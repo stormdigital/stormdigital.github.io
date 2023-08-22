@@ -1,0 +1,151 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.cursorPopupContainer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 50px;
+  background-color: #000;
+  border-radius: 0 150px 150px 150px;
+  font-size: 11px;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.cursorPopupContainer span {
+  padding: 15px;
+}
+
+@font-face {
+  font-family: "Overwave";
+  src: url(Overwave.woff?0f0cc199f5814410da591d5aab9de3a7) format("woff"), url(Overwave.woff2?4ebdad4d179c81dc9f2b4d4a3925589d) format("woff2");
+}
+body {
+  cursor: none;
+}
+
+.scrollingContainer {
+  position: relative;
+  width: 100%;
+}
+
+.contentContainer, .contentContainer02 {
+  position: relative;
+  width: 400vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.contentBlock {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
+}
+
+.nonScrollingContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  font-family: "Overwave";
+  color: #fff;
+  font-size: 55px;
+}
+.nonScrollingContainer .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contentBlock01 {
+  background-color: rebeccapurple;
+}
+
+.contentBlock02 {
+  background-color: blueviolet;
+}
+
+.contentBlock03 {
+  background-color: brown;
+}
+
+.contentBlock04 {
+  background-color: goldenrod;
+}
+
+.contentBlock05 {
+  background-color: purple;
+}
+
+.contentBlock06 {
+  background-color: tomato;
+}
+
+.contentBlock07 {
+  background-color: brown;
+}
+
+.contentBlock08 {
+  background-color: goldenrod;
+}
+
+.contentBlock09 {
+  background-color: purple;
+}
+
+.contentBlock10 {
+  background-color: tomato;
+}
