@@ -1,0 +1,170 @@
+body, body * {
+	vertical-align: baseline;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+@font-face{
+    font-family:"HelveticaNow";
+    src:url("HelveticaNowDisplay-ExtBlk.woff2") format("woff2");
+    src:url("HelveticaNowDisplay-ExtBlk.woff") format("woff");
+    font-weight:400;
+}
+
+@font-face{
+    font-family:"OpenSansBold";
+    src:url("HelveticaNowDisplay-ExtBlk.woff2") format("woff2");
+    src:url("HelveticaNowDisplay-ExtBlk.woff") format("woff");
+    font-weight:400;
+}
+
+img, div, span, object{
+    position: absolute;
+}
+
+#banner{
+    width: 970px;
+    height: 250px;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+    font-family: "HelveticaNow",sans-serif;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #75b440;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #000;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#logo{
+    width: 158px;
+    left: 94px;
+    top: 32px;
+}
+
+#text1Wrapper,
+#text2Wrapper,
+#text3Wrapper{
+    background: #5aa620;
+    text-transform: uppercase;
+    padding: 24px 28px;
+    font-size: 33px;
+    line-height: 1.1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 0px 0px;
+    white-space: nowrap;
+}
+
+#text1,
+#text2,
+#text3{
+    position: relative;
+    transform-origin: 0px 0px;
+}
+
+#dartBoardWrapper{
+    position: relative;
+    margin: -20px -10px 0px -9px;
+    top: 17px;
+    display: inline-block;
+    width: 59px;
+    height: 59px;
+}
+
+#boardWrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#dartBoard{
+    position: relative;
+    width: 100%;
+}
+
+#shadow{
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#flare{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%);
+    width: 200%;
+    height: 200%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#dartWrapper{
+    width: 340px;
+    height: 2130px;
+    border-radius: 50%;
+    top: -150px;
+    left: 0px;
+}
+
+#dart{
+    top: 157px;
+    left: 28px;
+    transform-origin: 0% 100%;
+}
+
+#confettiWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.cDiv{
+    position: relative;
+}
+
+#cta{
+    right: 27px;
+    bottom: 10px;
+    width: 177px;
+}
