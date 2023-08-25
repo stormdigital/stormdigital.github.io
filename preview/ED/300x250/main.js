@@ -74,8 +74,8 @@ function setConfetti(fps){
         var randomColor = colors[gsap.utils.random(0, colors.length-1, 1)];
 
         const newWrapper = document.createElement("div");
-        newWrapper.style.left = "295px";
-        newWrapper.style.top = "60px";
+        newWrapper.style.left = "122px";
+        newWrapper.style.top = "57px";
         document.querySelector("#confettiWrapper").appendChild(newWrapper);
         
         const newDiv = document.createElement("div");

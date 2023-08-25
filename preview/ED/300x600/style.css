@@ -17,8 +17,8 @@ img, div, span, object{
 }
 
 #banner{
-    width: 970px;
-    height: 250px;
+    width: 300px;
+    height: 600px;
     border: 1px solid #333;
     box-sizing: border-box;
     overflow: hidden;
@@ -64,9 +64,9 @@ img, div, span, object{
 }
 
 #logo{
-    width: 158px;
-    left: 94px;
-    top: 32px;
+    width: 114px;
+    left: 15px;
+    top: 211px;
 }
 
 #text1Wrapper,
@@ -74,14 +74,18 @@ img, div, span, object{
 #text3Wrapper{
     background: #5aa620;
     text-transform: uppercase;
-    padding: 21px 32px;
-    font-size: 44px;
+    padding: 11px 18px;
+    font-size: 24px;
     line-height: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 251px;
+    left: 18px;
     transform-origin: 0px 0px;
     white-space: nowrap;
+}
+
+#text2Wrapper{
+    left: 38px;
+    top: 252px;
 }
 
 #text1,
@@ -93,11 +97,11 @@ img, div, span, object{
 
 #dartBoardWrapper{
     position: relative;
-    margin: -20px -17px 0px -19px;
-    top: 17px;
+    margin: -11px -9px 0px -5px;
+    top: 6px;
     display: inline-block;
-    width: 59px;
-    height: 59px;
+    width: 32px;
+    height: 32px;
 }
 
 #boardWrapper{
@@ -136,14 +140,15 @@ img, div, span, object{
     width: 340px;
     height: 2130px;
     border-radius: 50%;
-    top: -150px;
-    left: 0px;
+    top: -155px;
+    left: -13px;
 }
 
 #dart{
     top: 157px;
     left: 28px;
     transform-origin: 0% 100%;
+    width: 24px;
 }
 
 #confettiWrapper{
@@ -156,9 +161,9 @@ img, div, span, object{
 }
 
 #ctaWrapper{
-    right: 101px;
-    bottom: 4px;
-    width: 118px;
+    right: 28px;
+    bottom: 183px;
+    width: 103px;
 }
 
 #cta{
