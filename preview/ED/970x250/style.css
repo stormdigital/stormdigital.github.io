@@ -106,6 +106,7 @@ img, div, span, object{
     height: 100%;
     border-radius: 50%;
     overflow: hidden;
+    backface-visibility: hidden;
 }
 
 #dartBoard{
