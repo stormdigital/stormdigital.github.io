@@ -57,8 +57,8 @@ function getAnimation(){
     masterTL.to("#dart", 0.2, {rotation:-10, ease:Sine.easeInOut}, "-=0.2");
     masterTL.to("#dart", 0.4, {rotation:5, ease:Sine.easeInOut});
     masterTL.to("#dart", 0.2, {rotation:0, ease:Sine.easeInOut});
-    masterTL.to("#text2Wrapper", 0.1, {opacity:0, ease:Sine.easeInOut}, "+=0.5");
-    masterTL.from("#text3Wrapper", 0.1, {opacity:0, ease:Sine.easeInOut});
+    masterTL.to("#text2Wrapper", 0.3, {opacity:0, ease:Sine.easeInOut}, "+=0.5");
+    masterTL.from("#text3Wrapper", 0.5, {x:"300%", ease:Sine.easeInOut})
     masterTL.from("#text3Wrapper", 0.1, {onStart:animateConfetti});
     masterTL.from("#ctaWrapper", 0.5, {scale:0, y:-50, ease:Sine.easeInOut}, "+=0.5");
 }
