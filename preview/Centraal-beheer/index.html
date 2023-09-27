@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>index</title>
+<script src="./material/gsap.min.js"></script>
+<script>
+
+function init(){
+document.querySelector('#preload_div').style.display = 'none'
+
+console.log('start');
+
+var tl = gsap.timeline({paused:true}); 
+tl.add('intro')
+	tl.from('.cb-logo', 0.3, {width:700, y:-740, x:-140}, 'intro+=1')
+	tl.to('.introoverlay', 0.3, {autoAlpha:0}, 'intro+=1.2')
+
+tl.add('start')
+	tl.from('.curvedBackground', 0.5, {yPercent:100, ease: "power2.out"}, 'start')
+	
+	// tl.from('.cb-logo', 0.3, {autoAlpha:0, ease: "power2.out"}, 'start+=0.2')
+	tl.from('.text01', 0.6, {y:100, autoAlpha:0, ease: "back.out(1.7)"}, 'start+=0.6')
+tl.add('frame02', '+=2')
+	tl.to('.greenbg', 0.6, {y:1213, ease: "back.out(0.3)"}, 'frame02')
+	tl.to('.text01', 0.6, {autoAlpha:0, ease: "power2.out"}, 'frame02')
+	tl.from('.greengradient', 0.6, {y:-1213, ease: "back.out(0.3)"}, 'frame02')
+	tl.from('.text02a', 0.6, {y:100, autoAlpha:0, ease: "back.out(1.7)"}, 'frame02+=0.6')
+tl.add('frame03', '+=3')
+	tl.from('.whitebg', 1, {y:document.querySelector('.container').offsetHeight, ease: "back.in(0.3)"}, 'frame03')
+	tl.to('.curvedBackground', 1, {y:-document.querySelector('.container').offsetHeight, ease: "back.in(0.3)"}, 'frame03')
+	tl.to(['.text02a', '.text02b'], 0.6, {y:-600, ease: "back.out(0.3)"}, 'frame03+=0.65')
+	tl.from('.text02b', 0.6, {autoAlpha:0}, 'frame03+=0.5')
+	tl.to('.cb-logo', 1, {width:433, ease: "back.out(0.3)"}, 'frame03+=0.7')
+	tl.from('.text03', 0.6, {autoAlpha:0,y:150}, 'frame03+=1')
+
+tl.duration(10);
+tl.play(0)
+
+}
+
+</script>
+<!-- write your code here -->
+</head>
+<style>
+
+	.container{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width:1080px;
+		height:1920px;
+		background-color: red;
+		overflow: hidden;
+	}
+
+	.backgroundImage{
+		position: absolute;
+		width: 100%;
+		height: auto;
+		top:0;
+		left:0;
+	}
+
+	.cb-logo{
+		position: absolute;
+		bottom: 61px;
+		right: 50px;
+		width: 293px;
+	}
+
+	.curvedBackground{
+		position: absolute;
+		bottom:0;
+		left:0;
+		width: 100%;
+		height: auto;
+	}
+
+	.guide{
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: auto;
+		opacity: 0.5;
+		pointer-events: none;
+	}
+
+	.greenbg{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: #25a737;
+	}
+
+	.whitebg{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+	}
+
+	.text01{
+		position: absolute;
+		top: 44%;
+    	left: 45%;
+    	transform: translate(-50%,-50%);
+	}
+
+	.text02a{
+		position: absolute;
+		top: 932px;
+    	left: -29px;
+	}
+
+	.text02b{
+		position: absolute;
+		top: 1037px;
+    	left: 76px;
+	}
+
+	.text03{
+		position: absolute;
+		top: 828px;
+    	left: 76px;
+	}
+
+	.greengradient{
+		top:730px;
+		position: absolute;
+	}
+
+	.introoverlay{
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+	}
+
+	 /* width:1080px; height:1920px" */
+</style>
+<body onload="init();" style="margin:0px;">
+	<div class="container">
+		<div class="backgroundImage">
+			<img src="./material/backgroundImage.jpg">
+		</div>
+		<div class="greenbg"></div>
+		<img src="./material/greengradient.png" class="greengradient">
+		<img src="./material/text01.png" class="text01">
+		<img src="./material/text02a.png" class="text02a">
+		<img src="./material/curvedbg.png" class="curvedBackground">
+		<div class="whitebg"></div>
+		<img src="./material/text02b.png" class="text02b">
+		<img src="./material/text03.png" class="text03">
+
+		<div class="introoverlay"></div>
+		<img src="./material/centraalbeheerlogo.png" class="cb-logo">
+
+		<!-- <img src="./material/guide03.png" class="guide"> -->
+	</div>
+
+
+    <div id='preload_div' style='position:absolute; top:0; left:0; display: inline-block; height:1920px; width: 1080px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=material/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+</body>
+</html>
