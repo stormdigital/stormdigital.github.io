@@ -88,5 +88,5 @@ function mouseOut(){
     setTimeout(() => {
         gsap.to(".box", 0.2, {opacity: 0, width: '100%'});  
     }, 500);
-    gsap.to(".box", 0.2, {opacity: 0, width: '100%'});
+    // gsap.to(".box", 0.2, {opacity: 0, width: '100%'});
 }
