@@ -29,6 +29,9 @@ function init() {
 
 function getAnimation(){
 
+    window.pricePos = "start";
+    window.oldPricePos = "start";
+
     Draggable.create("#dot", {
         bounds:"#dragBar",
         onDragEnd: dragEnded,
@@ -50,15 +53,13 @@ function getAnimation(){
     masterTL.to("#logoWrapper", 0.4, {height:248, ease:Sine.easeInOut}, "start+=4")
     masterTL.from("#border", 0.4, {opacity:0, ease:Power3.easeOut}, "start+=4")
     masterTL.from(split2.words, {opacity: 0, x:-10, ease:Sine.easeOut, stagger: 0.2});
-    masterTL.from("#dragWrapper", 0.5, {x:-30, opacity:0, ease:Sine.easeOut});
+    // masterTL.from("#dragWrapper", 0.5, {x:-30, opacity:0, ease:Sine.easeOut});
 }
 
 function dragEnded(){
 
     var barW = document.querySelector("#dragBar").offsetWidth;
     var barDragged = (this.x/barW)*100;
-
-    console.log(barDragged);
 
     if(barDragged < 33){
         gsap.to("#dot", 0.5, {x:5});
@@ -78,6 +79,9 @@ function dragEnded(){
 }
 
 function drag(){
+
+    window.oldPricePos =window.pricePos;
+
     var barW = document.querySelector("#dragBar").offsetWidth;
     var barDragged = (this.x/barW)*100;
 
@@ -85,16 +89,54 @@ function drag(){
     gsap.set("#priceBottom", {x:this.x});
 
     if(barDragged < 33){
-        document.querySelector("#priceBottom").innerText = "€385,-";
-        document.querySelector("#price").innerText = "€128.30";
+        window.pricePos = "start";
     }
     else if(barDragged >= 33 && barDragged <= 66){
-        document.querySelector("#priceBottom").innerText = "€585,-";
-        document.querySelector("#price").innerText = "€120.30";
+        window.pricePos = "middle";
     }
     else{
-        document.querySelector("#priceBottom").innerText = "€885,-";
-        document.querySelector("#price").innerText = "€108.30";
+        window.pricePos = "end";
     } 
 
+    if(window.oldPricePos != window.pricePos){
+        animateNumbers()
+    }
+
+}
+
+function animateNumbers(){
+
+    var priceDiv = document.querySelector("#price");
+    var price = {value:priceDiv.innerText.replace('€', '')};
+    
+    var bottomPriceDiv = document.querySelector("#priceBottom");
+    var priceBottom = {value:priceDiv.innerText.replace('€', '').replace(',-', '')};
+    
+
+    if(window.pricePos == "start"){
+        gsap.to(price, 0.5, {value:128.30, ease:Sine.easeOut, onUpdate:function() {
+            priceDiv.innerHTML = "€"+price.value.toFixed(2);
+        }});
+        gsap.to(priceBottom, 0.5, {value:385, ease:Sine.easeOut, onUpdate:function() {
+            bottomPriceDiv.innerHTML = "€"+priceBottom.value.toFixed(0)+",-";
+        }});
+        
+    }
+    else if(window.pricePos == "middle"){
+        gsap.to(price, 0.5, {value:120.30, ease:Sine.easeOut, onUpdate:function() {
+            priceDiv.innerHTML = "€"+price.value.toFixed(2);
+        }});
+        gsap.to(priceBottom, 0.5, {value:585, ease:Sine.easeOut, onUpdate:function() {
+            bottomPriceDiv.innerHTML = "€"+priceBottom.value.toFixed(0)+",-";
+        }});
+        
+    }
+    else{
+        gsap.to(price, 0.5, {value:108.30, ease:Sine.easeOut, onUpdate:function() {
+            priceDiv.innerHTML = "€"+price.value.toFixed(2);
+        }});
+        gsap.to(priceBottom, 0.5, {value:885, ease:Sine.easeOut, onUpdate:function() {
+            bottomPriceDiv.innerHTML = "€"+priceBottom.value.toFixed(0)+",-";
+        }});
+    } 
 }
