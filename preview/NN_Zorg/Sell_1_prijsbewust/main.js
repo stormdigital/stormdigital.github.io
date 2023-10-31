@@ -53,7 +53,7 @@ function getAnimation(){
     masterTL.to("#logoWrapper", 0.4, {height:248, ease:Sine.easeInOut}, "start+=4")
     masterTL.from("#border", 0.4, {opacity:0, ease:Power3.easeOut}, "start+=4")
     masterTL.from(split2.words, {opacity: 0, x:-10, ease:Sine.easeOut, stagger: 0.2});
-    // masterTL.from("#dragWrapper", 0.5, {x:-30, opacity:0, ease:Sine.easeOut});
+    masterTL.from("#dragWrapper", 0.5, {x:-30, opacity:0, ease:Sine.easeOut});
 }
 
 function dragEnded(){
