@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'nn_dagny_textlight';
+    src: url('nndagnytext-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nn_nitti_groteskheading';
+    src: url('nnnittigrotesk-heading-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 160px;
+    height: 600px;
+    border: 1px solid #ee7e00;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+    font-family: 'nn_nitti_groteskheading';
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #da6d2e;;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #000;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#bg{
+    height: 100%;
+}
+
+#t1Wrapper,
+#t2Wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.introText{
+    height: 100%;
+    opacity: 0;
+}
+
+#logoWrapper{
+    width: 137px;
+    height: 77px;
+    background: #fff;
+    border-radius: 5px;
+    left: 10px;
+    bottom: 9px;
+}
+
+#logo{
+    bottom: 25px;
+    left: 15px;
+    width: 107px;
+}
+
+#cta{
+    background: #ea650d;
+    right: 18px;
+    bottom: 83px;
+    font-size: 12px;
+    height: 32px;
+    width: 102px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+#text1{
+    color: #ee7e00;
+    width: 107px;
+    left: 15px;
+    margin-top: 40px;
+    font-size: 17.4px;
+    line-height: 1.1;
+    position: absolute;
+}
+
+#text2{
+    color: #ee7e00;
+    position: absolute;
+    width: 107px;
+    left: 15px;
+    margin-top: 80px;
+    font-size: 17.4px;
+    line-height: 1.1;
+}
+
+.darker{color: #ea650e;}
+.darkest{color: #e64415;}
+
+#endText{
+    color: #000;
+    font-family: 'nn_dagny_textlight';
+    left: 15px;
+    margin-top: 40px;
+    position: relative;
+    width: 109px;
+}
+
+#disclaimerText{
+    font-size: 5.4px;
+    color: #000;
+    position: absolute;
+    bottom: 150px;
+    left: 15px;
+    font-family: NN Nitti Grotesk;
+}
+
+svg{
+    position: absolute;
+    bottom: 0;
+ }
