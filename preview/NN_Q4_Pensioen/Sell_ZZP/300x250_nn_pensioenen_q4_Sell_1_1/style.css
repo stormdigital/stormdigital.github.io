@@ -70,6 +70,7 @@ img, div, object{
 
 #bg{
     width: 100%;
+    z-index: -2;
 }
 
 #t1Wrapper,
@@ -148,15 +149,6 @@ img, div, object{
     top: -7px;
     right: -7px;
     line-height: 1.1;
-    font-family: NN Nitti Grotesk;
-}
-
-#renteNumber{
-    color: #EE7F00;
-    text-align: center;
-    font-family: NN Nitti Grotesk;
-    font-size: 36px;
-    font-weight: 500;
 }
 
 #disclaimerText{
@@ -165,10 +157,11 @@ img, div, object{
     position: absolute;
     bottom: 60px;
     left: 13px;
-    font-family: NN Nitti Grotesk;
+    font-family: 'nn_dagny_textlight';
 }
 
 svg{
     position: absolute;
     bottom: 0;
+    /* z-index: -1; */
  }

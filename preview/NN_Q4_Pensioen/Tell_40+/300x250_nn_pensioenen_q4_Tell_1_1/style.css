@@ -70,6 +70,7 @@ img, div, object{
 
 #bg{
     width: 100%;
+    z-index: -2;
 }
 
 #t1Wrapper,
@@ -154,4 +155,5 @@ img, div, object{
 svg{
     position: absolute;
     bottom: 0;
+    z-index: -1;
  }
