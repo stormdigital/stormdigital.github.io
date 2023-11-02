@@ -124,6 +124,7 @@ img, div, object{
     top: 100px;
     left: 30px;
     border-radius: 9px;
+    opacity: 0;
 }
 
 #dragText1{
