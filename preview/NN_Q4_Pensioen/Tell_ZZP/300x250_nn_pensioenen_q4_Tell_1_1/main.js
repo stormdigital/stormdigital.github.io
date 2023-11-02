@@ -78,8 +78,8 @@ function getAnimation(){
     masterTL.from("#cta", 0.5, {scale:0, ease:Back.easeOut})
     masterTL.to("#logoWrapper", 0.4, {height:224, ease:Sine.easeInOut}, "+=1")
     masterTL.to("#text1", 0.4, {top: 35}, "-=0.4")
-    masterTL.from("#endText", 0.3, {opacity:0, ease:Sine.easeOut})
-    masterTL.to("#endText", 0.4, {top: 35}, "-=0.3")
+    masterTL.to("#endText", 0.4, {top: 35}, "-=0.2")
+    masterTL.from("#endText", 0.3, {opacity:0, ease:Sine.easeOut}, "-=0.3")
     masterTL.from("#disclaimerText", 0.4, {scale: 0}, "-=0.3")
     masterTL.from("#border", 1, {opacity:0, ease:Power3.easeOut}, "+=1")
 }

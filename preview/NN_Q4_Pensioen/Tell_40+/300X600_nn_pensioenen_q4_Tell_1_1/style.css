@@ -3,16 +3,14 @@ body{
 }
 
 @font-face {
-    font-family: 'nn_dagny_textlight';
-    src: url('nndagnytext-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
     font-family: 'nn_nitti_groteskheading';
     src: url('nnnittigrotesk-heading-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'nn_nitti_grotesktext_regular';
+    src: url('nnnittigrotesk-textregular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -136,21 +134,23 @@ img, div, object{
 
 #endText{
     color: #000;
-    font-family: 'nn_dagny_textlight';
+    font-family: 'nn_nitti_grotesktext_regular';
     left: 35px;
     margin-top: 15px;
     position: relative;
     width: 219px;
     font-size: 20px;
+    line-height: 1.1;
 }
 
 #disclaimerText{
-    font-size: 6px;
+    font-size: 11px;
     color: #000;
     position: absolute;
     bottom: 160px;
     left: 35px;
-    font-family: NN Nitti Grotesk;
+    font-family: 'nn_nitti_grotesktext_regular';
+    width: 155px;
 }
 
 svg{

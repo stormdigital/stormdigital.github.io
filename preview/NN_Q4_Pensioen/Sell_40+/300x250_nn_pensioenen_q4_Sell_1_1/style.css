@@ -3,16 +3,14 @@ body{
 }
 
 @font-face {
-    font-family: 'nn_dagny_textlight';
-    src: url('nndagnytext-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
     font-family: 'nn_nitti_groteskheading';
     src: url('nnnittigrotesk-heading-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'nn_nitti_grotesktext_regular';
+    src: url('nnnittigrotesk-textregular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -126,7 +124,7 @@ img, div, object{
 
 #endText{
     color: #000;
-    font-family: 'nn_dagny_textlight';
+    font-family: 'nn_nitti_grotesktext_regular';
     left: 12px;
     margin-top: 20px;
     position: relative;
@@ -149,15 +147,17 @@ img, div, object{
     top: -7px;
     right: -7px;
     line-height: 1.1;
+    font-family: 'nn_nitti_grotesktext_regular';
+    font-weight: 600;
 }
 
 #disclaimerText{
-    font-size: 5.4px;
+    font-size: 9px;
     color: #000;
     position: absolute;
     bottom: 50px;
     left: 13px;
-    font-family: 'nn_dagny_textlight';
+    font-family: 'nn_nitti_grotesktext_regular';
 }
 
 svg{
