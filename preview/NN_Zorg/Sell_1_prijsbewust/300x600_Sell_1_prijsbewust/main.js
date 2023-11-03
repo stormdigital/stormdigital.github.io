@@ -41,19 +41,20 @@ function getAnimation(){
     masterTL.add("start");
     masterTL.from("#logoWrapper", 0.5, {scale:0, ease:Back.easeOOut}, "start")
     masterTL.from(split.words, {opacity: 0, x:-10, ease:Sine.easeOut, stagger: 0.2}, "start+=0.5");
-    // masterTL.from("#logo", 0.5, {opacity:0, ease:Back.easeOut}, "start+=1.5")
     masterTL.from("#cta", 0.5, {scale:0, ease:Back.easeOut}, "start+=1.7")
     masterTL.to(split.words, {opacity: 0, x:10, ease:Sine.easeOut, stagger: -0.05}, "start+=3.5");
-    masterTL.to("#logoWrapper", 0.4, {height:248, ease:Sine.easeInOut}, "start+=4")
+    masterTL.to("#logoWrapper", 0.4, {height:585, y:5, ease:Sine.easeInOut}, "start+=4")
     masterTL.from("#border", 0.4, {opacity:0, ease:Power3.easeOut}, "start+=4")
     masterTL.from(split2.words, {opacity: 0, x:-10, ease:Sine.easeOut, stagger: 0.2});
+    masterTL.from("#endText", 0.3, {opacity:0, ease:Sine.easeOut}, "+=0.3")
     masterTL.from("#dragWrapper", 0.5, {x:-30, ease:Sine.easeOut});
     masterTL.to("#dragWrapper", 0.5, {opacity:1, ease:Sine.easeOut}, "-=0.5");
     masterTL.add("animateDrag")
-    masterTL.to("#dot", 0.5, {x:barW/2, ease:Sine.easeInOut}, "animateDrag");
+    masterTL.to(["#dot", "#priceBottom"], 0.5, {x:barW/2, ease:Sine.easeInOut}, "animateDrag");
     masterTL.to("#bar", 0.5, {width:barW/2, ease:Sine.easeInOut, onStart:animateNumbers}, "animateDrag");
-
+ 
 }
+
 
 function setupDrag(){
     window.pricePos = "middle";

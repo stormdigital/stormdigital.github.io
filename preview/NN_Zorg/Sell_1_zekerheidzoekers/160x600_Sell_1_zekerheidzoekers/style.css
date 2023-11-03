@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'nn_nitti_groteskheading';
+    src: url('nnnittigrotesk-heading-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nn_nitti_grotesktext_regular';
+    src: url('nnnittigrotesk-textregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 160px;
+    height: 600px;
+    border: 1px solid #ee7e00;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+    font-family: 'nn_nitti_groteskheading';
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #da6d2e;;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #000;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#bg{
+    height: 100%;
+}
+
+#logoWrapper{
+    width: 144px;
+    height: 242px;
+    background: #fff;
+    border-radius: 4px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 11px;
+}
+
+#logo{
+    bottom: 26px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;
+}
+
+#cta{
+    background: #ea650d;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 90px;
+    font-size: 12px;
+    height: 32px;
+    width: 117px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+#text1,
+#text2{
+    color: #ee7e00;
+    width: 240px;
+    left: 13px;
+    top: 34px;
+    font-size: 17px;
+    line-height: 1.1;
+}
+
+#text2{
+    top: 87px;
+}
+
+.darker{color: #ea650e;}
+.darkest{color: #e64415;}
+
+#endText{
+    color: #000;
+    left: 17px;
+    top: 304px;
+    font-size: 15px;
+    line-height: 1.1;
+    font-family: 'nn_nitti_grotesktext_regular';
+}
+
+#border{
+    height: 100%;
+}
+
+#sticker{
+    background: #F1EDEB;
+    width: 103px;
+    height: 103px;
+    top: 178px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+#stickerText{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
+    font-size: 11px;
+}
+
+#stickerText .price{
+    color: #EA650E;
+    font-size: 23px;
+}

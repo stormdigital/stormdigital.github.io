@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'nn_nitti_groteskheading';
+    src: url('nnnittigrotesk-heading-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nn_nitti_grotesktext_regular';
+    src: url('nnnittigrotesk-textregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 320px;
+    height: 240px;
+    border: 1px solid #ee7e00;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+    font-family: 'nn_nitti_groteskheading';
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #da6d2e;;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #000;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#bg{
+    width: 100%;
+}
+
+#logoWrapper{
+    width: 296px;
+    height: 119px;
+    background: #fff;
+    border-radius: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 13px;
+}
+
+#logo{
+    bottom: 16px;
+    left: 12px;
+    width: 102px;
+}
+
+#cta{
+    background: #ea650d;
+    right: 12px;
+    bottom: 16px;
+    font-size: 12px;
+    height: 29px;
+    width: 103px;
+    line-height: 29px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+#text1,
+#text2{
+    color: #ee7e00;
+    left: 15px;
+    top: 11px;
+    font-size: 20px;
+    line-height: 1.1;
+}
+
+#text2{
+    top: 20px;
+}
+
+.darker{color: #ea650e;}
+.darkest{color: #e64415;}
+
+#endText{
+    color: #000;
+    left: 16px;
+    width: 256px;
+    top: 82px;
+    font-size: 15px;
+    line-height: 1.1;
+    font-family: 'nn_nitti_grotesktext_regular';
+}
+
+#border{
+    width: 100%;
+}
+
+#counter{
+    color: #EA650E;
+    right: 12px;
+    bottom: 53px;
+    width: 102px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#counter .number{
+    color: #000;
+    border: 1px solid #EA650E;
+    width: 11px;
+    display: inline-block;
+    margin-right: 0px;
+    border-radius: 2px;
+}
+
+.guide{
+    width: 100%;
+}
+
+#sticker{
+    background: #F1EDEB;
+    width: 90px;
+    height: 90px;
+    top: -7px;
+    right: -6px;
+    border-radius: 50%;
+}
+
+#stickerText{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
+    font-size: 11px;
+}
+
+#stickerText .price{
+    color: #EA650E;
+    font-size: 21px;
+}
