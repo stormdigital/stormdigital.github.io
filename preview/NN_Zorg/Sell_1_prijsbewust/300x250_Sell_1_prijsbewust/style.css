@@ -151,8 +151,10 @@ img, div, object{
 #dragText3{
     color: #000;
     font-size: 11px;
-    left: 195px;
+    left: 175px;
     top: 56px;
+    width: 75px;
+    text-align: center;
 }
 
 #price{

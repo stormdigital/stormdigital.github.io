@@ -144,8 +144,10 @@ img, div, object{
 #dragText3{
     color: #000;
     font-size: 11px;
-    left: 195px;
-    top: 56px;
+    left: 178px;
+    top: 53px;
+    width: 70px;
+    text-align: center;
 }
 
 #price{
