@@ -1,0 +1,43 @@
+@import './styling/reset.scss';
+@import './styling/fonts.scss';
+
+
+.background{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  // background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(58,144,180,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.contentContainer{
+  position: relative;
+  width: 100%;
+  height: auto;
+  left:50%;
+  top:0;
+  transform: translate(-50%, 0);
+  max-width: 1200px;
+
+
+  .heroCopyContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: #2f2f2f;
+    align-items: center;
+
+    h2{
+      font-family: 'Mont-Heavy';
+      font-size: 2vw;
+    }
+
+    h1{
+      font-family: 'Mont-Heavy';
+      font-size: min(12vw, 176px);
+      background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

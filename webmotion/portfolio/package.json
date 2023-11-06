@@ -1,0 +1,42 @@
+{
+  "name": "jde_interactive-map_2023",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wessel-Storm/JDE_interactive-map_2023.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wessel-Storm/JDE_interactive-map_2023/issues"
+  },
+  "homepage": "https://github.com/Wessel-Storm/JDE_interactive-map_2023#readme",
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.2.45",
+    "browser-sync": "^2.27.11",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "filename-regex": "^2.0.1",
+    "html-webpack-plugin": "^5.5.0",
+    "json-loader": "^0.5.7",
+    "laravel-mix": "^6.0.49",
+    "laravel-mix-clean": "^0.1.0",
+    "laravel-mix-polyfill": "^3.0.1",
+    "mix-html-builder": "^0.9.0",
+    "replace-in-file": "^6.3.5",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.57.1",
+    "sass-loader": "^12.6.0",
+    "vue-loader": "^16.8.3",
+    "webpack-livereload-plugin": "^1.2.0"
+  },
+  "dependencies": {
+    "dotenv-webpack": "^8.0.1"
+  }
+}

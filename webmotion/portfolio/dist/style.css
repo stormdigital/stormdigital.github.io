@@ -1,0 +1,100 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Mont-ExtraLight";
+  src: url(/fonts/Mont-ExtraLight.woff2?1321894b65bfbb6bdb295b08b0b47180) format("woff2"), url(/fonts/Mont-ExtraLight.woff?319c1a8a3a89fee9d7ba1653cb77695a) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mont-Heavy";
+  src: url(/fonts/Mont-Heavy.woff2?ef7bfe7ea6bd6e6d34bdfae4774a3e9e) format("woff2"), url(/fonts/Mont-Heavy.woff?39cd887761251c0de58fc5d673de6b74) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.contentContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+  max-width: 1200px;
+}
+.contentContainer .heroCopyContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: #2f2f2f;
+  align-items: center;
+}
+.contentContainer .heroCopyContainer h2 {
+  font-family: "Mont-Heavy";
+  font-size: 2vw;
+}
+.contentContainer .heroCopyContainer h1 {
+  font-family: "Mont-Heavy";
+  font-size: min(12vw, 176px);
+  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

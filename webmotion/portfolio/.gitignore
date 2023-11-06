@@ -1,0 +1,5 @@
+*~
+*.DS_store
+_debug
+node_modules/
+README.md
