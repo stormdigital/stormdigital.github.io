@@ -80,7 +80,7 @@ img, div, object{
     border-radius: 5px;
     left: 50%;
     transform: translate(-50%);
-    bottom: 14px;
+    bottom: 15px;
 }
 
 #logo{
@@ -144,10 +144,8 @@ img, div, object{
 #dragText3{
     color: #000;
     font-size: 11px;
-    left: 178px;
-    top: 53px;
-    width: 70px;
-    text-align: center;
+    left: 195px;
+    top: 56px;
 }
 
 #price{

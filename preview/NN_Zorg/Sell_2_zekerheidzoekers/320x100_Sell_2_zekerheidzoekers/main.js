@@ -57,7 +57,7 @@ function getAnimation(){
     masterTL.from("#logoWrapper", 0.5, {scale:0, ease:Back.easeOOut}, "start")
     masterTL.from(split.words, {opacity: 0, x:-10, ease:Sine.easeOut, stagger: 0.2}, "start+=0.5");
     masterTL.to(split.words, {opacity: 0, x:10, ease:Sine.easeOut, stagger: -0.05}, "start+=3.5");
-    masterTL.to("#logoWrapper", 0.4, {width:307, ease:Sine.easeInOut}, "start+=4")
+    masterTL.to("#logoWrapper", 0.4, {width:308, ease:Sine.easeInOut}, "start+=4")
     masterTL.from("#border", 0.4, {opacity:0, ease:Power3.easeOut}, "start+=4")
     masterTL.from(split2.words, {opacity: 0, x:-10, ease:Sine.easeOut, stagger: 0.2});
     masterTL.from("#endText", 0.3, {opacity:0, ease:Sine.easeOut})
