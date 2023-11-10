@@ -140,7 +140,7 @@ img, div, object{
     position: absolute;
     top: 0;
     width: 172px;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.1;
 }
 
@@ -149,10 +149,10 @@ img, div, object{
 }
 
 #disclaimerText{
-    font-size: 9px;
+    font-size: 10px;
     color: #000;
     position: absolute;
-    bottom: 3px;
+    bottom: 5px;
     left: 250px;
     font-family: 'nn_nitti_grotesktext_regular';
     width: 150px;
