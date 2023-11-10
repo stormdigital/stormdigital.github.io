@@ -109,11 +109,12 @@ img, div, object{
     width: 240px;
     left: 20px;
     top: 28px;
-    font-size: 29px;
+    font-size: 23px;
     line-height: 1.1;
 }
 
 #text2{
+    font-size: 29px;
     top: 210px;
 }
 
