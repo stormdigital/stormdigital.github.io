@@ -118,38 +118,38 @@ function drag(){
 }
 
 function animateNumbers(){
-
+    
     var priceDiv = document.querySelector("#price");
-    var price = {value:priceDiv.innerText.replace('€', '')};
+    var price = {value:priceDiv.innerText.replace('€', '').toString().replace(",", ".")};
     
     var bottomPriceDiv = document.querySelector("#priceBottom");
     var priceBottom = {value:priceDiv.innerText.replace('€', '').replace(',-', '')};
     
 
     if(window.pricePos == "start"){
-        gsap.to(price, 0.5, {value:128.30, ease:Sine.easeOut, onUpdate:function() {
-            priceDiv.innerHTML = "€"+price.value.toFixed(2);
+        gsap.to(price, 0.5, {value:140.50, ease:Sine.easeOut, onUpdate:function() {
+            priceDiv.innerHTML = "€"+price.value.toFixed(2).toString().replace(".", ",");
         }});
         gsap.to(priceBottom, 0.5, {value:385, ease:Sine.easeOut, onUpdate:function() {
-            bottomPriceDiv.innerHTML = "€"+priceBottom.value.toFixed(0)+",-";
+            bottomPriceDiv.innerHTML = "€"+Math.floor(priceBottom.value)+",-";
         }});
         
     }
     else if(window.pricePos == "middle"){
-        gsap.to(price, 0.5, {value:120.30, ease:Sine.easeOut, onUpdate:function() {
-            priceDiv.innerHTML = "€"+price.value.toFixed(2);
+        gsap.to(price, 0.5, {value:134.50, ease:Sine.easeOut, onUpdate:function() {
+            priceDiv.innerHTML = "€"+price.value.toFixed(2).toString().replace(".", ",");
         }});
         gsap.to(priceBottom, 0.5, {value:585, ease:Sine.easeOut, onUpdate:function() {
-            bottomPriceDiv.innerHTML = "€"+priceBottom.value.toFixed(0)+",-";
+            bottomPriceDiv.innerHTML = "€"+Math.floor(priceBottom.value)+",-";
         }});
         
     }
     else{
-        gsap.to(price, 0.5, {value:108.30, ease:Sine.easeOut, onUpdate:function() {
-            priceDiv.innerHTML = "€"+price.value.toFixed(2);
+        gsap.to(price, 0.5, {value:125.50, ease:Sine.easeOut, onUpdate:function() {
+            priceDiv.innerHTML = "€"+price.value.toFixed(2).toString().replace(".", ",");
         }});
         gsap.to(priceBottom, 0.5, {value:885, ease:Sine.easeOut, onUpdate:function() {
-            bottomPriceDiv.innerHTML = "€"+priceBottom.value.toFixed(0)+",-";
+            bottomPriceDiv.innerHTML = "€"+Math.floor(priceBottom.value)+",-";
         }});
     } 
 }
