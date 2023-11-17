@@ -104,7 +104,8 @@ img, div, object{
 #text2{
     color: #ee7e00;
     left: 36px;
-    top: 74px;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 28px;
     line-height: 1.1;
 }
