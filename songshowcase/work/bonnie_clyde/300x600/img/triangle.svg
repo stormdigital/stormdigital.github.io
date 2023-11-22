@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="483px" height="446px" viewBox="0 0 483 446" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Grid</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="242 149.0904 322 296.708871 162 296.708871"></polygon>
+        <polygon id="path-2" points="160 297.702175 240 445.320646 80 445.320646"></polygon>
+        <polygon id="path-3" points="322 297.702175 402 445.320646 242 445.320646"></polygon>
+        <polygon id="path-4" points="80 149.0904 160 296.708871 5.68434189e-14 296.708871"></polygon>
+        <polygon id="path-5" points="161 149.0904 241 296.708871 81 296.708871"></polygon>
+        <polygon id="path-6" points="241 297.702175 321 445.320646 161 445.320646"></polygon>
+        <polygon id="path-7" points="403 297.878261 483 445.496732 323 445.496732"></polygon>
+        <polygon id="path-8" points="323 149.0904 403 296.708871 243 296.708871"></polygon>
+        <polygon id="path-9" points="323 74.5452002 363 148.354436 283 148.354436"></polygon>
+        <polygon id="path-10" points="241 74.5452002 281 148.354436 201 148.354436"></polygon>
+        <polygon id="path-11" points="363 -7.95807864e-13 403 73.8092355 323 73.8092355"></polygon>
+        <polygon id="path-12" points="364 149.0904 404 222.899636 324 222.899636"></polygon>
+        <polygon id="path-13" points="282 74.5452002 322 148.354436 242 148.354436"></polygon>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Homepage-Redesign---User-Test-Iteration---Desktop" transform="translate(-928.000000, -80.000000)">
+            <g id="Hero" transform="translate(-229.000000, 0.000000)">
+                <g id="Hero-Content">
+                    <g id="Grid-Ornaments" transform="translate(0.000000, 80.000000)">
+                        <g id="Grid" transform="translate(1157.000000, 0.000000)">
+                            <g id="Triangle-Copy" transform="translate(242.000000, 222.899636) scale(1, -1) translate(-242.000000, -222.899636) ">
+                                <use fill-opacity="0" fill="#000000" xlink:href="#path-1"></use>
+                                <use fill-opacity="0.16" fill="#FFFFFF" xlink:href="#path-1"></use>
+                            </g>
+                            <g id="Triangle-Copy-8" opacity="0.5" transform="translate(160.000000, 371.511411) scale(1, -1) translate(-160.000000, -371.511411) ">
+                                <use fill-opacity="0" fill="#000000" xlink:href="#path-2"></use>
+                                <use fill-opacity="0.16" fill="#FFFFFF" xlink:href="#path-2"></use>
+                            </g>
+                            <g id="Triangle-Copy-10" transform="translate(322.000000, 371.511411) scale(1, -1) translate(-322.000000, -371.511411) ">
+                                <use fill-opacity="0" fill="#000000" xlink:href="#path-3"></use>
+                                <use fill-opacity="0.16" fill="#FFFFFF" xlink:href="#path-3"></use>
+                            </g>
+                            <g id="Triangle-Copy-2" transform="translate(80.000000, 222.899636) scale(1, -1) translate(-80.000000, -222.899636) ">
+                                <use fill-opacity="0" fill="#000000" xlink:href="#path-4"></use>
+                                <use fill-opacity="0.25" fill="#FFFFFF" xlink:href="#path-4"></use>
+                            </g>
+                            <g id="Triangle-Copy-3">
+                                <use fill-opacity="0" fill="#000000" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.3" fill="#FFFFFF" xlink:href="#path-5"></use>
+                            </g>
+                            <g id="Triangle-Copy-9" opacity="0.200000003">
+                                <use fill-opacity="0" fill="#000000" xlink:href="#path-6"></use>
+                                <use fill-opacity="0.16" fill="#FFFFFF" xlink:href="#path-6"></use>
+                            </g>
+                            <g id="Triangle-Copy-11">
+                                <use fill-opacity="0" fill="#000000" xlink:href="#path-7"></use>
+                                <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-7"></use>
+                            </g>
+                            <g id="Triangle-Copy-4">
+                                <use fill-opacity="0" fill="#000000" xlink:href="#path-8"></use>
+                                <use fill-opacity="0.1" fill="#FFFFFF" xlink:href="#path-8"></use>
+                            </g>
+                            <g id="Triangle-Copy" transform="translate(323.000000, 111.449818) scale(1, -1) translate(-323.000000, -111.449818) ">
+                                <use fill-opacity="0" fill="#000000" xlink:href="#path-9"></use>
+                                <use fill-opacity="0.1" fill="#FFFFFF" xlink:href="#path-9"></use>
+                            </g>
+                            <g id="Triangle-Copy-2" transform="translate(241.000000, 111.449818) scale(1, -1) translate(-241.000000, -111.449818) ">
+                                <use fill-opacity="0" fill="#000000" xlink:href="#path-10"></use>
+                                <use fill-opacity="0.19" fill="#FFFFFF" xlink:href="#path-10"></use>
+                            </g>
+                            <g id="Triangle-Copy-5" transform="translate(363.000000, 36.904618) scale(1, -1) translate(-363.000000, -36.904618) ">
+                                <use fill-opacity="0" fill="#000000" xlink:href="#path-11"></use>
+                                <use fill-opacity="0.3" fill="#FFFFFF" xlink:href="#path-11"></use>
+                            </g>
+                            <g id="Triangle-Copy-6" transform="translate(364.000000, 185.995018) scale(1, -1) translate(-364.000000, -185.995018) ">
+                                <use fill-opacity="0" fill="#000000" xlink:href="#path-12"></use>
+                                <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-12"></use>
+                            </g>
+                            <g id="Triangle-Copy-3">
+                                <use fill-opacity="0" fill="#000000" xlink:href="#path-13"></use>
+                                <use fill-opacity="0.18" fill="#FFFFFF" xlink:href="#path-13"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

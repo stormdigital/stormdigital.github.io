@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    background: #aaa;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#page{
+    position: relative;
+    margin-top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#thumbNailWrapper{
+    position: relative;
+    left: 5%;
+    top: 10%;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    font-size: 18px;
+}
+
+.thumb{
+    position: relative;
+    width: 15%;
+    background: #000;
+}
+
+.thumbImage{
+    width: 100%;
+}
+
+.thumb:hover .thumbImage{
+    opacity: 0.2;
+}
+
+.thumbName{
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: #fff;
+    opacity: 0;
+    font-size: 2vw;
+}
+
+.thumb:hover .thumbName{
+    opacity: 1;
+}
+
+#previewWrapper{
+    position: relative;
+    padding: 2vw;
+    background: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    display: none;
+}
+
+#closeBtn{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 20px;
+    padding: 1vw;
+    cursor: pointer;
+}
+
+#videoWrapper{
+    position: relative;
+    width: 300px;
+    height: 250px;
+}
+
+.sizeLink{
+    display: block;
+}

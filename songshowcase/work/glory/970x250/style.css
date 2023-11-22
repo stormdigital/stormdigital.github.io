@@ -1,0 +1,122 @@
+body, body * {
+	vertical-align: baseline;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	-webkit-transform: perspective(1px) scale(1.0);
+	transform: perspective(1px) scale(1.0);
+    -webkit-font-smoothing: antialiased;
+}
+
+img, div, span, object{
+    position: absolute;
+}
+
+#banner{
+    width: 970px;
+    height: 250px;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #000;
+}
+
+#logoVL{
+    width: 7520px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.0531914894);
+}
+
+#logoVLSmall{
+    width: 208px;
+    right: 95px;
+    top: 25px;
+}
+
+#fighter1Wrapper{
+    width: 220px;
+    height: 422px;
+    transform: rotate(-30deg);
+    left: 91px;
+    top: -87px;
+    overflow: hidden;
+}
+
+#fighter1Reset{
+    width: 100%;
+    height: 100%;
+    transform: rotate(30deg);
+}
+
+#fighter1{
+    bottom: 86px;
+    left: -8px;
+}
+
+#fighter2Wrapper{
+    width: 220px;
+    height: 422px;
+    transform: rotate(30deg);
+    left: 331px;
+    top: -87px;
+    overflow: hidden;
+}
+
+#fighter2Reset{
+    width: 100%;
+    height: 100%;
+    transform: rotate(-30deg);
+}
+
+#fighter2{
+    bottom: 87px;
+    right: 20px;
+}
+
+#names{
+    right: 192px;
+    bottom: 22px;
+}
+
+#date{
+    right: 80px;
+    top: 95px;
+}
+
+#cta1{
+    width: 128px;
+    height: 34px;
+    border-radius: 200px;
+    background: #fff;
+    right: 26px;
+    bottom: 58px;
+}
+
+#cta1Text{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#cta2{
+    width: 150px;
+    height: 40px;
+    border-radius: 200px;
+    background: #ff3746;
+    right: 16px;
+    bottom: 24px;
+}
+
+#cta2Text{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
