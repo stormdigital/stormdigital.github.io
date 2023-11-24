@@ -9,6 +9,8 @@ function init(id){
   else{
     setUpPreview();
   }
+
+  document.querySelector("#searchBar").onkeyup = checkSearch;
   
   var tl = gsap.timeline({paused:true});
   
@@ -16,9 +18,10 @@ function init(id){
 
 function initAllProjects(){
 
-  window.data.forEach(project => {
+  window.data.reverse().forEach(project => {
 
     var newProject = document.createElement("div");
+    newProject.id = "thumb_"+project.id;
     newProject.classList.add("thumb");
     document.querySelector("#thumbNailWrapper").appendChild(newProject);
 
@@ -53,6 +56,7 @@ function setUpPreview(){
 
   var currentId = window.location.search.match(/\d+/).shift();
   gsap.set("#previewWrapper", {display:"inline-block"});
+  gsap.set("#thumbNailWrapper", {display:"none"});
 
 
   window.data.forEach(project => {
@@ -79,7 +83,10 @@ function createVideo(project){
 
   var newVideo = document.createElement("video");
   newVideo.id = "videoWrapper";
-  newVideo.src= project.video;
+  newVideo.src= project.video.link;
+  console.log(project.video.size.split("x")[0]);
+  newVideo.width = project.video.size.split("x")[0];
+  newVideo.height = project.video.size.split("x")[1];
   newVideo.muted= true;
   newVideo.loop= true;
   newVideo.autoplay= true;
@@ -100,4 +107,20 @@ function closePreview(){
   var urlParams = new URLSearchParams(window.location.search);
   urlParams.delete("id");
   window.location.search = urlParams;
+}
+
+function checkSearch(e){
+  var searchString = e.target.value.toLowerCase();
+  var matches = [];
+
+  window.data.forEach(project => {
+    if( project.name.toLowerCase().includes(searchString) || 
+        project.client.toLowerCase().includes(searchString) ||
+        project.category.toLowerCase().includes(searchString)){
+          gsap.set("#thumb_"+project.id, {display:"block"})
+    }
+    else{
+      gsap.set("#thumb_"+project.id, {display:"none"})
+    }
+  });
 }

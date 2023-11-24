@@ -1,0 +1,204 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+div, img{
+    position: absolute;
+}
+
+#banner{
+    width: 300px;
+    height: 250px;
+    background: rgb(0,159,220);
+    background: radial-gradient(circle, rgba(0,159,220,1) 0%, rgba(0,70,97,1) 100%);
+    overflow: hidden;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+#plus1,
+#plus2{
+    width: 8px;
+}
+
+#plus1{
+    top: 84px;
+    left: 145px;
+}
+
+#plus2{
+    top: 84px;
+    left: 213px;
+}
+
+#wIsM{
+    width: 36px;
+    top: 130px;
+    left: 17px;
+}
+
+#minAL{
+    width: 19px;
+    top: 126px;
+    left: 98px;
+}
+
+#sunWrapper{
+    left: -15px;
+}
+
+#sunWrapper,
+#ballWrapper,
+#oneWrapper{
+    width: 100%;
+    height: 100%;
+    top:-33px;
+}
+
+#sunClouds{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+}
+
+#sunStrings{
+    width: 103px;
+    right: 58px;
+    top: 52px;
+}
+
+#rainWrapper{
+    width: 75px;
+    height: 41px;
+    top: 170px;
+    left: 100px;
+    overflow: hidden;
+}
+
+#rain1,
+#rain2{
+    width: 100%;
+    top: -50px;
+    left: 25px;
+}
+
+#ball{
+    width: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#circle,
+#one{
+    width: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#spaceWrapper{
+    width: 150px;
+    height: 150px;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    overflow: hidden;
+    background: #0b0b27;
+    border-radius: 50%;
+}
+
+#spaceship{
+    width: 103px;
+    bottom: 23px;
+    right: 9px;
+}
+
+#planet{
+    width: 31px;
+    top: 42px;
+    left: 98px;
+}
+
+#star1{
+    width: 15px;
+    left: 46px;
+    top: 34px;
+}
+
+#star2{
+    width: 25px;
+    top: 58px;
+    left: 15px;
+}
+
+#ctaWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+#cta{
+    width: 187px;
+    height: 34px;
+    background: #e37222;
+    border-radius: 17px;
+    left: 20px;
+    bottom: 36px;
+}
+
+#ctaText{
+    width: 155px;
+    bottom: 48px;
+    left: 36px;
+}
+
+#ctaArrow{
+    width: 5px;
+    bottom: 49px;
+    left: 184px;
+}
+
+#wing{
+    bottom: 0px;
+    right: 0px;
+    width: 91px;
+}
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: rgb(0,159,220);
+    background: radial-gradient(circle, rgba(0,159,220,1) 0%, rgba(0,70,97,1) 100%);
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #003f72;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
