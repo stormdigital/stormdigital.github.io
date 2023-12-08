@@ -43,10 +43,10 @@ function getAnimation(){
     masterTL.add("start");
     masterTL.from(["#bg", "#bg2"], 3,{x:-70, ease:Sine.easeOut}, "start");
     masterTL.to(arrowTL, 3,{progress: 1, ease:Sine.easeOut}, "start");
-    masterTL.from("#logo", 0.5,{opacity:0, ease:Sine.easeOut}, "start+=0.8");
-    masterTL.from("#logoText", 0.5,{opacity:0, y:-20, ease:Sine.easeOut}, "start+=1");
-    masterTL.from(split.lines, 0.6, {x:-15, ease:Sine.easeOut, stagger: 0.15}, "-=0.3");
-    masterTL.from("#text1", 0.6, {opacity:0, ease:Sine.easeOut}, "-=0.6");
-    masterTL.from("#cta", 0.5, {scale:0, ease:Back.easeOut}, "-=0.2");
+    masterTL.from(split.lines, 0.6, {x:-15, ease:Sine.easeOut, stagger: 0.15}, "start+=0.8");
+    masterTL.from("#text1", 0.6, {opacity:0, ease:Sine.easeOut}, "start+=0.8");
+    masterTL.from("#logo", 0.5,{opacity:0, ease:Sine.easeOut}, "start+=2");
+    masterTL.from("#logoText", 0.5,{opacity:0, y:-20, ease:Sine.easeOut}, "start+=2.2");
+    masterTL.from("#cta", 0.5, {scale:0, ease:Back.easeOut}, "start+=2.5");
 
 }
