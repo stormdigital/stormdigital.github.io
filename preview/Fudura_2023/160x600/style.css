@@ -13,7 +13,7 @@ img, div, object{
 }
 
 #banner{
-    width: 300px;
+    width: 160px;
     height: 600px;
     border: 1px solid #50a8ae;
     box-sizing: border-box;
@@ -64,13 +64,13 @@ img, div, object{
     width: 200%;
     display: flex;
     -webkit-mask-image: url(arrow.svg);
-    -webkit-mask-position: 0px 190px;
+    -webkit-mask-position: 0px 218px;
     -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: auto 326px;
+    -webkit-mask-size: auto 300px;
     mask-image: url(arrow.svg);
-    mask-position: 0px 190px;
+    mask-position: 0px 218px;
     mask-repeat: no-repeat;
-    mask-size: auto 326px;
+    mask-size: auto 300px;
 }
 
 #bg{
@@ -84,35 +84,35 @@ img, div, object{
 }
 
 #logo{
-    width: 120px;
-    left: 22px;
-    bottom: 36px;
+    width: 105px;
+    left: 10px;
+    bottom: 26px;
 }
 
 #logoText{
     color: #243065;
-    left: 22px;
-    bottom: 12px;
-    font-size: 14px;
+    left: 10px;
+    bottom: 2px;
+    font-size: 12px;
 }
 
 #text1{
     color: #243065;
-    left: 22px;
-    font-size: 23px;
-    line-height: 25px;
-    top: 24px;
+    left: 10px;
+    font-size: 18px;
+    line-height: 19px;
+    top: 16px;
 }
 
 #cta{
     background: #ffbe00;
     color: #1c3661;
     border-radius: 1000px;
-    width: 134px;
-    height: 32px;
-    line-height: 32px;
+    width: 128px;
+    height: 30px;
+    line-height: 30px;
     font-size: 14px;
     text-align: center;
-    top: 141px;
-    left: 22px;
+    top: 130px;
+    left: 10px;
 }
