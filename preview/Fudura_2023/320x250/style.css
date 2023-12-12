@@ -84,16 +84,16 @@ img, div, object{
 }
 
 #logo{
-    width: 72px;
+    width: 82px;
     left: 10px;
-    bottom: 20px;
+    bottom: 12px;
 }
 
 #logoText{
     color: #243065;
-    left: 10px;
-    bottom: 4px;
-    font-size: 8px;
+    left: 35px;
+    bottom: 8px;
+    font-size: 6.6px;
 }
 
 #text1{
