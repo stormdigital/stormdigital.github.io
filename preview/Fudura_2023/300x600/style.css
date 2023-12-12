@@ -94,6 +94,13 @@ img, div, object{
     left: 62px;
     bottom: 15px;
     font-size: 10.4px;
+    white-space: nowrap;
+}
+
+#logoTextWrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 #text1{
