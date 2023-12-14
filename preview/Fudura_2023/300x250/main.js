@@ -10,14 +10,14 @@ function init() {
     document.querySelector("#mainExit").addEventListener("mouseover", function(){
         if(masterTL.progress() == 1){
             gsap.to("#cta", 0.3, {background:"#f8d770", ease:Sine.easeInOut});
-            gsap.to("#bgWrapper", 0.3, {WebkitMaskPositionX:100, MaskPositionX:100, ease:Sine.easeInOut});
+            gsap.to("#bgWrapper", 0.3, {WebkitMaskPositionX:120, MaskPositionX:120, ease:Sine.easeInOut});
         }
     })
     
     document.querySelector("#mainExit").addEventListener("mouseout", function(){
         if(masterTL.progress() == 1){
             gsap.to("#cta", 0.3, {background:"#ffbe00", ease:Sine.easeInOut});
-            gsap.to("#bgWrapper", 0.3, {WebkitMaskPositionX:86, MaskPositionX:86, ease:Sine.easeInOut});
+            gsap.to("#bgWrapper", 0.3, {WebkitMaskPositionX:105, MaskPositionX:105, ease:Sine.easeInOut});
         }
     })
 
@@ -36,7 +36,7 @@ function getAnimation(){
     var arrowTL = gsap.timeline({paused:true});
     // arrowTL.fromTo("#bgWrapper", 0.4, {WebkitMaskPositionX:-280, MaskPositionX:-280}, {WebkitMaskPositionX:300, MaskPositionX:300, ease:Power0.easeNone});
     arrowTL.to("#bgWrapper", 0.00000001, {WebkitMaskPositionX:-280, MaskPositionX:-280});
-    arrowTL.to("#bgWrapper", 0.2, {WebkitMaskPositionX:86, MaskPositionX:86, ease:Sine.easeOut});
+    arrowTL.to("#bgWrapper", 0.2, {WebkitMaskPositionX:105, MaskPositionX:105, ease:Sine.easeOut});
 
     masterTL = new TimelineLite({});
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)

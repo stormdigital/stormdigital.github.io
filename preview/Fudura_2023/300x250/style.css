@@ -64,13 +64,13 @@ img, div, object{
     width: 200%;
     display: flex;
     -webkit-mask-image: url(arrow.svg);
-    -webkit-mask-position: 0px 66px;
+    -webkit-mask-position: 0px 76px;
     -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: auto 226px;
+    -webkit-mask-size: auto 206px;
     mask-image: url(arrow.svg);
-    mask-position: 0px 66px;
+    mask-position: 0px 76px;
     mask-repeat: no-repeat;
-    mask-size: auto 226px;
+    mask-size: auto 206px;
 }
 
 #bg{
@@ -84,16 +84,16 @@ img, div, object{
 }
 
 #logo{
-    width: 84px;
+    width: 91px;
     left: 10px;
-    bottom: 12px;
+    bottom: 18px;
 }
 
 #logoText{
     color: #243065;
-    left: 36px;
-    bottom: 8px;
-    font-size: 6.8px;
+    left: 10px;
+    bottom: 3px;
+    font-size: 8.2px;
     white-space: nowrap;
 }
 
@@ -106,9 +106,9 @@ img, div, object{
 #text1{
     color: #243065;
     left: 10px;
-    font-size: 17px;
-    line-height: 19px;
-    top: 16px;
+    font-size: 19px;
+    line-height: 21px;
+    top: 14px;
 }
 
 #cta{
@@ -120,6 +120,6 @@ img, div, object{
     line-height: 28px;
     font-size: 12px;
     text-align: center;
-    top: 86px;
+    top: 93px;
     left: 10px;
 }

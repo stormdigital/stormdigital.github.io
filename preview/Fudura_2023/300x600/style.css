@@ -84,16 +84,16 @@ img, div, object{
 }
 
 #logo{
-    width: 128px;
-    left: 22px;
-    bottom: 21px;
+    width: 105px;
+    left: 14px;
+    bottom: 25px;
 }
 
 #logoText{
     color: #243065;
-    left: 62px;
-    bottom: 15px;
-    font-size: 10.4px;
+    left: 14px;
+    bottom: 6px;
+    font-size: 9.4px;
     white-space: nowrap;
 }
 
@@ -105,10 +105,10 @@ img, div, object{
 
 #text1{
     color: #243065;
-    left: 22px;
+    left: 14px;
     font-size: 23px;
     line-height: 25px;
-    top: 24px;
+    top: 17px;
 }
 
 #cta{
@@ -120,6 +120,6 @@ img, div, object{
     line-height: 32px;
     font-size: 14px;
     text-align: center;
-    top: 141px;
-    left: 22px;
+    top: 134px;
+    left: 14px;
 }
