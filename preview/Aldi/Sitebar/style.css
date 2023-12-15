@@ -1,0 +1,235 @@
+body{
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'brandon_grotesquebold';
+    src: url('brandongrotesque-bold-webfont.woff2') format('woff2')
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+    font-family: 'brandon_grotesquebold';
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #222c77;;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #00b6ed;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#scaler{
+    width: 1200px;
+    height: 1200px;
+    left: 0px;
+    background: #222c77;
+}
+
+#bg{
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#bewusstSticker{
+    width: 233px;
+    top: 617px;
+    left: 290px;
+    transform: rotate(-47deg);
+}
+
+#preis{
+    width: 246px;
+    top: 978px;
+    left: 618px;
+    transform: rotate(-5deg);
+}
+
+#logo{
+    width: 122px;
+    top: 34px;
+    left: 334px;
+}
+
+#text1Wrapper{
+    text-transform: uppercase;
+    font-size: 85px;
+    top: 698px;
+    left: 460px;
+    line-height: 99px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+#text1{
+    position: relative;
+}
+
+#blueBg{
+    width: 341px;
+    height: 90px;
+    top: 2px;
+    left: -19px;
+    border-radius: 14px;
+    background: #00b6ed;
+}
+
+#bluePanel{
+    width: 100%;
+    height: 100%;
+    background: #222c77;
+}
+
+#product{
+    height: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#text2Wrapper{
+    text-transform: uppercase;
+    font-size: 58px;
+    top: 844px;
+    left: 347px;
+    line-height: 68px;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+
+#text2{
+    position: relative;
+}
+
+#blueBg2{
+    width: 450px;
+    height: 72px;
+    top: -4px;
+    left: -13px;
+    border-radius: 11px;
+    background: #00b6ed;
+}
+
+#stickerWrapper{
+    top: 500px;
+    left: 500px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #00b6ed;
+}
+
+#sticker{
+    width: 178px;
+    height: 178px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+}
+
+#stickerText{
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 29px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 36px;
+}
+
+#endCard{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#endCard img{
+    width: 100%;
+}
+
+#endText{
+    width: 100%;
+    text-align: center;
+    top: 412px;
+    font-size: 59px;
+}
+
+#cta{
+    width: 533px;
+    height: 76px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    color: #00005b;
+}
+
+#ctaText{
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 75px;
+    background: #FFF;
+    border-radius: 11px;
+}
+
+#arrowWrapper{
+    width: 20%;
+    right: 0px;
+    height: 100%;
+    background: #00b6ed;
+    border-radius: 11px;
+}
+
+#arrow{
+    width: 19px;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+#endBack,
+#endFront{
+    transform-origin: 50% 100%;
+}
