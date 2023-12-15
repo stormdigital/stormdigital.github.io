@@ -36,12 +36,16 @@ function onResize(){
     gsap.set("#scaler", {scale:bannerS});
     var scalerW = document.querySelector("#scaler").offsetWidth*bannerS;
 
-    if(bannerW < scalerW){
-        console.log("smaller");
-        document.querySelector("#scaler").classList.add("center");
+    if(bannerW < scalerW/2){
+        var newScale = bannerW/(scalerW/2);
+        gsap.set("#scaler", {left:"50%", xPercent:-50, transformOrigin:"50% 0%", scale:newScale*bannerS});
+    }
+    else if(bannerW < scalerW){
+        console.log("middle");
         gsap.set("#scaler", {left:"50%", xPercent:-50, transformOrigin:"50% 0%"});
     }
     else{
+        console.log("left");
         gsap.set("#scaler", {left:"0%", xPercent:0, transformOrigin:"0% 0%"});
     }
 }
@@ -65,7 +69,7 @@ function introTL(){
     tl.from("#bg", 1, {opacity:0, ease:Sine.easeOut}, "start+=0.7")
     tl.from("#text1Wrapper", 0.5, {scale:0, opacity:0, ease:Sine.easeOut}, "-=0.3")
     tl.from("#bewusstSticker", 1, {scale:0, x:40, y:30, ease:Back.easeOut})
-    tl.from("#preis", 0.7, {y:400, rotation:70, ease:Back.easeOut}, "-=0.8")
+    tl.from("#preis", 0.7, {x:600, rotation:70, ease:Back.easeOut}, "-=0.8")
     tl.from("#blueBg", 0.5, {width:0, ease:Power2.easeInOut}, "+=0.5")
 
     return tl;
