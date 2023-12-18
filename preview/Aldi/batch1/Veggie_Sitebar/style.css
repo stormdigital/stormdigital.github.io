@@ -72,16 +72,16 @@ img, div, object{
 }
 
 #bewusstSticker{
-    width: 233px;
-    top: 617px;
-    left: 290px;
+    width: 186px;
+    top: 509px;
+    left: 315px;
     transform: rotate(-47deg);
 }
 
 #preis{
-    width: 246px;
-    top: 978px;
-    left: 618px;
+    width: 204px;
+    top: 725px;
+    left: 674px;
     transform: rotate(-5deg);
 }
 
@@ -93,10 +93,10 @@ img, div, object{
 
 #text1Wrapper{
     text-transform: uppercase;
-    font-size: 85px;
-    top: 698px;
-    left: 460px;
-    line-height: 99px;
+    font-size: 76px;
+    top: 571px;
+    left: 338px;
+    line-height: 92px;
     letter-spacing: 1px;
     white-space: nowrap;
 }
@@ -105,12 +105,16 @@ img, div, object{
     position: relative;
 }
 
+#text1 span{
+    margin-left: 119px;
+}
+
 #blueBg{
-    width: 341px;
-    height: 90px;
-    top: 2px;
-    left: -19px;
-    border-radius: 14px;
+    width: 304px;
+    height: 81px;
+    top: 4px;
+    left: 102px;
+    border-radius: 12px;
     background: #00b6ed;
 }
 
@@ -196,7 +200,7 @@ img, div, object{
 }
 
 #cta{
-    width: 533px;
+    width: 482px;
     height: 76px;
     left: 50%;
     transform: translateX(-50%);
@@ -205,11 +209,11 @@ img, div, object{
 }
 
 #ctaText{
-    width: 90%;
+    width: 89%;
     height: 100%;
     text-align: center;
     text-transform: uppercase;
-    font-size: 32px;
+    font-size: 37px;
     line-height: 75px;
     background: #FFF;
     border-radius: 11px;

@@ -20,7 +20,6 @@ function init() {
     })
 
     document.querySelector("#mainExit").addEventListener("click", function(){
-        // myFT.clicktag(1);
         masterTL.progress(1);
     })
 
@@ -86,7 +85,6 @@ function endTL(){
     tl.from("#endText", 0.5, {scale:0, opacity:0, ease:Sine.easeOut}, "start+=1.5")
     tl.from("#cta", 0.5, {scale:0, ease:Back.easeOut})
     tl.from("#arrowWrapper", 0.2, {x:-21, ease:Sine.easeInOut}, "start+=4")
-    tl.from("#cta", 0.2, {x:10, ease:Sine.easeInOut}, "start+=4")
     tl.to("#cta", 0.2, {scale:1.05, ease:Sine.easeInOut, repeat:1, yoyo:true}, "start+=4.5")
 
     return tl;
