@@ -73,15 +73,15 @@ img, div, object{
 
 #bewusstSticker{
     width: 186px;
-    top: 509px;
-    left: 315px;
+    top: 463px;
+    left: 309px;
     transform: rotate(-47deg);
 }
 
 #preis{
     width: 204px;
-    top: 725px;
-    left: 674px;
+    top: 681px;
+    left: 671px;
     transform: rotate(-5deg);
 }
 
@@ -93,9 +93,9 @@ img, div, object{
 
 #text1Wrapper{
     text-transform: uppercase;
-    font-size: 76px;
-    top: 571px;
-    left: 338px;
+    font-size: 77px;
+    top: 526px;
+    left: 330px;
     line-height: 92px;
     letter-spacing: 1px;
     white-space: nowrap;
@@ -110,10 +110,10 @@ img, div, object{
 }
 
 #blueBg{
-    width: 304px;
+    width: 292px;
     height: 81px;
     top: 4px;
-    left: 102px;
+    left: 103px;
     border-radius: 12px;
     background: #00b6ed;
 }
@@ -132,10 +132,10 @@ img, div, object{
 
 #text2Wrapper{
     text-transform: uppercase;
-    font-size: 58px;
-    top: 844px;
-    left: 347px;
-    line-height: 68px;
+    font-size: 79px;
+    top: 827px;
+    left: 329px;
+    line-height: 89px;
     letter-spacing: 0.3px;
     white-space: nowrap;
 }
@@ -145,11 +145,11 @@ img, div, object{
 }
 
 #blueBg2{
-    width: 450px;
-    height: 72px;
-    top: -4px;
-    left: -13px;
-    border-radius: 11px;
+    width: 571px;
+    height: 88px;
+    top: 87px;
+    left: -14px;
+    border-radius: 10px;
     background: #00b6ed;
 }
 
@@ -176,10 +176,10 @@ img, div, object{
     text-align: center;
     width: 100%;
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 36px;
     top: 50%;
     transform: translateY(-50%);
-    line-height: 32px;
+    line-height: 42px;
 }
 
 #endCard{
@@ -200,7 +200,7 @@ img, div, object{
 }
 
 #cta{
-    width: 482px;
+    width: 526px;
     height: 76px;
     left: 50%;
     transform: translateX(-50%);
