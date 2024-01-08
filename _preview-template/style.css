@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -34,6 +35,7 @@ body{
     border-right: 2px solid #929292;
     background-color: #efefef;
     padding: 15px;
+    min-height: 100vh;
     /* background-color: red; */
 }
 
@@ -48,8 +50,23 @@ body{
     /* background-color: navy; */
 }
 
-.iframeContainer iframe{
+.iframeWrapper{
+    display: inline-block;
     margin: 15px;
+}
+
+.iframeContainer iframe{
+    border:0;
+}
+
+.refreshButton{
+    background-color: red;
+    height: 25px;
+    width: 25px;
+    background-image: url('https://t3.ftcdn.net/jpg/03/66/45/86/360_F_366458691_UXbnbAXYhhZgsm55JU6IXe3SXkHI1BsL.jpg');
+    background-color: red;
+    background-size: cover;
+    cursor: pointer;
 }
 
 .filterTitle{

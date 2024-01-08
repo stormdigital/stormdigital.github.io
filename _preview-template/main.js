@@ -49,13 +49,37 @@ function checkActiveFilters(){
 
 function createIframes(){
     buildFileArray.forEach(iframeElement => {
+        var newIframeWrapper = document.createElement('div');
+        newIframeWrapper.classList.add('iframeWrapper')
+
+
+
         var newIframe =  document.createElement('iframe');
         newIframe.src = `${iframeElement}/index.html`;
         newIframe.id = iframeElement;
-        document.querySelector('.iframeContainer').appendChild(newIframe)
+        newIframeWrapper.appendChild(newIframe)
+
+        var refreshButton = document.createElement('div');
+        refreshButton.classList.add('refreshButton');
+        refreshButton.addEventListener('click', function(){
+            refreshIframe(iframeElement)
+        })
+        newIframeWrapper.appendChild(refreshButton)
+
+        document.querySelector('.iframeContainer').appendChild(newIframeWrapper)
         newIframe.onload = function(){
             newIframe.height = newIframe.contentWindow.document.querySelector('#banner').offsetHeight;
             newIframe.width = newIframe.contentWindow.document.querySelector('#banner').offsetWidth;
+        }
+    });
+}
+
+function refreshIframe(iframeElement){
+    // console.log(iframeElement);
+    document.querySelectorAll('iframe').forEach(iframeSelector => {
+        if(iframeSelector.id == iframeElement){
+            console.log(iframeSelector);
+            iframeSelector.src = iframeSelector.src
         }
     });
 }
