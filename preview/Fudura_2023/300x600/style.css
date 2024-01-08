@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'poppinsbold';
+    src: url('poppins-bold-webfont.woff2') format('woff2'),
+         url('poppins-bold-webfont.woff') format('woff');
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 300px;
+    height: 600px;
+    border: 1px solid #50a8ae;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+    background: #e7f6f7;
+    font-family: 'poppinsbold';
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #243064;;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #50a8ae;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#bgWrapper{
+    width: 200%;
+    display: flex;
+    -webkit-mask-image: url(arrow.svg);
+    -webkit-mask-position: 0px 190px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: auto 326px;
+    mask-image: url(arrow.svg);
+    mask-position: 0px 190px;
+    mask-repeat: no-repeat;
+    mask-size: auto 326px;
+}
+
+#bg{
+    position: relative;
+}
+
+#bg2{
+    position: relative;
+    transform: scaleX(-1);
+    margin-left: -1px;
+}
+
+#logo{
+    width: 105px;
+    left: 14px;
+    bottom: 25px;
+}
+
+#logoText{
+    color: #243065;
+    left: 14px;
+    bottom: 6px;
+    font-size: 9.4px;
+    white-space: nowrap;
+}
+
+#logoTextWrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#text1{
+    color: #243065;
+    left: 14px;
+    font-size: 23px;
+    line-height: 25px;
+    top: 17px;
+}
+
+#cta{
+    background: #ffbe00;
+    color: #1c3661;
+    border-radius: 1000px;
+    width: 134px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    text-align: center;
+    top: 134px;
+    left: 14px;
+}

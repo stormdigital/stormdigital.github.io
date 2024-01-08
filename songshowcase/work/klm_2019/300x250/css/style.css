@@ -1,0 +1,219 @@
+body,
+body * {
+    vertical-align: baseline;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+div, img, span, video, object, canvas, button{
+    position: absolute;
+}
+
+img{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+@font-face {
+    font-family: 'NoaLight';
+    src: url("../font/NoaLTW02-Light.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
+    background: #036eb1;
+    font-family: 'NoaLight';
+}
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #029fdc;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #029fdc;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#mainExit {
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#cloudsWrapper{
+    width: 1800px;
+    height: 250px;
+}
+
+.cloudLeft{
+    left: 0px;
+    top: 0px;
+}
+
+.cloudRight{
+    left: 599px;
+    top: 0px;
+    transform: rotateY(180deg);
+}
+
+.cloudLeftDuplicate{
+    left: 1198px;
+    top: 0px;
+}
+
+#ribbonWrapper{
+    width: 1200px;
+    height: 250px;
+    left: 0;
+    top: 0;
+}
+
+#dealLogo{
+    top: 30px;
+    left: 65px;
+}
+
+#destWrapper{
+    width: 100%;
+    height: 100%;
+    -moz-perspective: 100px;
+    -webkit-perspective: 100px;
+    perspective: 100px;
+}
+
+.destPoster{
+    top: 12px;
+    left: 18px;
+}
+
+.destBox div,
+.destBox span{
+    position: relative;
+}
+
+.destBox{
+    background: #fff;
+    padding: 8px 12px 8px 12px;
+    color: #00a1de;
+    bottom: 20px;
+    left: 45px;
+}
+
+.dest{
+    font-size: 23px;
+    line-height: 23px;
+    margin-bottom: 2px;
+}
+
+.fromText{
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 2px;
+}
+
+.price{
+    color: #e47020;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 2px;
+}
+
+.currency{
+    font-size: 21px;
+    line-height: 21px;
+    top: -8px;
+}
+
+.disclaimer{
+    font-size: 9px;
+    line-height: 9px;
+}
+
+#plane{
+    top: 8px;
+    left: 40px;
+}
+
+#blueBox{
+    background: rgba(10, 164, 224, 0.94);
+    width: 280px;
+    height: 170px;
+    border-radius: 15px 15px 0px 15px;
+    padding: 24px;
+    box-sizing: border-box;
+    bottom: 10px;
+    left: 10px;
+    overflow: hidden;
+}
+
+#wing{
+    bottom: 0px;
+    right: 0px;
+}
+
+#endText{
+    font-size: 25px;
+    color: #fff;
+    line-height: 30px;
+}
+
+#cta{
+    background: #e77b2f;
+    color: #fff;
+    padding: 8px 18px 8px 18px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 13px;
+    bottom: 45px;
+}
+
+/* fix de safari 3d renderbug */
+#dest1{
+    transform: translateZ(-10px);
+}
+
+#dest2{
+    transform: translateZ(-10px);
+}
+
+#destBox1{
+    transform: translateZ(10px);
+}
+
+#destBox2{
+    transform: translateZ(10px);
+}

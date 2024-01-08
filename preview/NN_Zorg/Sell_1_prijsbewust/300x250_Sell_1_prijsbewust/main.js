@@ -116,7 +116,7 @@ function drag(){
 }
 
 function animateNumbers(){
-
+    
     var priceDiv = document.querySelector("#price");
     var price = {value:priceDiv.innerText.replace('€', '').toString().replace(",", ".")};
     
@@ -125,7 +125,7 @@ function animateNumbers(){
     
 
     if(window.pricePos == "start"){
-        gsap.to(price, 0.5, {value:128.30, ease:Sine.easeOut, onUpdate:function() {
+        gsap.to(price, 0.5, {value:140.50, ease:Sine.easeOut, onUpdate:function() {
             priceDiv.innerHTML = "€"+price.value.toFixed(2).toString().replace(".", ",");
         }});
         gsap.to(priceBottom, 0.5, {value:385, ease:Sine.easeOut, onUpdate:function() {
@@ -134,17 +134,16 @@ function animateNumbers(){
         
     }
     else if(window.pricePos == "middle"){
-        gsap.to(price, 0.5, {value:120.30, ease:Sine.easeOut, onUpdate:function() {
+        gsap.to(price, 0.5, {value:134.50, ease:Sine.easeOut, onUpdate:function() {
             priceDiv.innerHTML = "€"+price.value.toFixed(2).toString().replace(".", ",");
         }});
         gsap.to(priceBottom, 0.5, {value:585, ease:Sine.easeOut, onUpdate:function() {
             bottomPriceDiv.innerHTML = "€"+Math.floor(priceBottom.value)+",-";
-           
         }});
         
     }
     else{
-        gsap.to(price, 0.5, {value:108.30, ease:Sine.easeOut, onUpdate:function() {
+        gsap.to(price, 0.5, {value:125.50, ease:Sine.easeOut, onUpdate:function() {
             priceDiv.innerHTML = "€"+price.value.toFixed(2).toString().replace(".", ",");
         }});
         gsap.to(priceBottom, 0.5, {value:885, ease:Sine.easeOut, onUpdate:function() {

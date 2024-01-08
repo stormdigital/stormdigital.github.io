@@ -138,17 +138,19 @@ img, div, object{
     left: 12px;
     margin-top: 20px;
     position: relative;
-    width: 230px;
+    width: 237px;
     line-height: 1.1;
+    font-size: 12px;
 }
 
 #disclaimerText{
-    font-size: 9px;
+    font-size: 12px;
     color: #000;
     position: absolute;
     bottom: 59px;
     left: 13px;
     font-family: 'nn_nitti_grotesktext_regular';
+    width: 210px;
 }
 
 svg{

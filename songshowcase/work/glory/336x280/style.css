@@ -1,0 +1,131 @@
+body, body * {
+	vertical-align: baseline;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	-webkit-transform: perspective(1px) scale(1.0);
+	transform: perspective(1px) scale(1.0);
+    -webkit-font-smoothing: antialiased;
+}
+
+img, div, span, object{
+    position: absolute;
+}
+
+#banner{
+    width: 336px;
+    height: 280px;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #000;
+}
+
+#logoVL{
+    width: 6600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.0303030303);
+}
+
+#logoVLSmall{
+    width: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+}
+
+#fighter1Wrapper{
+    width: 194px;
+    height: 400px;
+    transform: rotate(-30deg);
+    left: -17px;
+    top: -40px;
+    overflow: hidden;
+}
+
+#fighter1Reset{
+    width: 100%;
+    height: 100%;
+    transform: rotate(30deg);
+}
+
+#fighter1{
+    bottom: 82px;
+    left: 16px;
+}
+
+#fighter2Wrapper{
+    width: 194px;
+    height: 400px;
+    transform: rotate(30deg);
+    right: -17px;
+    top: -40px;
+    overflow: hidden;
+}
+
+#fighter2Reset{
+    width: 100%;
+    height: 100%;
+    transform: rotate(-30deg);
+}
+
+#fighter2{
+    bottom: 81px;
+    right: 23px;
+}
+
+#names{
+    width: 162px;
+    left: 50%;
+    top: 72px;
+    transform: translate(-50%);
+}
+
+#date{
+    width: 136px;
+    left: 50%;
+    top: 180px;
+    transform: translate(-50%);
+}
+
+#cta1{
+    width: 100px;
+    height: 27px;
+    border-radius: 200px;
+    background: #fff;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 37px;
+}
+
+#cta1Text{
+    width: 59px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#cta2{
+    width: 118px;
+    height: 31px;
+    border-radius: 200px;
+    background: #ff3746;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 10px;
+}
+
+#cta2Text{
+    width: 59px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}

@@ -139,8 +139,8 @@ img, div, object{
     margin-top: 17px;
     position: absolute;
     top: 30px;
-    width: 229px;
-    font-size: 22px;
+    width: 290px;
+    font-size: 20px;
     line-height: 1.1;
 }
 
@@ -149,11 +149,11 @@ img, div, object{
 }
 
 #disclaimerText{
-    font-size: 13px;
+    font-size: 20px;
     color: #000;
     position: absolute;
-    bottom: 20px;
-    width: 250px;
+    bottom: 40px;
+    width: 300px;
     left: 370px;
     font-family: 'nn_nitti_grotesktext_regular';
 }

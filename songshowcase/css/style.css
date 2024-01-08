@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    background: #aaa;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#page{
+    position: relative;
+    margin-top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+}
+
+#searchBar{
+    position: relative;
+    margin: 2vw;
+    width: 40%;
+    font-size: 1.5vw;
+    margin: 2vw 23vw;
+}
+
+#thumbNailWrapper{
+    position: relative;
+    left: 0;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1vw;
+    font-size: 18px;
+}
+
+.thumb{
+    position: relative;
+    width: 15%;
+    background: #000;
+}
+
+.thumbImage{
+    width: 100%;
+}
+
+.thumb:hover .thumbImage{
+    opacity: 0.2;
+}
+
+.thumbName{
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: #fff;
+    opacity: 0;
+    font-size: 2vw;
+}
+
+.thumb:hover .thumbName{
+    opacity: 1;
+}
+
+#previewWrapper{
+    position: relative;
+    padding: 2vw;
+    background: #fff;
+    display: inline-block;
+    display: none;
+}
+
+#closeBtn{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 20px;
+    padding: 1vw;
+    cursor: pointer;
+}
+
+#videoWrapper{
+    position: relative;
+    background: #222;
+}
+
+.sizeLink{
+    display: block;
+}

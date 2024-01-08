@@ -78,8 +78,8 @@ img, div, object{
     height: 78px;
     background: #fff;
     border-radius: 2px;
-    right: 7px;
-    bottom: 6px;
+    right: 6px;
+    bottom: 5px;
 }
 
 #logo{
@@ -137,7 +137,7 @@ img, div, object{
     background: #F1EDEB;
     width: 75px;
     height: 75px;
-    top: 2px;
+    top: -4px;
     left: 170px;
     border-radius: 50%;
 }

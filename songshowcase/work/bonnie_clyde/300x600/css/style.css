@@ -1,0 +1,220 @@
+body,
+body * {
+    vertical-align: baseline;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+div, img, object{
+    position: absolute;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../font/Gotham-Black.woff2') format('woff2'),
+        url('../font/Gotham-Black.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+img{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    border: 1px solid #eeef79;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
+    background: #000;
+    font-family: 'Gotham';
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #ec4b4e;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#mainExit {
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#triangleWrapper{
+    width: 500px;
+    left: -100px;
+    height: 650px;
+    pointer-events: none;
+    background: #000;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 26px solid transparent;
+    border-right: 26px solid transparent;
+}
+
+.triangleDown{
+    border-top: 50px solid #000;
+}
+
+.triangleUp{
+    border-bottom: 50px solid #000;
+}
+
+#bg{
+    left: 0;
+}
+
+#clydeWrapper{
+    width: 209px;
+    height: 298px;
+    bottom: 154px;
+    left: -34px;
+}
+
+#gun{
+    top: 2px;
+    left: 43px;
+    transform-origin: 30px 89px;
+}
+
+#bonnie{
+    bottom: 145px;
+    left: -36px;
+}
+
+#bonnieGlasses{
+    top: 226px;
+    left: 173px;
+    width: 51px;
+    height: 35px;
+    overflow: hidden;
+}
+
+#shine{
+    opacity: 0.25;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+
+#gradient{
+    width: 100%;
+    height: 110px;
+    background: rgb(50,111,100);
+    background: -moz-linear-gradient(0deg, rgba(50,111,100,0) 0%, rgba(50,111,100,1) 50%, rgba(50,111,100,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(50,111,100,0) 0%, rgba(50,111,100,1) 50%, rgba(50,111,100,0) 100%);
+    background: linear-gradient(0deg, rgba(50,111,100,0) 0%, rgba(50,111,100,1) 50%, rgba(50,111,100,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#326f64",endColorstr="#326f64",GradientType=1);
+    bottom: 106px;
+}
+
+#coverup{
+    left: -190px;
+    bottom: 160px;
+}
+
+#triangleLeft{
+    bottom: 0px;
+    left: -170px;
+    height: 50%;
+    opacity: 0.5;
+}
+
+#triangleRight{
+    bottom: -20px;
+    right: -140px;
+    height: 40%;
+    opacity: 0.7;
+    transform: scaleX(-1);
+}
+
+#logoVL{
+    left: 50%;
+    transform: translateX(-50%);
+    width: 121px;
+    top: 12px;
+}
+
+#logoBC{
+    width: 236px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+}
+
+#tagline{
+    width: 246px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 137px;
+}
+
+#cta{
+    width: 181px;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    color: #fff;
+    border-radius: 500px;
+    background: #ec4b4e;
+    left: 60px;
+    bottom: 30px;
+    font-size: 22px;
+}
+
+#ctaPrice{
+    width: 129px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #000;
+    border-radius: 500px;
+    background: #fff;
+    left: 84px;
+    bottom: 66px;
+    font-size: 18px;
+}
