@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'nn_nitti_groteskheading';
+    src: url('nnnittigrotesk-heading-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nn_nitti_grotesktext_medium';
+    src: url('nnnittigrotesk-textmedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nn_nitti_grotesktext_regular';
+    src: url('nnnittigrotesk-textregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.contentContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar{
+    /* width: 500px; */
+    border-right: 2px solid #929292;
+    background-color: #efefef;
+    padding: 15px;
+    /* background-color: red; */
+}
+
+.filterContainter{
+    margin: 15px 0;
+}
+
+.iframeContainer{
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    /* background-color: navy; */
+}
+
+.iframeContainer iframe{
+    margin: 15px;
+}
+
+.filterTitle{
+    font-family: 'Montserrat';
+    color: #000;
+    font-size: 12px;
+}
