@@ -125,10 +125,10 @@ function animateNumbers(){
     
 
     if(window.pricePos == "start"){
-        gsap.to(price, 0.5, {value:"128.30", ease:Sine.easeOut, onUpdate:function() {
+        gsap.to(price, 0.5, {value:128.30, ease:Sine.easeOut, onUpdate:function() {
             priceDiv.innerHTML = "€"+price.value.toFixed(2).toString().replace(".", ",");
         }});
-        gsap.to(priceBottom, 0.5, {value:"385", ease:Sine.easeOut, onUpdate:function() {
+        gsap.to(priceBottom, 0.5, {value:385, ease:Sine.easeOut, onUpdate:function() {
             bottomPriceDiv.innerHTML = "€"+Math.floor(priceBottom.value)+",-";
         }});
         
