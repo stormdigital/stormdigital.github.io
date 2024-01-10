@@ -130,6 +130,7 @@ img, div, object, button{
 
 .option.yellow{
     background: #FFC801;
+    border: 2px solid #fff;
 }
 
 .optionText{
@@ -202,7 +203,7 @@ img, div, object, button{
 }
 
 #usp1{top: 112px;}
-#usp2{top: 195px;}
+#usp2{top: 181px;}
 #usp3{top: 268px;}
 
 #disclaimer,

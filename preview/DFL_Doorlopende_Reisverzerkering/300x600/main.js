@@ -43,10 +43,10 @@ function init() {
     })
     
     document.querySelector("#op1").addEventListener("click", function(){
-        getQuestionAnimation();
+        getUSPAnimation();
     })
     document.querySelector("#op2").addEventListener("click", function(){
-        getUSPAnimation();
+        getQuestionAnimation();
     })
 
     var optionBtns = document.querySelectorAll(".option");
@@ -101,8 +101,24 @@ function getUSPAnimation(){
 }
 
 function getQuestionAnimation(){
+
+    document.querySelector("#cta2").addEventListener("click", function(){
+        Enabler.exit("CTA Exit");
+    })
+    document.querySelector("#cta2").addEventListener("mouseover", function(){
+        if(uspTL.progress() == 1){
+            gsap.to("#cta2", 0.3, {scale:1.05});
+        }
+    })
+    document.querySelector("#cta2").addEventListener("mouseout", function(){
+        if(uspTL.progress() == 1){
+            gsap.to("#cta2", 0.3, {scale:1});
+        }
+    })
     
-    var splitT1 = new SplitText("#uspText", {type: "words"});
+    var splitT1 = new SplitText("#questionText", {type: "words"});
+
+    console.log(document.querySelectorAll(".question")[0]);
 
     uspTL = new TimelineLite({});
     uspTL.add("start")
@@ -110,12 +126,18 @@ function getQuestionAnimation(){
     uspTL.to("#stickerWrapper", 0.5, {scale:0, opacity:0, rotation:-300, ease:Sine.easeOut},"start")
     uspTL.to("#questionScreen", 0.5, {scale:1, ease:Sine.easeInOut});
     uspTL.to("#stickerWrapper", 0.5, {scale:1, opacity:1, y:-130, rotation:0, ease:Sine.easeOut})
-    // uspTL.from(splitT1.words, 0.5, {opacity: 0, x:-20, ease: Sine.easeOut, stagger: 0.05});
-    // uspTL.from("#usp1", 0.5, {x:-20, opacity:0, ease: Sine.easeOut});
-    // uspTL.from("#usp2", 0.5, {x:-20, opacity:0, ease: Sine.easeOut});
-    // uspTL.from("#usp3", 0.5, {x:-20, opacity:0, ease: Sine.easeOut});
-    // uspTL.from("#disclaimer", 0.2, {opacity:0, ease: Sine.easeOut}, "+=0.3");
-    // uspTL.from("#cta", 0.5, {scale:0, ease: Back.easeOut});
+    uspTL.from(splitT1.words, 0.5, {opacity: 0, x:-20, ease: Sine.easeOut, stagger: 0.05});
+    uspTL.from(document.querySelectorAll(".question")[0], 0.5, {x:-20, opacity:0, ease: Sine.easeOut});
+    uspTL.from("#op3", 0.2, {scale:0, ease:Sine.easeOut})
+    uspTL.from("#op4", 0.2, {scale:0, ease:Sine.easeOut})
+    uspTL.from(document.querySelectorAll(".question")[1], 0.5, {x:-20, opacity:0, ease: Sine.easeOut});
+    uspTL.from("#op5", 0.2, {scale:0, ease:Sine.easeOut})
+    uspTL.from("#op6", 0.2, {scale:0, ease:Sine.easeOut})
+    uspTL.from(document.querySelectorAll(".question")[2], 0.5, {x:-20, opacity:0, ease: Sine.easeOut});
+    uspTL.from("#op7", 0.2, {scale:0, ease:Sine.easeOut})
+    uspTL.from("#op8", 0.2, {scale:0, ease:Sine.easeOut})
+    uspTL.from("#disclaimer2", 0.2, {opacity:0, ease: Sine.easeOut}, "+=0.3");
+    uspTL.from("#cta2", 0.5, {scale:0, ease: Back.easeOut});
 
     document.querySelector("#questionScreen").addEventListener("mouseover", function(){
         if(uspTL.progress() == 1){
@@ -138,17 +160,13 @@ function optionClicked(e){
         index--;
     }
 
-    console.log(index);
-
     if(e.target.classList.contains("yellow")){
         e.target.classList.remove("yellow");
         document.querySelectorAll(".option")[index-1].classList.add("yellow");
-        console.log(document.querySelectorAll(".option")[index]);
     }
     else{
         e.target.classList.add("yellow");
         document.querySelectorAll(".option")[index-1].classList.remove("yellow");
-        console.log(document.querySelectorAll(".option")[index]);
     }
 
     calcPrices();
@@ -177,41 +195,31 @@ function calcPrices(){
         var klant = false;
     }
 
-    console.log(wereld, maand, klant);
-
     if(wereld && maand && klant){
-        console.log("€2,40 maand")
         document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>2,40</span> p.p.</span><BR>per maand"
     }
     else if(wereld && !maand && klant){
-        console.log("€28,80 jaar")
         document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>28,80</span> p.p.</span><BR>per jaar"
     }
     
     if(!wereld && maand && klant){
-        console.log("€1,60 maand")
         document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>1,60</span> p.p.</span><BR>per maand"
     }
     else if(!wereld && !maand && klant){
-        console.log("€19,19 jaar")
         document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>19.90</span> p.p.</span><BR>per jaar"
     }
 
     if(wereld && maand && !klant){
-        console.log("€2,67 maand")
         document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>2,67</span> p.p.</span><BR>per maand"
     }
     else if(wereld && !maand && !klant){
-        console.log("€32,00 jaar")
         document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>32,00</span> p.p.</span><BR>per jaar"
     }
     
     if(!wereld && maand && !klant){
-        console.log("€1,78 maand")
         document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>1,78</span> p.p.</span><BR>per maand"
     }
     else if(!wereld && !maand && !klant){
-        console.log("€21,33")
         document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>21,33</span> p.p.</span><BR>per jaar"
     }
 }
