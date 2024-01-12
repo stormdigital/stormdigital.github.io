@@ -3,7 +3,7 @@ window.onload = function () {
 }
 
 function loadLocalDynamic() {
-    var adSize = "160x600";
+    var adSize = "120x600";
 
     if(localDynamicData.ctaText[adSize] != ""){
         document.querySelector('#cta').innerHTML = localDynamicData.ctaText[adSize];
@@ -18,7 +18,6 @@ function loadLocalDynamic() {
     else{
         document.querySelector('#text1').innerHTML = localDynamicData.headlineText["default"];
     }
-
     if(localDynamicData.disclaimerText[adSize] != ""){
         document.querySelector('#disclaimerText').innerHTML = localDynamicData.disclaimerText[adSize];
     }
@@ -35,6 +34,7 @@ function loadLocalDynamic() {
 
     document.querySelector('#bg').src = localDynamicData.backgroundImage;
     document.querySelector('#logo').src = localDynamicData.logo;
+
 
 }
 
@@ -76,11 +76,11 @@ function getAnimation(){
     masterTL.to("#logoWrapper", 0.4, {height:242, ease:Sine.easeInOut})
     masterTL.from(split.words, {opacity: 0, x:-10, ease:Sine.easeOut, stagger: 0.02});
     masterTL.from("#cta", 0.5, {scale:0, ease:Back.easeOut})
-    masterTL.to("#logoWrapper", 0.4, {height:573, ease:Sine.easeInOut}, "+=1")
-    masterTL.to("#text1", 0.3, {top:56, ease:Sine.easeOut}, "-=0.3")
-    masterTL.to("#endText", 0.4, {top: 309})
+    masterTL.to("#logoWrapper", 0.4, {height:579, ease:Sine.easeInOut}, "+=1")
+    masterTL.to("#text1", 0.3, {top:9, ease:Sine.easeOut}, "-=0.3")
+    // masterTL.to("#endText", 0.4, {top: 260})
     masterTL.from("#endText", 0.4, {opacity:0, ease:Sine.easeOut}, "-=0.1")
-    // masterTL.from("#disclaimerText", 0.4, {top: 16}, "-=0.2")
+
     masterTL.from("#disclaimerText", 0.3, {opacity:0, ease:Sine.easeOut}, "-=0.2")
     masterTL.from("#renteCircle", 0.4, {scale: 0})
     masterTL.from("#border", 1, {opacity:0, ease:Power3.easeOut}, '-=2')
