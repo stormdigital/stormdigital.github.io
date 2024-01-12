@@ -100,7 +100,7 @@ function createSnow(){
     var wrapper = document.querySelector("#snowWrapper");
     for (var i = 0; i < 700; i++) {
         var newDiv = document.createElement("div");
-        var size = gsap.utils.random(0.5, 2);
+        var size = gsap.utils.random(1, 4);
         newDiv.style.width = size+"px";
         newDiv.style.height = size+"px";
         newDiv.style.opacity = gsap.utils.random(0.3, 0.9);
