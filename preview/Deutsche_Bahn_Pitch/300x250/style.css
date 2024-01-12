@@ -1,0 +1,184 @@
+body, body * {
+	vertical-align: baseline;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+    font-family: 'db_headregular';
+    src: url('dbhead-regular-webfont.woff2') format('woff2'),
+         url('dbhead-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'db_headblack';
+    src: url('dbhead-black-webfont.woff2') format('woff2'),
+         url('dbhead-black-webfont.woff') format('woff');
+}
+
+img, div, object, button{
+    position: absolute;
+}
+
+#banner{
+    width: 300px;
+    height: 250px;
+    border: 1px solid #ec0016;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #282D37;
+    font-family: 'db_headblack';
+    background: #050611;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #FFF;;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #282D37;
+    border-top: 3px solid #EC0016;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#bg{
+    height: 140px;
+    top: -40px;
+    left: 108px;
+}
+
+#reflection{
+    width: 100%;
+    height: 100%;
+    background: #888;
+    opacity: 0.2;
+}
+
+#train{
+    width: 100%;
+}
+
+#snowBg{
+    width: 100%;
+    transform-origin: 70% 25%;
+}
+
+#snowFront{
+    width: 100%;
+    transform-origin: 70% 25%;
+}
+
+#snowWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.snow{
+    background: #fff;
+    border-radius: 50%;
+}
+
+#panel{
+    width: 125px;
+    height: 135px;
+    bottom: 56px;
+    left: 7px;
+    border-radius: 4px;
+    background: #fff;
+}
+
+#logo{
+    width: 42px;
+    top: 15px;
+    left: 15px;
+}
+
+#text1{
+    top: 54px;
+    left: 15px;
+    font-size: 11px;
+}
+
+#redLine{
+    width: 42px;
+    height: 6px;
+    bottom: 12px;
+    left: 15px;
+    border-radius: 200px;
+    background: #EC0016;
+}
+
+#text2{
+    top: 54px;
+    left: 15px;
+    font-size: 11px;
+}
+
+#uspWrapper{
+    width: 159px;
+    height: 64px;
+    left: 0;
+    top: 130px;
+}
+
+.uspContainer{
+    position: relative;
+    height: 20px;
+}
+
+.icon{
+    width: 20px;
+    left: 13px;
+    top: -2px;
+}
+
+.uspText{
+    font-family: 'db_headregular';
+    left: 45px;
+    font-size: 8px;
+    top: 3px;
+}
+
+#cta{
+    background: #EC0016;
+    font-family: Montserrat;
+    color: #fff;
+    width: 129px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    left: 15px;
+    bottom: 15px;
+    border-radius: 3px;
+    font-size: 8px;
+}
