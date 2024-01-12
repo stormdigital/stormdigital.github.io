@@ -6,6 +6,18 @@ body, body * {
 	margin: 0;
 }
 
+@font-face {
+    font-family: 'db_headregular';
+    src: url('dbhead-regular-webfont.woff2') format('woff2'),
+         url('dbhead-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'db_headblack';
+    src: url('dbhead-black-webfont.woff2') format('woff2'),
+         url('dbhead-black-webfont.woff') format('woff');
+}
+
 img, div, object, button{
     position: absolute;
 }
@@ -13,10 +25,12 @@ img, div, object, button{
 #banner{
     width: 300px;
     height: 600px;
-    border: 1px solid #333;
+    border: 1px solid #ec0016;
     box-sizing: border-box;
     overflow: hidden;
-    color: #fff;
+    color: #282D37;
+    font-family: 'db_headblack';
+    background: #050611;
 }
 
 #loaderWrapper{
@@ -59,7 +73,7 @@ img, div, object, button{
 
 #bg{
     height: 250px;
-    top: -50px;
+    top: -80px;
 }
 
 #reflection{
@@ -70,5 +84,96 @@ img, div, object, button{
 }
 
 #train{
+    width: 100%;
+}
+
+#snowBg{
     height: 100%;
+    transform-origin: 50% 25%;
+}
+
+#snowWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.snow{
+    background: #fff;
+    border-radius: 50%;
+}
+
+#panel{
+    width: 264px;
+    height: 227px;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border-radius: 4px;
+}
+
+#logo{
+    width: 42px;
+    top: 20px;
+    left: 17px;
+}
+
+#text1{
+    top: 64px;
+    left: 17px;
+    font-size: 25px;
+}
+
+#redLine{
+    width: 46px;
+    height: 8px;
+    bottom: 16px;
+    left: 13px;
+    border-radius: 200px;
+    background: #EC0016;
+}
+
+#text2{
+    top: 59px;
+    left: 17px;
+    font-size: 25px;
+}
+
+#uspWrapper{
+    width: 100%;
+    height: 93px;
+    left: 0;
+    top: 181px;
+}
+
+.uspContainer{
+    position: relative;
+    height: 35px;
+}
+
+.icon{
+    width: 22px;
+    left: 15px;
+    top: 2px;
+}
+
+.uspText{
+    font-family: 'db_headregular';
+    left: 49px;
+    font-size: 13px;
+    top: 3px;
+}
+
+#cta{
+    font-family: Montserrat;
+    color: #fff;
+    background: #EC0016;
+    width: 232px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    left: 17px;
+    bottom: 15px;
+    border-radius: 5px;
+    font-size: 12px;
 }
