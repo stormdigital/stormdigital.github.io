@@ -1,0 +1,166 @@
+body, body * {
+	vertical-align: baseline;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+    font-family: 'db_headregular';
+    src: url('dbhead-regular-webfont.woff2') format('woff2'),
+         url('dbhead-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'db_headblack';
+    src: url('dbhead-black-webfont.woff2') format('woff2'),
+         url('dbhead-black-webfont.woff') format('woff');
+}
+
+img, div, object, button{
+    position: absolute;
+}
+
+#banner{
+    width: 320px;
+    height: 50px;
+    border: 1px solid #ec0016;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #282D37;
+    font-family: 'db_headblack';
+    background: #050611;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #FFF;;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #282D37;
+    border-top: 3px solid #EC0016;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#snowBg{
+    width: 100%;
+    transform-origin: 95% 10%;
+}
+
+#snowFront{
+    width: 100%;
+    transform-origin: 95% 10%;
+}
+
+#snowWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.snow{
+    background: #fff;
+    border-radius: 50%;
+}
+
+#panel{
+    width: 188px;
+    height: 49px;
+    top: 0px;
+    left: 0px;
+    background: #fff;
+}
+
+#logo{
+    width: 30px;
+    top: 14px;
+    left: 12px;
+}
+
+#text1{
+    top: 5px;
+    left: 56px;
+    font-size: 9px;
+}
+
+#redLine{
+    width: 36px;
+    height: 3px;
+    bottom: 4px;
+    left: 56px;
+    border-radius: 200px;
+    background: #EC0016;
+}
+
+#text2{
+    top: 5px;
+    left: 56px;
+    font-size: 9px;
+}
+
+#uspWrapper{
+    width: 85px;
+    height: 39px;
+    left: 150px;
+    top: 5px;
+}
+
+.uspContainer{
+    position: relative;
+    height: 12px;
+}
+
+.icon{
+    width: 10px;
+    left: 0px;
+    top: 4px;
+}
+
+.uspText{
+    font-family: 'db_headregular';
+    left: 16px;
+    font-size: 6.4px;
+    top: 4px;
+}
+
+#cta{
+    background: #EC0016;
+    font-family: Montserrat;
+    color: #fff;
+    width: 65px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    left: 245px;
+    bottom: 12px;
+    border-radius: 2px;
+    font-size: 7px;
+}
