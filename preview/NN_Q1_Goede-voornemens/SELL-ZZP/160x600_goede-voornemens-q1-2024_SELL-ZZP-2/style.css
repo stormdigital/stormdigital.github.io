@@ -28,8 +28,8 @@ img, div, object{
 }
 
 #banner{
-    width: 970px;
-    height: 250px;
+    width: 160px;
+    height: 600px;
     border: 1px solid #ee7e00;
     box-sizing: border-box;
     overflow: hidden;
@@ -75,7 +75,7 @@ img, div, object{
 }
 
 #bg{
-    width: 100%;
+    height: 100%;
     z-index: -2;
 }
 
@@ -91,40 +91,44 @@ img, div, object{
 }
 
 #logoWrapper{
-    width: 80px;
-    height: 40px;
+    width: 142px;
+    height: 77px;
     background: #fff;
-    border-radius: 3px;
-    right: 13px;
-    bottom: 11px;
+    border-radius: 5px;
+    left: 8px;
+    bottom: 12px;
 }
 
 #logo{
-    bottom: 10px;
-    right: 10px;
-    width: 64px;
+    bottom: 19px;
+    left: 17px;
+    width: 107px;
 }
 
 #cta{
     background: #ea650d;
-    right: 41px;
-    padding: 14px 17px;
-    bottom: 124px;
-    font-size: 17.5px;
+    left:50%;
+    transform: translate(-50%, 0);
+    padding: 9px 8px;
+    bottom: 83px;
+    font-size: 13px;
     line-height: 1;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 3px;
     font-family: 'nn_nitti_grotesktext_medium';
+    white-space: nowrap;
 }
+
+
 
 #text1{
     color: #ee7e00;
-    position: absolute;
-    width: 255px;
-    left: 36px;
-    top: 15px;
-    font-size: 33px;
+    width: 110px;
+    left: 16px;
+    margin-top: 21px;
+    font-size: 18px;
     line-height: 1.1;
+    position: absolute;
 }
 
 .darker{color: #ea650e;}
@@ -133,54 +137,43 @@ img, div, object{
 #endText{
     color: #000;
     font-family: 'nn_nitti_grotesktext_regular';
-    left: 464px;
-    /* margin-top: 38px; */
-    position: absolute;
-    top: 56px;
-    width: 248px;
+    left: 15px;
+    position: relative;
+    margin-top:309px;
+    width: 119px;
     line-height: 1.1;
-    font-size: 17px;
-}
-
-#border{
-    width: 100%;
+    font-size: 12px;
 }
 
 #disclaimerText{
-    font-size: 17px;
+    font-size: 12px;
+    line-height: 1.1;
     color: #000;
-    position: absolute;
-    top: 129px;
-    width: 248px;
-    left: 464px;
-    line-height: 1;
+    position: relative;
+    top: 20px;
+    left: 13px;
+    width: 115px;
     font-family: 'nn_nitti_grotesktext_regular';
 }
 
 #renteCircle{
-    width: 159px;
-    height: 159px;
+    width: 105px;
+    height: 105px;
     border-radius: 50%;
     background-color: #efe9e8;
     color: #000;
-    font-size: 18px;
+    font-size: 12px;
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: 34px;
-    right: 498px;
+    top: 190px;
+    right: 21px;
     line-height: 1.1;
     font-family: 'nn_nitti_grotesktext_regular';
     font-weight: 600;
 }
-
-svg{
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
- }
 
  .guide{
     position: absolute;

@@ -28,7 +28,7 @@ img, div, object{
 }
 
 #banner{
-    width: 160px;
+    width: 120px;
     height: 600px;
     border: 1px solid #ee7e00;
     box-sizing: border-box;
@@ -91,27 +91,27 @@ img, div, object{
 }
 
 #logoWrapper{
-    width: 142px;
+    width: 101px;
     height: 77px;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 3px;
     left: 8px;
-    bottom: 12px;
+    bottom: 11px;
 }
 
 #logo{
     bottom: 19px;
-    left: 17px;
-    width: 107px;
+    left: 9px;
+    width: 79px;
 }
 
 #cta{
     background: #ea650d;
     left:50%;
     transform: translate(-50%, 0);
-    padding: 9px 8px;
-    bottom: 83px;
-    font-size: 13px;
+    padding: 8px 8px;
+    bottom: 77px;
+    font-size: 9px;
     line-height: 1;
     text-align: center;
     border-radius: 3px;
@@ -124,10 +124,10 @@ img, div, object{
 #text1{
     color: #ee7e00;
     width: 110px;
-    left: 16px;
+    left: 13px;
     margin-top: 21px;
-    font-size: 18px;
-    line-height: 1.1;
+    font-size: 14px;
+    line-height: 1.15;
     position: absolute;
 }
 
@@ -137,10 +137,10 @@ img, div, object{
 #endText{
     color: #000;
     font-family: 'nn_nitti_grotesktext_regular';
-    left: 15px;
-    position: absolute;
-    top:309px;
-    width: 119px;
+    left: 13px;
+    position: relative;
+    margin-top: 260px;
+    width: 75px;
     line-height: 1.1;
     font-size: 12px;
 }
@@ -149,28 +149,28 @@ img, div, object{
     font-size: 12px;
     line-height: 1.1;
     color: #000;
-    position: absolute;
-    bottom: 148px;
+    position: relative;
+    top: 20px;
     left: 13px;
-    width: 115px;
+    width: 78px;
     font-family: 'nn_nitti_grotesktext_regular';
 }
 
 #renteCircle{
-    width: 105px;
-    height: 105px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     background-color: #efe9e8;
     color: #000;
-    font-size: 12px;
+    font-size: 9px;
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: 190px;
-    right: 21px;
-    line-height: 1.1;
+    top: 161px;
+    right: 14px;
+    line-height: 1;
     font-family: 'nn_nitti_grotesktext_regular';
     font-weight: 600;
 }
