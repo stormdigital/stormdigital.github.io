@@ -47,6 +47,8 @@ function init() {
         
         if(mainTL.progress() == 1){
             gsap.to("#cta", 0.3, {scale:1.05, ease:Power2.easeInOut});
+            gsap.fromTo("#bg", 2, {x:0}, {x:-685, ease:Power0.easeNone});
+            gsap.to("#train", 1, {y:0, repeat:1, yoyo:true, ease:Sine.easeInOut});
         }
         gsap.to("#cta", 0.3, {background:"#b52522", ease:Power2.easeInOut});
     })
