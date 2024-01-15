@@ -154,7 +154,7 @@ img, div, object, button{
     height: 82px;
     border-radius: 50%;
     background: #FFC801;
-    top: 141px;
+    top: 301px;
     right: 9px;
 }
 
@@ -273,7 +273,11 @@ img, div, object, button{
 #questionScreen .option{
     width: 25px;
     height: 25px;
-    margin-bottom: 2px;
+    margin-bottom: 6px;
+}
+
+#questionScreen .optionText{
+    font-size: 10px;
 }
 
 #questionText{
@@ -291,12 +295,12 @@ img, div, object, button{
     bottom: 0;
 }
 
-#op3{left: 17px;}
-#op4{left: 90px;}
-#op5{left: 17px;}
-#op6{left: 102px;}
+#op3{left: 28px;}
+#op4{left: 100px;}
+#op5{left: 28px;}
+#op6{left: 106px;}
 #op7{left: 33px;}
-#op8{left: 103px;}
+#op8{left: 107px;}
 
 .question{
     font-size: 15px;
@@ -305,15 +309,15 @@ img, div, object, button{
 
 #q1Wrapper{
     top: 103px;
-    height: 78px;
+    height: 74px;
 }
 
 #q2Wrapper{
     top: 200px;
-    height: 77px;
+    height: 74px;
 }
 
 #q3Wrapper{
     top: 298px;
-    height: 97px;
+    height: 93px;
 }

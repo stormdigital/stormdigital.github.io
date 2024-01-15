@@ -114,7 +114,7 @@ function getQuestionAnimation(){
     questionTL.to("#questionScreen", 0.01, {opacity:1, display: "block", ease:Sine.easeIn}, "start");
     questionTL.to("#intro", 0.01, {opacity:0, ease:Sine.easeOut}, "start+=0.01")
     questionTL.from("#questionScreen", 0.5, {height:244, ease:Sine.easeInOut});
-    questionTL.to("#stickerWrapper", 0.5, {scale:1, opacity:1, y:-130, rotation:0, ease:Sine.easeOut})
+    questionTL.to("#stickerWrapper", 0.5, {scale:1, opacity:1, y:-290, rotation:0, ease:Sine.easeOut})
     questionTL.from(splitT1.words, 0.5, {opacity: 0, x:-20, ease: Sine.easeOut, stagger: 0.05});
     questionTL.from(document.querySelectorAll(".question")[0], 0.5, {x:-20, opacity:0, ease: Sine.easeOut});
     questionTL.from("#op3", 0.2, {scale:0, ease:Sine.easeOut})
