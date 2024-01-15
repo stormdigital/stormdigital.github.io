@@ -46,7 +46,7 @@ function init() {
     document.querySelector("#mainExit").addEventListener("mouseover", function(){
         
         if(mainTL.progress() == 1){
-            gsap.to("#cta", 0.3, {scale:1.05, ease:Power2.easeInOut});
+            // gsap.to("#cta", 0.3, {scale:1.05, ease:Power2.easeInOut});
             gsap.fromTo("#bg", 2, {x:0}, {x:-2970, ease:Power0.easeNone});
             gsap.fromTo("#train", 1, {y:-3}, {y:0, repeat:1, yoyo:true, ease:Sine.easeInOut});
         }
@@ -56,9 +56,9 @@ function init() {
     document.querySelector("#mainExit").addEventListener("mouseout", function(){
         
         if(mainTL.progress() == 1){
-            gsap.to("#cta", 0.3, {scale:1.0, ease:Power2.easeInOut});
+            // gsap.to("#cta", 0.3, {scale:1.0, ease:Power2.easeInOut});
         }
-        gsap.to("#cta", 0.3, {background:"#EC0016", ease:Power2.easeInOut});
+        // gsap.to("#cta", 0.3, {background:"#EC0016", ease:Power2.easeInOut});
     })
 
 }
@@ -86,18 +86,18 @@ function getAnimation(){
     mainTL.to("#redLine", 0.3, {width:0, ease:Power3.easeInOut, onStart:function(){
         gsap.set("#redLine", {left:"auto", right:284});
     }}, "start+=5.2")
-    mainTL.to("#panel", 0.5, {width:689, height:1035, bottom:22, ease:Sine.easeInOut}, "start+=5.3")
+    mainTL.to("#panel", 0.5, {width:689, height:865, bottom:107, ease:Sine.easeInOut}, "start+=5.3")
     mainTL.to("#logo", 0.5, {y:-1, ease:Sine.easeInOut}, "start+=5.3")
     mainTL.from(splitT2.words, 0.3, {opacity: 0, x:-20, ease: Sine.easeOut, stagger: 0.1}, "start+=5.7");
     mainTL.to("#redLine", 0.3, {width:192, ease:Power3.easeInOut, onStart:function(){
-        gsap.set("#redLine", {left:65, bottom:503, right:"auto",});
+        gsap.set("#redLine", {left:65, bottom:342, right:"auto",});
     }}, "start+=6.5")
     mainTL.from("#usp1", 0.3, {x:-30, opacity:0, ease:Sine.easeOut}, "start+=7")
     mainTL.from("#usp2", 0.3, {x:-30, opacity:0, ease:Sine.easeOut}, "start+=7.1")
     mainTL.from("#usp3", 0.3, {x:-30, opacity:0, ease:Sine.easeOut}, "start+=7.2")
-    mainTL.from("#cta", 0.5, {scale:0, ease:Back.easeOut}, "start+=7.5")
-    mainTL.to("#cta", 0.3, {scale:1.05, ease:Back.easeInOut, repeat:1, yoyo:true}, "start+=10")
-    mainTL.to("#cta", 0.3, {scale:1.05, ease:Back.easeInOut, repeat:1, yoyo:true}, "start+=14")
+    // mainTL.from("#cta", 0.5, {scale:0, ease:Back.easeOut}, "start+=7.5")
+    // mainTL.to("#cta", 0.3, {scale:1.05, ease:Back.easeInOut, repeat:1, yoyo:true}, "start+=10")
+    // mainTL.to("#cta", 0.3, {scale:1.05, ease:Back.easeInOut, repeat:1, yoyo:true}, "start+=14")
 }
 
 function createSnow(){
