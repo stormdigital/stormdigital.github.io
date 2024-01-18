@@ -108,79 +108,76 @@ img, div, object, button{
 }
 
 #panel{
-    width: 148px;
-    height: 209px;
-    bottom: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 4px;
+    width: 100%;
+    height: 105px;
+    bottom: 0px;
     background: #fff;
 }
 
-#logo{
-    width: 42px;
-    top: 20px;
-    left: 16px;
+#logo,
+#logoWhite{
+    width: 57px;
+    top: 18px;
+    left: 20px;
 }
 
 #text1{
-    top: 64px;
-    left: 16px;
-    font-size: 17px;
-    line-height: 22px;
+    top: 19px;
+    left: 20px;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 #redLine{
     width: 45px;
     height: 6px;
-    bottom: 17px;
-    left: 13px;
+    bottom: 13px;
+    left: 20px;
     border-radius: 200px;
     background: #EC0016;
 }
 
 #text2{
-    top: 59px;
-    left: 16px;
-    font-size: 17px;
-    line-height: 22px;
+    top: 15px;
+    left: 20px;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 #uspWrapper{
     width: 100%;
-    height: 111px;
+    height: 133px;
     left: 0;
-    top: 200px;
+    top: 117px;
 }
 
 .uspContainer{
     position: relative;
-    height: 39px;
+    height: 48px;
 }
 
 .icon{
-    width: 21px;
-    left: 15px;
-    top: 4px;
+    width: 27px;
+    left: 19px;
+    top: 3px;
 }
 
 .uspText{
     font-family: 'db_headregular';
-    left: 44px;
-    font-size: 10px;
-    top: 0px;
+    left: 56px;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 #cta{
     background: #EC0016;
-    font-family: Montserrat;
     color: #fff;
-    width: 119px;
+    width: 120px;
     height: 45px;
     line-height: 45px;
     text-align: center;
-    left: 15px;
-    bottom: 16px;
+    left: 20px;
+    bottom: 18px;
     border-radius: 5px;
     font-size: 12px;
 }

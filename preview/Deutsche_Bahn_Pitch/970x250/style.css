@@ -109,76 +109,72 @@ img, div, object, button{
 }
 
 #panel{
-    width: 262px;
-    height: 227px;
-    bottom: 9px;
-    left: 12px;
+    width: 318px;
+    height: 100%;
     background: #fff;
-    border-radius: 4px;
 }
 
 #logo{
-    width: 42px;
+    width: 58px;
     top: 20px;
-    left: 15px;
+    left: 20px;
 }
 
 #text1{
-    top: 64px;
-    left: 15px;
+    top: 94px;
+    left: 21px;
     font-size: 25px;
 }
 
 #redLine{
     width: 44px;
     height: 6px;
-    bottom: 17px;
-    left: 15px;
+    bottom: 42px;
+    left: 21px;
     border-radius: 200px;
     background: #EC0016;
 }
 
 #text2{
-    top: 63px;
-    left: 15px;
+    top: 94px;
+    left: 21px;
     font-size: 25px;
 }
 
 #uspWrapper{
-    width: 207px;
+    width: 245px;
     height: 93px;
     right: 0;
-    top: 41px;
+    top: 96px;
 }
 
 .uspContainer{
     position: relative;
-    height: 35px;
+    height: 38px;
 }
 
 .icon{
-    width: 22px;
-    left: 15px;
-    top: 2px;
+    width: 23px;
+    left: 16px;
+    top: 1px;
 }
 
 .uspText{
     font-family: 'db_headregular';
-    left: 49px;
-    font-size: 13px;
+    left: 55px;
+    font-size: 14px;
     top: 3px;
 }
 
 #cta{
     background: #EC0016;
-    font-family: Montserrat;
     color: #fff;
     width: 174px;
     height: 45px;
     line-height: 45px;
     text-align: center;
-    left: 270px;
-    bottom: 18px;
+    left: 302px;
+    bottom: 30px;
     border-radius: 5px;
     font-size: 12px;
 }

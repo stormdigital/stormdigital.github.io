@@ -108,47 +108,45 @@ img, div, object, button{
 }
 
 #panel{
-    width: 264px;
-    height: 227px;
-    bottom: 18px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    height: 170px;
+    bottom: 0px;
     background: #fff;
-    border-radius: 4px;
 }
 
-#logo{
-    width: 42px;
-    top: 20px;
-    left: 17px;
+#logo,
+#logoWhite{
+    width: 57px;
+    top: 40px;
+    left: 39px;
 }
 
 #text1{
-    top: 64px;
-    left: 17px;
-    font-size: 25px;
+    top: 19px;
+    left: 39px;
+    font-size: 26px;
 }
 
 #redLine{
-    width: 46px;
-    height: 8px;
-    bottom: 16px;
-    left: 17px;
+    width: 44px;
+    height: 6px;
+    bottom: 36px;
+    left: 39px;
     border-radius: 200px;
     background: #EC0016;
 }
 
 #text2{
-    top: 59px;
-    left: 17px;
+    top: 15px;
+    left: 39px;
     font-size: 25px;
 }
 
 #uspWrapper{
-    width: 100%;
+    width: 278px;
     height: 93px;
-    left: 0;
-    top: 181px;
+    right: 0;
+    top: 140px;
 }
 
 .uspContainer{
@@ -170,15 +168,15 @@ img, div, object, button{
 }
 
 #cta{
-    font-family: Montserrat;
+    font-family: 'db_headblack';
     color: #fff;
     background: #EC0016;
-    width: 232px;
+    width: 223px;
     height: 45px;
     line-height: 45px;
     text-align: center;
-    left: 17px;
-    bottom: 15px;
+    left: 38px;
+    bottom: 27px;
     border-radius: 5px;
     font-size: 12px;
 }
