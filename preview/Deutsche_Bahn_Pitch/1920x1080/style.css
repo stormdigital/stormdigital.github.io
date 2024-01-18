@@ -90,12 +90,12 @@ img, div, object, button{
 
 #snowBg{
     width: 100%;
-    transform-origin: 50% 50%;
+    transform-origin: 70% 50%;
 }
 
 #snowFront{
     width: 100%;
-    transform-origin: 50% 50%;
+    transform-origin: 70% 50%;
 }
 
 #snowWrapper{
@@ -109,53 +109,50 @@ img, div, object, button{
 }
 
 #panel{
-    width: 540px;
-    height: 586px;
-    bottom: 246px;
-    left: 30px;
+    width: 790px;
+    height: 100%;
     background: #fff;
-    border-radius: 12px;
 }
 
 #logo{
-    width: 181px;
-    top: 65px;
-    left: 65px;
+    width: 215px;
+    top: 150px;
+    left: 150px;
 }
 
 #text1{
-    top: 234px;
-    left: 65px;
-    font-size: 47px;
-    line-height: 61px;
+    top: 434px;
+    left: 149px;
+    font-size: 64px;
+    line-height: 78px;
 }
 
 #redLine{
-    width: 192px;
-    height: 23px;
-    bottom: 54px;
-    left: 65px;
+    width: 142px;
+    height: 16px;
+    bottom: 342px;
+    left: 149px;
     border-radius: 200px;
     background: #EC0016;
 }
 
 #text2{
-    top: 234px;
-    left: 65px;
-    font-size: 47px;
-    line-height: 61px;
+    top: 434px;
+    left: 149px;
+    font-size: 64px;
+    line-height: 78px;
 }
 
 #uspWrapper{
     width: 557px;
     height: 263px;
-    left: 62px;
-    top: 561px;
+    left: 142px;
+    top: 803px;
 }
 
 .uspContainer{
     position: relative;
-    height: 90px;
+    height: 110px;
 }
 
 .icon{
@@ -166,14 +163,13 @@ img, div, object, button{
 
 .uspText{
     font-family: 'db_headregular';
-    left: 131px;
-    font-size: 36px;
-    top: 9px;
+    left: 112px;
+    font-size: 41px;
+    top: 13px;
 }
 
 #cta{
     background: #EC0016;
-    font-family: Montserrat;
     color: #fff;
     width: 559px;
     height: 127px;

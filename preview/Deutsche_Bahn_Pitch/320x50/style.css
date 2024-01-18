@@ -71,14 +71,31 @@ img, div, object, button{
     cursor: pointer;
 }
 
+#bg{
+    height: 140px;
+    top: -40px;
+    left: 108px;
+}
+
+#reflection{
+    width: 100%;
+    height: 100%;
+    background: #888;
+    opacity: 0.2;
+}
+
+#train{
+    width: 100%;
+}
+
 #snowBg{
     width: 100%;
-    transform-origin: 95% 10%;
+    transform-origin: 70% 25%;
 }
 
 #snowFront{
     width: 100%;
-    transform-origin: 95% 10%;
+    transform-origin: 70% 25%;
 }
 
 #snowWrapper{
@@ -92,75 +109,72 @@ img, div, object, button{
 }
 
 #panel{
-    width: 188px;
-    height: 49px;
-    top: 0px;
-    left: 0px;
+    width: 142px;
+    height: 100%;
     background: #fff;
 }
 
 #logo{
-    width: 30px;
-    top: 14px;
-    left: 12px;
+    width: 17px;
+    top: 6px;
+    left: 6px;
 }
 
 #text1{
-    top: 5px;
-    left: 56px;
+    top: 22px;
+    left: 6px;
     font-size: 9px;
 }
 
 #redLine{
-    width: 36px;
-    height: 3px;
-    bottom: 4px;
-    left: 56px;
+    width: 42px;
+    height: 6px;
+    bottom: 104px;
+    left: 19px;
     border-radius: 200px;
     background: #EC0016;
 }
 
 #text2{
-    top: 5px;
-    left: 56px;
+    top: 22px;
+    left: 6px;
     font-size: 9px;
 }
 
 #uspWrapper{
-    width: 85px;
-    height: 39px;
-    left: 150px;
-    top: 5px;
+    width: 100%;
+    height: 46px;
+    left: 0;
+    top: 159px;
 }
 
 .uspContainer{
     position: relative;
-    height: 12px;
+    height: 22px;
 }
 
 .icon{
-    width: 10px;
-    left: 0px;
-    top: 4px;
+    width: 20px;
+    left: 20px;
+    top: -2px;
 }
 
 .uspText{
     font-family: 'db_headregular';
-    left: 16px;
-    font-size: 6.4px;
-    top: 4px;
+    left: 54px;
+    font-size: 10px;
+    top: 3px;
 }
 
 #cta{
     background: #EC0016;
-    font-family: Montserrat;
     color: #fff;
-    width: 65px;
-    height: 24px;
-    line-height: 24px;
+    width: 47px;
+    height: 18px;
+    line-height: 18px;
     text-align: center;
-    left: 245px;
-    bottom: 12px;
-    border-radius: 2px;
-    font-size: 7px;
+    left: 143px;
+    bottom: 6px;
+    border-radius: 3px;
+    font-size: 5px;
 }
