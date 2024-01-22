@@ -114,12 +114,23 @@ img, div, object, button{
     background: #fff;
 }
 
+#logo{
+    background: white;
+    border-radius: 6px;
+}
+
 #logo,
 #logoWhite{
     width: 57px;
     top: 18px;
     left: 20px;
 }
+
+
+#logoWhite{
+    display: none;
+}
+
 
 #text1{
     top: 19px;
