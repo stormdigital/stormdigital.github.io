@@ -109,63 +109,72 @@ img, div, object, button{
 }
 
 #panel{
-    width: 790px;
+    width: 1010px;
     height: 100%;
     background: #fff;
 }
 
 #logo{
-    width: 215px;
-    top: 150px;
-    left: 150px;
+    width: 157px;
+    top: 110px;
+    left: 109px;
 }
 
 #text1{
-    top: 434px;
-    left: 149px;
-    font-size: 64px;
-    line-height: 78px;
+    top: 317px;
+    left: 110px;
+    font-size: 97px;
+    line-height: 117px;
 }
 
 #redLine{
-    width: 142px;
+    width: 157px;
     height: 16px;
-    bottom: 342px;
-    left: 149px;
+    bottom: 361px;
+    left: 109px;
     border-radius: 200px;
     background: #EC0016;
 }
 
 #text2{
-    top: 434px;
-    left: 149px;
-    font-size: 64px;
-    line-height: 78px;
+    top: 317px;
+    left: 110px;
+    font-size: 97px;
+    line-height: 117px;
 }
 
 #uspWrapper{
     width: 557px;
     height: 263px;
-    left: 142px;
-    top: 803px;
+    left: 102px;
+    top: 769px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .uspContainer{
     position: relative;
     height: 110px;
+    width: 461px;
 }
 
 .icon{
-    width: 69px;
+    width: 100px;
     left: 0px;
     top: 0px;
+}
+#offer{
+    width: 115px;
+    left: -6px;
+    top: -15px;
 }
 
 .uspText{
     font-family: 'db_headregular';
-    left: 112px;
-    font-size: 41px;
-    top: 13px;
+    left: 122px;
+    font-size: 30px;
+    top: 29px;
 }
 
 #cta{
@@ -179,4 +188,14 @@ img, div, object, button{
     bottom: 64px;
     border-radius: 16px;
     font-size: 36px;
+}
+
+.guide{
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.6;
+    top:0;
+    left:0;
+    width: 100%;
+    height: auto;
 }

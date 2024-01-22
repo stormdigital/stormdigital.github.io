@@ -86,15 +86,16 @@ function getAnimation(){
     mainTL.to("#redLine", 0.3, {width:0, ease:Power3.easeInOut, onStart:function(){
         gsap.set("#redLine", {left:"auto", right:449});
     }}, "start+=5.2")
-    mainTL.to("#panel", 0.5, {width:900, ease:Sine.easeInOut}, "start+=5.3")
+    mainTL.to("#panel", 0.5, {width:1080, ease:Sine.easeInOut}, "start+=5.3")
     mainTL.to("#logo", 0.5, {y:-1, ease:Sine.easeInOut}, "start+=5.3")
     mainTL.from(splitT2.words, 0.3, {opacity: 0, x:-20, ease: Sine.easeOut, stagger: 0.1}, "start+=5.7");
-    mainTL.to("#redLine", 0.3, {width:192, ease:Power3.easeInOut, onStart:function(){
-        gsap.set("#redLine", {left:149, right:"auto",});
+    mainTL.to("#redLine", 0.3, {width:157, ease:Power3.easeInOut, onStart:function(){
+        gsap.set("#redLine", {left:109, right:"auto",});
     }}, "start+=6.5")
     mainTL.from("#usp1", 0.3, {x:-30, opacity:0, ease:Sine.easeOut}, "start+=7")
     mainTL.from("#usp2", 0.3, {x:-30, opacity:0, ease:Sine.easeOut}, "start+=7.1")
     mainTL.from("#usp3", 0.3, {x:-30, opacity:0, ease:Sine.easeOut}, "start+=7.2")
+    mainTL.from("#usp4", 0.3, {x:-30, opacity:0, ease:Sine.easeOut}, "start+=7.3")
     // mainTL.from("#cta", 0.5, {scale:0, ease:Back.easeOut}, "start+=7.5")
     // mainTL.to("#cta", 0.3, {scale:1.05, ease:Back.easeInOut, repeat:1, yoyo:true}, "start+=10")
     // mainTL.to("#cta", 0.3, {scale:1.05, ease:Back.easeInOut, repeat:1, yoyo:true}, "start+=14")
