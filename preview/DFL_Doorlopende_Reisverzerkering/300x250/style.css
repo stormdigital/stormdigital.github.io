@@ -88,8 +88,8 @@ img, div, object, button{
 }
 
 #intro{
-    width: 146px;
-    height: 103px;
+    width: 196px;
+    height: 136px;
     left: 10px;
     bottom: 10px;
     background: rgba(30, 190, 190, 0.9);
@@ -97,7 +97,7 @@ img, div, object, button{
 }
 
 #introText{
-    font-size: 10px;
+    font-size: 15px;
     top: 9px;
     left: 9px;
 }
@@ -109,13 +109,13 @@ img, div, object, button{
 }
 
 #op1{
-    top: 40px;
-    left: 11px;
+    top: 65px;
+    left: 15px;
 }
 
 #op2{
-    top: 40px;
-    left: 42px;
+    top: 65px;
+    left: 60px;
 }
 
 .optionWrapper div{
@@ -127,8 +127,8 @@ img, div, object, button{
 }
 
 .option{
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     box-sizing: border-box;
     border: 2px solid #287E7F;
@@ -144,7 +144,7 @@ img, div, object, button{
 
 .optionText{
     text-align: center;
-    font-size: 6.5px;
+    font-size: 9.5px;
     font-family: 'montserratregular';
 }
 
@@ -153,8 +153,8 @@ img, div, object, button{
     height: 57px;
     border-radius: 50%;
     background: #FFC801;
-    top: 100px;
-    left: 120px;
+    top: 75px;
+    left: 176px;
 }
 
 #stickerText{
