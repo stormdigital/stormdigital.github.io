@@ -1,0 +1,322 @@
+body, body * {
+	vertical-align: baseline;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('montserrat-bold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: 'montserratregular';
+    src: url('montserrat-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  
+}
+
+img, div, object, button{
+    position: absolute;
+}
+
+#banner{
+    width: 160px;
+    height: 600px;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'montserratbold';
+    color: #fff;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #1EBEBE;;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #FFC801;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#bg{
+    height: 100%;
+}
+
+#snowWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.snow{
+    background: #fff;
+    border-radius: 50%;
+}
+
+#intro{
+    width: 143px;
+    height: 168px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 22px;
+    background: rgba(30, 190, 190, 0.9);
+    transform-origin: 0% 100%;
+}
+
+#introText{
+    font-size: 13px;
+    top: 18px;
+    left: 14px;
+}
+
+.logo{
+    width: 97px;
+    bottom: 14px;
+    left: 12px;
+}
+
+#op1{
+    top: 80px;
+    left: 14px;
+}
+
+#op2{
+    top: 80px;
+    left: 53px;
+}
+
+.optionWrapper div{
+    position: relative;
+}
+
+.optionWrapper:hover .option{
+    background: rgba(255, 200, 1, 0.5);
+}
+
+.option{
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 2px solid #287E7F;
+    background: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.option.yellow{
+    background: #FFC801;
+    border: 2px solid #fff;
+}
+
+.optionText{
+    text-align: center;
+    font-size: 13px;
+    font-family: 'montserratregular';
+}
+
+#stickerWrapper{
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #FFC801;
+    top: 377px;
+    right: 2px;
+}
+
+#stickerText{
+    color: #000;
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+    line-height: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#uspScreen{
+    width: 143px;
+    height: 431px;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
+    opacity: 0;
+    bottom: 10px;
+    background: rgba(30, 190, 190, 0.9);
+    transform-origin: 0% 100%;
+}
+
+#uspText{
+    font-size: 13px;
+    top: 26px;
+    left: 12px;
+    line-height: 19px;
+}
+
+.usp span{
+    font-family: 'montserratbold';
+}
+
+.usp::before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #FFC801;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.usp{
+    font-size: 10px;
+    line-height: normal;
+    font-family: 'montserratregular';
+    width: 200px;
+    left: 7px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+#usp1{top: 86px;}
+#usp2{top: 126px;}
+#usp3{top: 175px;}
+
+#disclaimer,
+#disclaimer2{
+    font-size: 7px;
+    font-family: 'montserratregular';
+    bottom: 167px;
+    left: 12px;
+}
+
+#cta,
+#cta2{
+    width: 119px;
+    height: 39px;
+    background: #FFC801;
+    color: #000;
+    bottom: 111px;
+    left: 12px;
+    border-radius: 6px;
+}
+
+.ctaText{
+    font-size: 13px;
+    left: 12px;
+    line-height: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'montserratregular';
+}
+
+.ctaText span{
+    font-family: 'montserratbold';
+}
+
+.ctaArrow{
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 13px;
+}
+
+#questionScreen{
+    width: 143px;
+    height: 580px;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
+    opacity: 0;
+    bottom: 10px;
+    background: rgba(30, 190, 190, 0.9);
+    transform-origin: 0% 100%;
+}
+
+#questionScreen .option{
+    width: 19.5px;
+    height: 19.5px;
+    margin-bottom: 6px;
+}
+
+#questionScreen .optionText{
+    font-size: 10.72px;
+}
+
+#questionText{
+    font-size: 13px;
+    top: 55px;
+    left: 12px;
+    line-height: auto;
+}
+
+.questionWrapper{
+    width: 100%;
+}
+
+.questionWrapper .optionWrapper{
+    bottom: 10px;
+}
+
+#op3{left: 12px;}
+#op4{left: 66px;}
+#op5{left: 12px;}
+#op6{left: 73px;}
+#op7{left: 21px; top: 60px;}
+#op8{left: 73px; top: 60px;}
+
+.question{
+    font-size: 12px;
+    left: 12px;   
+}
+
+#q1Wrapper{
+    top: 136px;
+    height: 74px;
+}
+
+#q2Wrapper{
+    top: 214px;
+    height: 74px;
+}
+
+#q3Wrapper{
+    top: 293px;
+    height: 93px;
+}
