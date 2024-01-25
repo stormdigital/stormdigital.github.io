@@ -1,5 +1,5 @@
 window.onload = function () {
-        init();
+    init();
 }
 
 function loadLocalDynamic() {
@@ -55,7 +55,7 @@ function loadLocalDynamic() {
 
 }
 
-function init() {
+function init(clickTAGvalue) {
     loadLocalDynamic();
 
     document.querySelector("#mainExit").addEventListener("mouseover", function(){
@@ -71,7 +71,8 @@ function init() {
     })
 
     document.querySelector("#mainExit").addEventListener("click", function(){
-        window.open(window.clickTag);
+        clickTAGvalue = dhtml.getVar('clickTAG', 'http://www.example.com');
+        window.open(clickTAGvalue, '_blank');
         masterTL.progress(1);
     })
 
@@ -97,7 +98,7 @@ function getAnimation(){
     masterTL.from("#tadaa5", 0.5, {y:150, scale:0, x:-70, ease:Back.easeOut}, "start+=5.9")
     masterTL.from("#tadaa6", 0.5, {y:150, scale:0, x:-100, ease:Back.easeOut}, "start+=5.95")
     masterTL.to("#tesaWrapper", 0.5, {opacity:0, x:70, ease:Sine.easeIn}, "start+=7.5")
-    masterTL.to("#tadaaWrapper", 0.5, {opacity:0, x:70, ease:Sine.easeIn}, "start+=7.6")
+    masterTL.to("#tadaaWrapper", 0.5, {opacity:0, x:70, ease:Sine.easeIn}, "start+=7.5")
     masterTL.from("#blueCircle", 1.25, {scaleY:0, ease:"elastic.out(0.5,0.3)"}, "start+=8")
     masterTL.from("#mainProduct", 1, {opacity:0, y:70, ease:"elastic.out(0.5 ,0.4)"}, "start+=8")
     masterTL.from("#text2", 0.7, {x:-50, opacity:0, ease:Power2.easeInOut}, "start+=8.3")
@@ -112,4 +113,6 @@ function getAnimation(){
     masterTL.to("#cta", 0.25, {scale:1.15, ease:Sine.easeInOut, repeat:1, yoyo:true}, "start+=14")
     masterTL.to("#ctaBorder", 0.5, {scale:1.8, ease:Sine.easeIn, opacity:0}, "start+=14")
     masterTL.to("#ctaBorder", 0.5, {opacity:0}, "start+=14.5")
+
+    masterTL.duration(13.5);
 }

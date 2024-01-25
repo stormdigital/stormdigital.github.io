@@ -20,12 +20,21 @@ img, div, object{
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('proximanova-regular-webfont.woff2') format('woff2'),
+         url('proximanova-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 #banner{
     width: 300px;
     height: 600px;
     overflow: hidden;
     color: #fff;
-    font-family: 'Proxima Nova';
+    font-family: 'proxima_novaregular';
     font-weight: bold;
 }
 
@@ -100,7 +109,6 @@ img, div, object{
     bottom: 0px;
     background: #009fdf;
     left: 1px;
-    border-radius: 2px;
 }
 
 #tesaWrapper{
@@ -167,20 +175,17 @@ img, div, object{
 }
 
 #leftProduct{
-    left: 26px;
-    top: 309px;
+    width: 300px;
 }
 
 #rightProduct{
-    right: 26px;
-    top: 309px;
+    width: 300px;
 }
 
 #mainProduct{
-    width: 127px;
+    width: 300px;
     left: 50%;
     transform: translateX(-50%);
-    top: 300px;
 }
 
 #text2,
@@ -197,9 +202,10 @@ img, div, object{
     transform: translateX(-50%);
     white-space: nowrap;
     bottom: 35px;
-    font-size: 15px;
-    border: 1px solid #fff;
-    padding: 7px 9px;
+    font-size: 14px;
+    font-weight: normal;
+    border: 2px solid #fff;
+    padding: 5px 13px;
     box-sizing: border-box;
 }
 
