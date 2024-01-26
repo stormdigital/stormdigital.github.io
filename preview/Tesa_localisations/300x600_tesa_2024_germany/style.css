@@ -20,21 +20,12 @@ img, div, object{
     font-weight: normal;
 }
 
-@font-face {
-    font-family: 'proxima_novaregular';
-    src: url('proximanova-regular-webfont.woff2') format('woff2'),
-         url('proximanova-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 #banner{
     width: 300px;
     height: 600px;
     overflow: hidden;
     color: #fff;
-    font-family: 'proxima_novaregular';
+    font-family: 'Proxima Nova';
     font-weight: bold;
 }
 
