@@ -3,7 +3,7 @@ window.onload = function () {
 }
 
 function loadLocalDynamic() {
-    var adSize = "300x600";
+    var adSize = "300x250";
     if(localDynamicData.text1[adSize] != ""){
         document.querySelector('#text1').innerHTML = localDynamicData.text1[adSize];
     }
@@ -98,15 +98,18 @@ function getAnimation(){
     masterTL.from("#tadaa5", 0.5, {y:150, scale:0, x:-70, ease:Back.easeOut}, "start+=5.9")
     masterTL.from("#tadaa6", 0.5, {y:150, scale:0, x:-100, ease:Back.easeOut}, "start+=5.95")
     masterTL.to("#tesaWrapper", 0.5, {opacity:0, x:70, ease:Sine.easeIn}, "start+=7.5")
-    masterTL.to("#tadaaWrapper", 0.5, {opacity:0, x:70, ease:Sine.easeIn}, "start+=7.6")
+    masterTL.to("#tadaaWrapper", 0.5, {opacity:0, x:70, ease:Sine.easeIn}, "start+=7.5")
     masterTL.from("#blueCircle", 1.25, {scaleY:0, ease:"elastic.out(0.5,0.3)"}, "start+=8")
     masterTL.from("#mainProduct", 1, {opacity:0, y:70, ease:"elastic.out(0.5 ,0.4)"}, "start+=8")
+    masterTL.to(".blur", 0.8, {opacity: 1, ease:Sine.easeInOut}, "start+=8")
     masterTL.from("#text2", 0.7, {x:-50, opacity:0, ease:Power2.easeInOut}, "start+=8.3")
+    masterTL.from(document.querySelectorAll(".blueLine")[1], 0.5, {width:0, ease:Power2.easeInOut}, "start+=8.9")
     masterTL.from(["#cta", "#ctaBorder"], 1, {opacity:0, y:70, ease:"elastic.out(0.5 ,0.4)"}, "start+=8.5")
     masterTL.from("#leftProduct", 0.4, {x:70, opacity:0, ease:Back.easeOut}, "start+=10")
     masterTL.from("#rightProduct", 0.4, {x:-70, opacity:0, ease:Back.easeOut}, "start+=10")
     masterTL.to("#text2", 0.7, {x:50, opacity:0, ease:Power2.easeInOut}, "start+=10.5")
     masterTL.from("#text3", 0.7, {x:-50, opacity:0, ease:Power2.easeInOut}, "start+=11")
+    masterTL.from(document.querySelectorAll(".blueLine")[2], 0.5, {width:0, ease:Power2.easeInOut}, "start+=11.6")
     masterTL.to("#cta", 0.25, {scale:1.15, ease:Sine.easeInOut, repeat:1, yoyo:true}, "start+=13")
     masterTL.to("#ctaBorder", 0.5, {scale:1.8, ease:Sine.easeIn, opacity:0}, "start+=13")
     masterTL.to("#ctaBorder", 0.001, {scale:1, opacity:1}, "start+=13.999")

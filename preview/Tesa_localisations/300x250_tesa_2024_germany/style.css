@@ -20,9 +20,19 @@ img, div, object{
     font-weight: normal;
 }
 
+.referenceImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    width: 300px;
+    height: 250px;
+    z-index: 33333;
+}
+
 #banner{
     width: 300px;
-    height: 600px;
+    height: 250px;
     overflow: hidden;
     color: #fff;
     font-family: 'Proxima Nova';
@@ -68,6 +78,14 @@ img, div, object{
     top: 0;
 }
 
+.blur{
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(8px);
+    width: 300px;
+    height: 250px;
+    opacity: 0;
+}
+
 #mainExit{
     width: 100%;
     height: 100%;
@@ -76,13 +94,13 @@ img, div, object{
 }
 
 #logo{
-    width: 90px;
-    top: 15px;
-    right: 15px;
+    width: 73px;
+    top: 13px;
+    right: 12px;
 }
 
 #text1{
-    top: 271px;
+    top: 97px;
     width: 100%;
     text-align: center;
     font-size: 30px;
@@ -96,21 +114,22 @@ img, div, object{
 
 .blueLine{
     width: 100%;
-    height: 6px;
+    height: 4px;
     bottom: 0px;
     background: #009fdf;
-    left: 1px;
+    left: -1px;
+    z-index: -1;
 }
 
 #tesaWrapper{
-    top: 250px;
-    left: 115px;
+    top: 93px;
+    left: 128px;
     overflow: hidden;
 }
 
 #tesa{
     position: relative;
-    width: 70px;
+    width: 44px;
 }
 
 #tadaaWrapper{
@@ -119,46 +138,46 @@ img, div, object{
 }
 
 #tadaa1{
-    width: 47px;
-    top: 291px;
-    left: 40px;
+    width: 30px;
+    top: 120px;
+    left: 78px;
 }
 
 #tadaa2{
-    width: 35px;
-    top: 287px;
-    left: 85px;
+    width: 23px;
+    top: 117px;
+    left: 108px;
 }
 
 #tadaa3{
-    width: 35px;
-    top: 282px;
-    left: 121px;
+    width: 23px;
+    top: 114px;
+    left: 131px;
 }
 
 #tadaa4{
-    width: 34px;
-    top: 288px;
-    left: 162px;
+    width: 22px;
+    top: 118px;
+    left: 157px;
 }
 
 #tadaa5{
-    width: 44px;
-    top: 293px;
-    left: 193px;
+    width: 28px;
+    top: 122px;
+    left: 178px;
 }
 
 #tadaa6{
-    width: 26px;
-    top: 288px;
-    left: 235px;
+    width: 17px;
+    top: 117px;
+    left: 205px;
 }
 
 #blueCircle{
     background: #009fdf;
-    width: 260%;
-    height: 200%;
-    top: 388px;
+    width: 140%;
+    height: 190%;
+    top: 163px;
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
@@ -166,21 +185,21 @@ img, div, object{
 }
 
 #leftProduct{
-    width: 120px;
-    top: 309px;
-    left: 26px;
+    width: 86px;
+    top: 103px;
+    left: 62px;
 }
 
 #rightProduct{
-    width: 120px;
-    top: 309px;
-    right: 26px;
+    width: 86px;
+    right: 62px;
+    top: 103px;
 }
 
 #mainProduct{
-    width: 130px;
+    width: 94px;
+    top: 95px;
     left: 50%;
-    top: 300px;
     transform: translateX(-50%);
 }
 
@@ -188,7 +207,7 @@ img, div, object{
 #text3{
     width: 100%;
     text-align: center;
-    bottom: 101px;
+    bottom: 176px;
     font-size: 19px;
 }
 
@@ -197,11 +216,11 @@ img, div, object{
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    bottom: 36px;
+    bottom: 11px;
     font-size: 14px;
     font-weight: normal;
-    border: 2px solid #fff;
-    padding: 5px 13px;
+    border: 1px solid #fff;
+    padding: 4px 6px;
     box-sizing: border-box;
 }
 

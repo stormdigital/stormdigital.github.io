@@ -6,10 +6,6 @@
     "clicktags": {
         "clickTAG": "http://www.example.com"
     },
-    "events": {
-        "enabled": 0,
-        "list": {
-        }
-    },
+
     "source": "index.html"
 }

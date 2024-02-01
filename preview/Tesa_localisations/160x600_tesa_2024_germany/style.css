@@ -21,7 +21,7 @@ img, div, object{
 }
 
 #banner{
-    width: 300px;
+    width: 160px;
     height: 600px;
     overflow: hidden;
     color: #fff;
@@ -76,18 +76,23 @@ img, div, object{
 }
 
 #logo{
-    width: 90px;
-    top: 15px;
-    right: 15px;
+    width: 97px;
+    top: 16px;
+    right: 32px;
+}
+
+.referenceImg{
+    opacity: 0.5;
+    z-index: 333;
 }
 
 #text1{
-    top: 271px;
+    top: 265px;
     width: 100%;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: -0.8px;
-    line-height: 30px;
+    line-height: 24px;
 }
 
 .blueLineWrapper{
@@ -96,21 +101,22 @@ img, div, object{
 
 .blueLine{
     width: 100%;
-    height: 6px;
-    bottom: 0px;
+    height: 5px;
+    bottom: 1px;
     background: #009fdf;
     left: 1px;
+    z-index: -1;
 }
 
 #tesaWrapper{
-    top: 250px;
-    left: 115px;
+    top: 272px;
+    left: 59px;
     overflow: hidden;
 }
 
 #tesa{
     position: relative;
-    width: 70px;
+    width: 40px;
 }
 
 #tadaaWrapper{
@@ -119,46 +125,46 @@ img, div, object{
 }
 
 #tadaa1{
-    width: 47px;
-    top: 291px;
-    left: 40px;
+    width: 26px;
+    top: 297px;
+    left: 17px;
 }
 
 #tadaa2{
-    width: 35px;
-    top: 287px;
-    left: 85px;
+    width: 21px;
+    top: 293px;
+    left: 41px;
 }
 
 #tadaa3{
-    width: 35px;
-    top: 282px;
-    left: 121px;
+    width: 21px;
+    top: 290px;
+    left: 62px;
 }
 
 #tadaa4{
-    width: 34px;
-    top: 288px;
-    left: 162px;
+    width: 20px;
+    top: 294px;
+    left: 85px;
 }
 
 #tadaa5{
-    width: 44px;
-    top: 293px;
-    left: 193px;
+    width: 25px;
+    top: 298px;
+    left: 103px;
 }
 
 #tadaa6{
-    width: 26px;
-    top: 288px;
-    left: 235px;
+    width: 15px;
+    top: 294px;
+    left: 127px;
 }
 
 #blueCircle{
     background: #009fdf;
-    width: 260%;
+    width: 360%;
     height: 200%;
-    top: 388px;
+    top: 498px;
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
@@ -166,21 +172,21 @@ img, div, object{
 }
 
 #leftProduct{
-    width: 120px;
-    top: 309px;
-    left: 26px;
+    width: 72px;
+    top: 452px;
+    left: 6px;
 }
 
 #rightProduct{
-    width: 120px;
-    top: 309px;
-    right: 26px;
+    width: 72px;
+    top: 452px;
+    right: 6px;
 }
 
 #mainProduct{
-    width: 130px;
+    width: 78px;
     left: 50%;
-    top: 300px;
+    top: 447px;
     transform: translateX(-50%);
 }
 
@@ -188,8 +194,10 @@ img, div, object{
 #text3{
     width: 100%;
     text-align: center;
-    bottom: 101px;
-    font-size: 19px;
+    top: 264px;
+    font-size: 22px;
+    line-height: 23px;
+    z-index: 22;
 }
 
 #cta,
@@ -197,11 +205,11 @@ img, div, object{
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    bottom: 36px;
-    font-size: 14px;
+    bottom: 20px;
+    font-size: 11px;
     font-weight: normal;
-    border: 2px solid #fff;
-    padding: 5px 13px;
+    border: 1px solid #fff;
+    padding: 4px 8px;
     box-sizing: border-box;
 }
 
