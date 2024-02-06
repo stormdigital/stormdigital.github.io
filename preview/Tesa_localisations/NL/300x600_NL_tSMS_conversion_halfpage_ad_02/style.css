@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('ProximaNova-Bold.woff2') format('woff2'),
+        url('ProximaNova-Bold.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('ProximaNova-Regular.woff2') format('woff2'),
+        url('ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+}
+
+#banner{
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    color: #fff;
+    font-family: 'Proxima Nova';
+    font-weight: bold;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #ff0000;;
+    pointer-events: none;
+}
+
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #00a2e7;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    top: 0;
+}
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#logo{
+    width: 90px;
+    top: 15px;
+    right: 15px;
+}
+
+#text1Wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+#text1{
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: -0.8px;
+    line-height: 30px;
+}
+
+.blueLineWrapper{
+    position: relative;
+}
+
+.blueLine{
+    width: 100%;
+    height: 6px;
+    bottom: 0px;
+    background: #009fdf;
+    left: 1px;
+}
+
+#tesaWrapper{
+    top: 250px;
+    left: 115px;
+    overflow: hidden;
+}
+
+#tesa{
+    position: relative;
+    width: 70px;
+}
+
+#tadaaWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+#tadaa1{
+    width: 47px;
+    top: 291px;
+    left: 40px;
+}
+
+#tadaa2{
+    width: 35px;
+    top: 287px;
+    left: 85px;
+}
+
+#tadaa3{
+    width: 35px;
+    top: 282px;
+    left: 121px;
+}
+
+#tadaa4{
+    width: 34px;
+    top: 288px;
+    left: 162px;
+}
+
+#tadaa5{
+    width: 44px;
+    top: 293px;
+    left: 193px;
+}
+
+#tadaa6{
+    width: 26px;
+    top: 288px;
+    left: 235px;
+}
+
+#blueCircle{
+    background: #009fdf;
+    width: 260%;
+    height: 200%;
+    top: 388px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: "center bottom";
+}
+
+#leftProduct{
+    width: 120px;
+    top: 309px;
+    left: 26px;
+}
+
+#rightProduct{
+    width: 120px;
+    top: 309px;
+    right: 26px;
+}
+
+#mainProduct{
+    width: 130px;
+    left: 50%;
+    top: 300px;
+    transform: translateX(-50%);
+}
+
+#text2Wrapper,
+#text3Wrapper{
+    width: 100%;
+    bottom: 81px;
+    height: 63px;
+}
+
+#text2,
+#text3{
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 19px;
+}
+
+#cta,
+#ctaBorder{
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    bottom: 36px;
+    font-size: 14px;
+    font-weight: normal;
+    border: 2px solid #fff;
+    padding: 5px 13px;
+    box-sizing: border-box;
+}
+
+#ctaBorder{
+    color: transparent;
+}
