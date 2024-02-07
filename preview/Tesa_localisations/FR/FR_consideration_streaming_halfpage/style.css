@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('ProximaNova-Bold.woff2') format('woff2'),
+        url('ProximaNova-Bold.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('ProximaNova-Regular.woff2') format('woff2'),
+        url('ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+}
+
+#banner{
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    color: #fff;
+    background: green;
+    font-family: 'Proxima Nova';
+    font-weight: bold;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #ff0000;;
+    pointer-events: none;
+}
+
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #00a2e7;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    top: 0;
+}
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#text1Wrapper{
+    width: 100%;
+    height: 158px;
+    bottom: 66px;
+}
+
+#text1{
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: -0.8px;
+    line-height: 20px;
+}
+
+.blueLineWrapper{
+    position: relative;
+}
+
+.blueLine{
+    width: 100%;
+    height: 6px;
+    bottom: 0px;
+    background: #009fdf;
+    left: 1px;
+}
+
+#blueCircle{
+    background: #009fdf;
+    width: 260%;
+    height: 200%;
+    top: 330px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: "center bottom";
+}
+
+#leftProduct{
+    width: 120px;
+    top: 309px;
+    left: 26px;
+}
+
+#rightProduct{
+    width: 120px;
+    top: 309px;
+    right: 26px;
+}
+
+#mainProduct{
+    width: 130px;
+    left: 50%;
+    top: 300px;
+    transform: translateX(-50%);
+}
+
+#cta,
+#ctaBorder{
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    bottom: 36px;
+    font-size: 14px;
+    font-weight: normal;
+    border: 2px solid #fff;
+    padding: 5px 13px;
+    box-sizing: border-box;
+}
+
+#ctaBorder{
+    color: transparent;
+}
+
+#video{
+    position: absolute;
+    width: 300px;
+}
+
+.btn{
+    width: 25px;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    z-index: 10000;
+}
+
+#soundOff{
+    display: block;
+}
