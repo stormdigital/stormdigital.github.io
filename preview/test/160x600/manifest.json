@@ -1,0 +1,11 @@
+{
+    "version": "1.0", 
+    "title": "300x600 300x600_tesa_2024_germany",   
+    "width" : "300", 
+    "height": "600", 
+    "clicktags": {
+        "clickTAG": "http://www.example.com"
+    },
+
+    "source": "index.html"
+}
