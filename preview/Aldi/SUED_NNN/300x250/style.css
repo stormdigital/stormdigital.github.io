@@ -81,6 +81,11 @@ img, div, object{
     left: -2px;
 }
 
+.darkShadow{
+    top: 0px;
+    left: 450px;
+}
+
 #product{
     position: absolute;
     right: 160px;
@@ -215,6 +220,7 @@ img, div, object{
     right: 400px;
     top:160px;
     scale: 0.95;
+    transform: rotate(-40deg);
 }
 
 

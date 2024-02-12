@@ -28,7 +28,7 @@ function getAnimation(){
     masterTL.add("start")
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)
     masterTL.add("start");
-    masterTL.to("#bgWrapper", 12, {x:-870, ease:Power1.easeOut}, "start");
+    masterTL.fromTo("#bgWrapper", 12, {x:-350}, {x:-870, ease:Sine.easeOut}, "start");
     masterTL.from("#nurNurWrapper", 1, {width:0, ease:Sine.easeInOut}, "start+=0.5");
     masterTL.from("#tagline", 0.5, {scale:0, ease:Sine.easeOut}, "start+=0.8");
     masterTL.from("#tagline", 0.7, {y:-70, ease:Back.easeOut}, "start+=0.8");
@@ -55,8 +55,8 @@ function getAnimation(){
     masterTL.from("#ctaWrapper", 0.5, {scale:0, ease:Back.easeOut}, "start+=14.2");
     masterTL.from("#ctaRight", 0.3, {x:-50, ease:Sine.easeOut}, "start+=14.7");
 
-    masterTL.to("#butterFlyWrapper", 3.5, {x:-70, y:-120, rotation:-50, ease:Power0.easeNone}, "start+=5");
-    masterTL.to("#butterFlyWrapper2", 4, {x:-75, y:-130, rotation:-40, ease:Power0.easeNone}, "start+=5");
+    masterTL.to("#butterFlyWrapper", 3.5, {x:-70, y:-120, rotation:-50, ease:Power0.easeNone}, "start+=3");
+    masterTL.to("#butterFlyWrapper2", 4, {x:-195, y:-60, rotation:-90, ease:Power0.easeNone}, "start+=3.2");
     masterTL.to("#bumblebeeWrapper", 2, {rotation:45, ease:Power0.easeNone}, "start+=12");
     masterTL.to("#bumblebee", 2, {rotation:-40, scale:0.8, ease:Power0.easeNone}, "start+=12");
     masterTL.to("#bumblebee", 0.5, {y:-20, ease:Sine.easeInOut}, "start+=12");
