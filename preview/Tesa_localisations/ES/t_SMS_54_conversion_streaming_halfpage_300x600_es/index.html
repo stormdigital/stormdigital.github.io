@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="ad.size" content="width=300,height=600">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="localDynamic.js"></script>
+    <script>
+        document.write('<script src="' + (window.API_URL || 'https://s1.adform.net/banners/scripts/rmb/Adform.DHTML.js?bv=' + Math.random()) + '"><\/script>');
+    </script>
+</head>
+<body>
+
+    <div id="banner">
+
+        <video id="video" muted playsinline>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <div id="blueCircle"></div>
+
+        <img id="leftProduct" src="product_left.png">
+        <img id="rightProduct" src="product_right.png">
+        <img id="mainProduct" src="product_middle.png">
+        
+        <div id="text1Wrapper">
+            <div id="text1">Prueba los<BR>clavos adhesivos tesa®.</div>
+        </div>
+
+        <div id="cta">Más información</div>
+        <div id="ctaBorder">Más información</div>
+
+        <div id="border"></div>
+        <div id="loaderWrapper">
+            <div id="loaderCenter">
+                <div id="loader"></div>
+            </div>
+        </div>
+    
+        <div id="mainExit"></div>
+
+        <img id="soundOff" class="btn" src="sound_off.png">
+        <img id="soundOn" class="btn" src="sound_on.png">
+        <img id="replay" class="btn" src="replay.png">
+    </div>
+            
+</body>
+
+</html>
