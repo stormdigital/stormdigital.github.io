@@ -2,9 +2,9 @@ localDynamicData = {
 	"variationName": "ES_03",
 	"campaignName": "es",
 	"dimensionName": {
-		"160x600": "t_SMS_50_conversion_skyscraper",
-		"300x250": "t_SMS_47_conversion_rectangle",
-		"728x90": "t_SMS_53_conversion_leaderboard"
+		"160x600": "t_SMS_50_consideration_skyscraper",
+		"300x250": "t_SMS_47_consideration_rectangle",
+		"728x90": "t_SMS_53_consideration_leaderboard"
 	},
 	"text1": {
 		"default": "",

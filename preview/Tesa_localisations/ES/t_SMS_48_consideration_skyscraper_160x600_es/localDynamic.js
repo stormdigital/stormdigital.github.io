@@ -1,31 +1,31 @@
 localDynamicData = {
-	"variationName": "ES_02",
+	"variationName": "ES_01",
 	"campaignName": "es",
 	"dimensionName": {
-		"160x600": "t_SMS_49_conversion_skyscraper",
-		"300x250": "t_SMS_46_conversion_rectangle",
-		"728x90": "t_SMS_52_conversion_leaderboard"
+		"160x600": "t_SMS_48_consideration_skyscraper",
+		"300x250": "t_SMS_45_consideration_rectangle",
+		"728x90": "t_SMS_51_consideration_leaderboard"
 	},
 	"text1": {
 		"default": "",
-		"300x600": "",
-		"160x600": "<span class='blueLineWrapper'>Sujeción<div class='blueLine'></div></span><BR>fiable.",
-		"300x250": "<span class='blueLineWrapper'>Sujeción<div class='blueLine'></div></span> fiable.",
-		"728x90": "<span class='blueLineWrapper'>Sujeción<div class='blueLine'></div></span> fiable."
+		"300x600": "Decora tus paredes<BR><span class='blueLineWrapper'>sin<div class='blueLine'></div></span> taladrarlas.",
+		"160x600": "Decora<BR>tus paredes<BR><span class='blueLineWrapper'>sin<div class='blueLine'></div></span><BR>taladrarlas.",
+		"300x250": "Decora tus paredes<BR><span class='blueLineWrapper'>sin<div class='blueLine'></div></span> taladrarlas.",
+		"728x90": "Decora tus paredes<BR><span class='blueLineWrapper'>sin<div class='blueLine'></div></span> taladrarlas."
 	},
 	"text2": {
 		"default": "",
 		"300x600": "",
-		"160x600": "Para hasta<BR><span class='blueLineWrapper'>4 kg*<div class='blueLine'></div></span>",
-		"300x250": "Para hasta <span class='blueLineWrapper'>4 kg*<div class='blueLine'></div></span>",
-		"728x90": "Para hasta <span class='blueLineWrapper'>4 kg*<div class='blueLine'></div></span>"
+		"160x600": "Aplícalos<BR><span class='blueLineWrapper'>fácilmente<div class='blueLine'></div></span><BR>con solo<BR>presionar.",
+		"300x250": "Aplícalos <span class='blueLineWrapper'>fácilmente<div class='blueLine'></div></span><BR>con solo presionar.",
+		"728x90": "Aplícalos <span class='blueLineWrapper'>fácilmente<div class='blueLine'></div></span><BR>con solo presionar."
 	},
 	"disclaimer": {
 		"default": "",
 		"300x600": "",
-		"160x600": "*4 kg si se usan 2 clavos adhesivos<BR>tesa® 2 kg en yeso y papel pintado",
-		"300x250": "*4 kg si se usan 2 clavos adhesivos tesa® 2 kg en yeso y papel pintado",
-		"728x90": "*4 kg si se usan 2 clavos adhesivos tesa® 2 kg en yeso y papel pintado"
+		"160x600": "",
+		"300x250": "",
+		"728x90": ""
 	},
 	"text3": {
 		"default": "",

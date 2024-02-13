@@ -9,10 +9,10 @@ localDynamicData = {
 	},
 	"text1": {
 		"default": "",
-		"300x600": "Decora tus paredes<BR><span class='blueLineWrapper'>sin <div class='blueLine'></div></span> taladrarlas.",
-		"160x600": "Decora<BR>tus paredes<BR><span class='blueLineWrapper'>sin <div class='blueLine'></div></span><BR>taladrarlas.",
-		"300x250": "Decora tus paredes<BR><span class='blueLineWrapper'>sin <div class='blueLine'></div></span> taladrarlas.",
-		"728x90": "Decora tus<BR>paredes <span class='blueLineWrapper'>sin <div class='blueLine'></div></span> taladrarlas."
+		"300x600": "Decora tus paredes<BR><span class='blueLineWrapper'>sin<div class='blueLine'></div></span> taladrarlas.",
+		"160x600": "Decora<BR>tus paredes<BR><span class='blueLineWrapper'>sin<div class='blueLine'></div></span><BR>taladrarlas.",
+		"300x250": "Decora tus paredes<BR><span class='blueLineWrapper'>sin<div class='blueLine'></div></span> taladrarlas.",
+		"728x90": "Decora tus<BR>paredes <span class='blueLineWrapper'>sin<div class='blueLine'></div></span> taladrarlas."
 	},
 	"text2": {
 		"default": "",
