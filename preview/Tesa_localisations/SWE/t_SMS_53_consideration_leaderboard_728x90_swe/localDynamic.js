@@ -16,9 +16,9 @@ localDynamicData = {
 	"text2": {
 		"default": "",
 		"300x600": "",
-		"160x600": "För tapet,<BR>målad <span class='blueLineWrapper'>gips<div class='blueLine'></div></span><BR>och kakel.",
-		"300x250": "För tapet,<BR>målad <span class='blueLineWrapper'>gips<div class='blueLine'></div></span> och kakel.",
-		"728x90": "För tapet,<BR>målad <span class='blueLineWrapper'>gips<div class='blueLine'></div></span> och kakel."
+		"160x600": "För tapet,<BR><span class='blueLineWrapper'>målad gips<div class='blueLine'></div></span><BR>och kakel.",
+		"300x250": "För tapet,<BR><span class='blueLineWrapper'>målad gips<div class='blueLine'></div></span> och kakel.",
+		"728x90": "För tapet,<BR><span class='blueLineWrapper'>målad gips<div class='blueLine'></div></span> och kakel."
 	},
 	"disclaimer": {
 		"default": "",

@@ -9,9 +9,9 @@ localDynamicData = {
 	"text1": {
 		"default": "",
 		"300x600": "",
-		"160x600": "Pålitliga<BR>även på<BR>tapet och<BR>målad <span class='blueLineWrapper'>gips<div class='blueLine'></div></span>.",
-		"300x250": "<div style='font-size: 25px; position: relative; line-height: 27px;'>Pålitliga även på<BR>tapet och målad <span class='blueLineWrapper'>gips<div class='blueLine'></div></span>.</div>",
-		"728x90": "Pålitliga även på tapet<BR>och målad <span class='blueLineWrapper'>gips<div class='blueLine'></div></span>."
+		"160x600": "Pålitliga<BR>även på<BR>tapet och<BR><span class='blueLineWrapper'>målad gips<div class='blueLine'></div></span>.",
+		"300x250": "<div style='font-size: 25px; position: relative; line-height: 27px;'>Pålitliga även på<BR>tapet och <span class='blueLineWrapper'>målad gips<div class='blueLine'></div></span>.</div>",
+		"728x90": "Pålitliga även på tapet<BR>och<span class='blueLineWrapper'>målad gips<div class='blueLine'></div></span>."
 	},
 	"text2": {
 		"default": "",
