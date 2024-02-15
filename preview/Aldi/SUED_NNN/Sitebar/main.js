@@ -33,12 +33,14 @@ function onResize(){
     var scalerW = document.querySelector("#scaler").offsetWidth*bannerS;
 
     if(bannerW < scalerW/2){
+        console.log("small");
         var newScale = bannerW/(scalerW/2);
         gsap.set("#scaler", {left:"50%", xPercent:-50, transformOrigin:"50% 0%", scale:newScale*bannerS});
+        gsap.set("#border", {width:"50%", left:"50%", x:"-50%"});
     }
     else if(bannerW < scalerW){
-        console.log("middle");
         gsap.set("#scaler", {left:"50%", xPercent:-50, transformOrigin:"50% 0%"});
+        gsap.set("#border", {width:bannerW*(1/bannerS), left:"50%", x:"-50%"});
     }
     else{
         console.log("left");
@@ -80,9 +82,9 @@ function getAnimation(){
     masterTL.from("#ctaRight", 0.3, {x:-50, ease:Sine.easeOut}, "start+=14.7");
 
     masterTL.to("#butterFlyWrapper2", 4, {x:-1000, y:-200, rotation:-90, ease:Power0.easeNone}, "start+=2");
-    masterTL.to("#butterFlyWrapper", 3.5, {x:-200, y:-500, rotation:-50, ease:Power0.easeNone}, "start+=4");
+    masterTL.to("#butterFlyWrapper", 3.5, {x:-600, y:-500, rotation:-50, ease:Power0.easeNone}, "start+=4");
     masterTL.to("#bumblebeeWrapper", 4, {rotation:130, ease:Power0.easeNone}, "start+=8");
-    masterTL.to("#bumblebee", 4, {rotation:-120, scale:0.8, ease:Power0.easeNone}, "start+=8");
+    masterTL.to("#bumblebee", 4, {rotation:-120, scale:0.6, ease:Power0.easeNone}, "start+=8");
     masterTL.to("#bumblebee", 1, {y:-40, ease:Sine.easeInOut}, "start+=8");
     masterTL.to("#bumblebee", 0.6, {y:0, ease:Sine.easeInOut}, "start+=9");
     masterTL.to("#bumblebee", 1.4, {y:-200, ease:Sine.easeInOut}, "start+=9.6");

@@ -199,14 +199,14 @@ img, div, object{
     height: 126px;
     top: 360px;
     right: 20px;
-    transform: rotate(-20deg);
+    transform: rotate(-20deg) scale(0.8);
 }
 
 #butterFlyWrapper2{
     right: 400px;
     top:740px;
     scale: 0.95;
-    transform: rotate(-40deg);
+    transform: rotate(-40deg) scale(0.8);
 }
 
 
@@ -221,7 +221,7 @@ img, div, object{
     border-radius: 50%;
     top: 520px;
     left: 60px;
-    transform: rotate(0deg);
+    transform: rotate(0deg) scale(0.8);
 }
 
 #bumblebee{
