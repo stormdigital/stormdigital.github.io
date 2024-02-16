@@ -8,10 +8,10 @@ localDynamicData = {
 	},
 	"text1": {
 		"default": "",
-		"300x600": "Dekoruj ściany<BR><span class='blueLineWrapper'>bez<div class='blueLine'></div></span> wiercenia.",
-		"160x600": "Dekoruj<BR>ściany <span class='blueLineWrapper'>bez<div class='blueLine'></div></span><BR>wiercenia.",
-		"300x250": "Dekoruj ściany<BR><span class='blueLineWrapper'>bez<div class='blueLine'></div></span> wiercenia.",
-		"728x90": "Dekoruj ściany<BR><span class='blueLineWrapper'>bez<div class='blueLine'></div></span> wiercenia."
+		"300x600": "Udekoruj ściany<BR><span class='blueLineWrapper'>bez<div class='blueLine'></div></span> wiercenia.",
+		"160x600": "Udekoruj<BR>ściany <span class='blueLineWrapper'>bez<div class='blueLine'></div></span><BR>wiercenia.",
+		"300x250": "Udekoruj ściany<BR><span class='blueLineWrapper'>bez<div class='blueLine'></div></span> wiercenia.",
+		"728x90": "Udekoruj ściany<BR><span class='blueLineWrapper'>bez<div class='blueLine'></div></span> wiercenia."
 	},
 	"text2": {
 		"default": "",
