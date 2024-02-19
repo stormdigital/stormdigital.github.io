@@ -1,0 +1,181 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+@font-face {
+    font-family: 'avenir_next_lt_probold';
+    src: url('avenir_next_lt_pro_bold-webfont.woff2') format('woff2'),
+         url('avenir_next_lt_pro_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#banner{
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    color: #fefefe;
+    font-family: 'avenir_next_lt_probold';
+    font-weight: bold;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #0064a9;;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #000;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid #000;
+}
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#bottomWrapper{
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    position: relative;
+    width: 62px;
+    /* width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+#bar{
+    position: relative;
+    width: 1px;
+    height: 9px;
+    margin: 0px 9px;
+    background: #fff;
+}
+
+#taglineWrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+#tagline{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 8px;
+    letter-spacing: 0.3px;
+    line-height: 1;
+}
+
+#oneToolWrapper{
+    width: 100%;
+    height: 150px;
+    top: 0;
+}
+
+#oneToolWrapper img{
+    width: 100%;
+}
+
+#product{
+    bottom: 1px;
+    left: 199px;
+    width: 268px;
+}
+
+#toolsWrapper{
+    width: 100%;
+    height: 100%;
+    top: 137px;
+}
+
+.toolWrapper{
+    position: relative;
+    height: 90px;
+}
+
+.toolText{
+    width: 122px;
+    text-align: right;
+    font-size: 15px;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+.toolImage{
+    opacity: 0.5;
+}
+
+#tool3 .toolImage{
+    top: 5px;
+    left: 148px;
+    width: 102px;
+}
+
+#tool4 .toolImage{
+    top: -33px;
+    width: 88px;
+    left: 150px;
+}
+
+#tool5 .toolImage{
+    top: -4px;
+    width: 102px;
+    left: 150px;
+}
+
+#tool1 .toolImage,
+#tool6 .toolImage{
+    top: -7px;
+    width: 109px;
+    left: 145px;
+}
+
+#tool2 .toolImage,
+#tool7 .toolImage{
+    top: -7px;
+    width: 109px;
+    left: 145px;
+}
+
+
+
