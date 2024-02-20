@@ -30,7 +30,7 @@ localDynamicData = {
 	"text3": {
 		"default": "",
 		"300x600": "",
-		"160x600": "<span class='blueLineWrapper'>Gwoździe <div class='blueLine'></div></span> <span class='blueLineWrapper'>samoprzylepne<div class='blueLine'></div></span> tesa®. Prosto. Solidnie. Bez dziur.",
+		"160x600": "<span class='blueLineWrapper'>Gwoździe <div class='blueLine'></div></span> <span class='blueLineWrapper'>samoprzylepne<div class='blueLine'></div></span> tesa®. Prosto. Solidnie.<BR>Bez dziur.",
 		"300x250": "<span class='blueLineWrapper'>Gwoździe samoprzylepne<div class='blueLine'></div></span> tesa®.<BR>Prosto. Solidnie. Bez dziur.",
 		"728x90": "<span class='blueLineWrapper'>Gwoździe samoprzylepne<div class='blueLine'></div></span> tesa®.<BR>Prosto. Solidnie. Bez dziur."
 	},
