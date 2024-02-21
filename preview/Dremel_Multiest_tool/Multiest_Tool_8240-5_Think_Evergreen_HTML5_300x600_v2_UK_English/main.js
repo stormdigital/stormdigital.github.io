@@ -38,7 +38,7 @@ function init(clickTAGvalue) {
 
 function getAnimation(){
 
-    masterTL = new TimelineLite({});
+    masterTL = new TimelineLite({repeat:1});
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut, onComplete:function(){
         gsap.set("#loaderWrapper", {display:"none"});
     }}, 0)
@@ -62,11 +62,13 @@ function getAnimation(){
         masterTL.from("#tool"+i+" .toolText", 0.5, {opacity:0, ease:Sine.easeOut}, "showProduct5+="+(0.1*i))
         masterTL.from("#tool"+i+" .toolImage", 0.5, {opacity:0, stagger:0.1, ease:Sine.easeOut}, "showProduct5+="+(0.1*i))
     }
+    masterTL.add("caroussel")
     for(var i=1; i<6; i++){
-        masterTL.to("#toolsWrapper", 0.5, {y:"+=90", ease:Sine.easeInOut}, "+=1")
-        masterTL.to("#tool"+i, 0.5, {opacity:0, ease:Power2.easeOut}, "-=0.5")
-        masterTL.to("#tool"+(i+5), 0.5, {opacity:1, ease:Power2.easeIn}, "-=0.5")
+        masterTL.to("#toolsWrapper", 0.5, {y:"+=90", ease:Sine.easeInOut}, "caroussel+="+(i-1)*1)
+        masterTL.to("#tool"+i, 0.3, {opacity:0, ease:Power2.easeOut}, "-=0.5")
+        masterTL.to("#tool"+(i+5), 0.3, {opacity:1, ease:Power2.easeIn}, "-=0.5")
     }
+    masterTL.to("#banner", 0.1, {}, 7.4)
 
     console.log(masterTL.duration());
     
