@@ -10,8 +10,63 @@ function loadLocalDynamic() {
     else{
         document.querySelector('#tagline').innerHTML = localDynamicData.tagline["default"];
     }
+    
+    if(localDynamicData.tool1Text[adSize] != ""){
+        document.querySelector('#tool1 .toolText').innerHTML = localDynamicData.tool1Text[adSize];
+        document.querySelector('#tool6 .toolText').innerHTML = localDynamicData.tool1Text[adSize];
+    }
+    else{
+        document.querySelector('#tool1 .toolText').innerHTML = localDynamicData.tool1Text["default"];
+        document.querySelector('#tool6 .toolText').innerHTML = localDynamicData.tool1Text["default"];
+    }
+    
+    if(localDynamicData.tool2Text[adSize] != ""){
+        document.querySelector('#tool2 .toolText').innerHTML = localDynamicData.tool2Text[adSize];
+        document.querySelector('#tool7 .toolText').innerHTML = localDynamicData.tool2Text[adSize];
+    }
+    else{
+        document.querySelector('#tool2 .toolText').innerHTML = localDynamicData.tool2Text["default"];
+        document.querySelector('#tool7 .toolText').innerHTML = localDynamicData.tool2Text["default"];
+    }
+    
+    if(localDynamicData.tool3Text[adSize] != ""){
+        document.querySelector('#tool3 .toolText').innerHTML = localDynamicData.tool3Text[adSize];
+        document.querySelector('#tool8 .toolText').innerHTML = localDynamicData.tool3Text[adSize];
+    }
+    else{
+        document.querySelector('#tool3 .toolText').innerHTML = localDynamicData.tool3Text["default"];
+        document.querySelector('#tool8 .toolText').innerHTML = localDynamicData.tool3Text["default"];
+    }
+    
+    if(localDynamicData.tool4Text[adSize] != ""){
+        document.querySelector('#tool4 .toolText').innerHTML = localDynamicData.tool4Text[adSize];
+        document.querySelector('#tool9 .toolText').innerHTML = localDynamicData.tool4Text[adSize];
+    }
+    else{
+        document.querySelector('#tool4 .toolText').innerHTML = localDynamicData.tool4Text["default"];
+        document.querySelector('#tool9 .toolText').innerHTML = localDynamicData.tool4Text["default"];
+    }
+    
+    if(localDynamicData.tool5Text[adSize] != ""){
+        document.querySelector('#tool5 .toolText').innerHTML = localDynamicData.tool5Text[adSize];
+        document.querySelector('#tool10 .toolText').innerHTML = localDynamicData.tool5Text[adSize];
+    }
+    else{
+        document.querySelector('#tool5 .toolText').innerHTML = localDynamicData.tool5Text["default"];
+        document.querySelector('#tool10 .toolText').innerHTML = localDynamicData.tool5Text["default"];
+    }
 
     document.querySelector('#logo').data = localDynamicData.logo;
+    document.querySelector('#tool1 .toolImage').src = localDynamicData.tool1Img;
+    document.querySelector('#tool2 .toolImage').src = localDynamicData.tool2Img;
+    document.querySelector('#tool3 .toolImage').src = localDynamicData.tool3Img;
+    document.querySelector('#tool4 .toolImage').src = localDynamicData.tool4Img;
+    document.querySelector('#tool5 .toolImage').src = localDynamicData.tool5Img;
+    document.querySelector('#tool6 .toolImage').src = localDynamicData.tool1Img;
+    document.querySelector('#tool7 .toolImage').src = localDynamicData.tool2Img;
+    document.querySelector('#tool8 .toolImage').src = localDynamicData.tool3Img;
+    document.querySelector('#tool9 .toolImage').src = localDynamicData.tool4Img;
+    document.querySelector('#tool10 .toolImage').src = localDynamicData.tool5Img;
 }
 
 function init(clickTAGvalue) {
