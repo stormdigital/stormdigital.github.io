@@ -36,11 +36,11 @@ function onResize(){
         console.log("small");
         var newScale = bannerW/(scalerW/2);
         gsap.set("#scaler", {left:"50%", xPercent:-50, transformOrigin:"50% 0%", scale:newScale*bannerS});
-        gsap.set("#border", {width:"50%", left:"50%", x:"-50%"});
+        gsap.set("#border", {width:"47.5%", left:"50%", x:"-50%"});
     }
     else if(bannerW < scalerW){
         gsap.set("#scaler", {left:"50%", xPercent:-50, transformOrigin:"50% 0%"});
-        gsap.set("#border", {width:bannerW*(1/bannerS), left:"50%", x:"-50%"});
+        gsap.set("#border", {width:bannerW*((1/bannerS)*0.95), left:"50%", x:"-50%"});
     }
     else{
         console.log("left");
