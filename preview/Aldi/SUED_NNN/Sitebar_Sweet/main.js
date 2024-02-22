@@ -76,7 +76,7 @@ function getAnimation(){
     masterTL.to(["#leafs2", "#text2"], 0.4, {opacity:0, ease:Power1.easeIn}, "start+=13.4");
     masterTL.from("#purpleBg", 0.4, {opacity:0, ease:Power1.easeOut}, "start+=13.4");
     masterTL.to("#border", 0.4, {borderColor:"#91c596", ease:Power1.easeOut}, "start+=13.4");
-    masterTL.to("#logo", 0.5, {width:182, y:-574, ease:Sine.easeInOut}, "start+=13.8");
+    masterTL.to("#logo", 0.5, {width:146, y:-582, ease:Sine.easeInOut}, "start+=13.8");
     masterTL.from("#endText", 0.5, {opacity:0, y:20, ease:Sine.easeInOut}, "start+=14");
     masterTL.from("#ctaWrapper", 0.5, {scale:0, ease:Back.easeOut}, "start+=14.2");
     masterTL.from("#ctaRight", 0.3, {x:-50, ease:Sine.easeOut}, "start+=14.7");
