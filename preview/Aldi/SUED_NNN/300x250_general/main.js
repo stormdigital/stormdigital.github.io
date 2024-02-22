@@ -29,7 +29,7 @@ function getAnimation(){
     masterTL.add("start")
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)
     masterTL.add("start");
-    masterTL.fromTo("#bgWrapper", 10, {x:-550}, {x:-870, ease:Sine.easeInOut}, "start+=2");
+    masterTL.fromTo("#bgWrapper", 10, {x:-720}, {x:-1009, ease:Sine.easeInOut}, "start+=2");
     masterTL.from("#nurNurWrapper", 1, {width:0, ease:Sine.easeInOut}, "start+=0.5");
     masterTL.from("#tagline", 0.5, {scale:0, ease:Sine.easeOut}, "start+=0.8");
     masterTL.from("#tagline", 0.7, {y:-70, ease:Back.easeOut}, "start+=0.8");
@@ -50,7 +50,7 @@ function getAnimation(){
     masterTL.from("#text2", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=10.6");
     masterTL.to(["#leafs2", "#text2"], 0.4, {opacity:0, ease:Power1.easeIn}, "start+=13.4");
     masterTL.from("#purpleBg", 0.4, {opacity:0, ease:Power1.easeOut}, "start+=13.4");
-    masterTL.to("#border", 0.4, {borderColor:"#ada0d6", ease:Power1.easeOut}, "start+=13.4");
+    masterTL.to("#border", 0.4, {borderColor:"#88a5d4", ease:Power1.easeOut}, "start+=13.4");
     masterTL.to("#logo", 0.5, {width:50, y:-112, ease:Sine.easeInOut}, "start+=13.8");
     masterTL.from("#endText", 0.5, {opacity:0, y:20, ease:Sine.easeInOut}, "start+=14");
     masterTL.from("#ctaWrapper", 0.5, {scale:0, ease:Back.easeOut}, "start+=14.2");
