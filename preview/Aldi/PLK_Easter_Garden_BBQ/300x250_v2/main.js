@@ -48,7 +48,7 @@ function getAnimation(){
     masterTL.from("#product2PriceBlock", 0.5, {scale:0, ease:Sine.easeOut}, "showProduct2+=0.8")
     masterTL.from("#product2Date", 0.5, {opacity:0, ease:Sine.easeOut}, "showProduct2+=1")
     masterTL.to(["#product2PriceBlock", "#product2", "#product2Date", "#productBg2", "#logo"], 0.5, {opacity:0, ease:Sine.easeInOut}, "showProduct2+=3")
-    masterTL.add("endscreen", "-=0.5");
+    masterTL.add("endscreen");
     masterTL.from("#logo2", 0.3, {opacity:0, ease:Sine.easeOut}, "endscreen")
     masterTL.from("#tagline", 0.3, {opacity:0, ease:Sine.easeOut}, "endscreen+=0.1")
     masterTL.from("#endText", 0.5, {x:-300, ease:Sine.easeOut}, "endscreen+=0.2")
