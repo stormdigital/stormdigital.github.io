@@ -29,7 +29,7 @@ function getAnimation(){
     masterTL.add("start")
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)
     masterTL.add("start");
-    masterTL.fromTo("#bgWrapper", 10, {x:-750}, {x:-1006, ease:Sine.easeInOut}, "start+=2");
+    masterTL.fromTo("#bgWrapper", 10, {x:-800}, {x:-1006, ease:Sine.easeInOut}, "start+=2");
     masterTL.from("#nurNurWrapper", 1, {width:0, ease:Sine.easeInOut}, "start+=0.5");
     masterTL.from("#tagline", 0.5, {scale:0, ease:Sine.easeOut}, "start+=0.8");
     masterTL.from("#tagline", 0.7, {y:-70, ease:Back.easeOut}, "start+=0.8");
