@@ -36,9 +36,7 @@ function getAnimation(){
     masterTL.add("showProduct1");
     masterTL.from("#productBg1", 1, {x:450, ease:Sine.easeOut}, "showProduct1")
     masterTL.from("#product1", 1, {x:350, ease:Sine.easeOut}, "showProduct1")
-    masterTL.from("#product1PriceBlock", 1, {x:300, ease:Sine.easeOut}, "showProduct1")
-    masterTL.to("#product1PriceBlock", 0.4, {rotation:-5, ease:Sine.easeInOut}, "showProduct1+=0.6")
-    masterTL.to("#product1PriceBlock", 0.25, {rotation:0, ease:Sine.easeInOut}, "showProduct1+=1")
+    masterTL.from("#product1PriceBlock", 0.5, {scale:0, ease:Sine.easeOut}, "showProduct1+=0.8")
     masterTL.from("#product1Date", 0.5, {opacity:0, ease:Sine.easeOut}, "showProduct1+=1")
     masterTL.to("#product1Date", 0.5, {opacity:0, ease:Sine.easeOut}, "showProduct1+=3")
     masterTL.to("#productBg1", 1, {x:-450, ease:Sine.easeOut}, "showProduct1+=3")
@@ -47,9 +45,7 @@ function getAnimation(){
     masterTL.add("showProduct2", "-=0.5");
     masterTL.from("#productBg2", 1, {x:450, ease:Sine.easeOut}, "showProduct2")
     masterTL.from("#product2", 1, {x:350, ease:Sine.easeOut}, "showProduct2")
-    masterTL.from("#product2PriceBlock", 1, {x:300, ease:Sine.easeOut}, "showProduct2")
-    masterTL.to("#product2PriceBlock", 0.4, {rotation:-5, ease:Sine.easeInOut}, "showProduct2+=0.6")
-    masterTL.to("#product2PriceBlock", 0.25, {rotation:0, ease:Sine.easeInOut}, "showProduct2+=1")
+    masterTL.from("#product2PriceBlock", 0.5, {scale:0, ease:Sine.easeOut}, "showProduct2+=0.8")
     masterTL.from("#product2Date", 0.5, {opacity:0, ease:Sine.easeOut}, "showProduct2+=1")
     masterTL.to(["#product2PriceBlock", "#product2", "#product2Date", "#productBg2", "#logo"], 0.5, {opacity:0, ease:Sine.easeInOut}, "showProduct2+=3")
     masterTL.add("endscreen", "-=0.5");
