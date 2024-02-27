@@ -15,8 +15,8 @@ img, div, object{
 }
 
 #banner{
-    width: 300px;
-    height: 600px;
+    width: 320px;
+    height: 50px;
     overflow: hidden;
     color: #fefefe;
     font-family: 'avenir_next_lt_probold';
@@ -35,7 +35,7 @@ img, div, object{
     height: 50px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.5);
 }
 
 #loader{
@@ -67,33 +67,30 @@ img, div, object{
     z-index: 999;
 }
 
-#bottomWrapper{
+/* #bottomWrapper{
     bottom: 16px;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
     display: flex;
     align-items: center;
-}
+} */
 
 #logo{
-    position: relative;
-    width: 62px;
-    /* width: 200px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+    width: 43px;
+    bottom: 5px;
+    left: 42px;
 }
 
-#bar{
+/* #bar{
     position: relative;
     width: 1px;
     height: 9px;
     margin: 0px 9px;
     background: #fff;
-}
+} */
 
-#taglineWrapper{
+/* #taglineWrapper{
     position: relative;
     overflow: hidden;
 }
@@ -104,33 +101,33 @@ img, div, object{
     font-size: 8px;
     letter-spacing: 0.3px;
     line-height: 1;
-}
+} */
 
 #oneToolWrapper{
-    width: 100%;
-    height: 150px;
+    width: 125px;
+    height: 100%;
     top: 0;
 }
 
 #oneToolWrapper img{
-    width: 100%;
+    height: 100%;
 }
 
 #product{
-    bottom: -1px;
-    left: 199px;
-    width: 268px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
 }
 
 #toolsWrapper{
     width: 100%;
     height: 100%;
-    top: -348px;
+    top: -449px;
 }
 
 .toolWrapper{
     position: relative;
-    height: 90px;
+    height: 50px;
     display: flex;
     align-items: center;
 }
@@ -140,10 +137,12 @@ img, div, object{
     text-align: right;
     font-size: 15px;
     text-transform: uppercase;
+    opacity: 0;
 }
 
 .toolImage{
-    width: 100%;
+    width: 41%;
+    left: 95px;
 }
 
 
