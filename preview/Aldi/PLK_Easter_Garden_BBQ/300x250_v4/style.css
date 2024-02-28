@@ -109,7 +109,7 @@ img, div, object{
 
 #product1,
 #product2{
-    transform-origin: 50% 90%;
+    transform-origin: 60% 90%;
 }
 
 .productPriceBlock{
