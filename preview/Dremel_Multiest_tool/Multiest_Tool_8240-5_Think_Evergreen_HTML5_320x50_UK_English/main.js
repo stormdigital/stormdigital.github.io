@@ -115,7 +115,7 @@ function getAnimation(){
     masterTL.add("showProduct5", "+=0.1")
     masterTL.from("#product", 0.5, {x:150, ease:Sine.easeOut}, "showProduct5")
     for(var i=1; i<6; i++){
-        // masterTL.from("#tool"+i+" .toolText", 0.5, {opacity:0, ease:Sine.easeOut}, "showProduct5+="+(0.1*i))
+        masterTL.from("#tool"+i+" .toolText", 0.5, {opacity:0, ease:Sine.easeOut}, "showProduct5+="+(0.1*i))
         masterTL.from("#tool"+i+" .toolImage", 0.5, {opacity:0, stagger:0.1, ease:Sine.easeOut}, "showProduct5+="+(0.1*(i+1)))
     }
     masterTL.add("caroussel")

@@ -115,7 +115,7 @@ img, div, object{
 
 #product{
     top: 0px;
-    left: 0px;
+    left: 39px;
     width: 100%;
 }
 
@@ -133,16 +133,15 @@ img, div, object{
 }
 
 .toolText{
-    width: 122px;
+    width: 188px;
     text-align: right;
-    font-size: 15px;
+    font-size: 10px;
     text-transform: uppercase;
-    opacity: 0;
 }
 
 .toolImage{
     width: 41%;
-    left: 95px;
+    left: 134px;
 }
 
 
