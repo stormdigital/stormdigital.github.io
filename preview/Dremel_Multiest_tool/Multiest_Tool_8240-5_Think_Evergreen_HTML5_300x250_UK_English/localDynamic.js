@@ -56,6 +56,7 @@ localDynamicData = {
 		"728x90": "",
 		"320x50": ""
 	},
+	"product": "./product.png",
 	"logo": "./logo.svg",
 	"tool1Img": "./sand.png",
 	"tool2Img": "./sharpen.png",
