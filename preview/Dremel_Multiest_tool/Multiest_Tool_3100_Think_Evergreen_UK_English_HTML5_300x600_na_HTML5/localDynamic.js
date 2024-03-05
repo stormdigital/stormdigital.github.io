@@ -1,12 +1,12 @@
 localDynamicData = {
-	"variationName": "UK_02",
+	"variationName": "UK_03",
 	"campaignName": "UK_English",
 	"dimensionName": {
-		"300x600": "Multiest_Tool_8240-5_Think_Evergreen_HTML5_2",
-		"160x600": "Multiest_Tool_8240-5_Think_Evergreen_HTML5_2",
-		"300x250": "Multiest_Tool_8240-5_Think_Evergreen_HTML5_2",
-		"728x90": "Multiest_Tool_8240-5_Think_Evergreen_HTML5_2",
-		"320x50": "Multiest_Tool_8240-5_Think_Evergreen_HTML5_2"
+		"300x600": "Multiest_Tool_3100_Think_Evergreen_UK_English_HTML5",
+		"160x600": "Multiest_Tool_3100_Think_Evergreen_UK_English_HTML5",
+		"300x250": "Multiest_Tool_3100_Think_Evergreen_UK_English_HTML5",
+		"728x90": "Multiest_Tool_3100_Think_Evergreen_UK_English_HTML5",
+		"320x50": "Multiest_Tool_3100_Think_Evergreen_UK_English_HTML5"
 	},
 	"tagline": {
 		"default": "the multiest tool in the world",
@@ -25,7 +25,7 @@ localDynamicData = {
 		"320x50": ""
 	},
 	"tool2Text": {
-		"default": "clean",
+		"default": "Sharpen",
 		"300x600": "",
 		"160x600": "",
 		"300x250": "",
@@ -33,7 +33,7 @@ localDynamicData = {
 		"320x50": ""
 	},
 	"tool3Text": {
-		"default": "engrave",
+		"default": "Engrave",
 		"300x600": "",
 		"160x600": "",
 		"300x250": "",
@@ -41,7 +41,7 @@ localDynamicData = {
 		"320x50": ""
 	},
 	"tool4Text": {
-		"default": "polish",
+		"default": "Cut",
 		"300x600": "",
 		"160x600": "",
 		"300x250": "",
@@ -49,7 +49,7 @@ localDynamicData = {
 		"320x50": ""
 	},
 	"tool5Text": {
-		"default": "carve",
+		"default": "Drill",
 		"300x600": "",
 		"160x600": "",
 		"300x250": "",
@@ -59,8 +59,8 @@ localDynamicData = {
 	"product": "./product.png",
 	"logo": "./logo.svg",
 	"tool1Img": "./sand.png",
-	"tool2Img": "./clean.png",
+	"tool2Img": "./sharpen.png",
 	"tool3Img": "./engrave.png",
-	"tool4Img": "./polish.png",
-	"tool5Img": "./carve.png"
+	"tool4Img": "./cut.png",
+	"tool5Img": "./drill.png"
 }
