@@ -1,12 +1,12 @@
 localDynamicData = {
-	"variationName": "UK_02",
-	"campaignName": "UK_English",
+	"variationName": "NA_02",
+	"campaignName": "NA_English",
 	"dimensionName": {
-		"300x600": "Multiest_Tool_2050_Think_Evergreen_UK_English_HTML5",
-		"160x600": "Multiest_Tool_2050_Think_Evergreen_UK_English_HTML5",
-		"300x250": "Multiest_Tool_2050_Think_Evergreen_UK_English_HTML5",
-		"728x90": "Multiest_Tool_2050_Think_Evergreen_UK_English_HTML5",
-		"320x50": "Multiest_Tool_2050_Think_Evergreen_UK_English_HTML5"
+		"300x600": "Multiest_Tool_2050_Think_Evergreen_NA_English_HTML5",
+		"160x600": "Multiest_Tool_2050_Think_Evergreen_NA_English_HTML5",
+		"300x250": "Multiest_Tool_2050_Think_Evergreen_NA_English_HTML5",
+		"728x90": "Multiest_Tool_2050_Think_Evergreen_NA_English_HTML5",
+		"320x50": "Multiest_Tool_2050_Think_Evergreen_NA_English_HTML5"
 	},
 	"tagline": {
 		"default": "the multiest tool in the world",
