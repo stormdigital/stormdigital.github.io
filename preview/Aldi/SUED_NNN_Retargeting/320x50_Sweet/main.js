@@ -29,11 +29,11 @@ function getAnimation(){
     masterTL.add("start")
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)
     masterTL.add("start");
-    // masterTL.fromTo("#bgWrapper", 7, {x:-800}, {x:-1009, ease:Sine.easeInOut}, "start");
+    masterTL.fromTo("#bgWrapper", 7, {y:0}, {y:-50, ease:Sine.easeInOut}, "start");
     masterTL.from("#nurNurWrapper", 1, {width:0, ease:Sine.easeInOut}, "start+=0.5");
     masterTL.from("#tagline", 0.5, {scale:0, ease:Sine.easeOut}, "start+=0.8");
-    masterTL.from("#tagline", 0.7, {y:-70, ease:Back.easeOut}, "start+=0.8");
-    masterTL.from("#naturText", 0.7, {y:-55, rotation:-30, ease: "back.out(2)"}, "start+=0.8");
+    masterTL.from("#tagline", 0.7, {y:-10, ease:Back.easeOut}, "start+=0.8");
+    masterTL.from("#naturText", 0.7, {y:-25, rotation:-30, ease: "back.out(2)"}, "start+=0.8");
     masterTL.from("#leafsContainer", 1, {y:60, ease:Sine.easeOut}, "start+=0.8");
     masterTL.from("#leafs", 1.5, {rotation:60, ease: "back.inOut(5)"}, "start+=0.8");
     masterTL.to("#topText", 0.5, {opacity:0}, "start+=3.5");

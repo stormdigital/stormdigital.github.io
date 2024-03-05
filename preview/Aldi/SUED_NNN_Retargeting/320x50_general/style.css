@@ -62,8 +62,8 @@ img, div, object{
 }
 
 #bgWrapper{
-    width: 1306px;
-    height: 100%;
+    width: 100%;
+    height: 100px;
     left: 0px;
     display: flex; 
 }
