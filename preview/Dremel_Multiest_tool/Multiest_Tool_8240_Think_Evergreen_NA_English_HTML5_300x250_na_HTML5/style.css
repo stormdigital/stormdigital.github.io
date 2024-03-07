@@ -75,6 +75,10 @@ img, div, object{
     align-items: center;
 }
 
+#bottomWrapper.ger{
+    bottom: 11px;
+}
+
 #logo{
     width: 58px;
     bottom: 10px;
@@ -100,6 +104,9 @@ img, div, object{
     font-size: 7.6px;
     letter-spacing: 0.3px;
     line-height: 1;
+}
+#tagline.ger{
+    font-size: 5.2px;
 }
 
 #oneToolWrapper{

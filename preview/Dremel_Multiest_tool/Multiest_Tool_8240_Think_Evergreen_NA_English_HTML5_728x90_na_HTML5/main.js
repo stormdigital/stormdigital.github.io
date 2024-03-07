@@ -86,8 +86,7 @@ function init(clickTAGvalue) {
 
     document.querySelector("#mainExit").addEventListener("click", function(){
         window.open(clickTag, '_blank');
-        masterTL.pause();
-        // masterTL.progress(1).pause();
+        masterTL.progress(1).pause();
     })
 
     getAnimation();

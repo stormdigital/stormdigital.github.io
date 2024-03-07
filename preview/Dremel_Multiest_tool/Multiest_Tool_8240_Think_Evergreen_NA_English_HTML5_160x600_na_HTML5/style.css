@@ -68,7 +68,7 @@ img, div, object{
 }
 
 #bottomWrapper{
-    bottom: 22px;
+    top: 561px;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
@@ -138,6 +138,14 @@ img, div, object{
     text-align: right;
     font-size: 12px;
     text-transform: uppercase;
+}
+
+.toolText.ger{
+    font-size: 10px;
+}
+
+.toolText.fr{
+    font-size: 11px;
 }
 
 .toolImage{

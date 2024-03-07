@@ -3,6 +3,19 @@ window.onload = function () {
 }
 
 function loadLocalDynamic() {
+
+    if(localDynamicData.campaignName == "German"){
+        for (var i = 0; i < document.querySelectorAll(".toolText").length; i++) {
+            document.querySelectorAll(".toolText")[i].classList.add("ger");
+        }
+    }
+    
+    if(localDynamicData.campaignName == "FR_Frensh"){
+        for (var i = 0; i < document.querySelectorAll(".toolText").length; i++) {
+            document.querySelectorAll(".toolText")[i].classList.add("fr");
+        }
+    }
+
     var adSize = "160x600";
     if(localDynamicData.tagline[adSize] != ""){
         document.querySelector('#tagline').innerHTML = localDynamicData.tagline[adSize];
@@ -86,8 +99,7 @@ function init(clickTAGvalue) {
 
     document.querySelector("#mainExit").addEventListener("click", function(){
         window.open(clickTag, '_blank');
-        masterTL.pause();
-        // masterTL.progress(1).pause();
+        masterTL.progress(1).pause();
     })
 
     getAnimation();

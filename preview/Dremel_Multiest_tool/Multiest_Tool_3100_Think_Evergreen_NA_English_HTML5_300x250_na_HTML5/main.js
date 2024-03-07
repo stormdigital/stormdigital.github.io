@@ -3,6 +3,13 @@ window.onload = function () {
 }
 
 function loadLocalDynamic() {
+
+    if(localDynamicData.campaignName == "German"){
+        
+        document.querySelector("#bottomWrapper").classList.add("ger");
+        document.querySelector("#tagline").classList.add("ger");
+    }
+
     var adSize = "300x250";
     if(localDynamicData.tagline[adSize] != ""){
         document.querySelector('#tagline').innerHTML = localDynamicData.tagline[adSize];
@@ -86,8 +93,7 @@ function init(clickTAGvalue) {
 
     document.querySelector("#mainExit").addEventListener("click", function(){
         window.open(clickTag, '_blank');
-        masterTL.pause();
-        // masterTL.progress(1).pause();
+        masterTL.progress(1).pause();
     })
 
     getAnimation();
