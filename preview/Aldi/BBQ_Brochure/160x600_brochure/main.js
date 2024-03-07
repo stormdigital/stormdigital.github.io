@@ -33,7 +33,7 @@ function getAnimation(){
     masterTL.from("#text1HighlightWrapper", 0.7, {width:0, ease:Sine.easeInOut}, "start+=0.8")
     masterTL.to(["#text1", "#text1HighlightWrapper"], 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=2.7")
     masterTL.to("#introBg", 0.3, {opacity:0, ease:Sine.easeIn}, "start+=2.7")
-    masterTL.from("#brochure", 1, {width: 792, y:-1576, x: -260, rotation:-5, ease:Power2.easeInOut}, "start+=2.7")
+    masterTL.from("#brochure", 1, {scale:4.95, y:-274, x:52, rotation:-5, ease:Power2.easeInOut}, "start+=2.7")
     masterTL.from("#topic1", 0.5, {x:200, ease:Sine.easeOut}, "start+=3.5")
     masterTL.from("#topic2", 0.5, {x:200, ease:Sine.easeOut}, "start+=4.5")
     masterTL.from("#topic3", 0.5, {x:200, ease:Sine.easeOut}, "start+=5.5")
