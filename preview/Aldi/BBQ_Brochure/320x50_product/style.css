@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 320px;
+    height: 50px;
+    overflow: hidden;
+    background: #009640;
+    color: #fff;
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #95c11f;
+    box-sizing: border-box;
+    
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #009640;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #000;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* #wText{
+    bottom: -2px;
+    right: 2px;
+    font-family: Arial;
+    font-size: 13px;
+} */
+
+#introBg{
+    width: 100%;
+}
+
+#logo{
+    width: 100%;
+}
+
+/* #logo2{
+    width: 57px;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+#text1,
+#text1Highlight{
+    width: 320px;
+}
+
+#text1HighlightWrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.productBg{
+    width: 175px;
+    height: 100%;
+    background: #95c11f;
+    top: 0px;
+    left: 65px;
+}
+
+.productDate{
+    width: 100%;
+}
+
+/* #product1,
+#product2{
+    transform-origin: 60% 90%;
+    width: 100%;
+} */
+
+.productPriceBlock{
+    width: 100%;
+    transform-origin: 72px 100%;
+}
+
+/* #tagline{
+    width: 100%;
+} */
+
+#endText{
+    width: 100%;
+}
+
+/* #stamp{
+    width: 100%;
+    transform-origin: 182px 153px;
+} */
+
+#ctaLeft,
+#ctaRight{
+    width: 100%;
+    transform-origin: 259px 50%; 
+}
+
+/* #endAsset1,
+#endAsset2,
+#endAsset3{
+    width: 100%;
+}
+
+#endAsset1{transform-origin: 90% 50%;}
+#endAsset2{transform-origin: 5% 5%;}
+#endAsset3{transform-origin: 10% 10%;} */
