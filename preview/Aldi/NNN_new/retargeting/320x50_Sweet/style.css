@@ -1,0 +1,211 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 320px;
+    height: 50px;
+    overflow: hidden;
+    color: #fff;
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: 3px solid #deefbf;
+    box-sizing: border-box;
+    
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #deefbf;;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #000;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#bgWrapper{
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    display: flex; 
+}
+
+.first{
+    position: relative;
+    width: 320px;
+    height: 100px;
+}
+
+.second{
+    position: relative;
+    transform: translateX(-1);
+    transform: scaleX(-1);
+    left: -1px;
+}
+
+.last{
+    position: relative;
+    left: -2px;
+}
+
+.darkShadow{
+    top: 0px;
+    left: 450px;
+}
+
+#product{
+    position: absolute;
+    right: 21px;
+    top: 77px;
+    width: 133px;
+}
+
+#introWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+#leafsWrapper{
+    width: 104px;
+    height: 42px;
+    top: 6px;
+    left: 106px;
+    overflow: hidden;
+}
+
+#leafsContainer{
+    width: 100%;
+    height: 100%;
+}
+
+#leafs{
+    left: 8px;
+    width: 19px;
+    transform-origin: 20% 100%;
+}
+
+#nurNurWrapper{
+    width: 122px;
+    height: 35px;
+    top: 16px;
+    left: 105px;
+    overflow: hidden;
+}
+
+#nurNurText{
+    width: 34px;
+}
+
+#naturWrapper{
+    width: 102px;
+    height: 70px;
+    top: 26px;
+    left: 105px;
+    overflow: hidden;
+}
+
+#naturText{
+    width: 30px;
+}
+
+#tagline{
+    width: 45px;
+    top: 39px;
+    left: 99px;
+}
+
+#text1,
+#text2,
+#endText{
+    width: 100%;
+}
+
+#naturland{
+    width: 100%;
+}
+
+#leafs2{
+    left: 115px;
+    top: 8px;
+    width: 17px;
+}
+
+#purpleBg{
+    width: 100%;
+    height: 100%;
+    background: #deefbf;
+}
+
+#wText{
+    bottom: 10px;
+    right: 13px;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+#topBlock{
+    width:34px;
+    height:30px;
+    background: #007749;
+    right: 0px;
+    transform: translateY(-50%);
+    top: 50%;
+    transform-origin: 100% 50%;
+}
+
+/* #topText{
+    width: 100%;
+} */
+
+#logo{
+    width: 30px;
+    bottom: 7px;
+    left: 7px;
+}
+
+#ctaWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+#ctaWrapper img{
+    width: 100%;
+}
