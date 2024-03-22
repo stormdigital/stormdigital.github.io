@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    color: #fff;
+    background: #f39bbf;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #f39bbf;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #222c77;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: solid 1px #222c77;
+    box-sizing: border-box;
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#wText{
+    bottom: -1px;
+    right: 2px;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+#bg{
+    width: 100%;
+    transform-origin: 108px 41px;
+}
+
+#bg2{
+    width: 100%;
+    left: -300px;
+    transform: scaleX(-1);
+}
+
+#logo{
+    width: 57px;
+    left: 12px;
+    top: 13px;
+}
+
+#productsWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+#products{
+    width: 100%;
+}
+
+#holeWrapper{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hole{
+    position: relative;
+    width: 124px;
+    display: block;
+}
+
+#holeT{
+    background-color: #000;
+    width: 600px;
+    height: 500px;
+    top: -499px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#holeB{
+    background-color: #000;
+    width: 600px;
+    height: 500px;
+    bottom: -499px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#holeL{
+    background-color: #000;
+    width: 600px;
+    height: 500px;
+    left: -599px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#holeR{
+    background-color: #000;
+    width: 600px;
+    height: 500px;
+    right: -599px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#text1{
+    width: 100%;
+}
+
+#endBg{
+    width: 100%;
+    clip-path: circle(100% at 50% 50%);
+}
+
+#text2{
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#endCircle{
+    width: 600px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f39bbf;
+    border-radius: 50%;
+}
+
+#tagline{
+    width: 100%;
+}
+
+#ctaLeft,
+#ctaRight{
+    width: 100%;
+}
