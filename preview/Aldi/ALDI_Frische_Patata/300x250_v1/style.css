@@ -72,7 +72,7 @@ img, div, object{
 
 #bg2{
     width: 100%;
-    left: -300px;
+    left: -299px;
     transform: scaleX(-1);
 }
 
