@@ -35,7 +35,7 @@ function getAnimation(){
     masterTL.add("holeAnimation", "-=0.3")
     masterTL.fromTo("#holeWrapper", 1, {y:-40, x:-30}, {x:-8, y:50, ease:Sine.easeInOut}, "holeAnimation")
     masterTL.to("#holeWrapper", 0.8, {x:-100, y:70, ease:Sine.easeInOut}, "holeAnimation+=1")
-    masterTL.to("#holeWrapper", 1.4, {x:94, y:32, ease:Sine.easeInOut}, "holeAnimation+=1.8")
+    masterTL.to("#holeWrapper", 1.4, {x:94, y:45, ease:Sine.easeInOut}, "holeAnimation+=1.8")
     masterTL.to("#holeWrapper", 0.6, {x:0, y:0, ease:Sine.easeIn}, "holeAnimation+=3.6")
     masterTL.to("#holeWrapper", 0.6, {scale:5, ease:Sine.easeIn}, "holeAnimation+=3.9")
     masterTL.from("#text1", 0.5, {opacity:0, ease:Sine.easeOut}, "holeAnimation+=3.9")
