@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #f39bbf;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #222c77;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: solid 1px #222c77;
+    box-sizing: border-box;
+}
+
+#scaler{
+    width: 1200px;
+    height: 1200px;
+    left: 0px;
+    background: #222c77;
+    overflow: hidden;
+    background: #f39bbf;
+}
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#bg{
+    width: 100%;
+    transform-origin: 520px 110px;
+}
+
+#bgBlur{
+    width: 100%;
+    transform-origin: 520px 110px;
+    filter: blur(2px);
+}
+
+#bg2{
+    width: 100%;
+    left: -1198px;
+    transform: scaleX(-1);
+}
+
+#logo{
+    width: 122px;
+    left: 335px;
+    top: 33px;
+}
+
+#productsWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+#products{
+    width: 100%;
+}
+
+#holeWrapper{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hole{
+    position: relative;
+    width: 363px;
+    display: block;
+}
+
+#holeT{
+    background-color: #000;
+    width: 2400px;
+    height: 2400px;
+    top: -2398px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#holeB{
+    background-color: #000;
+    width: 2400px;
+    height: 2400px;
+    bottom: -2398px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#holeL{
+    background-color: #000;
+    width: 2400px;
+    height: 2400px;
+    left: -2398px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#holeR{
+    background-color: #000;
+    width: 2400px;
+    height: 2400px;
+    right: -2398px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#text1{
+    width: 100%;
+}
+
+#endBg{
+    width: 100%;
+    clip-path: circle(100% at 50% 50%);
+}
+
+#text2{
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#endCircle{
+    width: 2400px;
+    height: 2400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f39bbf;
+    border-radius: 50%;
+}
+
+#tagline{
+    width: 100%;
+}
+
+#ctaLeft,
+#ctaRight{
+    width: 100%;
+}

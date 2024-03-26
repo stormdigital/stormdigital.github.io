@@ -16,8 +16,7 @@ function init() {
     })
 
     document.querySelector("#mainExit").addEventListener("click", function(){
-        // masterTL.progress(1);
-        masterTL.pause();
+        masterTL.progress(1);
     })
 
     getAnimation();
@@ -51,6 +50,4 @@ function getAnimation(){
     masterTL.from("#ctaRight", 0.3, {x:-50, ease:Sine.easeOut}, "showEnd+=4.7");
  
     masterTL.play();
-
-    console.log(masterTL.duration());
 }
