@@ -77,9 +77,10 @@ function getAnimation(){
     masterTL.from("#endBg", 1, {clipPath: "circle(0% at 50% 50%)", ease:"none"}, "showEnd")
     masterTL.from("#text2", 0.5, {opacity:0, x:-50, ease:Sine.easeOut}, "showEnd+=0.5")
     masterTL.from("#endCircle", 1, {scale:0, ease:Sine.easeIn}, "showEnd+=3")
-    masterTL.to("#logo", 0.5, {y:60, width:215, left:"50%", x:"-50%", ease:Sine.easeInOut}, "showEnd+=3")
     masterTL.to("#text2", 0.5, {opacity:0, ease:Sine.easeInOut}, "showEnd+=3")
+    masterTL.to("#logo", 0.5, {opacity:0, ease:Sine.easeInOut}, "showEnd+=3.2")
     masterTL.from("#endText", 0.5, {opacity:0, ease:Sine.easeInOut}, "showEnd+=3.4")
+    masterTL.from("#logo2", 0.5, {opacity:0, ease:Sine.easeInOut}, "showEnd+=3.5")
     masterTL.from("#tagline", 0.5, {opacity:0, ease:Sine.easeOut}, "showEnd+=3.5")
     masterTL.from("#ctaLeft", 0.5, {scale:0, transformOrigin:"50% 95%", ease:Back.easeOut}, "showEnd+=4");
     masterTL.from("#ctaRight", 0.01, {opacity:0, ease:Sine.easeOut}, "showEnd+=4.7");
