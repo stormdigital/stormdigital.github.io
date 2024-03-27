@@ -3,6 +3,8 @@ myFT.on("ready", init);
 
 function init() {
 
+    getAnimation();
+
     window.addEventListener("resize", onResize);
     onResize();
 
@@ -22,11 +24,10 @@ function init() {
         // masterTL.progress(1);
         masterTL.pause();
     })
-
-    getAnimation();
 }
 
 function onResize(){
+    var screenW = document.body.offsetWidth;
     var bannerH = document.querySelector("#banner").offsetHeight;
     var bannerW = document.querySelector("#banner").offsetWidth;
     var bannerS = bannerH/1200;
@@ -36,13 +37,21 @@ function onResize(){
     if(bannerW < scalerW/2){
         var newScale = bannerW/(scalerW/2);
         gsap.set("#scaler", {left:"50%", xPercent:-50, transformOrigin:"50% 0%", scale:newScale*bannerS});
-        gsap.set("#logo", {left:335});
+        if(masterTL.progress() < 0.9){
+            gsap.set("#logo", {left:335, x:0, xPercent:0});
+        }
     }
     else if(bannerW < scalerW){
-        gsap.set("#logo", {left:"50%", xPercent:-bannerW/2});
+        console.log(screenW);
+        if(masterTL.progress() < 0.9){
+            gsap.set("#logo", {left:"50%", xPercent:-50, x:-screenW/2 });
+        }
         gsap.set("#scaler", {left:"50%", xPercent:-50, transformOrigin:"50% 0%"});
     }
     else{
+        if(masterTL.progress() < 0.9){
+            gsap.set("#logo", {left:35, x:0, xPercent:0});
+        }
         gsap.set("#scaler", {left:"0%", xPercent:0, transformOrigin:"0% 0%"});
     }
 }
@@ -68,7 +77,7 @@ function getAnimation(){
     masterTL.from("#endBg", 1, {clipPath: "circle(0% at 50% 50%)", ease:"none"}, "showEnd")
     masterTL.from("#text2", 0.5, {opacity:0, x:-50, ease:Sine.easeOut}, "showEnd+=0.5")
     masterTL.from("#endCircle", 1, {scale:0, ease:Sine.easeIn}, "showEnd+=3")
-    masterTL.to("#logo", 0.5, {left:"50%", x:"-50%", y:60, width:215, ease:Sine.easeInOut}, "showEnd+=3")
+    masterTL.to("#logo", 0.5, {y:60, width:215, left:"50%", x:"-50%", ease:Sine.easeInOut}, "showEnd+=3")
     masterTL.to("#text2", 0.5, {opacity:0, ease:Sine.easeInOut}, "showEnd+=3")
     masterTL.from("#endText", 0.5, {opacity:0, ease:Sine.easeInOut}, "showEnd+=3.4")
     masterTL.from("#tagline", 0.5, {opacity:0, ease:Sine.easeOut}, "showEnd+=3.5")
