@@ -3,6 +3,8 @@ myFT.on("ready", init);
 
 function init() {
 
+    getAnimation();
+
     window.addEventListener("resize", onResize);
     onResize();
 
@@ -22,11 +24,10 @@ function init() {
     document.querySelector("#mainExit").addEventListener("click", function(){
         masterTL.progress(1);
     })
-
-    getAnimation();
 }
 
 function onResize(){
+    var screenW = document.body.offsetWidth;
     var bannerH = document.querySelector("#banner").offsetHeight;
     var bannerW = document.querySelector("#banner").offsetWidth;
     var bannerS = bannerH/1200;
@@ -36,13 +37,20 @@ function onResize(){
     if(bannerW < scalerW/2){
         var newScale = bannerW/(scalerW/2);
         gsap.set("#scaler", {left:"50%", xPercent:-50, transformOrigin:"50% 0%", scale:newScale*bannerS});
+        if(masterTL.progress() < 0.9){
+            gsap.set("#logo", {left:335, x:0, xPercent:0});
+        }
     }
     else if(bannerW < scalerW){
-        console.log("middle");
+        if(masterTL.progress() < 0.9){
+            gsap.set("#logo", {left:"50%", xPercent:-50, x:-screenW/2 });
+        }
         gsap.set("#scaler", {left:"50%", xPercent:-50, transformOrigin:"50% 0%"});
     }
     else{
-        console.log("left");
+        if(masterTL.progress() < 0.9){
+            gsap.set("#logo", {left:35, x:0, xPercent:0});
+        }
         gsap.set("#scaler", {left:"0%", xPercent:0, transformOrigin:"0% 0%"});
     }
 }
