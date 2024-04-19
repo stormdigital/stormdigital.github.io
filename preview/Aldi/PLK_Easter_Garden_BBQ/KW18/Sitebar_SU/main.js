@@ -40,11 +40,13 @@ function onResize(){
         if(masterTL.progress() < 0.9){
             gsap.set("#logo", {left:335, x:0, xPercent:0});
         }
+        gsap.set("#product1Date", {x:-300});
     }
     else if(bannerW < scalerW){
         if(masterTL.progress() < 0.9){
             gsap.set("#logo", {left:"50%", xPercent:-50, x:-screenW/2 });
         }
+        gsap.set("#product1Date", {x:-((scalerW - screenW)/2)/bannerS});
         gsap.set("#scaler", {left:"50%", xPercent:-50, transformOrigin:"50% 0%"});
     }
     else{
