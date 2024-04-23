@@ -33,15 +33,20 @@ function getAnimation(){
     masterTL.from("#headline", 1, {opacity:0, ease:Sine.easeOut}, "start")
     
     masterTL.from("#product3", 1, {scale:3, ease:Power2.easeIn}, "start+=1")
-    masterTL.from("#product3", 0.75, {opacity:0, 'filter': 'blur(2px)', ease:Sine.easeOut}, "start+=1")
+    masterTL.from("#shadow3", 1, {x:-100, y:100, scale:4, opacity:0, 'filter': 'blur(5px)', ease:Sine.easeIn}, "start+=1")
+    masterTL.from("#product3", 0.75, {opacity:0, 'filter': 'blur(2px)', ease:Power4.easeOut}, "start+=1")
     masterTL.from("#product4", 1, {scale:3, ease:Power2.easeIn}, "start+=1.6")
-    masterTL.from("#product4", 0.75, {opacity:0, 'filter': 'blur(2px)', ease:Sine.easeOut}, "start+=1.6")
+    masterTL.from("#shadow4", 1, {x:-100, y:100, scale:4, opacity:0, 'filter': 'blur(5px)', ease:Sine.easeIn}, "start+=1.6")
+    masterTL.from("#product4", 0.75, {opacity:0, 'filter': 'blur(2px)', ease:Power4.easeOut}, "start+=1.6")
     masterTL.from("#product1", 1, {scale:3, ease:Power2.easeIn}, "start+=2.2")
-    masterTL.from("#product1", 0.75, {opacity:0, 'filter': 'blur(2px)', ease:Sine.easeOut}, "start+=2.2")
+    masterTL.from("#shadow1", 1, {x:-100, y:100, scale:4, opacity:0, 'filter': 'blur(5px)', ease:Sine.easeIn}, "start+=2.2")
+    masterTL.from("#product1", 0.75, {opacity:0, 'filter': 'blur(2px)', ease:Power4.easeOut}, "start+=2.2")
     masterTL.from("#product5", 1, {scale:3, ease:Power2.easeIn}, "start+=2.8")
-    masterTL.from("#product5", 0.75, {opacity:0, 'filter': 'blur(2px)', ease:Sine.easeOut}, "start+=2.8")
+    masterTL.from("#shadow5", 1, {x:-100, y:100, scale:4, opacity:0, 'filter': 'blur(5px)', ease:Sine.easeIn}, "start+=2.8")
+    masterTL.from("#product5", 0.75, {opacity:0, 'filter': 'blur(2px)', ease:Power4.easeOut}, "start+=2.8")
     masterTL.from("#product2", 1, {scale:3, ease:Power2.easeIn}, "start+=3.4")
-    masterTL.from("#product2", 0.75, {opacity:0, 'filter': 'blur(2px)', ease:Sine.easeOut}, "start+=3.4")
+    masterTL.from("#shadow2", 1, {x:-100, y:100, scale:4, opacity:0, 'filter': 'blur(5px)', ease:Sine.easeIn}, "start+=3.4")
+    masterTL.from("#product2", 0.75, {opacity:0, 'filter': 'blur(2px)', ease:Power4.easeOut}, "start+=3.4")
     
     masterTL.from("#color2", 0.5, {y:"-100%", ease:Sine.easeOut}, "start+=5");
     masterTL.from("#productBig", 0.5, {y:"100%", ease:Sine.easeOut}, "start+=5");

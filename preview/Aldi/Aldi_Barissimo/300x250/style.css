@@ -90,26 +90,34 @@ img, div, object{
     height: 100%;
 }
 
-.product{
+#productsBg{
     width: 100%;
 }
 
+.product{
+    width: 100%;
+}
+#shadow1,
 #product1{
-    transform-origin: 224px 20px;
+    transform-origin: 224px 50px;
 }
 
+#shadow2,
 #product2{
     transform-origin: 190px 125px;
 }
 
+#shadow3,
 #product3{
     transform-origin: 258px 125px;
 }
 
+#shadow4,
 #product4{
     transform-origin: 190px 240px;
 }
 
+#shadow5,
 #product5{
     transform-origin: 258px 240px;
 }
