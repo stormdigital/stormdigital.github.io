@@ -16,7 +16,7 @@ img, div, object{
 #loaderWrapper{
     width: 100%;
     height: 100%;
-    background: #ee7100;
+    background: #9fc2d5;
     pointer-events: none;
 }
 
@@ -33,7 +33,7 @@ img, div, object{
     height: 50px;
     position: relative;
     border: 3px solid #fff;
-    border-top: 3px solid #000;
+    border-top: 3px solid #0d2253;
     border-radius: 50%;
     animation: spin 2s linear infinite;
 }
@@ -134,13 +134,13 @@ img, div, object{
 #color2{
     width: 100%;
     height: 100%;
-    background: #65b2e4;
+    background: #b7642b;
 }
 
 #color3{
     width: 100%;
     height: 100%;
-    background: #90ae41;
+    background: #457217;
 }
 
 .productBig{
