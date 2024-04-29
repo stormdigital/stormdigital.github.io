@@ -104,7 +104,7 @@ function getAnimation(){
     masterTL.from("#headline3", 1, {opacity:0, ease:Sine.easeOut}, "start+=9");
     masterTL.from("#headline3", 2, {scale:0.8, ease:Sine.easeOut}, "start+=9")
 
-    masterTL.from("#sticker2", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=9.3")
+    masterTL.from("#sticker2", 1, {scale:0, rotation: 360, ease:Back.easeOut}, "start+=9.3")
 
     masterTL.from("#endScreen", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=11")
     masterTL.from("#endLogo", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=11.3")
