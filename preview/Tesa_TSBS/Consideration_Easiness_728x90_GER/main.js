@@ -56,6 +56,7 @@ function loadLocalDynamic() {
     document.querySelector('#tadaa6').data = localDynamicData.tadaa6;
     document.querySelector('#bg1').src = localDynamicData.bg1;
     document.querySelector('#bg2').src = localDynamicData.bg2;
+    document.querySelector('#bg3').src = localDynamicData.bg3;
     document.querySelector('#mainProduct').src = localDynamicData.product;
     document.querySelector('#leftProduct').src = localDynamicData.productLeft;
     document.querySelector('#rightProduct').src = localDynamicData.productRight;
@@ -92,7 +93,7 @@ function getAnimation(){
         gsap.set("#loaderWrapper", {display:"none"});
     }}, 0)
     masterTL.add("start");
-    masterTL.from("#bg1", 10, {scale:1.2, ease:Sine.easeOut}, "start")
+    masterTL.from("#bg1", 5, {scale:1.1, ease:Sine.easeOut}, "start")
     masterTL.from("#text1", 0.7, {x:-50, opacity:0, ease:Power2.easeInOut}, "start+=0.2")
     document.querySelectorAll("#text1 .blueLine").forEach(blueline => {
         masterTL.from(blueline, 0.5, {width:0, ease:Power2.easeInOut}, "start+=0.9")
@@ -100,6 +101,8 @@ function getAnimation(){
     masterTL.from("#mainProduct", 1, {opacity:0, y:40, ease:"elastic.out(0.5 ,0.4)"}, "start+=1")
     masterTL.from(["#cta", "#ctaBorder"], 1, {opacity:0, y:40, ease:"elastic.out(0.5 ,0.4)"}, "start+=1.3")
     masterTL.to("#text1", 0.7, {x:50, opacity:0, ease:Power2.easeInOut}, "start+=3.5")
+    masterTL.from("#bg2", 5, {scale:1.1, ease:Sine.easeOut}, "start+=3.5")
+    masterTL.from("#bg2", 1, {opacity:0, ease:Sine.easeInOut}, "start+=3.5")
     masterTL.from("#text2", 0.7, {x:-50, opacity:0, ease:Power2.easeInOut}, "start+=4")
     masterTL.from("#disclaimer", 0.5, {opacity:0, ease:Power2.easeInOut}, "start+=4.2")
     document.querySelectorAll("#text2 .blueLine").forEach(blueline => {
@@ -107,8 +110,8 @@ function getAnimation(){
     });
     masterTL.to("#text2", 0.7, {x:50, opacity:0, ease:Power2.easeInOut}, "start+=7")
     masterTL.to("#disclaimer", 0.5, {opacity:0, ease:Power2.easeInOut}, "start+=7.2")
-    masterTL.from("#bg2", 5, {scale:1.2, ease:Sine.easeOut}, "start+=7")
-    masterTL.from("#bg2", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=7")
+    masterTL.from("#bg3", 5, {scale:1.1, ease:Sine.easeOut}, "start+=7")
+    masterTL.from("#bg3", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=7")
     masterTL.from("#tesaWrapper", 0.5, {width:0, ease:Sine.easeInOut}, "start+=7.5")
     masterTL.from("#tadaa1", 0.5, {y:150, scale:0, x:80, ease:Back.easeOut}, "start+=7.7")
     masterTL.from("#tadaa2", 0.5, {y:150, scale:0, x:44, ease:Back.easeOut}, "start+=7.76")

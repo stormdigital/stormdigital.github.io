@@ -1,6 +1,6 @@
 localDynamicData = {
 	"variationName": "GER_01",
-	"campaignName": "nl",
+	"campaignName": "GER",
 	"dimensionName": {
 		"200x600": "Consideration_Easiness",
 		"300x250": "Consideration_Easiness",
@@ -52,6 +52,7 @@ localDynamicData = {
 	"tadaa": "./tadaa.svg",
 	"bg1": "./bg1.jpg",
 	"bg2": "./bg2.jpg",
+	"bg3": "./bg3.jpg",
 	"product": "./product_middle.png",
 	"productLeft": "./product_left.png",
 	"productRight": "./product_right.png"
