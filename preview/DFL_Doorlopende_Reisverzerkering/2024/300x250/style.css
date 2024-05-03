@@ -1,0 +1,339 @@
+body, body * {
+	vertical-align: baseline;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('montserrat-bold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: 'montserratregular';
+    src: url('montserrat-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  
+}
+
+img, div, object, button{
+    position: absolute;
+}
+
+#banner{
+    width: 300px;
+    height: 250px;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'montserratbold';
+    color: #fff;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #1EBEBE;;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #FFC801;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#bg{
+    height: 100%;
+}
+
+.guide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+#intro{
+    width: 195px;
+    height: 106px;
+    left: 50px;
+    bottom: 38px;
+    background: rgba(30, 190, 190, 0.9);
+    transform-origin: 0% 100%;
+}
+
+#introText{
+    font-size: 14px;
+    top: 23px;
+    left: 10px;
+    line-height: 1.15;
+}
+
+.logo{
+    width: 106px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+}
+
+#op1{
+    top: 68px;
+    left: 20px;
+}
+
+#op2{
+    top: 68px;
+    left: 65px;
+}
+
+.logoBackground{
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.optionWrapper div{
+    position: relative;
+}
+
+.optionWrapper:hover .option{
+    background: rgba(255, 200, 1, 0.5);
+}
+
+.option{
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 2px solid #287E7F;
+    background: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.option.yellow{
+    background: #FFC801;
+    border: 2px solid #fff;
+}
+
+.optionText{
+    text-align: center;
+    font-size: 8px;
+    font-family: 'montserratregular';
+}
+
+#stickerWrapper{
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    background: #FFC801;
+    top: 75px;
+    left: 218px;
+}
+
+#stickerText{
+    color: #000;
+    text-align: center;
+    width: 100%;
+    font-size: 8.8px;
+    line-height: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#uspScreen{
+    width: 247px;
+    height: 201px;
+    right: 44px;
+    display: none;
+    opacity: 0;
+    bottom: 39px;
+    background: rgba(30, 190, 190, 0.9);
+    transform-origin: 0% 100%;
+    cursor: pointer;
+}
+
+#uspText{
+    font-size: 14px;
+    top: 7px;
+    left: 9px;
+    line-height: normal;
+}
+
+.usp span{
+    font-family: 'montserratbold';
+}
+
+.usp::before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #FFC801;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.usp{
+    font-size: 10px;
+    line-height: 1.15;
+    font-family: 'montserratregular';
+    width: 200px;
+    left: 7px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+#usp1{top: 63px;}
+#usp2{top: 104px;}
+#usp3{top: 146px;}
+
+#disclaimer,
+#disclaimer2{
+    font-size: 7.5px;
+    font-family: 'montserratregular';
+    bottom: 11px;
+    left: 10px;
+}
+
+#cta,
+#cta2{
+    width: 64px;
+    height: 20px;
+    background: #FFC801;
+    color: #000;
+    bottom: 17px;
+    right: 17px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#cta{
+    width: 65px;
+    height: 21px;
+    bottom: 12px;
+    right: 9px;
+}
+
+.ctaText{
+    font-size: 7px;
+    left: 4px;
+    line-height: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'montserratregular';
+}
+
+.ctaText span{
+    font-family: 'montserratbold';
+}
+
+.ctaArrow{
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3px;
+}
+
+#questionScreen{
+    width: 247px;
+    height: 201px;
+    right: 44px;
+    display: none;
+    opacity: 0;
+    bottom: 39px;
+    background: rgba(30, 190, 190, 0.9);
+    transform-origin: 0% 100%;
+}
+
+#questionScreen .option{
+    width: 15px;
+    height: 15px;
+    margin-bottom: 3px;
+}
+
+#questionScreen .optionText{
+    font-size: 7px;
+}
+
+#questionText{
+    font-size: 14px;
+    top: 9px;
+    left: 13px;
+    line-height: 1.15;
+}
+
+.questionWrapper{
+    width: 100%;
+}
+
+.questionWrapper .optionWrapper{
+    bottom: 0;
+}
+
+#op3{left: 147px; top: -2px;}
+#op4{left: 183px; top: -2px;}
+#op5{left: 147px; top: -6px;}
+#op6{left: 189px; top: -6px;}
+#op7{left: 153px; top: 0px;}
+#op8{left: 189px; top: 0px;}
+
+.question{
+    font-size: 9px;
+    left: 24px;   
+}
+
+#q1Wrapper{
+    top: 58px;
+    height: 30px;
+}
+
+#q2Wrapper{
+    top: 97px;
+    height: 20px;
+}
+
+#q3Wrapper{
+    top: 128px;
+    height: 20px;
+}
