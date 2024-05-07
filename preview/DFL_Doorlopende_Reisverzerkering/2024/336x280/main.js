@@ -86,8 +86,8 @@ function getUSPAnimation(){
     uspTL.to("#stickerWrapper", 0.5, {scale:0, opacity:0, rotation:-300, ease:Sine.easeOut},"start")
     uspTL.to("#uspScreen", 0.01, {opacity:1, display: "block", ease:Sine.easeIn}, "start");
     uspTL.to("#intro", 0.01, {opacity:0, ease:Sine.easeOut}, "start+=0.01")
-    uspTL.from("#uspScreen", 0.5, {height:106, width: 195, x:-9, ease:Sine.easeInOut});
-    uspTL.to("#stickerWrapper", 0.5, {scale:1, opacity:1, y: -74, x: -7, rotation:0, ease:Sine.easeOut})
+    uspTL.from("#uspScreen", 0.5, {height:109, width: 205, x:-28, ease:Sine.easeInOut});
+    uspTL.to("#stickerWrapper", 0.5, {scale:1, opacity:1, y: -102, x: 20, rotation:0, ease:Sine.easeOut})
     uspTL.from(splitT1.words, 0.5, {opacity: 0, x:-20, ease: Sine.easeOut, stagger: 0.05});
     uspTL.from("#usp1", 0.5, {x:-20, opacity:0, ease: Sine.easeOut});
     uspTL.from("#usp2", 0.5, {x:-20, opacity:0, ease: Sine.easeOut});
@@ -117,10 +117,10 @@ function getQuestionAnimation(){
     questionTL = new TimelineLite({});
     questionTL.add("start")
     questionTL.to("#stickerWrapper", 0.5, {scale:0, opacity:0, rotation:-300, ease:Sine.easeOut},"start")
-    questionTL.to("#questionScreen", 0.01, { opacity: 1, display: "block", ease: Sine.easeIn }, "start");
+    questionTL.to("#questionScreen", 0.01, {opacity:1, display: "block", ease:Sine.easeIn}, "start");
     questionTL.to("#intro", 0.01, {opacity:0, ease:Sine.easeOut}, "start+=0.01")
-    questionTL.from("#questionScreen", 0.5, {height:106, width: 195, x:-9,ease:Sine.easeInOut});
-    questionTL.to("#stickerWrapper", 0.5, {scale:1, opacity:1, y: -74, x: -7, rotation:0, ease:Sine.easeOut})
+    questionTL.from("#questionScreen", 0.5, {height:109, width: 205, x:-28, ease:Sine.easeInOut});
+    questionTL.to("#stickerWrapper", 0.5, {scale:1, opacity:1, y: -102, x: 20, rotation:0, ease:Sine.easeOut})
     questionTL.from(splitT1.words, 0.5, {opacity: 0, x:-20, ease: Sine.easeOut, stagger: 0.05});
     questionTL.from(document.querySelectorAll(".question")[0], 0.5, {x:-20, opacity:0, ease: Sine.easeOut});
     questionTL.from("#op3", 0.2, {scale:0, ease:Sine.easeOut})
@@ -150,7 +150,6 @@ function getQuestionAnimation(){
     document.querySelector("#cta2").addEventListener("click", function(){
         Enabler.exitOverride('Question Answered', window.newExitUrl);
     })
-
     document.querySelector("#cta2").addEventListener("mouseover", function(){
         if(questionTL.progress() == 1){
             gsap.to("#cta2", 0.3, {scale:1.05});
@@ -222,7 +221,7 @@ function calcPrices(){
     }
     else if(!wereld && !maand && klant){
         window.newExitUrl = 'https://reisverzekeringen.defriesland.nl/doorlopend?rv=nee&dg=eu&bt=jr&kl=ja';
-        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>19,90</span> p.p.</span><BR>per jaar"
+        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>19.90</span> p.p.</span><BR>per jaar"
     }
 
     if(wereld && maand && !klant){
@@ -246,6 +245,25 @@ function calcPrices(){
 
 function isOdd(num) { return num % 2;}
 
+function createSnow(){
+    var wrapper = document.querySelector("#snowWrapper");
+    for (var i = 0; i < 700; i++) {
+        var newDiv = document.createElement("div");
+        var size = gsap.utils.random(1, 4);
+        newDiv.style.width = size+"px";
+        newDiv.style.height = size+"px";
+        newDiv.style.opacity = gsap.utils.random(0.3, 0.9);
+        newDiv.style.left = gsap.utils.random(0, 300)+"px";
+        newDiv.style.top = gsap.utils.random(-600, 600)+"px";
+        newDiv.classList.add("snow");
+        wrapper.appendChild(newDiv);
+
+        var rand = gsap.utils.random(5, 7.5);
+        gsap.to(newDiv, rand, {y:gsap.utils.random(600, 1200), ease:Power0.easeNone, onComplete:animateAgain});
+        gsap.to(newDiv, rand, {x:gsap.utils.random(-250, 250), ease:Power0.easeNone})
+        gsap.to(newDiv, rand, {scale:gsap.utils.random(0.5, 1.2), ease:Power0.easeNone})
+    }
+}
 
 function animateAgain(){
 
