@@ -57,7 +57,7 @@ function getAnimation(){
         gsap.set("#loaderWrapper", {display:"none"});
     }}, 0)
     masterTL.add("start");
-    masterTL.from("#bg1", 10, {scale:1.2, ease:Sine.easeOut}, "start")
+    masterTL.from("#bg1", 5, {scale:1.1, ease:Sine.easeOut}, "start")
     masterTL.from("#text1", 0.7, {x:-50, opacity:0, ease:Power2.easeInOut}, "start+=0.2")
     masterTL.from("#highlight1Wrapper", 0.8, {width:0, ease:Power2.easeInOut}, "start+=0.6")
     masterTL.to(["#text1", "#highlight1Wrapper"], 0.7, {x:50, opacity:0, ease:Power2.easeInOut}, "start+=3.5")
