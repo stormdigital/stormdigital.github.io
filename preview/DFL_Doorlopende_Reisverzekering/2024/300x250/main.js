@@ -222,7 +222,7 @@ function calcPrices(){
     }
     else if(!wereld && !maand && klant){
         window.newExitUrl = 'https://reisverzekeringen.defriesland.nl/doorlopend?rv=nee&dg=eu&bt=jr&kl=ja';
-        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>19.90</span> p.p.</span><BR>per jaar"
+        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>19,90</span> p.p.</span><BR>per jaar"
     }
 
     if(wereld && maand && !klant){
