@@ -194,7 +194,7 @@ img, div, object, button{
 #uspText{
     font-size: 25px;
     top: 19px;
-    left: 8px;
+    left: 16px;
     line-height: normal;
 }
 
@@ -209,8 +209,8 @@ img, div, object, button{
     border-radius: 50%;
     background: #FFC801;
     left: -5px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 10%;
+    /* transform: translateY(-50%); */
     position: absolute;
 }
 
@@ -219,12 +219,14 @@ img, div, object, button{
     line-height: 1.15;
     font-family: 'montserratregular';
     width: 270px;
-    left: 7px;
+    left: 16px;
     padding-left: 20px;
     box-sizing: border-box;
 }
 
-#usp1{top: 73px;}
+#usp1{
+    top: 73px;
+}
 #usp2{    
     top: 71px;
     left: 227px;
@@ -239,7 +241,7 @@ img, div, object, button{
     font-size: 10px;
     font-family: 'montserratregular';
     bottom: 8px;
-    left: 286px;
+    left: 16px;
 }
 
 #cta,

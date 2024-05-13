@@ -98,8 +98,8 @@ img, div, object, button{
 }
 
 #introText{
-    font-size: 15px;
-    top: 2px;
+    font-size: 14px;
+    top: 6px;
     left: 9px;
     line-height: 1.15;
 }
@@ -166,7 +166,7 @@ img, div, object, button{
     border-radius: 50%;
     background: #FFC801;
     top: 15px;
-    left: 334px;
+    left: 322px;
 }
 
 #stickerText{
@@ -224,16 +224,16 @@ img, div, object, button{
     box-sizing: border-box;
 }
 
-#usp1{top: 41px;}
-#usp2{top: 41px;left: 127px;}
-#usp3{top: 41px;left: 265px;}
+#usp1{top: 34px;}
+#usp2{top: 34px;left: 127px;}
+#usp3{top: 34px;left: 265px;}
 
 #disclaimer,
 #disclaimer2{
     font-size: 8px;
     font-family: 'montserratregular';
-    bottom: 61px;
-    left: 354px;
+    bottom: 5px;
+    left: 12px;
 }
 
 #cta,
@@ -242,17 +242,17 @@ img, div, object, button{
     height: 22px;
     background: #FFC801;
     color: #000;
-    bottom: 8px;
-    right: 38px;
+    bottom: 21px;
+    right: 45px;
     border-radius: 2px;
     cursor: pointer;
 }
 
 #cta{
-    width: 65px;
+    width: 75px;
     height: 21px;
-    bottom: 10px;
-    right: 39px;
+    bottom: 22px;
+    right: 40px;
 }
 
 .ctaText{
@@ -277,7 +277,7 @@ img, div, object, button{
 }
 
 #questionScreen{
-    width: 529px;
+    width: 539px;
     height: 75px;
     left: 158px;
     bottom: 5px;
@@ -300,7 +300,7 @@ img, div, object, button{
 
 #questionText{
     font-size: 15px;
-    top: 14px;
+    top: 6px;
     left: 9px;
     line-height: 1.25;
 }
@@ -330,11 +330,11 @@ img, div, object, button{
     top: -3px;
 }
 #op7{
-    left: 103px;
+    left: 86px;
     top: -3px;
 }
 #op8{
-    left: 131px;
+    left: 114px;
     top: -3px;
 }
 
@@ -344,18 +344,18 @@ img, div, object, button{
 }
 
 #q1Wrapper{
-    top: 47px;
+    top: 36px;
     height: 30px;
 }
 
 #q2Wrapper{
-    top: 47px;
+    top: 36px;
     height: 20px;
     left: 135px;
 }
 
 #q3Wrapper{
-    top: 47px;
+    top: 36px;
     height: 20px;
     left: 262px;
 }

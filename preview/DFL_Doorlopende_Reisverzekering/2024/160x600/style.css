@@ -91,16 +91,16 @@ img, div, object, button{
     width: 142px;
     height: 136px;
     left: 7px;
-    bottom: 99px;
+    bottom: 77px;
     background: rgb(30, 190, 190);
     transform-origin: 0% 100%;
 }
 
 #introText{
     font-size: 13px;
-    top: 18px;
+    top: 12px;
     left: 13px;
-    line-height: 1.25;
+    line-height: 1.35;
 }
 
 .logo{
@@ -165,7 +165,7 @@ img, div, object, button{
     height: 60px;
     border-radius: 50%;
     background: #FFC801;
-    top: 335px;
+    top: 350px;
     left: 95px;
 }
 
@@ -174,8 +174,8 @@ img, div, object, button{
     text-align: center;
     width: 100%;
     font-size: 8px;
-    line-height: 13px;
-    top: 50%;
+    line-height: 10px;
+    top: 48%;
     transform: translateY(-50%);
 }
 
@@ -183,7 +183,7 @@ img, div, object, button{
     width: 142px;
     height: 340px;
     left: 7px;
-    bottom: 99px;
+    bottom: 77px;
     display: none;
     opacity: 0;
     background: rgb(30, 190, 190);
@@ -195,7 +195,7 @@ img, div, object, button{
     font-size: 13px;
     top: 25px;
     left: 13px;
-    line-height: normal;
+    line-height: 1.35;
 }
 
 .usp span{
@@ -280,7 +280,7 @@ img, div, object, button{
     width: 142px;
     height: 464px;
     left: 7px;
-    bottom: 99px;
+    bottom: 77px;
     display: none;
     opacity: 0;
     background: rgb(30, 190, 190);
@@ -302,7 +302,7 @@ img, div, object, button{
     font-size: 13px;
     top: 33px;
     left: 14px;
-    line-height: 1.1;
+    line-height: 1.35;
 }
 
 .questionWrapper{
