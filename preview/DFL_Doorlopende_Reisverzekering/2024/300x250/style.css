@@ -98,25 +98,25 @@ img, div, object, button{
 
 #introText{
     font-size: 14px;
-    top: 23px;
+    top: 10px;
     left: 10px;
     line-height: 1.15;
 }
 
 .logo{
-    width: 106px;
-    top: 50%;
+    width: 156px;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, 10%);
 }
 
 #op1{
-    top: 68px;
+    top: 48px;
     left: 20px;
 }
 
 #op2{
-    top: 68px;
+    top: 48px;
     left: 65px;
 }
 
