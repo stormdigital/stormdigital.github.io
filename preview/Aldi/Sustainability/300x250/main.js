@@ -28,13 +28,13 @@ function getAnimation(){
     masterTL.add("start")
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)
     masterTL.add("start");
-    masterTL.from("#bg", 5, {scale:1.1, ease:Sine.easeOut}, "start")
-    masterTL.from("#bgBorder", 0.5, {scale:1.4, y:25, ease:Sine.easeOut}, "start+=1")
-    masterTL.from("#text1", 0.5, {y:100, ease:Sine.easeOut}, "start+=1.3")
-    masterTL.from("#text1HighlightWrapper", 0.7, {width:0, ease:Sine.easeInOut}, "start+=1.7")
+    // masterTL.from("#bg", 5, {scale:1.1, ease:Sine.easeOut}, "start")
+    masterTL.from("#bgBorder", 0.5, {scale:1.4, y:25, ease:Sine.easeOut}, "start")
+    masterTL.from("#text1", 0.5, {y:100, ease:Sine.easeOut}, "start+=0.5")
+    masterTL.from("#text1HighlightWrapper", 0.7, {width:0, ease:Sine.easeInOut}, "start+=1.2")
 
-    masterTL.add("showFrame2", "-=1.5")
-    masterTL.to("#bgBorder", 0.5, {scale:0, ease:Sine.easeIn}, "showFrame2+=1")
+    masterTL.add("showFrame2", 3)
+    masterTL.to(["#bgBorder", "#bg"], 0.5, {y:-250, ease:Sine.easeIn}, "showFrame2+=1")
     masterTL.to(["#text1", "#text1HighlightWrapper"], 0.5, {y:-98, ease:Sine.easeInOut}, "showFrame2+=1.25")
     masterTL.from("#text2", 0.5, {y:98, ease:Sine.easeInOut}, "showFrame2+=1.25")
     masterTL.to("#bg", 0.1, {opacity:0, ease:Sine.easeOut}, "showFrame2+=1.4")
@@ -43,7 +43,7 @@ function getAnimation(){
     masterTL.from("#sticker1", 0.2, {opacity:0, ease:Sine.easeIn}, "showFrame2+=4.5")
     masterTL.from("#sticker2", 1, {scale:2, rotation:-10, ease:Power4.easeOut}, "showFrame2+=4.8")
     masterTL.from("#sticker2", 0.2, {opacity:0, ease:Sine.easeIn}, "showFrame2+=4.8")
-    masterTL.to(["#sticker1", "#sticker2", "#text1", "#text1HighlightWrapper"], 0.3, {opacity:0, ease:Sine.easeIn}, "showFrame2+=6")
+    masterTL.to(["#sticker1", "#sticker2", "#text1", "#text1HighlightWrapper"], 0.3, {opacity:0, ease:Sine.easeIn}, "showFrame2+=6.7")
 
     masterTL.add("showFrame3")
 
@@ -54,23 +54,6 @@ function getAnimation(){
 
     masterTL.add("endScreen")
     masterTL.from("#tagline", 0.3, {opacity:0, ease:Sine.easeOut}, "endscreen")
-    
-    // masterTL.to("#tagWrapper", 0.0001, {width:37, ease:Sine.easeOut}, "endscreen+=0.1")
-    // masterTL.to("#tagWrapper", 0.0001, {width:57, ease:Sine.easeOut}, "endscreen+=0.15")
-    // masterTL.to("#tagWrapper", 0.0001, {width:73, ease:Sine.easeOut}, "endscreen+=0.2")
-    // masterTL.to("#tagWrapper", 0.0001, {width:81, ease:Sine.easeOut}, "endscreen+=0.25")
-    // masterTL.to("#tagWrapper", 0.0001, {width:97, ease:Sine.easeOut}, "endscreen+=0.3")
-    // masterTL.to("#tagWrapper", 0.0001, {width:116, ease:Sine.easeOut}, "endscreen+=0.35")
-    // masterTL.to("#tagWrapper", 0.0001, {width:135, ease:Sine.easeOut}, "endscreen+=0.4")
-    // masterTL.to("#tagWrapper", 0.0001, {width:153, ease:Sine.easeOut}, "endscreen+=0.45")
-    // masterTL.to("#tagWrapper", 0.0001, {width:167, ease:Sine.easeOut}, "endscreen+=0.5")
-    // masterTL.to("#tagWrapper", 0.0001, {width:191, ease:Sine.easeOut}, "endscreen+=0.55")
-    // masterTL.to("#tagWrapper", 0.0001, {width:208, ease:Sine.easeOut}, "endscreen+=0.6")
-    // masterTL.to("#tagWrapper", 0.0001, {width:225, ease:Sine.easeOut}, "endscreen+=0.65")
-    // masterTL.to("#tagWrapper", 0.0001, {width:243, ease:Sine.easeOut}, "endscreen+=0.7")
-    // masterTL.to("#tagWrapper", 0.0001, {width:258, ease:Sine.easeOut}, "endscreen+=0.75")
-    // masterTL.to("#tagWrapper", 0.0001, {width:276, ease:Sine.easeOut}, "endscreen+=0.8")
-    // masterTL.to("#tagWrapper", 0.0001, {width:300, ease:Sine.easeOut}, "endscreen+=0.85")
 
     masterTL.to("#tagWrapper", 0.0001, {width:37, ease:Sine.easeOut}, "endscreen+=0.1")
     masterTL.to("#tagWrapper", 0.0001, {width:57, ease:Sine.easeOut}, "endscreen+=0.2")
@@ -94,6 +77,4 @@ function getAnimation(){
     masterTL.from("#ctaRight", 0.3, {x:-50, ease:Sine.easeOut}, "endscreen+=1.7");
 
     masterTL.play();
-
-    console.log(masterTL.duration());
 }
