@@ -74,8 +74,8 @@ function getAnimation(){
     masterTL.add("endScreen", "+=0.3")
     masterTL.from("#logo2", 0.3, {opacity:0, ease:Sine.easeOut}, "endscreen")
 
-    masterTL.from("#text3", 0.5, {y:1000, ease:Sine.easeOut}, "endScreen+=0.3")
-    masterTL.from("#text3HighlightWrapper", 0.5, {width:0, ease:Sine.easeOut}, "endScreen+=0.8")
+    masterTL.from("#text3", 1, {y:1000, ease:Sine.easeOut}, "endScreen+=0.3")
+    masterTL.from("#text3HighlightWrapper", 1, {width:0, y:1000, ease:Sine.easeOut}, "endScreen+=0.3")
 
     masterTL.to("#tagWrapper", 0.0001, {width:421, ease:Sine.easeOut}, "endscreen+=2.1")
     masterTL.to("#tagWrapper", 0.0001, {width:452, ease:Sine.easeOut}, "endscreen+=2.2")
