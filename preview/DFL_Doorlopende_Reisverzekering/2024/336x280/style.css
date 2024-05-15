@@ -98,31 +98,31 @@ img, div, object, button{
 
 #introText{
     font-size: 15px;
-    top: 15px;
-    left: 10px;
+    top: 11px;
+    left: 15px;
     line-height: 1.15;
 }
 
 .logo{
     width: 116px;
-    top: 50%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, 10%);
 }
 
 #op1{
-    top: 68px;
-    left: 20px;
+    top: 61px;
+    left: 23px;
 }
 
 #op2{
-    top: 68px;
-    left: 65px;
+    top: 61px;
+    left: 68px;
 }
 
 .logoBackground{
     width: 100%;
-    height: 55px;
+    height: 49px;
     background-color: #fff;
     position: absolute;
     bottom: 0;
@@ -155,8 +155,9 @@ img, div, object, button{
 
 .optionText{
     text-align: center;
-    font-size: 8px;
+    font-size: 10px;
     font-family: 'montserratregular';
+    top: 3px;
 }
 
 #stickerWrapper{
@@ -164,8 +165,8 @@ img, div, object, button{
     height: 60px;
     border-radius: 50%;
     background: #FFC801;
-    top: 106px;
-    left: 238px;
+    top: 101px;
+    left: 240px;
 }
 
 #stickerText{
@@ -179,9 +180,9 @@ img, div, object, button{
 }
 
 #uspScreen{
-    width: 259px;
-    height: 219px;
-    right: 38px;
+    width: 291px;
+    height: 218px;
+    right: 21px;
     display: none;
     opacity: 0;
     bottom: 39px;
@@ -192,8 +193,8 @@ img, div, object, button{
 
 #uspText{
     font-size: 15px;
-    top: 7px;
-    left: 9px;
+    top: 8px;
+    left: 20px;
     line-height: normal;
 }
 
@@ -202,14 +203,13 @@ img, div, object, button{
 }
 
 .usp::before{
-    content: "";
+    content:url('./check.svg');
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: #FFC801;
-    left: 7px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 0px;
+    top: 0;
+    /* transform: translateY(-50%); */
     position: absolute;
 }
 
@@ -218,20 +218,24 @@ img, div, object, button{
     line-height: 1.15;
     font-family: 'montserratregular';
     width: 200px;
-    left: 7px;
+    left: 22px;
     padding-left: 20px;
     box-sizing: border-box;
 }
 
-#usp1{top: 63px;}
-#usp2{top: 108px;}
-#usp3{top: 154px;}
+#usp1{top: 62px;}
+#usp2{top: 103px;}
+#usp3{top: 143px;}
 
 #disclaimer,
 #disclaimer2{
     font-size: 8px;
     font-family: 'montserratregular';
-    bottom: 5px;
+    bottom: 9px;
+    left: 20px;
+}
+
+#disclaimer{
     left: 9px;
 }
 
@@ -241,22 +245,22 @@ img, div, object, button{
     height: 23px;
     background: #FFC801;
     color: #000;
-    bottom: 5px;
-    right: 4px;
+    bottom: 11px;
+    right: 13px;
     border-radius: 2px;
     cursor: pointer;
 }
 
 #cta{
     width: 85px;
-    height: 28px;
-    bottom: 5px;
-    right: 7px;
+    height: 23px;
+    bottom: 11px;
+    right: 13px;
 }
 
 .ctaText{
-    font-size: 10px;
-    left: 4px;
+    font-size: 9px;
+    left: 9px;
     line-height: 9px;
     top: 50%;
     transform: translateY(-50%);
@@ -268,17 +272,17 @@ img, div, object, button{
 }
 
 .ctaArrow{
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     top: 50%;
     transform: translateY(-50%);
-    right: 3px;
+    right: 7px;
 }
 
 #questionScreen{
-    width: 259px;
-    height: 219px;
-    right: 38px;
+    width: 291px;
+    height: 218px;
+    right: 21px;
     display: none;
     opacity: 0;
     bottom: 39px;
@@ -293,13 +297,14 @@ img, div, object, button{
 }
 
 #questionScreen .optionText{
-    font-size: 7px;
+    font-size: 8px;
+    top:2px;
 }
 
 #questionText{
     font-size: 15px;
-    top: 9px;
-    left: 9px;
+    top: 13px;
+    left: 23px;
     line-height: 1.25;
 }
 
@@ -311,29 +316,35 @@ img, div, object, button{
     bottom: 0;
 }
 
-#op3{left: 160px; top: -3px;}
-#op4{left: 204px; top: -3px;}
-#op5{left: 161px; top: -6px;}
-#op6{left: 207px; top: -6px;}
-#op7{left: 163px; top: 0px;}
-#op8{left: 208px; top: 0px;}
+#op3{left: 172px; top: -3px;}
+#op4{left: 216px; top: -3px;}
+#op5{
+    left: 173px;
+    top: -6px;
+}
+#op6{
+    left: 221px;
+    top: -6px;
+}
+#op7{left: 178px; top: 0px;}
+#op8{left: 222px; top: 0px;}
 
 .question{
     font-size: 11px;
-    left: 10px;  
+    left: 22px;  
 }
 
 #q1Wrapper{
-    top: 68px;
+    top: 65px;
     height: 30px;
 }
 
 #q2Wrapper{
-    top: 113px;
+    top: 106px;
     height: 20px;
 }
 
 #q3Wrapper{
-    top: 150px;
+    top: 140px;
     height: 20px;
 }

@@ -75,6 +75,8 @@ img, div, object, button{
 
 #bg{
     width: 100%;
+    /* transform: scale(1.13); */
+    transform-origin: 50% 100%;
 }
 
 .guide{
@@ -88,41 +90,41 @@ img, div, object, button{
 }
 
 #intro{
-    width: 142px;
-    height: 136px;
-    left: 7px;
-    bottom: 77px;
+    width: 136px;
+    height: 134px;
+    left: 11px;
+    bottom: 100px;
     background: rgb(30, 190, 190);
     transform-origin: 0% 100%;
 }
 
 #introText{
     font-size: 13px;
-    top: 12px;
-    left: 13px;
-    line-height: 1.35;
+    top: 7px;
+    left: 10px;
+    line-height: 1.25;
 }
 
 .logo{
-    width: 127px;
-    top: 66%;
+    width: 132px;
+    top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 #op1{
-    top: 79px;
+    top: 76px;
     left: 14px;
 }
 
 #op2{
-    top: 79px;
+    top: 76px;
     left: 52px;
 }
 
 .logoBackground{
     width: 100%;
-    height: 147px;
+    height: 111px;
     background-color: #fff;
     position: absolute;
     bottom: 0;
@@ -165,8 +167,8 @@ img, div, object, button{
     height: 60px;
     border-radius: 50%;
     background: #FFC801;
-    top: 350px;
-    left: 95px;
+    top: 335px;
+    left: 97px;
 }
 
 #stickerText{
@@ -180,10 +182,10 @@ img, div, object, button{
 }
 
 #uspScreen{
-    width: 142px;
+    width: 138px;
     height: 340px;
-    left: 7px;
-    bottom: 77px;
+    left: 10px;
+    bottom: 100px;
     display: none;
     opacity: 0;
     background: rgb(30, 190, 190);
@@ -193,7 +195,7 @@ img, div, object, button{
 
 #uspText{
     font-size: 13px;
-    top: 25px;
+    top: 34px;
     left: 13px;
     line-height: 1.35;
 }
@@ -203,37 +205,41 @@ img, div, object, button{
 }
 
 .usp::before{
-    content: "";
-    width: 8px;
-    height: 8px;
+    content:url('./check.svg');
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
-    background: #FFC801;
-    left: 7px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 4px;
+    top: 0;
+    /* transform: translateY(-50%); */
     position: absolute;
 }
 
 .usp{
-    font-size: 10px;
+    font-size: 11px;
     line-height: 1.15;
     font-family: 'montserratregular';
     width: 200px;
-    left: 6px;
+    left: 7px;
     padding-left: 20px;
     box-sizing: border-box;
 }
 
 #usp1{top: 87px;}
-#usp2{top: 125px;}
-#usp3{top: 174px;}
+#usp2{top: 137px;}
+#usp3{top: 185px;}
 
 #disclaimer,
 #disclaimer2{
     font-size: 7px;
     font-family: 'montserratregular';
-    bottom: 77px;
-    left: 11px;
+    bottom: 75px;
+    left: 7px;
+}
+
+#disclaimer{
+    bottom: 76px;
+    left: 9px;
 }
 
 #cta,
@@ -249,16 +255,16 @@ img, div, object, button{
 }
 
 #cta{
-    width: 116px;
-    height: 41px;
-    bottom: 21px;
-    right: 12px;
+    width: 113px;
+    height: 39px;
+    bottom: 23px;
+    right: 13px;
 }
 
 .ctaText{
     font-size: 12px;
     left: 7px;
-    line-height: 13px;
+    line-height: 1.1;
     top: 50%;
     transform: translateY(-50%);
     font-family: 'montserratregular';
@@ -277,10 +283,10 @@ img, div, object, button{
 }
 
 #questionScreen{
-    width: 142px;
+    width: 136px;
     height: 464px;
-    left: 7px;
-    bottom: 77px;
+    left: 11px;
+    bottom: 100px;
     display: none;
     opacity: 0;
     background: rgb(30, 190, 190);
@@ -288,21 +294,21 @@ img, div, object, button{
 }
 
 #questionScreen .option{
-    width: 21px;
-    height: 21px;
+    width: 19px;
+    height: 19px;
     margin-bottom: 3px;
 }
 
 #questionScreen .optionText{
     font-size: 11px;
-    top:2px;
+    top: 0px;
 }
 
 #questionText{
     font-size: 13px;
-    top: 33px;
-    left: 14px;
-    line-height: 1.35;
+    top: 34px;
+    left: 12px;
+    line-height: 1.25;
 }
 
 .questionWrapper{
@@ -314,46 +320,46 @@ img, div, object, button{
 }
 
 #op3{    
-    left: 16px;
-    top: 25px;
+    left: 11px;
+    top: 24px;
 }
 #op4{
-    left: 69px;
-    top: 25px;
+    left: 65px;
+    top: 24px;
 }
 #op5{    
-    left: 16px;
+    left: 11px;
     top: 24px;
 }
 #op6{
-    left: 76px;
+    left: 72px;
     top: 24px;
 }
 #op7{
-    left: 23px;
-    top: 53px;
+    left: 20px;
+    top: 56px;
 }
 #op8{
-    left: 76px;
-    top: 53px;
+    left: 73px;
+    top: 56px;
 }
 
 .question{
-    font-size: 12px;
-    left: 15px; 
+    font-size: 11px;
+    left: 11px;
 }
 
 #q1Wrapper{
-    top: 108px;
+    top: 110px;
     height: 30px;
 }
 
 #q2Wrapper{
-    top: 187px;
+    top: 188px;
     height: 20px;
 }
 
 #q3Wrapper{
-    top: 267px;
+    top: 265px;
     height: 20px;
 }

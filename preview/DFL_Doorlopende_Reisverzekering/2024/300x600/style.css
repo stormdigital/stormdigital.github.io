@@ -75,6 +75,7 @@ img, div, object, button{
 
 #bg{
     width: 100%;
+    transform-origin: 50% 100%;
 }
 
 .guide{
@@ -88,10 +89,10 @@ img, div, object, button{
 }
 
 #intro{
-    width: 248px;
-    height: 166px;
-    left: 25px;
-    bottom: 68px;
+    width: 250px;
+    height: 167px;
+    left: 24px;
+    bottom: 70px;
     background: rgb(30, 190, 190);
     transform-origin: 0% 100%;
 }
@@ -104,7 +105,7 @@ img, div, object, button{
 }
 
 .logo{
-    width: 211px;
+    width: 190px;
     top: 68%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -122,7 +123,7 @@ img, div, object, button{
 
 .logoBackground{
     width: 100%;
-    height: 110px;
+    height: 117px;
     background-color: #fff;
     position: absolute;
     bottom: 0;
@@ -165,8 +166,8 @@ img, div, object, button{
     height: 79px;
     border-radius: 50%;
     background: #FFC801;
-    top: 325px;
-    left: 203px;
+    top: 324px;
+    left: 207px;
 }
 
 #stickerText{
@@ -174,8 +175,8 @@ img, div, object, button{
     text-align: center;
     width: 100%;
     font-size: 12px;
-    line-height: 13px;
-    top: 50%;
+    line-height: 14px;
+    top: 48%;
     transform: translateY(-50%);
 }
 
@@ -193,7 +194,7 @@ img, div, object, button{
 
 #uspText{
     font-size: 18px;
-    top: 20px;
+    top: 18px;
     left: 23px;
     line-height: normal;
 }
@@ -203,14 +204,13 @@ img, div, object, button{
 }
 
 .usp::before{
-    content: "";
-    width: 11px;
-    height: 11px;
+    content:url('./check.svg');
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
-    background: #FFC801;
-    left: -1px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: -4px;
+    top: 0;
+    /* transform: translateY(-50%); */
     position: absolute;
 }
 
@@ -219,7 +219,7 @@ img, div, object, button{
     line-height: 1.15;
     font-family: 'montserratregular';
     width: 200px;
-    left: 22px;
+    left: 27px;
     padding-left: 20px;
     box-sizing: border-box;
 }
@@ -232,18 +232,18 @@ img, div, object, button{
 #disclaimer2{
     font-size: 10px;
     font-family: 'montserratregular';
-    bottom: 77px;
-    left: 23px;
+    bottom: 72px;
+    left: 36px;
 }
 
 #cta,
 #cta2{
-    width: 218px;
+    width: 206px;
     height: 41px;
     background: #FFC801;
     color: #000;
-    bottom: 21px;
-    right: 15px;
+    bottom: 25px;
+    right: 20px;
     border-radius: 2px;
     cursor: pointer;
 }
@@ -251,13 +251,13 @@ img, div, object, button{
 #cta{
     width: 195px;
     height: 41px;
-    bottom: 21px;
+    bottom: 26px;
     right: 26px;
 }
 
 .ctaText{
     font-size: 15px;
-    left: 16px;
+    left: 11px;
     line-height: 7px;
     top: 50%;
     transform: translateY(-50%);
@@ -273,7 +273,7 @@ img, div, object, button{
     height: 16px;
     top: 50%;
     transform: translateY(-50%);
-    right: 10px;
+    right: 6px;
 }
 
 #questionScreen{
@@ -300,7 +300,7 @@ img, div, object, button{
 
 #questionText{
     font-size: 18px;
-    top: 15px;
+    top: 17px;
     left: 22px;
     line-height: 1.15;
 }
@@ -314,46 +314,46 @@ img, div, object, button{
 }
 
 #op3{    
-    left: 19px;
-    top: 25px;
+    left: 21px;
+    top: 29px;
 }
 #op4{
-    left: 91px;
-    top: 25px;
+    left: 90px;
+    top: 29px;
 }
 #op5{    
-    left: 19px;
-    top: 28px;
+    left: 21px;
+    top: 29px;
 }
 #op6{
-    left: 102px;
+    left: 100px;
     top: 29px;
 }
 #op7{
-    left: 31px;
+    left: 29px;
     top: 50px;
 }
 #op8{
-    left: 102px;
+    left: 100px;
     top: 50px;
 }
 
 .question{
     font-size: 15px;
-    left: 20px;   
+    left: 17px;   
 }
 
 #q1Wrapper{
-    top: 108px;
+    top: 103px;
     height: 30px;
 }
 
 #q2Wrapper{
-    top: 202px;
+    top: 199px;
     height: 20px;
 }
 
 #q3Wrapper{
-    top: 297px;
+    top: 294px;
     height: 20px;
 }
