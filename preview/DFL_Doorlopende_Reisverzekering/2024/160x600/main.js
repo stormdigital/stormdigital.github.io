@@ -84,9 +84,10 @@ function getUSPAnimation(){
     uspTL.add("start")
     uspTL.to("#stickerWrapper", 0.5, {scale:0, opacity:0, rotation:-300, ease:Sine.easeOut},"start")
     uspTL.to("#uspScreen", 0.01, {opacity:1, display: "block", ease:Sine.easeIn}, "start");
-    uspTL.to("#intro", 0.01, {opacity:0, ease:Sine.easeOut}, "start+=0.01")
-    uspTL.from("#uspScreen", 0.5, {height:136, ease:Sine.easeInOut});
-    uspTL.to("#stickerWrapper", 0.5, {scale:1, opacity:1, y: -207, x: 4, rotation:0, ease:Sine.easeOut})
+    uspTL.to("#intro", 0.01, { opacity: 0, ease: Sine.easeOut }, "start+=0.01")
+    uspTL.from("#uspScreen", 0.5, { height: 135, ease: Sine.easeInOut });
+    uspTL.to("#bg", 0.5, {scale:1.13, ease:Sine.easeOut}, "-=0.5")
+    uspTL.to("#stickerWrapper", 0.5, {scale:1, opacity:1, y: -206, x: -2, rotation:0, ease:Sine.easeOut})
     uspTL.from(splitT1.words, 0.5, { opacity: 0, x: -20, ease: Sine.easeOut, stagger: 0.05 });
     uspTL.from("#usp1", 0.5, {x:-20, opacity:0, ease: Sine.easeOut});
     uspTL.from("#usp2", 0.5, {x:-20, opacity:0, ease: Sine.easeOut});
@@ -118,8 +119,8 @@ function getQuestionAnimation(){
     questionTL.to("#stickerWrapper", 0.5, {scale:0, opacity:0, rotation:-300, ease:Sine.easeOut},"start")
     questionTL.to("#questionScreen", 0.01, {opacity:1, display: "block", ease:Sine.easeIn}, "start");
     questionTL.to("#intro", 0.01, {opacity:0, ease:Sine.easeOut}, "start+=0.01")
-    questionTL.from("#questionScreen", 0.5, {height:136, ease:Sine.easeInOut});
-    questionTL.to("#stickerWrapper", 0.5, {scale:1, opacity:1, y: -331, x: 0, rotation:0, ease:Sine.easeOut})
+    questionTL.from("#questionScreen", 0.5, {height:135, ease:Sine.easeInOut});
+    questionTL.to("#stickerWrapper", 0.5, {scale:1, opacity:1, y: -329, x: -2, rotation:0, ease:Sine.easeOut})
     questionTL.from(splitT1.words, 0.5, {opacity: 0, x:-20, ease: Sine.easeOut, stagger: 0.05});
     questionTL.from(document.querySelectorAll(".question")[0], 0.5, {x:-20, opacity:0, ease: Sine.easeOut});
     questionTL.from("#op3", 0.2, {scale:0, ease:Sine.easeOut})
@@ -207,38 +208,38 @@ function calcPrices(){
 
     if(wereld && maand && klant){
         window.newExitUrl = 'https://reisverzekeringen.defriesland.nl/doorlopend?rv=nee&dg=we&bt=mnd&kl=ja';
-        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>2,40</span> p.p.</span><br>per maand"
+        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>2,27</span> p.p.</span><br>per maand"
     }
     else if(wereld && !maand && klant){
         window.newExitUrl = 'https://reisverzekeringen.defriesland.nl/doorlopend?rv=nee&dg=we&bt=jr&kl=ja';
-        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>28,80</span> p.p.</span><br>per jaar"
+        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>27,21</span> p.p.</span><br>per jaar"
     }
     
     if(!wereld && maand && klant){
         window.newExitUrl = 'https://reisverzekeringen.defriesland.nl/doorlopend?rv=nee&dg=eu&bt=mnd&kl=ja';
-        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>1,60</span> p.p.</span><br>per maand"
+        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>1,52</span> p.p.</span><br>per maand"
     }
     else if(!wereld && !maand && klant){
         window.newExitUrl = 'https://reisverzekeringen.defriesland.nl/doorlopend?rv=nee&dg=eu&bt=jr&kl=ja';
-        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>19,90</span> p.p.</span><br>per jaar"
+        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>18,13</span> p.p.</span><br>per jaar"
     }
 
     if(wereld && maand && !klant){
         window.newExitUrl = 'https://reisverzekeringen.defriesland.nl/doorlopend?rv=nee&dg=we&bt=mnd&kl=nee';
-        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>2,67</span> p.p.</span><br>per maand"
+        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>2,52</span> p.p.</span><br>per maand"
     }
     else if(wereld && !maand && !klant){
         window.newExitUrl = 'https://reisverzekeringen.defriesland.nl/doorlopend?rv=nee&dg=we&bt=jr&kl=nee';
-        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>32,00</span> p.p.</span><br>per jaar"
+        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>30,23</span> p.p.</span><br>per jaar"
     }
     
     if(!wereld && maand && !klant){
         window.newExitUrl = 'https://reisverzekeringen.defriesland.nl/doorlopend?rv=nee&dg=eu&bt=mnd&kl=nee';
-        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>1,78</span> p.p.</span><br>per maand"
+        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>1,68</span> p.p.</span><br>per maand"
     }
     else if(!wereld && !maand && !klant){
         window.newExitUrl = 'https://reisverzekeringen.defriesland.nl/doorlopend?rv=nee&dg=eu&bt=yr&kl=nee';
-        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>21,33</span> p.p.</span><br>per jaar"
+        document.querySelector("#cta2 .ctaText").innerHTML = "<span>€ <span id='price'>20,14</span> p.p.</span><br>per jaar"
     }
 }
 

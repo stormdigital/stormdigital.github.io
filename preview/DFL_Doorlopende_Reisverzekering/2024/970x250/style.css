@@ -90,39 +90,39 @@ img, div, object, button{
 
 #intro{
     width: 372px;
-    height: 179px;
-    left: 195px;
-    bottom: 35px;
+    height: 200px;
+    left: 203px;
+    bottom: 23px;
     background: rgb(30, 190, 190);
     transform-origin: 0% 100%;
 }
 
 #introText{
     font-size: 25px;
-    top: 27px;
-    left: 16px;
+    top: 36px;
+    left: 20px;
     line-height: 1.15;
 }
 
 .logo{
-    width: 139px;
+    width: 156px;
     top: 50%;
     left: 25px;
     transform: translate(0%, -50%);
 }
 
 #op1{
-    top: 107px;
-    left: 25px;
+    top: 117px;
+    left: 32px;
 }
 
 #op2{
-    top: 107px;
-    left: 73px;
+    top: 117px;
+    left: 80px;
 }
 
 .logoBackground{
-    width: 218px;
+    width: 225px;
     height: 248px;
     background-color: #fff;
     position: absolute;
@@ -161,29 +161,29 @@ img, div, object, button{
 }
 
 #stickerWrapper{
-    width: 100px;
-    height: 100px;
+    width: 91px;
+    height: 91px;
     border-radius: 50%;
     background: #FFC801;
-    top: 14px;
-    left: 518px;
+    top: 8px;
+    left: 525px;
 }
 
 #stickerText{
     color: #000;
     text-align: center;
     width: 100%;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 17px;
     top: 50%;
     transform: translateY(-50%);
 }
 
 #uspScreen{
-    width: 754px;
-    height: 179px;
-    left: 195px;
-    bottom: 35px;
+    width: 721px;
+    height: 201px;
+    left: 202px;
+    bottom: 23px;
     display: none;
     opacity: 0;
     background: rgb(30, 190, 190);
@@ -193,8 +193,8 @@ img, div, object, button{
 
 #uspText{
     font-size: 25px;
-    top: 19px;
-    left: 16px;
+    top: 14px;
+    left: 26px;
     line-height: normal;
 }
 
@@ -203,45 +203,44 @@ img, div, object, button{
 }
 
 .usp::before{
-    content: "";
-    width: 12px;
-    height: 12px;
+    content:url('./check.svg');
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
-    background: #FFC801;
-    left: -5px;
-    top: 10%;
+    left: -6px;
+    top: 3px;
     /* transform: translateY(-50%); */
     position: absolute;
 }
 
 .usp{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.15;
     font-family: 'montserratregular';
     width: 270px;
-    left: 16px;
+    left: 34px;
     padding-left: 20px;
     box-sizing: border-box;
 }
 
 #usp1{
-    top: 73px;
+    top: 80px;
 }
 #usp2{    
-    top: 71px;
-    left: 227px;
+    top: 81px;
+    left: 246px;
 }
 #usp3{    
-    top: 71px;
-    left: 434px;
+    top: 81px;
+    left: 453px;
 }
 
 #disclaimer,
 #disclaimer2{
-    font-size: 10px;
+    font-size: 11px;
     font-family: 'montserratregular';
     bottom: 8px;
-    left: 16px;
+    left: 272px;
 }
 
 #cta,
@@ -250,8 +249,8 @@ img, div, object, button{
     height: 39px;
     background: #FFC801;
     color: #000;
-    bottom: 12px;
-    right: 11px;
+    bottom: 24px;
+    right: 24px;
     border-radius: 2px;
     cursor: pointer;
 }
@@ -259,8 +258,8 @@ img, div, object, button{
 #cta{
     width: 199px;
     height: 40px;
-    bottom: 10px;
-    right: 8px;
+    bottom: 22px;
+    right: 24px;
 }
 
 .ctaText{
@@ -285,10 +284,10 @@ img, div, object, button{
 }
 
 #questionScreen{
-    width: 754px;
-    height: 179px;
-    left: 195px;
-    bottom: 35px;
+    width: 722px;
+    height: 201px;
+    left: 201px;
+    bottom: 23px;
     display: none;
     opacity: 0;
     background: rgb(30, 190, 190);
@@ -308,8 +307,8 @@ img, div, object, button{
 
 #questionText{
     font-size: 25px;
-    top: 19px;
-    left: 10px;
+    top: 16px;
+    left: 22px;
     line-height: 1.25;
 }
 
@@ -322,48 +321,48 @@ img, div, object, button{
 }
 
 #op3{    
-    left: 9px;
-    top: 32px;
+    left: 26px;
+    top: 35px;
 }
 #op4{    
-    left: 79px;
-    top: 32px;
+    left: 95px;
+    top: 35px;
 }
 #op5{    
-    left: 12px;
-    top: 32px;
+    left: 27px;
+    top: 35px;
 }
 #op6{
-    left: 89px;
-    top: 32px;
+    left: 105px;
+    top: 35px;
 }
 #op7{
-    left: 22px;
-    top: 32px;
+    left: 33px;
+    top: 35px;
 }
 #op8{
-    left: 90px;
-    top: 32px;
+    left: 100px;
+    top: 35px;
 }
 
 .question{
     font-size: 16px;
-    left: 11px;
+    left: 25px;
 }
 
 #q1Wrapper{
-    top: 69px;
+    top: 64px;
     height: 30px;
 }
 
 #q2Wrapper{
-    top: 69px;
+    top: 64px;
     height: 20px;
-    left: 174px;
+    left: 170px;
 }
 
 #q3Wrapper{
-    top: 69px;
+    top: 64px;
     height: 20px;
-    left: 334px;
+    left: 317px;
 }
