@@ -40,9 +40,16 @@ function getAnimation(){
     // masterTL.to("#text2", 0.3, {opacity:0, ease:Sine.easeInOut}, "showFrame2+=4")
     masterTL.from("#sticker1", 1, {scale:2, rotation:30, ease:Power4.easeOut}, "showFrame2+=1.75")
     masterTL.from("#sticker1", 0.2, {opacity:0, ease:Sine.easeIn}, "showFrame2+=1.75")
-    // masterTL.from("#sticker2", 1, {scale:2, rotation:-10, ease:Power4.easeOut}, "showFrame2+=4.8")
-    // masterTL.from("#sticker2", 0.2, {opacity:0, ease:Sine.easeIn}, "showFrame2+=4.8")
-    masterTL.to(["#sticker1", "#sticker2", "#text1", "#text1HighlightWrapper"], 0.3, {opacity:0, ease:Sine.easeIn}, "showFrame2+=4")
+    masterTL.to("#sticker1", 0.3, {opacity:0, ease:Sine.easeIn}, "showFrame2+=3.25")
+    masterTL.from("#sticker2", 1, {scale:2, rotation:30, ease:Power4.easeOut}, "showFrame2+=3.25")
+    masterTL.from("#sticker2", 0.2, {opacity:0, ease:Sine.easeIn}, "showFrame2+=3.25")
+    masterTL.to("#sticker2", 0.3, {opacity:0, ease:Sine.easeIn}, "showFrame2+=4.75")
+    masterTL.from("#sticker3", 1, {scale:2, rotation:30, ease:Power4.easeOut}, "showFrame2+=4.75")
+    masterTL.from("#sticker3", 0.2, {opacity:0, ease:Sine.easeIn}, "showFrame2+=4.75")
+    masterTL.to("#sticker3", 0.3, {opacity:0, ease:Sine.easeIn}, "showFrame2+=6.25")
+    masterTL.from("#sticker4", 1, {scale:2, rotation:30, ease:Power4.easeOut}, "showFrame2+=6.25")
+    masterTL.from("#sticker4", 0.2, {opacity:0, ease:Sine.easeIn}, "showFrame2+=6.25")
+    masterTL.to(["#sticker4", "#text1", "#text1HighlightWrapper"], 0.3, {opacity:0, ease:Sine.easeIn}, "showFrame2+=7.75")
 
     masterTL.add("showFrame3")
 
@@ -76,4 +83,6 @@ function getAnimation(){
     masterTL.from("#ctaRight", 0.3, {x:-50, ease:Sine.easeOut}, "endscreen+=1.7");
 
     masterTL.play();
+
+    console.log(masterTL.duration());
 }

@@ -105,14 +105,12 @@ img, div, object{
     overflow: hidden;
 }
 
-#sticker1{
+#sticker1,
+#sticker2,
+#sticker3,
+#sticker4{
     width: 100%;
     transform-origin: 150px 205px;
-}
-
-#sticker2{
-    width: 100%;
-    transform-origin: 200px 200px;
 }
 
 #tagWrapper{
