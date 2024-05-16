@@ -28,7 +28,6 @@ function getAnimation(){
     masterTL.add("start")
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)
     masterTL.add("start");
-    // masterTL.from("#bg", 5, {scale:1.1, ease:Sine.easeOut}, "start")
     masterTL.from("#bgBorder", 0.5, {scale:1.4, y:25, ease:Sine.easeOut}, "start")
     masterTL.from("#text1", 0.5, {y:100, ease:Sine.easeOut}, "start+=0.5")
     masterTL.from("#text1HighlightWrapper", 0.7, {width:0, ease:Sine.easeInOut}, "start+=1.2")
