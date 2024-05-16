@@ -39,7 +39,9 @@ function getAnimation(){
     
     masterTL.add("showProduct2", "+=0.5");
     masterTL.to("#product1", 1, {scale:0.8, x:-65, y:15, ease:Sine.easeInOut}, "showProduct2")
-    masterTL.from("#product2", 1, {x:150, ease:Sine.easeInOut}, "showProduct2")
+    masterTL.from("#product2", 1, {x:150, ease:Sine.easeInOut, onComplete:function(){
+        gsap.set("#product2Bg", {right:0});
+    }}, "showProduct2")
     masterTL.to(["#text1HighlightWrapper", "#text1"], 1, {scale:0.8, ease:Sine.easeInOut}, "showProduct2")
     masterTL.from("#text2", 0.5, {opacity:0, ease:Sine.easeOut}, "showProduct2+=0.5")
     masterTL.from("#text2HighlightWrapper", 0.7, {width:0, ease:Sine.easeInOut}, "showProduct2+=1.25")
@@ -51,14 +53,17 @@ function getAnimation(){
     
     masterTL.add("endScreen", "+=1")
     
-    masterTL.to(["#text1HighlightWrapper", "#text1", "#text2HighlightWrapper", "#text2", "#product1", "#product2", "#payOffWrapper"], 0.5, {opacity:0, ease:Sine.easeInOut}, "endScreen")
-    masterTL.to("#logo", 0.5, {scale:0.62871287128, left:120, top:12, ease:Sine.easeInOut}, "endscreen+=0.3")
-    masterTL.from("#tagline", 0.5, {opacity:0, ease:Sine.easeOut}, "endscreen+=0.7");
-    masterTL.from("#text3", 0.5, {opacity:0, ease:Sine.easeOut}, "endscreen+=1")
-    masterTL.from("#text3HighlightWrapper", 0.7, {width:0, ease:Sine.easeInOut}, "endscreen+=1.45")
-    masterTL.from("#ctaLeft", 0.5, {scale:0, transformOrigin:"50% 95%", ease:Back.easeOut}, "endscreen+=1.8");
-    masterTL.from("#ctaRight", 0.01, {opacity:0, ease:Sine.easeOut}, "endscreen+=2.5");
-    masterTL.from("#ctaRight", 0.3, {x:-50, ease:Sine.easeOut}, "endscreen+=2.5");
+    masterTL.to(["#text1HighlightWrapper", "#text1", "#text2HighlightWrapper", "#text2", "#payOffWrapper"], 0.5, {opacity:0, ease:Sine.easeInOut}, "endScreen")
+    masterTL.to("#product1", 1, {x:-200, ease:Sine.easeInOut}, "endscreen")
+    masterTL.to("#product2", 1, {x:200, ease:Sine.easeInOut}, "endscreen")
+    masterTL.to("#product2Bg", 0.5, {opacity:0, ease:Sine.easeIn}, "endscreen+=0.6")
+    masterTL.to("#logo", 0.5, {scale:0.62871287128, left:120, top:12, ease:Sine.easeInOut}, "endscreen+=0.6")
+    masterTL.from("#tagline", 0.5, {opacity:0, ease:Sine.easeOut}, "endscreen+=1");
+    masterTL.from("#text3", 0.5, {opacity:0, ease:Sine.easeOut}, "endscreen+=1.5")
+    masterTL.from("#text3HighlightWrapper", 0.7, {width:0, ease:Sine.easeInOut}, "endscreen+=2")
+    masterTL.from("#ctaLeft", 0.5, {scale:0, transformOrigin:"50% 95%", ease:Back.easeOut}, "endscreen+=2.5");
+    masterTL.from("#ctaRight", 0.01, {opacity:0, ease:Sine.easeOut}, "endscreen+=3.2");
+    masterTL.from("#ctaRight", 0.3, {x:-50, ease:Sine.easeOut}, "endscreen+=3.2");
 
     masterTL.play();
 

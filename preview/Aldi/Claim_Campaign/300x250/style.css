@@ -75,6 +75,13 @@ img, div, object{
     right: 0;
 }
 
+#product2Bg{
+    width: 50%;
+    height: 100%;
+    right: -150px;
+    background: #ef6b69;
+}
+
 #logo{
     width: 101px;
     left: 99px;
