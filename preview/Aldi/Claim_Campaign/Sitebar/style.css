@@ -79,17 +79,10 @@ img, div, object{
 
 #logo{
     width: 280px;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 50%;
+    transform: translateX(50%);
     top: 410px;
-    transform-origin: 0px 0px;
-}
-
-#logo2{
-    width: 120px;
-    right: 34px;
-    top: 34px;
-    opacity: 0;
+    transform-origin: 50% 0%;
 }
 
 #text1,

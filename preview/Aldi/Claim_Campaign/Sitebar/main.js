@@ -27,6 +27,7 @@ function init() {
 }
 
 function onResize(){
+
     var screenW = document.body.offsetWidth;
     var bannerH = document.querySelector("#banner").offsetHeight;
     var bannerW = document.querySelector("#banner").offsetWidth;
@@ -38,10 +39,14 @@ function onResize(){
         var newScale = bannerW/(scalerW/2);
         gsap.set("#scaler", {left:"50%", xPercent:-50, transformOrigin:"50% 0%", scale:newScale*bannerS});
         gsap.set("#extraScaler", {scale:newScale*bannerS});
-        gsap.set("#logo2", {x:-300});
+        if(masterTL.progress() > 0.11 && masterTL.progress() < 0.78){
+            gsap.set("#logo", {x:-300});
+        }
     }
     else if(bannerW < scalerW){
-        gsap.set("#logo2", {x:-((scalerW - screenW)/2)/bannerS});
+        if(masterTL.progress() > 0.11 && masterTL.progress() < 0.78){
+            gsap.set("#logo", {x:-((scalerW - screenW)/2)/bannerS});
+        }
         gsap.set("#scaler", {left:"50%", xPercent:-50, transformOrigin:"50% 0%"});
     }
     else{
@@ -56,12 +61,25 @@ function getAnimation(){
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)
     
     masterTL.add("start", "+=0.5");
-    masterTL.to("#logo", 0.5, {opacity: 0, ease:Sine.easeInOut}, "start")
-    // masterTL.to("#logo", 0.5, {scale:0.38514851485, left:"80%", top:28, ease:Sine.easeInOut}, "start")
-    masterTL.to("#introTagline", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=0.2")
     
+    var bannerH = document.querySelector("#banner").offsetHeight;
+    var bannerW = document.querySelector("#banner").offsetWidth;
+    var bannerS = bannerH/1200;
+    var screenW = document.body.offsetWidth;
+    var scalerW = document.querySelector("#scaler").offsetWidth*bannerS;
+   
+    if(bannerW < scalerW/2){
+        masterTL.to("#logo", 0.5, {scale:0.43928571428, right:34, top:34, x:-300, translateX:0, transformOrigin:"100% 0%", ease:Sine.easeInOut}, "start")
+    }
+    else if(bannerW < scalerW){
+        masterTL.to("#logo", 0.5, {scale:0.43928571428, right:34, top:34, x:-((scalerW - screenW)/2)/bannerS, translateX:0, transformOrigin:"100% 0%", ease:Sine.easeInOut}, "start")
+    }
+    else{
+        masterTL.to("#logo", 0.5, {scale:0.43928571428, right:34, top:34, translateX:0, transformOrigin:"100% 0%", ease:Sine.easeInOut}, "start")
+    }
+   
+    masterTL.to("#introTagline", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=0.2")
     masterTL.add("showProduct1", "-=0.5");
-    masterTL.to("#logo2", 0.5, {opacity: 1, ease:Sine.easeInOut}, "showProduct1")
     masterTL.from("#product1", 1, {x:"-150%", ease:Sine.easeOut}, "showProduct1")
     masterTL.from("#text1", 0.5, {opacity:0, ease:Sine.easeOut}, "showProduct1+=0.5")
     masterTL.from("#text1HighlightWrapper", 0.7, {width:0, ease:Sine.easeInOut}, "showProduct1+=1.25")
@@ -81,11 +99,12 @@ function getAnimation(){
     
     
     masterTL.add("endScreen", "+=1")
-    masterTL.to(["#text1HighlightWrapper", "#text1", "#text2HighlightWrapper", "#text2", "#product1", "#product2", "#text3", "#text3HighlightWrapper", "#logo2"], 0.5, {opacity:0, ease:Sine.easeInOut}, "endScreen")
+    masterTL.to(["#text1HighlightWrapper", "#text1", "#text2HighlightWrapper", "#text2", "#product1", "#product2", "#text3", "#text3HighlightWrapper"], 0.5, {opacity:0, ease:Sine.easeInOut}, "endScreen")
     masterTL.to("#product1", 1, {y:-1000, ease:Sine.easeInOut}, "endscreen")
     masterTL.to("#product2", 1, {y:-1000, ease:Sine.easeInOut}, "endscreen")
     masterTL.to("#product2Bg", 1, {height:"100%", ease:Sine.easeIn}, "endscreen")
-    masterTL.to("#logo", 0.5, {opacity: 1, scale:0.8, top:115, ease:Sine.easeInOut}, "endscreen+=0.3")
+    masterTL.to("#logo", 0.5, {scale:0.81428571428, right:"50%", top:118, translateX:"50%", transformOrigin:"50% 0%", ease:Sine.easeInOut}, "endscreen")
+    masterTL.from("#tagline", 0.5, {opacity:0, ease:Sine.easeInOut}, "endscreen+=0.6")
     masterTL.from("#payOff1", 0.5, {x:-850, ease:Sine.easeInOut}, "endscreen+=0.6")
     masterTL.from("#payOff2", 0.5, {x:850, ease:Sine.easeInOut}, "endscreen+=1")
     masterTL.from("#payOff3", 0.5, {x:-850, ease:Sine.easeInOut}, "endscreen+=1.45")
