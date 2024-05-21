@@ -68,7 +68,9 @@ function getAnimation(){
     
     masterTL.add("showProduct2", "+=0.5");
     masterTL.to("#product1", 1, {scale:0.6, y:-350, x:15, ease:Sine.easeInOut}, "showProduct2")
-    masterTL.from("#product2", 1, {y:600, ease:Sine.easeInOut}, "showProduct2")
+    masterTL.from("#product2", 1, {y:600, ease:Sine.easeInOut, onComplete:function(){
+        gsap.set("#product2Bg", {bottom:0});
+    }}, "showProduct2")
     masterTL.to(["#text1HighlightWrapper", "#text1"], 1, {scale:0.5, left:-110, top:-370, ease:Sine.easeInOut}, "showProduct2")
     masterTL.from("#text2", 0.5, {opacity:0, ease:Sine.easeOut}, "showProduct2+=0.8")
     masterTL.from("#text2HighlightWrapper", 0.7, {width:0, ease:Sine.easeInOut}, "showProduct2+=1.55")
@@ -79,9 +81,10 @@ function getAnimation(){
     
     
     masterTL.add("endScreen", "+=1")
-    masterTL.to("#logo2", 0.5, {opacity: 0, ease:Sine.easeInOut}, "endScreen")
-    masterTL.to(["#text1HighlightWrapper", "#text1", "#text2HighlightWrapper", "#text2", "#product1", "#product2", "#text3", "#text3HighlightWrapper"], 0.5, {opacity:0, ease:Sine.easeInOut}, "endScreen")
-    masterTL.to("#scaler", 0.5, {background: "#EF6A69", ease:Sine.easeInOut}, "endScreen")
+    masterTL.to(["#text1HighlightWrapper", "#text1", "#text2HighlightWrapper", "#text2", "#product1", "#product2", "#text3", "#text3HighlightWrapper", "#logo2"], 0.5, {opacity:0, ease:Sine.easeInOut}, "endScreen")
+    masterTL.to("#product1", 1, {y:-1000, ease:Sine.easeInOut}, "endscreen")
+    masterTL.to("#product2", 1, {y:-1000, ease:Sine.easeInOut}, "endscreen")
+    masterTL.to("#product2Bg", 1, {height:"100%", ease:Sine.easeIn}, "endscreen")
     masterTL.to("#logo", 0.5, {opacity: 1, scale:0.8, top:115, ease:Sine.easeInOut}, "endscreen+=0.3")
     masterTL.from("#payOff1", 0.5, {x:-850, ease:Sine.easeInOut}, "endscreen+=0.6")
     masterTL.from("#payOff2", 0.5, {x:850, ease:Sine.easeInOut}, "endscreen+=1")
