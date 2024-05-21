@@ -54,8 +54,8 @@ function getAnimation(){
     masterTL.add("endScreen", "+=1")
     
     masterTL.to(["#text1HighlightWrapper", "#text1", "#text2HighlightWrapper", "#text2", "#payOffWrapper"], 0.5, {opacity:0, ease:Sine.easeInOut}, "endScreen")
-    masterTL.to("#product1", 1, {x:-200, ease:Sine.easeInOut}, "endscreen")
-    masterTL.to("#product2", 1, {x:200, ease:Sine.easeInOut}, "endscreen")
+    masterTL.to("#product1", 1, {x:-250, ease:Sine.easeInOut}, "endscreen")
+    masterTL.to("#product2", 1, {x:-250, ease:Sine.easeInOut}, "endscreen")
     masterTL.to("#product2Bg", 1, {width:"100%", ease:Sine.easeIn}, "endscreen")
     // masterTL.to("#product2Bg", 0.5, {opacity:0, ease:Sine.easeIn}, "endscreen+=0.6")
     masterTL.to("#logo", 0.5, {scale:0.62871287128, left:120, top:12, ease:Sine.easeInOut}, "endscreen+=0.6")
