@@ -66,7 +66,7 @@ function getAnimation(){
     masterTL.from("#text1HighlightWrapper", 0.7, {width:0, ease:Sine.easeInOut}, "showProduct1+=1.25")
     
     masterTL.add("showProduct2", "+=0.5");
-    masterTL.to("#product1", 1, {y:-280, ease:Sine.easeInOut}, "showProduct2")
+    masterTL.to("#product1", 1, {y:-340, ease:Sine.easeInOut}, "showProduct2")
     masterTL.from("#product2", 1, {y:600, ease:Sine.easeInOut, onComplete:function(){
         gsap.set("#product2Bg", {bottom:0});
     }}, "showProduct2")
