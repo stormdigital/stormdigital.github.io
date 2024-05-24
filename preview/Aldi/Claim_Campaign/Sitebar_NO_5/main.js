@@ -89,7 +89,7 @@ function getAnimation(){
     masterTL.from("#product2", 1, {y:600, ease:Sine.easeInOut, onComplete:function(){
         gsap.set("#product2Bg", {bottom:0});
     }}, "showProduct2")
-    masterTL.to(["#text1HighlightWrapper", "#text1"], 1, {scale:0.51028037383, transformOrigin:"335px 238px", y:-192, ease:Sine.easeInOut}, "showProduct2")
+    masterTL.to(["#text1HighlightWrapper", "#text1"], 1, {scale:0.50742574257, transformOrigin:"335px 238px", y:-192, ease:Sine.easeInOut}, "showProduct2")
     masterTL.from("#text2", 0.5, {opacity:0, ease:Sine.easeOut}, "showProduct2+=0.8")
     masterTL.from("#text2HighlightWrapper", 0.7, {width:0, ease:Sine.easeInOut}, "showProduct2+=1.55")
     
