@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 160px;
+    height: 600px;
+    overflow: hidden;
+    color: #fff;
+    background: #00b6ed;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #00b6ed;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #c51718;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: solid 1px #c51718;
+    box-sizing: border-box;
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#wText{
+    bottom: -1px;
+    right: 2px;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+#product1{
+    width: 100%;
+    transform-origin: 0px 0px;
+}
+
+#product2{
+    width: 100%;
+    bottom: 0;
+}
+
+#product2Bg{
+    width: 100%;
+    height: 50%;
+    bottom: -300px;
+    background: #00b6ed;
+}
+
+#logo{
+    width: 43px;
+    right: 12px;
+    top: 12px;
+    transform-origin: 50% 0%;
+}
+
+#tagline{
+    width: 100%;
+}
+
+#text1,
+#text2,
+#text3,
+#text1Highlight,
+#text2Highlight,
+#text3Highlight{
+    width: 160px;
+    transform-origin: 12px 12px;
+}
+
+#text2Highlight{
+    right: 0;
+}
+
+#text1HighlightWrapper,
+#text2HighlightWrapper,
+#text3HighlightWrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform-origin: 12px 12px;
+}
+
+#payOffWrapper{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+}
+
+.payOff{
+    width: 100%;
+}
+
+#text2HighlightWrapper{
+    right: 0;
+}
+
+#ctaLeft,
+#ctaRight{
+    width: 100%;
+}
