@@ -74,6 +74,46 @@ var self = {
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (self);
 
+/***/ }),
+
+/***/ "./src/js/modules/introAnimation.js":
+/*!******************************************!*\
+  !*** ./src/js/modules/introAnimation.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _helpers_asset_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../helpers/asset.js */ "./src/js/helpers/asset.js");
+
+var self = {
+  eventBus: null,
+  initialize: function initialize(eventBus) {
+    self.eventBus = eventBus;
+    var introAnimation = self.createIntroTimeline();
+    introAnimation.play(0);
+  },
+  createIntroTimeline: function createIntroTimeline() {
+    var tl = gsap.timeline({
+      paused: true
+    });
+    tl.add('start');
+    // tl.to('.headline', 0, { x: "65vw" }, "start")
+    // tl.to('.title01', 0.1, {opacity:0}, 'start+=15')
+    // tl.to('.title02', 0.1, { opacity: 1 }, 'start+=15')
+
+    // tl.fromTo('.headline', 2, {x:(document.querySelector('.headline .title01').offsetWidth + document.querySelector('.headline .title03').offsetWidth)/4 + 150 },{ x: (document.querySelector('.headline .title01').offsetWidth + document.querySelector('.headline .title03').offsetWidth)/4}, "start+=2")
+    // tl.fromTo('.headline', 1, { x: '25vw' }, { x: 0 }, "start")
+    // tl.fromTo('.headline', 1,{x: 0}, {x: -200}, "start+=2")
+    // tl.fromTo('.headline', 12, {x:5200, ease: "sine.inOut"},{x:-5200}, "start")
+    // tl.to('.headline', 0.6, {scale: 1, x:0, ease: "sine.inOut"}, "start+=12")
+    return tl;
+  }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (self);
+
 /***/ })
 
 /******/ 	});
@@ -140,6 +180,8 @@ var __webpack_exports__ = {};
   \************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_background_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/background.js */ "./src/js/modules/background.js");
+/* harmony import */ var _modules_introAnimation_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/introAnimation.js */ "./src/js/modules/introAnimation.js");
+
 
 // import projectOverlay from './modules/projectOverlay';
 // import projectFilters from './modules/projectFilters';
@@ -148,6 +190,7 @@ __webpack_require__.r(__webpack_exports__);
 var eventBus = new EventTarget();
 window.addEventListener('load', function () {
   _modules_background_js__WEBPACK_IMPORTED_MODULE_0__["default"].initialize(eventBus);
+  _modules_introAnimation_js__WEBPACK_IMPORTED_MODULE_1__["default"].initialize(eventBus);
   // projectOverlay.initialize(eventBus);
   // projectFilters.initialize(eventBus);
   // article.initialize(eventBus);

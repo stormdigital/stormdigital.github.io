@@ -9,14 +9,23 @@
   // background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(58,144,180,1) 50%, rgba(252,176,69,1) 100%);
 }
 
+h3{
+  font-family: 'Mont-ExtraLight';
+  font-size: 12px;
+}
+
 .contentContainer{
   position: relative;
   width: 100%;
-  height: auto;
+  // height: 100vh;
   left:50%;
-  top:0;
-  transform: translate(-50%, 0);
-  max-width: 1200px;
+  top: 50%;
+  transform: translate(-50%, 0%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
 
   .heroCopyContainer{
@@ -26,6 +35,29 @@
     text-transform: uppercase;
     color: #2f2f2f;
     align-items: center;
+    flex-direction: row;
+    height: 100vh;
+    max-width: 1200px;
+
+    .headline{
+      // opacity: 0;
+      transform: scale(1);
+      white-space: nowrap;
+      overflow: hidden;
+
+      .title01{
+        opacity: 1;
+        // display: inline-block;
+      }
+      .title02{
+        opacity: 1;
+        // display: inline-block;
+      }
+      .title03{
+        opacity: 1;
+        // display: inline-block;
+      }
+    }
 
     h2{
       font-family: 'Mont-Heavy';
@@ -34,10 +66,67 @@
 
     h1{
       font-family: 'Mont-Heavy';
-      font-size: min(12vw, 176px);
+      font-size: min(10vw, 128px);
       background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .teamContainer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 25px 0;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // padding-top: 45px;
+
+    // max-width: 1200px;
+
+    .teamOverviewContainer{
+      display: flex;
+      flex-direction: row;
+      max-width: 1200px;
+      flex-flow: wrap;
+      gap: 35px 50px;
+      align-items: center;
+      justify-content: center;
+      margin-top:35px;
+
+      .teamMember{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        .memberName{
+          font-family: 'Mont-Heavy';
+          font-size: 12px;
+          margin-top: 5px;
+        }
+        .memberImage{
+          // margin-bottom: 10px;
+        }
+        
+      }
+    }
+
+    h2{
+      font-family: 'Mont-Heavy';
+      font-size: 2vw;
+    }
+
+    h1{
+      font-family: 'Mont-Heavy';
+      font-size: min(10vw, 128px);
+      background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
     }
   }
 }

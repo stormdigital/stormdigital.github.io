@@ -70,14 +70,21 @@ table {
   height: 100vh;
 }
 
+h3 {
+  font-family: "Mont-ExtraLight";
+  font-size: 12px;
+}
+
 .contentContainer {
   position: relative;
   width: 100%;
-  height: auto;
   left: 50%;
-  top: 0;
-  transform: translate(-50%, 0);
-  max-width: 1200px;
+  top: 50%;
+  transform: translate(-50%, 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .contentContainer .heroCopyContainer {
   position: relative;
@@ -86,6 +93,23 @@ table {
   text-transform: uppercase;
   color: #2f2f2f;
   align-items: center;
+  flex-direction: row;
+  height: 100vh;
+  max-width: 1200px;
+}
+.contentContainer .heroCopyContainer .headline {
+  transform: scale(1);
+  white-space: nowrap;
+  overflow: hidden;
+}
+.contentContainer .heroCopyContainer .headline .title01 {
+  opacity: 1;
+}
+.contentContainer .heroCopyContainer .headline .title02 {
+  opacity: 1;
+}
+.contentContainer .heroCopyContainer .headline .title03 {
+  opacity: 1;
 }
 .contentContainer .heroCopyContainer h2 {
   font-family: "Mont-Heavy";
@@ -93,7 +117,50 @@ table {
 }
 .contentContainer .heroCopyContainer h1 {
   font-family: "Mont-Heavy";
-  font-size: min(12vw, 176px);
+  font-size: min(10vw, 128px);
+  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contentContainer .teamContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 25px 0;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contentContainer .teamContainer .teamOverviewContainer {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  flex-flow: wrap;
+  gap: 35px 50px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+}
+.contentContainer .teamContainer .teamOverviewContainer .teamMember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.contentContainer .teamContainer .teamOverviewContainer .teamMember .memberName {
+  font-family: "Mont-Heavy";
+  font-size: 12px;
+  margin-top: 5px;
+}
+.contentContainer .teamContainer h2 {
+  font-family: "Mont-Heavy";
+  font-size: 2vw;
+}
+.contentContainer .teamContainer h1 {
+  font-family: "Mont-Heavy";
+  font-size: min(10vw, 128px);
   background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
