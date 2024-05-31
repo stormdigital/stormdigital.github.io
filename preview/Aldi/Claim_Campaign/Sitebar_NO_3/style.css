@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #c4a6ce;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #000;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#scaler{
+    width: 1200px;
+    height: 1200px;
+    left: 0px;
+    overflow: hidden;
+    background: #c4a6ce;
+    color: #fff;
+}
+
+#extraScaler{
+    width: 1200px;
+    height: 1200px;
+    pointer-events: none;
+    transform-origin: 0px 0px;
+}
+
+#bg{
+    width: 100%;
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: solid 1px #202b77;
+    box-sizing: border-box;
+}
+
+#logo{
+    width: 280px;
+    right: 50%;
+    transform: translateX(50%);
+    top: 410px;
+    transform-origin: 50% 0%;
+}
+
+#text1,
+#text2,
+#text3,
+#text1Highlight,
+#text2Highlight
+#text3Highlight{
+    width: 1200px;
+}
+
+#text1HighlightWrapper,
+#text3HighlightWrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#text2HighlightWrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    right: 0;
+}
+
+#text2Highlight{
+    right: 0;
+}
+
+#sticker1{
+    width: 100%;
+    transform-origin: 535px 1100px;
+}
+
+#sticker2{
+    width: 100%;
+    transform-origin: 675px 1100px;
+}
+
+#payOffWrapper{
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.payOff{
+    width: 100%;
+}
+
+#tagWrapper{
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#tag{
+    width: 1200px;
+}
+
+#ctaLeft,
+#ctaRight{
+    width: 100%;
+}
+
+#product2{
+    bottom: 0;
+}
+
+#product2Bg{
+    width: 100%;
+    height: 50%;
+    bottom: -600px;
+    background: #3597d1;
+}

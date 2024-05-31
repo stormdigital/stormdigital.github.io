@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #ed6b6a;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #000;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#scaler{
+    width: 1200px;
+    height: 1200px;
+    left: 0px;
+    overflow: hidden;
+    background: #ed6b6a;
+    color: #fff;
+}
+
+#extraScaler{
+    width: 1200px;
+    height: 1200px;
+    pointer-events: none;
+    transform-origin: 0px 0px;
+}
+
+#bg{
+    width: 100%;
+}
+
+#bgBorder{
+    width: 536px;
+    height: 854px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    top: 35px;
+    box-shadow: 0px 0px 0px 3000px #00b8f3;
+}
+
+#logo{
+    width: 105px;
+    left: 56px;
+    top: 56px;
+    transform-origin: 0px 0px;
+}
+
+#logo2{
+    width: 100%;
+}
+
+#text1,
+#text2,
+#text3,
+#text1Highlight,
+#text3Highlight{
+    width: 1200px;
+}
+
+#text1HighlightWrapper,
+#text3HighlightWrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#sticker1,
+#sticker2,
+#sticker3,
+#sticker4{
+    width: 100%;
+    transform-origin: 625px 840px;
+}
+
+#tagWrapper{
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#tag{
+    width: 1200px;
+}
+
+#ctaLeft,
+#ctaRight{
+    width: 100%;
+}
