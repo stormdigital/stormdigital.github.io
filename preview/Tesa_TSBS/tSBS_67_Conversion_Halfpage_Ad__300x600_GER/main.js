@@ -78,7 +78,7 @@ function getAnimation(){
     masterTL.to(["#tesaWrapper", "#tadaaWrapper"], 0.5, {opacity:0, ease:Sine.easeIn}, "start+=9.5")
     masterTL.from("#blueCircle", 1.25, {scaleY:0, ease:"elastic.out(0.5,0.3)"}, "start+=10")
     masterTL.from("#mainProduct", 1, {opacity:0, y:70, ease:"elastic.out(0.5 ,0.4)"}, "start+=10")
-    masterTL.to(".blur", 0.8, {opacity: 1, ease:Sine.easeInOut}, "start+=10")
+    // masterTL.to(".blur", 0.8, {opacity: 1, ease:Sine.easeInOut}, "start+=10")
     masterTL.from(["#cta", "#ctaBorder"], 1, {opacity:0, y:70, ease:"elastic.out(0.5 ,0.4)"}, "start+=10.5")
     masterTL.from("#leftProduct", 0.4, {x:70, opacity:0, ease:Back.easeOut}, "start+=10.5")
     masterTL.from("#rightProduct", 0.4, {x:-70, opacity:0, ease:Back.easeOut}, "start+=10.5")
