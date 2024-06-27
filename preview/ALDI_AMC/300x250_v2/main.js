@@ -16,7 +16,8 @@ function init() {
     })
 
     document.querySelector("#mainExit").addEventListener("click", function(){
-        masterTL.progress(1);
+        // masterTL.progress(1);
+        masterTL.pause();
     })
 
     getAnimation();
@@ -27,14 +28,13 @@ function getAnimation(){
     masterTL = gsap.timeline({paused:true});
     masterTL.add("start")
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)
-    masterTL.add("start");
-    masterTL.from("#bg", 4, {scale:1.2, ease:Sine.easeOut}, "start")
-    masterTL.from("#phoneWrapper", 4, {scale:1.6, ease:Sine.easeOut}, "start")
-    masterTL.from("#head", 4, {scale:3, ease:Sine.easeOut}, "start")
+    masterTL.fromTo("#bg", 2, {scale:1.25}, {scale:1.2, ease:Power0.easeNone}, "start")
+    masterTL.fromTo("#phoneWrapper", 2, {scale:1.7}, {scale:1.6, ease:Power0.easeNone}, "start")
+    masterTL.fromTo("#head", 2, {scale:3.5}, {scale:3, ease:Power0.easeNone}, "start")
 
-    // masterTL.to("#bg", 4, {scale:1.01, ease:Sine.easeIn}, "start+=4")
-    // masterTL.to("#phoneWrapper", 4, {scale:1.05, ease:Sine.easeIn}, "start+=4")
-    // masterTL.to("#head", 4, {scale:1.1, ease:Sine.easeIn}, "start+=4")
+    masterTL.to("#bg", 6, {scale:1, ease:Sine.easeOut}, "start+=2")
+    masterTL.to("#phoneWrapper", 6, {scale:1, ease:Sine.easeOut}, "start+=2")
+    masterTL.to("#head", 6, {scale:1, ease:Sine.easeOut}, "start+=2")
 
     masterTL.from("#flyerLeft", 3.5, {rotationY:90, ease: "back.out(2)",}, "start+=0.5")
     masterTL.from("#gradientLeft", 0.3, {opacity:0}, "start+=0.7")
@@ -45,13 +45,13 @@ function getAnimation(){
     masterTL.to("#gradientRight", 1.8, {left:"95%", ease:Power3.easeInOut}, "start+=0.3")
     masterTL.to("#gradientRight", 0.3, {opacity:0}, "start+=1.1")
     
-    masterTL.from("#text1", 0.5, {x:300, ease:Sine.easeOut}, "start+=1");
-    masterTL.from("#highlightWrapper1", 0.5, {width:0, ease:Sine.easeInOut}, "start+=2");
-    masterTL.to(["#text1", "#highlightWrapper1"], 0.5, {x:-300, ease:Sine.easeIn}, "start+=4")
+    masterTL.from("#text1", 0.5, {x:300, ease:Sine.easeOut}, "start+=2");
+    masterTL.from("#highlightWrapper1", 0.5, {width:0, ease:Sine.easeInOut}, "start+=3");
+    masterTL.to(["#text1", "#highlightWrapper1"], 0.5, {x:-300, ease:Sine.easeIn}, "start+=5")
     
-    masterTL.from("#text2", 0.5, {x:300, ease:Sine.easeOut}, "start+=4.3");
-    masterTL.from("#highlightWrapper2", 0.5, {width:0, ease:Sine.easeInOut}, "start+=5.3");
-    masterTL.to(["#text2", "#highlightWrapper2"], 0.3, {scale:1.1, ease:Sine.easeInOut, repeat:1, yoyo:true}, "start+=6")
+    masterTL.from("#text2", 0.5, {x:300, ease:Sine.easeOut}, "start+=5.3");
+    masterTL.from("#highlightWrapper2", 0.5, {width:0, ease:Sine.easeInOut}, "start+=6.3");
+    masterTL.to(["#text2", "#highlightWrapper2"], 0.3, {scale:1.1, ease:Sine.easeInOut, repeat:1, yoyo:true}, "start+=7")
     masterTL.from("#blueBg", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=8")
 
     masterTL.from("#icon1", 0.5, {scale:0, ease:Back.easeOut}, "start+=8.5")

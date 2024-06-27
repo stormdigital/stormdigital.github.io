@@ -32,35 +32,35 @@ function getAnimation(){
     masterTL.from("#phoneWrapper", 4, {scale:1.6, ease:Sine.easeOut}, "start")
     masterTL.from("#head", 4, {scale:3, ease:Sine.easeOut}, "start")
 
-    // masterTL.to("#bg", 4, {scale:1.01, ease:Sine.easeIn}, "start+=4")
-    // masterTL.to("#phoneWrapper", 4, {scale:1.05, ease:Sine.easeIn}, "start+=4")
-    // masterTL.to("#head", 4, {scale:1.1, ease:Sine.easeIn}, "start+=4")
+    masterTL.to("#bg", 4, {scale:1.01, ease:Sine.easeIn}, "start+=4")
+    masterTL.to("#phoneWrapper", 4, {scale:1.05, ease:Sine.easeIn}, "start+=4")
+    masterTL.to("#head", 4, {scale:1.1, ease:Sine.easeIn}, "start+=4")
 
-    masterTL.from("#flyerLeft", 3.5, {rotationY:90, ease: "back.out(2)",}, "start+=0.5")
-    masterTL.from("#gradientLeft", 0.3, {opacity:0}, "start+=0.7")
-    masterTL.to("#gradientLeft", 1.7, {left:"-40%", ease:Power3.easeInOut}, "start+=0.3")
-    masterTL.to("#gradientLeft", 0.3, {opacity:0}, "start+=1")
-    masterTL.from("#flyerRight", 3.45, {rotationY:-90, ease: "back.out(1)",}, "start+=0.6")
-    masterTL.from("#gradientRight", 0.3, {opacity:0}, "start+=0.7")
-    masterTL.to("#gradientRight", 1.8, {left:"95%", ease:Power3.easeInOut}, "start+=0.3")
-    masterTL.to("#gradientRight", 0.3, {opacity:0}, "start+=1.1")
+    masterTL.from("#flyerLeft", 3.5, {rotationY:90, ease: "back.out(2)",}, "start+=1")
+    masterTL.from("#gradientLeft", 0.3, {opacity:0}, "start+=1.2")
+    masterTL.to("#gradientLeft", 1.7, {left:"-40%", ease:Power3.easeInOut}, "start+=0.8")
+    masterTL.to("#gradientLeft", 0.3, {opacity:0}, "start+=1.5")
+    masterTL.from("#flyerRight", 3.45, {rotationY:-90, ease: "back.out(1)",}, "start+=1.1")
+    masterTL.from("#gradientRight", 0.3, {opacity:0}, "start+=1.2")
+    masterTL.to("#gradientRight", 1.8, {left:"95%", ease:Power3.easeInOut}, "start+=0.8")
+    masterTL.to("#gradientRight", 0.3, {opacity:0}, "start+=1.6")
     
-    masterTL.from("#text1", 0.5, {x:300, ease:Sine.easeOut}, "start+=1");
-    masterTL.from("#highlightWrapper1", 0.5, {width:0, ease:Sine.easeInOut}, "start+=2");
-    masterTL.to(["#text1", "#highlightWrapper1"], 0.5, {x:-300, ease:Sine.easeIn}, "start+=4")
+    masterTL.from("#text1", 0.5, {x:300, ease:Sine.easeOut}, "start+=2.5");
+    masterTL.from("#highlightWrapper1", 0.5, {width:0, ease:Sine.easeInOut}, "start+=3.5");
+    masterTL.to(["#text1", "#highlightWrapper1"], 0.5, {x:-300, ease:Sine.easeIn}, "start+=5")
     
-    masterTL.from("#text2", 0.5, {x:300, ease:Sine.easeOut}, "start+=4.3");
-    masterTL.from("#highlightWrapper2", 0.5, {width:0, ease:Sine.easeInOut}, "start+=5.3");
-    masterTL.to(["#text2", "#highlightWrapper2"], 0.3, {scale:1.1, ease:Sine.easeInOut, repeat:1, yoyo:true}, "start+=6")
-    masterTL.from("#blueBg", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=8")
+    masterTL.from("#text2", 0.5, {x:300, ease:Sine.easeOut}, "start+=5.4");
+    masterTL.from("#highlightWrapper2", 0.5, {width:0, ease:Sine.easeInOut}, "start+=6.4");
+    masterTL.to(["#text2", "#highlightWrapper2"], 0.3, {scale:1.1, ease:Sine.easeInOut, repeat:1, yoyo:true}, "start+=7")
+    masterTL.from("#blueBg", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=8.5")
 
-    masterTL.from("#icon1", 0.5, {scale:0, ease:Back.easeOut}, "start+=8.5")
-    masterTL.from("#icon2", 0.5, {scale:0, ease:Back.easeOut}, "start+=8.7")
-    masterTL.from("#icon3", 0.5, {scale:0, ease:Back.easeOut}, "start+=8.9")
-    masterTL.from("#icon4", 0.5, {scale:0, ease:Back.easeOut}, "start+=9.1")
+    masterTL.from("#icon1", 0.5, {scale:0, ease:Back.easeOut}, "start+=9")
+    masterTL.from("#icon2", 0.5, {scale:0, ease:Back.easeOut}, "start+=9.2")
+    masterTL.from("#icon3", 0.5, {scale:0, ease:Back.easeOut}, "start+=9.4")
+    masterTL.from("#icon4", 0.5, {scale:0, ease:Back.easeOut}, "start+=9.6")
 
-    masterTL.from("#text3", 0.5, {x:300, ease:Sine.easeOut}, "start+=9");
-    masterTL.from("#highlightWrapper3", 0.5, {width:0, ease:Sine.easeInOut}, "start+=10");
+    masterTL.from("#text3", 0.5, {x:300, ease:Sine.easeOut}, "start+=10");
+    masterTL.from("#highlightWrapper3", 0.5, {width:0, ease:Sine.easeInOut}, "start+=11");
 
     masterTL.to("#icon1", 0.5, {scale:0, ease:Back.easeIn}, "start+=12")
     masterTL.to("#icon2", 0.5, {scale:0, ease:Back.easeIn}, "start+=12.2")
