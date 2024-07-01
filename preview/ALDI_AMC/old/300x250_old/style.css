@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    color: #fff;
+    background: #202b77;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #202b77;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #00b6ed;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: solid 1px #00b6ed;
+    box-sizing: border-box;
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#wText{
+    bottom: -1px;
+    right: 2px;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+#bg,
+#phone,
+#head{
+    width: 100%;
+    transform-origin: 215px 100px;
+}
+
+#phoneWrapper{
+    width: 100%;
+    height: 100%;
+    transform-origin: 215px 100px;
+}
+
+#flyerWrapper{
+    width: 118px;
+    height: 114px;
+    top: 21px;
+    left: 122px;
+    transform: rotate(12deg);
+    overflow: hidden;
+}
+
+#flyerWrapper img{
+    width: 100%;
+}
+
+#gradientLeft,
+#gradientRight{
+    width: 50px;
+    height: 89%;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 20%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 81%);
+    left: 25%;
+    top: 3px;
+    opacity: 0.4;
+}
+
+#text1,
+#text2,
+#text3,
+#tagline{
+    width: 100%;
+    transform-origin: 10px 240px;
+}
+
+#highlightWrapper1,
+#highlightWrapper2,
+#highlightWrapper3{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform-origin: 10px 240px;
+}
+
+#highlight1,
+#highlight2,
+#highlight3{
+    width: 300px;
+}
+
+#blueBg{
+    width: 100%;
+    height: 100%;
+    background: #202b77;
+}
+
+#icon1,
+#icon2,
+#icon3,
+#icon4{
+    width: 100%;
+}
+
+#icon1{transform-origin: 40px 50%;}
+#icon2{transform-origin: 114px 50%;}
+#icon3{transform-origin: 188px 50%;}
+#icon4{transform-origin: 260px 50%;}
+
+#ctaLeft,
+#ctaRight{
+    width: 100%;
+}
+
+#logo{
+    width: 51px;
+    left: 10px;
+    top: 10px;
+}
