@@ -65,11 +65,8 @@ img, div, object{
     font-size: 14px;
 }
 
-#bg,
-#phone,
-#head{
+#bg{
     width: 100%;
-    transform-origin: 215px 100px;
 }
 
 #phoneWrapper{

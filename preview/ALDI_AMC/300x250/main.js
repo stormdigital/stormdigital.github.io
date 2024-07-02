@@ -28,13 +28,6 @@ function getAnimation(){
     masterTL.add("start")
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)
     masterTL.add("start");
-    masterTL.from("#bg", 4, {scale:1.2, ease:Sine.easeOut}, "start")
-    masterTL.from("#phoneWrapper", 4, {scale:1.6, ease:Sine.easeOut}, "start")
-    masterTL.from("#head", 4, {scale:3, ease:Sine.easeOut}, "start")
-
-    // masterTL.to("#bg", 4, {scale:1.01, ease:Sine.easeIn}, "start+=4")
-    // masterTL.to("#phoneWrapper", 4, {scale:1.05, ease:Sine.easeIn}, "start+=4")
-    // masterTL.to("#head", 4, {scale:1.1, ease:Sine.easeIn}, "start+=4")
 
     masterTL.from("#flyerLeft", 3.5, {rotationY:90, ease: "back.out(2)",}, "start+=0.5")
     masterTL.from("#gradientLeft", 0.3, {opacity:0}, "start+=0.7")
@@ -47,6 +40,7 @@ function getAnimation(){
     
     masterTL.from("#text1", 0.5, {x:300, ease:Sine.easeOut}, "start+=1");
     masterTL.from("#highlightWrapper1", 0.5, {width:0, ease:Sine.easeInOut}, "start+=2");
+    masterTL.to(["#text1", "#highlightWrapper1"], 0.3, {scale:1.1, ease:Sine.easeInOut, repeat:1, yoyo:true}, "start+=2.7")
     masterTL.to(["#text1", "#highlightWrapper1"], 0.5, {x:-300, ease:Sine.easeIn}, "start+=4")
     
     masterTL.from("#text2", 0.5, {x:300, ease:Sine.easeOut}, "start+=4.3");

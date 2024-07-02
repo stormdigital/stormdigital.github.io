@@ -65,11 +65,8 @@ img, div, object{
     font-size: 14px;
 }
 
-#bg,
-#phone,
-#head{
+#bg{
     width: 100%;
-    transform-origin: 215px 100px;
 }
 
 #phoneWrapper{
@@ -105,6 +102,7 @@ img, div, object{
 #text1,
 #text2,
 #text3,
+#text4,
 #tagline{
     width: 100%;
     transform-origin: 10px 240px;
@@ -112,7 +110,8 @@ img, div, object{
 
 #highlightWrapper1,
 #highlightWrapper2,
-#highlightWrapper3{
+#highlightWrapper3,
+#highlightWrapper4{
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -121,7 +120,8 @@ img, div, object{
 
 #highlight1,
 #highlight2,
-#highlight3{
+#highlight3,
+#highlight4{
     width: 300px;
 }
 
@@ -134,7 +134,8 @@ img, div, object{
 #icon1,
 #icon2,
 #icon3,
-#icon4{
+#icon4,
+#icon5{
     width: 100%;
 }
 

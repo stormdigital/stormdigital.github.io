@@ -28,13 +28,6 @@ function getAnimation(){
     masterTL.add("start")
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)
     masterTL.add("start");
-    // masterTL.from("#bg", 4, {scale:1.2, ease:Sine.easeOut}, "start")
-    // masterTL.from("#phoneWrapper", 4, {scale:1.6, ease:Sine.easeOut}, "start")
-    // masterTL.from("#head", 4, {scale:3, ease:Sine.easeOut}, "start")
-
-    // masterTL.to("#bg", 4, {scale:1.01, ease:Sine.easeIn}, "start+=4")
-    // masterTL.to("#phoneWrapper", 4, {scale:1.05, ease:Sine.easeIn}, "start+=4")
-    // masterTL.to("#head", 4, {scale:1.1, ease:Sine.easeIn}, "start+=4")
 
     masterTL.from("#flyerLeft", 3.5, {rotationY:90, ease: "back.out(2)",}, "start+=0.5")
     masterTL.from("#gradientLeft", 0.3, {opacity:0}, "start+=0.7")
@@ -63,20 +56,27 @@ function getAnimation(){
     masterTL.from("#text3", 0.5, {x:300, ease:Sine.easeOut}, "start+=9");
     masterTL.from("#highlightWrapper3", 0.5, {width:0, ease:Sine.easeInOut}, "start+=10");
 
+    masterTL.to(["#text3", "#highlightWrapper3"], 0.5, {x:-300, ease:Sine.easeIn}, "start+=12")
     masterTL.to("#icon1", 0.5, {scale:0, ease:Back.easeIn}, "start+=12")
     masterTL.to("#icon2", 0.5, {scale:0, ease:Back.easeIn}, "start+=12.2")
     masterTL.to("#icon3", 0.5, {scale:0, ease:Back.easeIn}, "start+=12.4")
     masterTL.to("#icon4", 0.5, {scale:0, ease:Back.easeIn}, "start+=12.6")
     
-    masterTL.to(["#text3", "#highlightWrapper3"], 0.5, {y:-55, ease:Sine.easeInOut}, "start+=13")
-    masterTL.to("#logo", 0.5, {width:65, left:"50%", translateX:"-50%", ease:Sine.easeInOut}, "start+=13")
-    
-    masterTL.from("#tagline", 0.5, {opacity:0, y:-10, ease:Back.easeOut}, "start+=13.5")
+    masterTL.from("#icon5", 0.5, {scale:0, ease:Back.easeOut}, "start+=13")
+    masterTL.from("#text4", 0.5, {x:300, ease:Sine.easeOut}, "start+=13");
+    masterTL.from("#highlightWrapper4", 0.5, {width:0, ease:Sine.easeInOut}, "start+=14");
 
-    masterTL.from("#ctaLeft", 0.5, {scale:0, transformOrigin:"50% 95%", ease:Back.easeOut}, "start+=14");
-    masterTL.from("#ctaRight", 0.01, {opacity:0, ease:Sine.easeOut}, "start+=14.7");
-    masterTL.from("#ctaRight", 0.3, {x:-50, ease:Sine.easeOut}, "start+=14.7");
+    masterTL.to("#icon5", 0.5, {scale:0, ease:Back.easeIn}, "start+=16")
+    
+    masterTL.to("#logo", 0.5, {width:65, left:"50%", translateX:"-50%", ease:Sine.easeInOut}, "start+=16")
+    masterTL.to(["#text4", "#highlightWrapper4"], 0.5, {y:-55, ease:Sine.easeInOut}, "start+=16.3")
+    
+    masterTL.from("#tagline", 0.5, {opacity:0, y:-10, ease:Back.easeOut}, "start+=16.5")
+
+    masterTL.from("#ctaLeft", 0.5, {scale:0, transformOrigin:"50% 95%", ease:Back.easeOut}, "start+=17");
+    masterTL.from("#ctaRight", 0.01, {opacity:0, ease:Sine.easeOut}, "start+=17.7");
+    masterTL.from("#ctaRight", 0.3, {x:-50, ease:Sine.easeOut}, "start+=17.7");
 
  
-    masterTL.play();
+    masterTL.duration(15).play();
 }
