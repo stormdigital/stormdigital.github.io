@@ -5,19 +5,18 @@ function init() {
 
     document.querySelector("#mainExit").addEventListener("mouseover", function(){
         if(masterTL.progress() == 1){
-            // gsap.to("#ctaRight", 0.3, {opacity:0.8, ease:Sine.easeInOut});
+            gsap.to("#ctaRight", 0.3, {opacity:0.8, ease:Sine.easeInOut});
         }
     })
     
     document.querySelector("#mainExit").addEventListener("mouseout", function(){
         if(masterTL.progress() == 1){
-            // gsap.to("#ctaRight", 0.3, {opacity:1, ease:Sine.easeInOut});
+            gsap.to("#ctaRight", 0.3, {opacity:1, ease:Sine.easeInOut});
         }
     })
 
     document.querySelector("#mainExit").addEventListener("click", function(){
-        // masterTL.progress(1);
-        masterTL.pause();
+        masterTL.progress(1);
     })
 
     getAnimation();
@@ -34,25 +33,26 @@ function getAnimation(){
 
     masterTL.to(["#text1", "#brandLogo"], 0.3, {opacity:0, ease:Sine.easeIn}, "start+=3")
 
-    masterTL.from("#productBg1", 0.5, {opacity:0, ease:Sine.easeOut}, "start+=3.3")
+    
+    masterTL.from("#productBg", 0.5, {opacity:0, ease:Sine.easeOut}, "start+=3.3")
     masterTL.from("#product1Large", 1, {scale:3, ease:Power2.easeIn}, "start+=3.3")
     masterTL.from("#product1Large", 0.75, {opacity:0, 'filter': 'blur(2px)', ease:Power4.easeOut}, "start+=3.3")
+    masterTL.from("#date1", 0.5, {x:"100%", ease:Sine.easeOut}, "start+=4")
     masterTL.from("#product1Info", 0.6, {x:"25%", ease:Sine.easeOut}, "start+=4.2")
     masterTL.from("#product1Info", 0.3, {opacity:0, ease:Sine.easeOut}, "start+=4.3")
-    masterTL.from("#date1", 0.5, {x:"100%", ease:Sine.easeOut}, "start+=5")
     
     masterTL.to("#product1Wrapper", 0.5, {x:"-100%", ease:Sine.easeIn}, "start+=7")
-    masterTL.to("#date1", 0.3, {opacity:0, ease:Sine.easeIn}, "start+=7")
-
-    masterTL.from("#productBg2", 0.5, {opacity:0, ease:Sine.easeOut}, "start+=7.3")
+    
     masterTL.from("#product2Large", 1, {scale:3, ease:Power2.easeIn}, "start+=7.3")
     masterTL.from("#product2Large", 0.75, {opacity:0, 'filter': 'blur(2px)', ease:Power4.easeOut}, "start+=7.3")
     masterTL.from("#product2Info", 0.6, {x:"25%", ease:Sine.easeOut}, "start+=8.2")
     masterTL.from("#product2Info", 0.3, {opacity:0, ease:Sine.easeOut}, "start+=8.3")
-    masterTL.from("#date2", 0.5, {x:"100%", ease:Sine.easeOut}, "start+=9")
-
+    // masterTL.from("#date2", 0.5, {x:"100%", ease:Sine.easeOut}, "start+=9")
+    
     masterTL.to("#product2Wrapper", 0.5, {x:"-100%", ease:Sine.easeIn}, "start+=11")
-    masterTL.to("#date2", 0.3, {opacity:0, ease:Sine.easeIn}, "start+=11")
+    masterTL.to("#productBg", 0.5, {x:"-100%", ease:Sine.easeIn}, "start+=11")
+    masterTL.to("#date1", 0.3, {opacity:0, ease:Sine.easeIn}, "start+=11")
+    // masterTL.to("#date2", 0.3, {opacity:0, ease:Sine.easeIn}, "start+=11")
 
     masterTL.set("#brandLogo", {x: -74, y:12, scale:0.63}, "start+=11.5");
     masterTL.set("#text2", {x: -74, y:2, scale:0.68862275449}, "start+=11.5");

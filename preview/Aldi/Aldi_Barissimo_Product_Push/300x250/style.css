@@ -47,7 +47,7 @@ img, div, object{
 #border{
     width: 100%;
     height: 100%;
-    border: solid 1px #00b6ed;
+    border: solid 1px #000;
     box-sizing: border-box;
 }
 
@@ -60,7 +60,7 @@ img, div, object{
 
 #wText{
     bottom: -1px;
-    left: 2px;
+    right: 2px;
     font-family: Arial;
     font-size: 14px;
 }
@@ -118,8 +118,7 @@ img, div, object{
 #brandLogo,
 #date1,
 #date2,
-#productBg1,
-#productBg2,
+#productBg,
 #product1Info,
 #product2Info,
 #product1Large,
@@ -139,8 +138,8 @@ img, div, object{
     height: 100%;
 }
 
-#productBg{transform-origin: 150px 160px;}
 #product1Large{transform-origin: 213px 166px;}
+#product2Large{transform-origin: 213px 166px;}
 
 #bgRight{
     height: 100%;
