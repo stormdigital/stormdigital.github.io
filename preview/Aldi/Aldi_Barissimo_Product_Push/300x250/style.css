@@ -199,8 +199,9 @@ img, div, object{
 }
 
 #logo{
-    width: 58px;
+    width: 64px;
     top: 10px;
     left: 10px;
-    transform: scale(0.90551181102);
+    transform: scale(0.890625);
+    transform-origin: 0px 0px;
 }
