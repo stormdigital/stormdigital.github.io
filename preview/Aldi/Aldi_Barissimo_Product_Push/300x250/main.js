@@ -33,18 +33,20 @@ function getAnimation(){
     masterTL.from("#text1", 1, {opacity:0, ease:Sine.easeOut}, "start")
 
     masterTL.to(["#text1", "#brandLogo"], 0.3, {opacity:0, ease:Sine.easeIn}, "start+=3")
-
+    
+    masterTL.from("#date1", 0.5, {x:"100%", ease:Sine.easeOut}, "start+=3.3")
     masterTL.from("#productBg", 0.5, {x:100, opacity:0, ease:Sine.easeOut}, "start+=3.3")
-    masterTL.from("#product1Large", 1, {x:300, ease:Power2.easeOut}, "start+=3.3")
-    masterTL.from("#date1", 0.5, {x:"100%", ease:Sine.easeOut}, "start+=4")
-    masterTL.from("#product1Info", 0.6, {x:"25%", ease:Sine.easeOut}, "start+=4")
-    masterTL.from("#product1Info", 0.3, {opacity:0, ease:Sine.easeOut}, "start+=4.1")
+    masterTL.from("#product1Info", 0.6, {x:300, ease:Sine.easeOut}, "start+=3.3")
+    masterTL.from("#product1Info", 0.3, {opacity:0, ease:Sine.easeOut}, "start+=3.4")
+    masterTL.from("#product1Large", 1, {x:300, ease:Power2.easeOut}, "start+=4")
+    masterTL.from("#product1Large", 0.3, {opacity:0, ease:Sine.easeOut}, "start+=4.1")
     
     masterTL.to("#product1Wrapper", 0.5, {x:"-100%", ease:Sine.easeIn}, "start+=7")
     
-    masterTL.from("#product2Large", 1, {x:300, ease:Power2.easeOut}, "start+=7.3")
-    masterTL.from("#product2Info", 0.6, {x:"25%", ease:Sine.easeOut}, "start+=8")
-    masterTL.from("#product2Info", 0.3, {opacity:0, ease:Sine.easeOut}, "start+=8.1")
+    masterTL.from("#product2Info", 0.6, {x:300, ease:Sine.easeOut}, "start+=7.3")
+    masterTL.from("#product2Info", 0.3, {opacity:0, ease:Sine.easeOut}, "start+=7.4")
+    masterTL.from("#product2Large", 1, {x:300, ease:Power2.easeOut}, "start+=8")
+    masterTL.from("#product2Large", 0.3, {opacity:0, ease:Sine.easeOut}, "start+=8.1")
     
     masterTL.to("#product2Wrapper", 0.5, {x:"-100%", ease:Sine.easeIn}, "start+=11")
     masterTL.to("#productBg", 0.5, {x:"-100%", ease:Sine.easeIn}, "start+=11")
