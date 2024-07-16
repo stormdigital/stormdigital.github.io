@@ -36,18 +36,18 @@ function getAnimation(){
     masterTL.to("#intro2 .introFill", 0.01, {opacity:0, ease:Sine.easeOut}, "+=0.2");     
     masterTL.from("#intro3 .introEmpty", 0.01, {opacity:0, ease:Sine.easeOut}, "-=0.01");    
     masterTL.from("#intro3 .introFill", 0.01, {opacity:0, ease:Sine.easeOut}, "-=0.01");    
-    masterTL.to("#intro3 .introFill", 0.01, {opacity:0, ease:Sine.easeOut}, "+=0.2");     
+    // masterTL.to("#intro3 .introFill", 0.01, {opacity:0, ease:Sine.easeOut}, "+=0.2");     
     
-    for (var i = 0; i < 2; i++) {
-        masterTL.to("#intro1 .introFill", 0.01, {opacity:1, ease:Sine.easeOut});    
-        masterTL.to("#intro1 .introFill", 0.01, {opacity:0, ease:Sine.easeIn}, "+=0.2");    
-        masterTL.to("#intro2 .introFill", 0.01, {opacity:1, ease:Sine.easeOut});    
-        masterTL.to("#intro2 .introFill", 0.01, {opacity:0, ease:Sine.easeIn}, "+=0.2");    
-        masterTL.to("#intro3 .introFill", 0.01, {opacity:1, ease:Sine.easeOut});    
-        masterTL.to("#intro3 .introFill", 0.01, {opacity:0, ease:Sine.easeIn}, "+=0.2");
-    }
+    // for (var i = 0; i < 2; i++) {
+    //     masterTL.to("#intro1 .introFill", 0.01, {opacity:1, ease:Sine.easeOut});    
+    //     masterTL.to("#intro1 .introFill", 0.01, {opacity:0, ease:Sine.easeIn}, "+=0.2");    
+    //     masterTL.to("#intro2 .introFill", 0.01, {opacity:1, ease:Sine.easeOut});    
+    //     masterTL.to("#intro2 .introFill", 0.01, {opacity:0, ease:Sine.easeIn}, "+=0.2");    
+    //     masterTL.to("#intro3 .introFill", 0.01, {opacity:1, ease:Sine.easeOut});    
+    //     masterTL.to("#intro3 .introFill", 0.01, {opacity:0, ease:Sine.easeIn}, "+=0.2");
+    // }
 
-    masterTL.from("#bgWrapper", 0.6, {width:0, ease:Sine.easeInOut});    
+    masterTL.from("#bgWrapper", 0.6, {width:0, ease:Sine.easeInOut}, "+=1");    
     
     masterTL.from("#text2", 0.3, {opacity:0, ease:Sine.easeInOut});    
     masterTL.from("#highlight2Wrapper", 0.5, {width:0, ease:Sine.easeInOut});
