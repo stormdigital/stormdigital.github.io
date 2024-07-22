@@ -17,9 +17,7 @@ function init() {
     })
 
     document.querySelector("#mainExit").addEventListener("click", function(){
-        // masterTL.progress(1);
-        console.log(masterTL.duration()*masterTL.progress());
-        // console.log(masterTL.duration()*masterTL.progress);
+        masterTL.progress(1);
         clickTAGvalue = dhtml.getVar('clickTAG', 'http://www.example.com');
     })
 
@@ -30,10 +28,10 @@ function getAnimation(){
     
     
     masterTL = gsap.timeline({paused:true, onStart:function(){
-        gsap.to("#buuble1", 15, {y:-150, rotation:360, ease:Power0.easeNone})
-        gsap.to("#buuble2", 15, {x:200, y:-350, rotation:180, ease:Power0.easeNone})
-        gsap.to("#buuble3", 15, {x:-30, y:500, rotation:-360, ease:Power0.easeNone})
-        gsap.to("#buuble4", 10, {x:350, y:70, rotation:-200, delay:5, ease:Power0.easeNone})
+        gsap.to("#buuble1", 20.3, {y:-150, rotation:360, ease:Power0.easeNone})
+        gsap.to("#buuble2", 20.3, {x:200, y:-350, rotation:180, ease:Power0.easeNone})
+        gsap.to("#buuble3", 20.3, {x:-30, y:500, rotation:-360, ease:Power0.easeNone})
+        gsap.to("#buuble4", 15.3, {x:350, y:70, rotation:-200, delay:5, ease:Power0.easeNone})
         gsap.to("#phoneWrapper", 3.25, {rotation:0, repeat:3, yoyo:true, delay:5, ease:Sine.easeInOut})
     }});
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)
