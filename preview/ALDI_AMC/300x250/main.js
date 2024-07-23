@@ -44,6 +44,7 @@ function getAnimation(){
     masterTL.to(["#text1", "#highlightWrapper1"], 0.5, {x:-300, ease:Sine.easeIn}, "start+=4")
     
     masterTL.from("#text2", 0.5, {x:300, ease:Sine.easeOut}, "start+=4.3");
+    masterTL.from("#disclaimer", 0.25, {opacity:0, ease:Sine.easeOut}, "start+=4.55");
     masterTL.from("#highlightWrapper2", 0.5, {width:0, ease:Sine.easeInOut}, "start+=5.3");
     masterTL.to(["#text2", "#highlightWrapper2"], 0.3, {scale:1.1, ease:Sine.easeInOut, repeat:1, yoyo:true}, "start+=6")
     masterTL.from("#blueBg", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=8")
