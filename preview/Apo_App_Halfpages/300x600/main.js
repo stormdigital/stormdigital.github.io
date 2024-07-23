@@ -51,8 +51,8 @@ function getAnimation(){
     
     masterTL.from("#text3", 0.3, {opacity:0, ease:Sine.easeOut}, "+=0.2")
     masterTL.to("#appLogoWrapper", 0.5, {scale:0.30851063829, x:-16, y:-61, ease:Sine.easeIn}, "-=0.2")
-    masterTL.set("#card", {opacity:1})
-    masterTL.from("#card", 1, {x:100, y:-200, ease:Sine.easeOut}, "-=0")
+    masterTL.set(["#card", "#cardConnected"], {opacity:1})
+    masterTL.from(["#card", "#cardConnected"], 1, {x:100, y:-200, ease:Sine.easeOut}, "-=0")
     masterTL.from("#phoneScreen2", 0.5, {opacity:0, ease:Sine.easeOut}, "-=0.1")
     masterTL.to("#progressMask1", 0.75, {rotation:120, ease:Sine.easeInOut}, "-=0.2")
     masterTL.set("#progressMask1", {opacity:0})
@@ -60,9 +60,11 @@ function getAnimation(){
     masterTL.set("#progressMask2", {opacity:0})
     masterTL.from("#check2", 0.5, {scale:0, ease:"back.out(1.5)"})
     masterTL.to("#phoneScreen", 0.25, {background:"rgba(10, 140, 0, 0.7)", ease:Power1.easeOut}, "-=0.5");
+    masterTL.to("#cardConnected", 0.25, {scale:1.5, repeat:1, yoyo:true, ease:Power1.easeInOut}, "-=0.5");
     masterTL.to("#phoneScreen", 0.25, {background:"transparent", ease:Power1.easeIn}, "-=0.25");
     
-    masterTL.to("#card", 1, {x:100, y:-200, ease:Sine.easeIn}, "+=1.5")
+    masterTL.to(["#card", "#cardConnected"], 1, {x:100, y:-200, ease:Sine.easeIn}, "+=1.5")
+    masterTL.set(["#card", "#cardConnected"], {opacity:0})
     masterTL.to("#text3", 0.3, {opacity:0, ease:Sine.easeIn}, "-=1.5")
     masterTL.to(["#phoneScreen2", "#check2"], 0.5, {opacity:0, ease:Sine.easeIn}, "-=0.5")
     masterTL.from("#text4", 0.3, {opacity:0, ease:Sine.easeOut}, "+=0.2")
@@ -92,4 +94,6 @@ function getAnimation(){
 
     
     masterTL.play();
+
+    console.log(masterTL.duration());
 }

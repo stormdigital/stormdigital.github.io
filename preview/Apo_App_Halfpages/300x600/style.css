@@ -154,11 +154,13 @@ img, div, object{
     left: 75px;
 }
 
-#card{
+#card,
+#cardConnected{
     width: 170px;
     top: -73px;
     left: 93px;
     opacity: 0;
+    transform-origin: 58px 20px;
 }
 
 #phoneScreen3,
