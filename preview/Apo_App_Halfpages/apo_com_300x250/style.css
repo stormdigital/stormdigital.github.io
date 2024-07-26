@@ -85,9 +85,9 @@ img, div, object{
 #phoneWrapper{
     width: 239px;
     height: 361px;
-    transform: rotate(5deg) scale(0.65);
-    left: 10px;
-    top: -35px;
+    transform: rotate(5deg) scale(0.6);
+    left: 5px;
+    top: -53px;
     transform-origin: 50% 100%;
 }
 
@@ -202,6 +202,6 @@ img, div, object{
     transform-origin: 100% 100%;
     width: 220px;
     transform: scale(0.33636363636);
-    right: 19px;
+    right: 15px;
     bottom: 15px;
 }

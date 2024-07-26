@@ -17,8 +17,9 @@ function init() {
     })
 
     document.querySelector("#mainExit").addEventListener("click", function(){
-        masterTL.progress(1);
-        clickTAGvalue = dhtml.getVar('clickTAG', 'http://www.example.com');
+        masterTL.pause();
+        // masterTL.progress(1);
+        // clickTAGvalue = dhtml.getVar('clickTAG', 'http://www.example.com');
     })
 
     getAnimation();
