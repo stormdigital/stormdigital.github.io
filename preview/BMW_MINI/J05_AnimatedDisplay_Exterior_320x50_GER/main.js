@@ -72,7 +72,7 @@ function getAnimation(text1Letters, adSize){
     masterTL = new TimelineLite({paused:true});
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)
     masterTL.add("start");
-    masterTL.from("#bg1", 5, {scale:1.05, ease:Sine.easeInOut}, "start")
+    masterTL.from("#bg1", 5, {scale:1, ease:Sine.easeInOut}, "start")
     masterTL.from("#logoMini", 0.5, {y:100, ease:Sine.easeOut}, "start+=0.2")
     masterTL.from("#logoJCW", 0.5, {y:100, ease:Sine.easeOut}, "start+=0.4")
     masterTL.add("text1Start", "-=4")
@@ -93,7 +93,7 @@ function getAnimation(text1Letters, adSize){
         }   
     }
     masterTL.to("#cta1Wrapper", 0.3, {scale:0, ease:Sine.easeIn}, "text1Remove+="+delay2)
-    masterTL.from("#bg2", 5, {scale:1.05, ease:Sine.easeInOut}, "start+=5")
+    masterTL.from("#bg2", 5, {scale:1, ease:Sine.easeInOut}, "start+=5")
     masterTL.to("#bg1", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=5")
     masterTL.add("text2Start", "-=4")
     var delay3 = 0;

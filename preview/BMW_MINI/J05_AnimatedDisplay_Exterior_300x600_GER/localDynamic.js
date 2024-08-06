@@ -72,7 +72,7 @@ localDynamicData = {
 			"top": 30
 		},
 		"970x250": {
-			"text": "0-100 KM/H IN 6.5s.",
+			"text": "0-100 KM/H IN",
 			"size": 36,
 			"top": 50
 		}
@@ -104,9 +104,9 @@ localDynamicData = {
 			"top": 54
 		},
 		"970x250": {
-			"text": "",
-			"size": 0,
-			"top": 0
+			"text": " 6.5s.",
+			"size": 36,
+			"top": 86
 		}
 	},
 	"text1d": {
@@ -197,8 +197,8 @@ localDynamicData = {
 		},
 		"320x50": {
 			"text": "THE FIRST EVER ALL-ELECTRIC",
-			"size": 12,
-			"top": 5
+			"size": 9,
+			"top": 6
 		},
 		"728x90": {
 			"text": "THE FIRST EVER ALL-ELECTRIC",
@@ -206,7 +206,7 @@ localDynamicData = {
 			"top": 10
 		},
 		"970x250": {
-			"text": "THE FIRST EVER ALL-ELECTRIC",
+			"text": "THE FIRST EVER",
 			"size": 36,
 			"top": 14
 		}
@@ -229,8 +229,8 @@ localDynamicData = {
 		},
 		"320x50": {
 			"text": "MINI JCW ACEMAN.",
-			"size": 12,
-			"top": 16
+			"size": 9,
+			"top": 14
 		},
 		"728x90": {
 			"text": "MINI JCW ACEMAN.",
@@ -238,7 +238,7 @@ localDynamicData = {
 			"top": 28
 		},
 		"970x250": {
-			"text": "MINI JCW ACEMAN.",
+			"text": "ALL-ELECTRIC",
 			"size": 36,
 			"top": 50
 		}
@@ -270,9 +270,9 @@ localDynamicData = {
 			"top": 0
 		},
 		"970x250": {
-			"text": "",
-			"size": 0,
-			"top": 0
+			"text": "MINI JCW ACEMAN.",
+			"size": 36,
+			"top": 86
 		}
 	},
 	"text2d": {
@@ -329,7 +329,7 @@ localDynamicData = {
 		"320x50": {
 			"text": "DISCOVER NOW",
 			"size": 7,
-			"top": 32,
+			"top": 30,
 			"height": 13
 		},
 		"728x90": {
@@ -341,7 +341,7 @@ localDynamicData = {
 		"970x250": {
 			"text": "DISCOVER NOW",
 			"size": 13,
-			"top": 100,
+			"top": 132,
 			"height": 24
 		}
 	}
