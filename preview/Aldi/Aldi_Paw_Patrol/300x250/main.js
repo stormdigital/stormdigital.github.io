@@ -5,7 +5,7 @@ function init() {
 
     var pawArr = [];
     var parent = document.querySelector("#pawWrapper")
-    for (let i = 1; i < 66; i++) {
+    for (let i = 1; i < 11; i++) {
         var newDiv = document.createElement('div');
         newDiv.style.backgroundImage = "url('paw"+i+".png')";
         parent.appendChild(newDiv);
@@ -38,7 +38,7 @@ function getAnimation(pawArr){
     pawTL.add("animatePaws")
     for (let i = 0; i < pawArr.length; i++) {
         pawTL.from(pawArr[i], 0.1, {opacity:0, ease:Sine.easeOut}, "animatePaws+="+pawDelay)
-        pawDelay+=0.2;
+        pawDelay+=1.5;
     }
 
 }
