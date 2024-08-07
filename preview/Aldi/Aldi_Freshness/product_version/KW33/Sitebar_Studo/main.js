@@ -73,12 +73,12 @@ function onResize(){
     if(bannerW < scalerW/2){
         var newScale = bannerW/(scalerW/2);
         gsap.set("#scaler", {left:"50%", xPercent:-50, transformOrigin:"50% 0%", scale:newScale*bannerS});
-        gsap.set(["#date", "#product1Info", "#product1Disclaimer", "#product2Info", "#product2Disclaimer"], {x:-300});
+        gsap.set(["#date", "#product1Disclaimer"], {x:-300});
         gsap.set("#extraScaler", {scale:newScale*bannerS});
     }
     else if(bannerW < scalerW){
         gsap.set("#scaler", {left:"50%", xPercent:-50, transformOrigin:"50% 0%"});
-        gsap.set(["#date", "#product1Info", "#product1Disclaimer", "#product2Info", "#product2Disclaimer"], {x:-((scalerW - screenW)/2)/bannerS});
+        gsap.set(["#date", "#product1Disclaimer"], {x:-((scalerW - screenW)/2)/bannerS});
     }
     else{
         gsap.set("#scaler", {left:"0%", xPercent:0, transformOrigin:"0% 0%"});
@@ -118,14 +118,14 @@ function getAnimation(){
     masterTL.from("#productBg", 0.6, {width:0, ease:Sine.easeInOut}, "+=1.5");  
     masterTL.from("#date", 0.3, {opacity:0, ease:Sine.easeOut});  
     masterTL.from("#product1", 0.6, {scale:0, ease: "back.out(1.4)",}, "-=0.15");  
-    masterTL.from("#product1Info", 0.5, {opacity:0, ease:Back.easeOut}, "-=0.4");  
-    masterTL.from("#product1Disclaimer", 0.3, {opacity:0, ease:Sine.easeOut}, "-=0.4");  
+    masterTL.from("#product1Info", 0.5, {scale:0, ease:Back.easeOut}, "-=0.4");  
+    masterTL.from(["#product1Disclaimer", "#product1Disclaimer2"], 0.3, {opacity:0, ease:Sine.easeOut}, "-=0.4");  
     masterTL.to("#product1", 0.5, {scale:0, ease: "back.in(1.4)",}, "+=1");  
-    masterTL.to("#product1Info", 0.5, {opacity:0, ease:Back.easeIn}, "-=0.4");  
-    masterTL.to("#product1Disclaimer", 0.3, {opacity:0, ease:Sine.easeOut}, "-=0.4");  
+    masterTL.to("#product1Info", 0.5, {scale:0, ease:Back.easeIn}, "-=0.4");  
+    masterTL.to(["#product1Disclaimer", "#product1Disclaimer2"], 0.3, {opacity:0, ease:Sine.easeOut}, "-=0.4");  
     
     masterTL.from("#product2", 0.6, {scale:0, ease: "back.out(1.4)",});  
-    masterTL.from("#product2Info", 0.5, {opacity:0, ease:Back.easeOut}, "-=0.4");  
+    masterTL.from("#product2Info", 0.5, {scale:0, ease:Back.easeOut}, "-=0.4");  
     masterTL.from("#product2Disclaimer", 0.3, {opacity:0, ease:Sine.easeOut}, "-=0.4");  
     // masterTL.to("#product2", 0.5, {scale:0, ease: "back.in(1.4)",}, "+=1");  
     // masterTL.to("#product2Info", 0.5, {scale:0, ease:Back.easeIn}, "-=0.4");  
