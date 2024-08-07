@@ -41,7 +41,6 @@ function init(clickTAGvalue) {
 
     document.querySelector("#mainExit").addEventListener("mouseover", function(){
         if(masterTL.progress() == 1){
-            gsap.to("#cta2Wrapper", 0.3, {scale:1.1, ease:Sine.easeInOut}); 
             gsap.to("#cta2Wrapper", 0.3, {background:"#fff", color:"#000", ease:Sine.easeInOut});
         }
 
@@ -52,8 +51,7 @@ function init(clickTAGvalue) {
     
     document.querySelector("#mainExit").addEventListener("mouseout", function(){
         if(masterTL.progress() == 1){
-            gsap.to("#cta2Wrapper", 0.3, {scale:1, ease:Sine.easeInOut});
-            gsap.to("#cta2Wrapper", 0.3, {background:"#c22e20", color:"#fff", ease:Sine.easeInOut});
+            gsap.to("#cta2Wrapper", 0.3, {background:"#CC0000", color:"#fff", ease:Sine.easeInOut});
         }
 
     })
@@ -68,9 +66,10 @@ function init(clickTAGvalue) {
 }
 
 function getAnimation(text1Letters, adSize){
-
-    masterTL = new TimelineLite({paused:true});
-    masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)
+    
+    gsap.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut})
+    
+    masterTL = new TimelineLite({paused:true, repeat:2});
     masterTL.add("start");
     masterTL.from("#bg1", 0.3, {scale:2, ease:Sine.easeInOut}, "start")
     masterTL.to("#bg1", 4, {scale:1.15, ease:Sine.easeInOut})
@@ -78,16 +77,16 @@ function getAnimation(text1Letters, adSize){
     var delay1 = 0;
     for (var i = 0; i < text1Letters.length; i++) {
         if(localDynamicData["text1"+text1Letters[i]][adSize].text != ""){
-            masterTL.from("#text1"+text1Letters[i], 0.2, {opacity:0, ease:Sine.easeOut}, "text1Start+="+delay1)
+            masterTL.from("#text1"+text1Letters[i], 0.01, {opacity:0, ease:Sine.easeOut}, "text1Start+="+delay1)
             delay1+=0.15;
         } 
     }
     masterTL.from("#cta1Wrapper", 0.5, {scale:0, ease:Back.easeOut}, "text1Start+="+(delay1+0.5))
     masterTL.add("text1Remove")
     var delay2 = 0;
-    for (var i = 0; i < text1Letters.length; i++) {
+    for (var i = text1Letters.length-1; i >= 0; i--) {
         if(localDynamicData["text1"+text1Letters[i]][adSize].text != ""){
-            masterTL.to("#text1"+text1Letters[i], 0.2, {opacity:0, ease:Sine.easeOut}, "text1Remove+="+delay2)
+            masterTL.to("#text1"+text1Letters[i], 0.01, {opacity:0, ease:Sine.easeOut}, "text1Remove+="+delay2)
             delay2+=0.15;
         }   
     }
@@ -102,18 +101,22 @@ function getAnimation(text1Letters, adSize){
     var delay3 = 0;
     for (var i = 0; i < text1Letters.length; i++) {
         if(localDynamicData["text2"+text1Letters[i]][adSize].text != ""){
-            masterTL.from("#text2"+text1Letters[i], 0.2, {opacity:0,  ease:Sine.easeOut}, "text2Start+="+delay3)
+            masterTL.from("#text2"+text1Letters[i], 0.01, {opacity:0,  ease:Sine.easeOut}, "text2Start+="+delay3)
             delay3+=0.15;
         } 
     }
-    masterTL.from("#cta2Wrapper", 0.3, {scale:0, ease:Back.easeOut}, "text2Start+="+(delay3+0.5))
+    masterTL.from("#cta2Wrapper", 0.01, {opacity:0, ease:Back.easeOut}, "text2Start+="+(delay3+0.5))
     masterTL.add("animateCTA", "-=2")
-    masterTL.to("#cta2Wrapper", 0.15, {background:"#fff", color:"#000", ease:Sine.easeInOut}, "animateCTA");
-    masterTL.to("#cta2Wrapper", 0.15, {background:"#c22e20", color:"#fff", ease:Sine.easeInOut}, "animateCTA+=0.15");
-    masterTL.to("#cta2Wrapper", 0.15, {background:"#fff", color:"#000", ease:Sine.easeInOut}, "animateCTA+=0.3");
-    masterTL.to("#cta2Wrapper", 0.15, {background:"#c22e20", color:"#fff", ease:Sine.easeInOut}, "animateCTA+=0.45");
-    masterTL.to("#cta2Wrapper", 0.15, {background:"#fff", color:"#000", ease:Sine.easeInOut}, "animateCTA+=0.6");
-    masterTL.to("#cta2Wrapper", 0.15, {background:"#c22e20", color:"#fff", ease:Sine.easeInOut}, "animateCTA+=0.75");
+    masterTL.to("#cta2Wrapper", 0.25, {background:"#fff", color:"#000", ease:Sine.easeInOut}, "animateCTA");
+    masterTL.to("#cta2Wrapper", 0.25, {background:"#CC0000", color:"#fff", ease:Sine.easeInOut}, "animateCTA+=0.25");
+    masterTL.to("#cta2Wrapper", 0.25, {background:"#fff", color:"#000", ease:Sine.easeInOut}, "animateCTA+=0.5");
+    masterTL.to("#cta2Wrapper", 0.25, {background:"#CC0000", color:"#fff", ease:Sine.easeInOut}, "animateCTA+=0.75");
+    masterTL.to("#cta2Wrapper", 0.25, {background:"#fff", color:"#000", ease:Sine.easeInOut}, "animateCTA+=1");
+    masterTL.to("#cta2Wrapper", 0.25, {background:"#CC0000", color:"#fff", ease:Sine.easeInOut}, "animateCTA+=1.25");
+    
+    masterTL.to("#banner", 0.01, {}, 9.99);
     
     masterTL.play();
+
+    console.log(masterTL.duration());
 }
