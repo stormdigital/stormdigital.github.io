@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    color: #fff;
+    background: #0d2253;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #0d2253;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #00b6ed;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: solid 1px #000;
+    box-sizing: border-box;
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#wText{
+    bottom: -1px;
+    right: 2px;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+#bgWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+#armWrapper{
+    width: 350px;
+    height: 100%;
+    transform-origin: 160px 125px;
+    left: -50px;
+}
+
+#arm2{
+    transform-origin: 204px 188px;
+}
+
+#arm2,
+#arm{
+    height: 100%;
+}
+
+#bg{
+    height: 100%;
+    left: -50px;
+}
+
+#storeWrapper{
+    width: 150px;
+    height: 100%;
+    right: 0;
+    overflow: hidden;
+}
+
+#store{
+    width: 150px;
+    right: 0;
+}
+
+#highlight2Wrapper,
+#highlight1Wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#highlight2,
+#highlight1{
+    width: 300px;
+}
+
+#sticker{
+    width: 100%;
+    transform-origin: 272px 166px;
+}
+
+#ctaRight,
+#ctaLeft,
+#text2,
+#tagline,
+#product2,
+#price2,
+#product1,
+#price1,
+#date,
+#text1{
+    width: 100%;
+}
+
+#productColorBg{
+    width: 100%;
+    height: 100%;
+    background: #95c11f;
+    right: 0;
+}
+
+#logo{
+    width: 49px;
+    left: 16px;
+    top: 12px;
+}
