@@ -34,7 +34,7 @@ function loadLocalDynamic(text1Letters, adSize) {
 
 function init(clickTAGvalue) {
 
-    var adSize = "160x600";
+    var adSize = "320x480";
     var text1Letters = ["a", "b", "c", "d"];
 
     loadLocalDynamic(text1Letters, adSize);
@@ -71,7 +71,7 @@ function getAnimation(text1Letters, adSize){
     
     masterTL = new TimelineLite({paused:true, repeat:2});
     masterTL.add("start");
-    masterTL.from("#bg1", 0.3, {scale:1.5, ease:Sine.easeInOut}, "start")
+    masterTL.from("#bg1", 0.3, {scale:2, ease:Sine.easeInOut}, "start")
     masterTL.to("#bg1", 4, {scale:1.15, ease:Sine.easeInOut})
     masterTL.add("text1Start", "-=3.9")
     var delay1 = 0;
@@ -94,7 +94,7 @@ function getAnimation(text1Letters, adSize){
 
     masterTL.add("switchBg", "-=0.3")
     masterTL.to("#bg1", 0.3, {scale:2, ease:Sine.easeInOut}, "switchBg")
-    masterTL.from("#bg2", 0.3, {scale:1.5, ease:Sine.easeInOut},"switchBg")
+    masterTL.from("#bg2", 0.3, {scale:2, ease:Sine.easeInOut},"switchBg")
     masterTL.to("#bg1", 0.15, {opacity:0, ease:Sine.easeInOut}, "switchBg+=0.15")
     masterTL.to("#bg2", 4, {scale:1.15, ease:Sine.easeInOut})
     masterTL.add("text2Start", "-=4")
