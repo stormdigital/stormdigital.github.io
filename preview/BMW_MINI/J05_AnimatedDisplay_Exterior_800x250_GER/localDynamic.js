@@ -40,8 +40,8 @@ localDynamicData = {
 		},
 		"300x250": {
 			"text": "ACCELERATE",
-			"size": 27,
-			"top": 14
+			"size": 23.5,
+			"top": 18
 		},
 		"320x50": {
 			"text": "ACCELERATE",
@@ -65,7 +65,7 @@ localDynamicData = {
 		},
 		"970x250": {
 			"text": "ACCELERATE",
-			"size": 36,
+			"size": 34,
 			"top": 14
 		}
 	},
@@ -92,8 +92,8 @@ localDynamicData = {
 		},
 		"300x250": {
 			"text": "0-100 KM/H IN 6.5s.",
-			"size": 27,
-			"top": 42
+			"size": 23.5,
+			"top": 40
 		},
 		"320x50": {
 			"text": "0-100 KM/H IN 6.5s.",
@@ -117,8 +117,8 @@ localDynamicData = {
 		},
 		"970x250": {
 			"text": "0-100 KM/H IN",
-			"size": 36,
-			"top": 50
+			"size": 34,
+			"top": 47
 		}
 	},
 	"text1c": {
@@ -169,8 +169,8 @@ localDynamicData = {
 		},
 		"970x250": {
 			"text": " 6.5s.",
-			"size": 36,
-			"top": 86
+			"size": 34,
+			"top": 81
 		}
 	},
 	"text1d": {
@@ -289,53 +289,53 @@ localDynamicData = {
 	},
 	"text2a": {
 		"300x600": {
-			"text": "THE FIRST EVER",
+			"text": "THE FIRST-EVER",
 			"size": 29,
 			"top": 84
 		},
 		"160x600": {
-			"text": "THE FIRST EVER",
+			"text": "THE FIRST-EVER",
 			"size": 15,
 			"top": 54
 		},
 		"320x480": {
-			"text": "THE FIRST EVER",
+			"text": "THE FIRST-EVER",
 			"size": 31.5,
 			"top": 17
 		},
 		"320x320": {
-			"text": "THE FIRST EVER",
+			"text": "THE FIRST-EVER",
 			"size": 28,
 			"top": 13
 		},
 		"300x250": {
-			"text": "THE FIRST EVER",
-			"size": 27,
-			"top": 14
+			"text": "THE FIRST-EVER",
+			"size": 23.5,
+			"top": 18
 		},
 		"320x50": {
-			"text": "THE FIRST EVER ALL-ELECTRIC",
+			"text": "THE FIRST-EVER ALL-ELECTRIC",
 			"size": 9.5,
 			"top": 6
 		},
 		"320x100": {
-			"text": "THE FIRST EVER",
+			"text": "THE FIRST-EVER",
 			"size": 14.5,
 			"top": 6
 		},
 		"728x90": {
-			"text": "THE FIRST EVER ALL-ELECTRIC",
+			"text": "THE FIRST-EVER ALL-ELECTRIC",
 			"size": 17,
 			"top": 10
 		},
 		"800x250": {
-			"text": "THE FIRST EVER",
+			"text": "THE FIRST-EVER",
 			"size": 36,
 			"top": 14
 		},
 		"970x250": {
-			"text": "THE FIRST EVER",
-			"size": 36,
+			"text": "THE FIRST-EVER",
+			"size": 34,
 			"top": 14
 		}
 	},
@@ -362,8 +362,8 @@ localDynamicData = {
 		},
 		"300x250": {
 			"text": "ALL-ELECTRIC",
-			"size": 27,
-			"top": 41
+			"size": 23.5,
+			"top": 38
 		},
 		"320x50": {
 			"text": "MINI JCW ACEMAN.",
@@ -387,8 +387,8 @@ localDynamicData = {
 		},
 		"970x250": {
 			"text": "ALL-ELECTRIC",
-			"size": 36,
-			"top": 50
+			"size": 34,
+			"top": 48
 		}
 	},
 	"text2c": {
@@ -414,8 +414,8 @@ localDynamicData = {
 		},
 		"300x250": {
 			"text": "MINI JCW ACEMAN.",
-			"size": 27,
-			"top": 68
+			"size": 23.5,
+			"top": 60
 		},
 		"320x50": {
 			"text": "MINI JCW ACEMAN.",
@@ -439,8 +439,8 @@ localDynamicData = {
 		},
 		"970x250": {
 			"text": "MINI JCW ACEMAN.",
-			"size": 36,
-			"top": 86
+			"size": 34,
+			"top": 82
 		}
 	},
 	"text2d": {
@@ -523,7 +523,7 @@ localDynamicData = {
 		"300x250": {
 			"text": "DISCOVER NOW",
 			"size": 13,
-			"top": 107,
+			"top": 97,
 			"height": 23
 		},
 		"320x50": {
@@ -553,7 +553,7 @@ localDynamicData = {
 		"970x250": {
 			"text": "DISCOVER NOW",
 			"size": 13,
-			"top": 132,
+			"top": 128,
 			"height": 24
 		}
 	}
