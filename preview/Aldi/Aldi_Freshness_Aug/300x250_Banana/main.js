@@ -27,9 +27,10 @@ function getAnimation(){
     masterTL = gsap.timeline({paused:true});
 
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)
-    masterTL.fromTo("#bgWrapper", 1, {scale:1.8, y:15, x:150}, {scale:1.7, x:140, y:20, ease:Sine.easeInOut})
-    masterTL.to("#bgWrapper", 1.5, {scale:1, x:0, y:0, ease:Sine.easeInOut})
-    masterTL.from("#storeWrapper", 2, {width:0, ease:Sine.easeInOut}, "-=1")
+    masterTL.fromTo("#bgWrapper", 2, {scale:1.8, y:15, x:150}, {scale:1, x:0, y:0, ease:Power2.easeInOut})
+    // masterTL.fromTo("#bgWrapper", 1, {scale:1.8, y:15, x:150}, {scale:1.7, x:140, y:20, ease:Sine.easeIn})
+    // masterTL.to("#bgWrapper", 1.5, {scale:1, x:0, y:0, ease:Sine.easeOut})
+    masterTL.from("#storeWrapper", 2, {width:0, ease:Sine.easeInOut}, "-=1.5")
 
 
     masterTL.add("showText1", "-=0")
