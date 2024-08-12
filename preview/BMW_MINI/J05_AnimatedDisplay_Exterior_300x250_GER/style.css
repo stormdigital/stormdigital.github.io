@@ -72,7 +72,6 @@ img, div, object{
     width: 100%;
     height: 100%;
     background-size: 300px 250px;
-    transform-origin: 50% 80%;
 }
 
 #logoMini{

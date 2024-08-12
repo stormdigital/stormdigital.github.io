@@ -71,8 +71,8 @@ function getAnimation(text1Letters, adSize){
     
     masterTL = new TimelineLite({paused:true, repeat:2});
     masterTL.add("start");
-    masterTL.from("#bg1", 0.3, {scale:2, ease:Sine.easeInOut}, "start")
-    masterTL.to("#bg1", 4, {scale:1.15, ease:Sine.easeInOut})
+    masterTL.from("#bg1", 0.3, {scale:localDynamicData.scale[adSize].introScale, ease:Sine.easeInOut}, "start")
+    masterTL.to("#bg1", 4, {scale:localDynamicData.scale[adSize].bg1, transformOrigin:localDynamicData.scale[adSize].transOr1, ease:Sine.easeInOut})
     masterTL.add("text1Start", "-=3.9")
     var delay1 = 0;
     for (var i = 0; i < text1Letters.length; i++) {
@@ -81,8 +81,9 @@ function getAnimation(text1Letters, adSize){
             delay1+=0.15;
         } 
     }
-    masterTL.from("#cta1Wrapper", 0.5, {scale:0, ease:Back.easeOut}, "text1Start+="+(delay1+0.5))
+    masterTL.from("#cta1Wrapper", 0.5, {opacity:0, ease:Back.easeOut}, "text1Start+="+(delay1+0.5))
     masterTL.add("text1Remove")
+    masterTL.to("#cta1Wrapper", 0.3, {opacity:0, ease:Sine.easeIn}, "text1Remove")
     var delay2 = 0;
     for (var i = text1Letters.length-1; i >= 0; i--) {
         if(localDynamicData["text1"+text1Letters[i]][adSize].text != ""){
@@ -90,13 +91,12 @@ function getAnimation(text1Letters, adSize){
             delay2+=0.15;
         }   
     }
-    masterTL.to("#cta1Wrapper", 0.3, {scale:0, ease:Sine.easeIn}, "text1Remove+="+delay2)
 
     masterTL.add("switchBg", "-=0.3")
-    masterTL.to("#bg1", 0.3, {scale:2, ease:Sine.easeInOut}, "switchBg")
-    masterTL.from("#bg2", 0.3, {scale:1.3, ease:Sine.easeInOut},"switchBg")
+    masterTL.to("#bg1", 0.3, {scale:localDynamicData.scale[adSize].introScale, ease:Sine.easeInOut}, "switchBg")
+    masterTL.from("#bg2", 0.3, {scale:localDynamicData.scale[adSize].introScale, ease:Sine.easeInOut},"switchBg")
     masterTL.to("#bg1", 0.15, {opacity:0, ease:Sine.easeInOut}, "switchBg+=0.15")
-    masterTL.to("#bg2", 4, {scale:1.15, ease:Sine.easeInOut})
+    masterTL.to("#bg2", 4, {scale:localDynamicData.scale[adSize].bg2, transformOrigin:localDynamicData.scale[adSize].transOr2, ease:Sine.easeInOut})
     masterTL.add("text2Start", "-=4")
     var delay3 = 0;
     for (var i = 0; i < text1Letters.length; i++) {
@@ -117,6 +117,4 @@ function getAnimation(text1Letters, adSize){
     masterTL.to("#banner", 0.01, {}, 9.99);
     
     masterTL.play();
-
-    console.log(masterTL.duration());
 }
