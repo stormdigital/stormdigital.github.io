@@ -21,70 +21,70 @@ localDynamicData = {
 		"300x600": {
 			"bg1": 1.15,
 			"bg2": 1.05,
-			"introScale": 1.15,
+			"introScale": 2,
 			"transOr1": "50% 80%",
 			"transOr2": "50% 80%"
 		},
 		"160x600": {
 			"bg1": 1.15,
 			"bg2": 1.05,
-			"introScale": 1.15,
+			"introScale": 2,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
 		},
 		"320x480": {
 			"bg1": 1.15,
 			"bg2": 1.05,
-			"introScale": 1.15,
+			"introScale": 2,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
 		},
 		"320x320": {
 			"bg1": 1.15,
 			"bg2": 1.05,
-			"introScale": 1.15,
+			"introScale": 2,
 			"transOr1": "50% 60%",
 			"transOr2": "50% 60%"
 		},
 		"300x250": {
 			"bg1": 1.15,
 			"bg2": 1.05,
-			"introScale": 1.15,
+			"introScale": 2,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 80%"
 		},
 		"320x50": {
 			"bg1": 1.1,
 			"bg2": 1.05,
-			"introScale": 1.1,
+			"introScale": 1.7,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
 		},
 		"320x100": {
 			"bg1": 1.2,
 			"bg2": 1.05,
-			"introScale": 1.2,
+			"introScale": 2,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
 		},
 		"728x90": {
 			"bg1": 1.15,
 			"bg2": 1.05,
-			"introScale": 1.15,
+			"introScale": 2,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
 		},
 		"800x250": {
 			"bg1": 1.15,
 			"bg2": 1.05,
-			"introScale": 1.15,
+			"introScale": 2,
 			"transOr1": "40% 40%",
 			"transOr2": "40% 40%"
 		},
 		"970x250": {
 			"bg1": 1.15,
 			"bg2": 1.05,
-			"introScale": 1.15,
+			"introScale": 2,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
 		}
