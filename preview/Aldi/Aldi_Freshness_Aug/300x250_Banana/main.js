@@ -28,8 +28,6 @@ function getAnimation(){
 
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)
     masterTL.fromTo("#bgWrapper", 2, {scale:1.8, y:15, x:150}, {scale:1, x:0, y:0, ease:Power2.easeInOut})
-    // masterTL.fromTo("#bgWrapper", 1, {scale:1.8, y:15, x:150}, {scale:1.7, x:140, y:20, ease:Sine.easeIn})
-    // masterTL.to("#bgWrapper", 1.5, {scale:1, x:0, y:0, ease:Sine.easeOut})
     masterTL.from("#storeWrapper", 2, {width:0, ease:Sine.easeInOut}, "-=1.5")
 
 
@@ -40,15 +38,15 @@ function getAnimation(){
     
     masterTL.from("#productColorBg", 0.5, {width:0, ease:Circ.easeInOut}, "+=1.5")
     masterTL.from("#date", 0.5, {x:150, ease:Sine.easeOut}, "+=0")
-    masterTL.from("#price1", 1, {x:300, ease:Sine.easeOut}, "-=0.1")
-    masterTL.from("#product1", 0.9, {x:300, ease:Sine.easeOut}, "-=0.9")
-    masterTL.to("#price1", 1, {x:-300, ease:Sine.easeIn}, "+=1.5")
-    masterTL.to("#product1", 0.9, {x:-300, ease:Sine.easeIn}, "-=1")
+    masterTL.from("#price1", 0.75, {x:300, ease:Sine.easeOut}, "-=0.1")
+    masterTL.from("#product1", 0.6, {x:300, ease:Sine.easeOut}, "-=0.6")
+    masterTL.to("#price1", 0.75, {x:-300, ease:Sine.easeIn}, "+=2")
+    masterTL.to("#product1", 0.6, {x:-300, ease:Sine.easeIn}, "-=0.75")
 
-    masterTL.from("#price2", 1, {x:300, ease:Sine.easeOut}, "-=0")
-    masterTL.from("#product2", 0.9, {x:300, ease:Sine.easeOut}, "-=0.9")
-    masterTL.to("#price2", 1, {x:-300, ease:Sine.easeIn}, "+=1.5")
-    masterTL.to("#product2", 0.9, {x:-300, ease:Sine.easeIn}, "-=1")
+    masterTL.from("#price2", 0.75, {x:300, ease:Sine.easeOut}, "-=0")
+    masterTL.from("#product2", 0.6, {x:300, ease:Sine.easeOut}, "-=0.6")
+    masterTL.to("#price2", 0.75, {x:-300, ease:Sine.easeIn}, "+=2")
+    masterTL.to("#product2", 0.6, {x:-300, ease:Sine.easeIn}, "-=0.75")
     masterTL.to("#date", 0.3, {x:150, ease:Sine.easeIn}, "-=1")
     
     masterTL.to("#logo", 0.5, {scale:1.28571428571, left:"50%", translateX:"-50%", ease:Sine.easeInOut}, "-=0.5")
