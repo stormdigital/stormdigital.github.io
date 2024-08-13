@@ -1,5 +1,5 @@
 localDynamicData = {
-	"variationName": "GER_02",
+	"variationName": "J05_01",
 	"campaignName": "GER",
 	"dimensionName": {
 		"300x600": "J05_AnimatedDisplay_Exterior",
@@ -17,6 +17,78 @@ localDynamicData = {
 	"bg2": "./bg2.jpg",
 	"logoMini": "./mini_logo.svg",
 	"logoJCW": "./jcw_logo.svg",
+	"scale": {
+		"300x600": {
+			"bg1": 1.15,
+			"bg2": 1.15,
+			"introScale": 2,
+			"transOr1": "50% 80%",
+			"transOr2": "50% 80%"
+		},
+		"160x600": {
+			"bg1": 1.15,
+			"bg2": 1.15,
+			"introScale": 2,
+			"transOr1": "50% 50%",
+			"transOr2": "50% 50%"
+		},
+		"320x480": {
+			"bg1": 1.15,
+			"bg2": 1.15,
+			"introScale": 2,
+			"transOr1": "50% 50%",
+			"transOr2": "50% 50%"
+		},
+		"320x320": {
+			"bg1": 1.15,
+			"bg2": 1.15,
+			"introScale": 2,
+			"transOr1": "50% 60%",
+			"transOr2": "50% 60%"
+		},
+		"300x250": {
+			"bg1": 1.15,
+			"bg2": 1.05,
+			"introScale": 2,
+			"transOr1": "50% 50%",
+			"transOr2": "50% 80%"
+		},
+		"320x50": {
+			"bg1": 1.1,
+			"bg2": 1.1,
+			"introScale": 2,
+			"transOr1": "50% 50%",
+			"transOr2": "50% 50%"
+		},
+		"320x100": {
+			"bg1": 1.2,
+			"bg2": 1.2,
+			"introScale": 2,
+			"transOr1": "50% 50%",
+			"transOr2": "50% 50%"
+		},
+		"728x90": {
+			"bg1": 1.15,
+			"bg2": 1.15,
+			"introScale": 2,
+			"transOr1": "50% 50%",
+			"transOr2": "50% 50%"
+		},
+		"800x250": {
+			"bg1": 1.15,
+			"bg2": 1.15,
+			"introScale": 2,
+			"transOr1": "40% 40%",
+			"transOr2": "40% 40%"
+		},
+		"970x250": {
+			"bg1": 1.15,
+			"bg2": 1.15,
+			"introScale": 2,
+			"transOr1": "50% 50%",
+			"transOr2": "50% 50%"
+		}
+	},
 	"text1a": {
 		"300x600": {
 			"text": "ACCELERATE",
@@ -547,13 +619,13 @@ localDynamicData = {
 		"800x250": {
 			"text": "DISCOVER NOW",
 			"size": 13,
-			"top": 132,
+			"top": 138,
 			"height": 24
 		},
 		"970x250": {
 			"text": "DISCOVER NOW",
 			"size": 13,
-			"top": 128,
+			"top": 138,
 			"height": 24
 		}
 	}
