@@ -361,131 +361,131 @@ localDynamicData = {
 	},
 	"text2a": {
 		"300x600": {
-			"text": "MINI JOHN COOPER",
+			"text": "250 KM/H",
 			"size": 27,
 			"top": 85
 		},
 		"160x600": {
-			"text": "MINI JOHN COOPER",
-			"size": 13,
+			"text": "250 KM/H",
+			"size": 16,
 			"top": 52
 		},
 		"320x480": {
-			"text": "MINI JOHN COOPER",
+			"text": "250 KM/H",
 			"size": 27,
 			"top": 22
 		},
 		"320x320": {
-			"text": "MINI JOHN COOPER",
+			"text": "250 KM/H",
 			"size": 23.5,
 			"top": 18
 		},
 		"300x250": {
-			"text": "MINI JOHN COOPER",
+			"text": "250 KM/H",
 			"size": 22,
 			"top": 18
 		},
 		"320x50": {
-			"text": "MINI JOHN COOPER WORKS.",
+			"text": "250 KM/H",
 			"size": 9.5,
 			"top": 6
 		},
 		"320x100": {
-			"text": "MINI JOHN COOPER WORKS.",
+			"text": "250 KM/H",
 			"size": 14.5,
 			"top": 6
 		},
 		"728x90": {
-			"text": "MINI JOHN COOPER WORKS.",
+			"text": "250 KM/H",
 			"size": 17,
 			"top": 10
 		},
 		"800x250": {
-			"text": "MINI JOHN COOPER WORKS.",
+			"text": "250 KM/H",
 			"size": 22.5,
 			"top": 23
 		},
 		"970x250": {
-			"text": "MINI JOHN COOPER WORKS.",
+			"text": "250 KM/H",
 			"size": 27.5,
 			"top": 20
 		}
 	},
 	"text2b": {
 		"300x600": {
-			"text": "WORKS.",
+			"text": "TOP SPEED.",
 			"size": 27,
 			"top": 113
 		},
 		"160x600": {
-			"text": "WORKS.",
-			"size": 13,
-			"top": 65
+			"text": "TOP SPEED.",
+			"size": 16,
+			"top": 68
 		},
 		"320x480": {
-			"text": "WORKS.",
+			"text": "TOP SPEED.",
 			"size": 27,
 			"top": 49
 		},
 		"320x320": {
-			"text": "WORKS.",
+			"text": "TOP SPEED.",
 			"size": 23.5,
 			"top": 41
 		},
 		"300x250": {
-			"text": "WORKS.",
+			"text": "TOP SPEED.",
 			"size": 22,
 			"top": 40
 		},
 		"320x50": {
-			"text": "250 KM/H TOP SPEED.",
+			"text": "TOP SPEED.",
 			"size": 9.5,
 			"top": 15
 		},
 		"320x100": {
-			"text": "250 KM/H TOP SPEED.",
+			"text": "TOP SPEED.",
 			"size": 14.5,
 			"top": 20
 		},
 		"728x90": {
-			"text": "250 KM/H TOP SPEED.",
+			"text": "TOP SPEED.",
 			"size": 17,
 			"top": 28
 		},
 		"800x250": {
-			"text": "250 KM/H TOP SPEED.",
+			"text": "TOP SPEED.",
 			"size": 22.5,
 			"top": 46
 		},
 		"970x250": {
-			"text": "250 KM/H TOP SPEED.",
+			"text": "TOP SPEED.",
 			"size": 27.5,
 			"top": 47
 		}
 	},
 	"text2c": {
 		"300x600": {
-			"text": "250 KM/H TOP SPEED.",
+			"text": "",
 			"size": 27,
 			"top": 139
 		},
 		"160x600": {
-			"text": "250 KM/H TOP SPEED.",
+			"text": "",
 			"size": 13,
 			"top": 78
 		},
 		"320x480": {
-			"text": "250 KM/H TOP SPEED.",
+			"text": "",
 			"size": 27,
 			"top": 76
 		},
 		"320x320": {
-			"text": "250 KM/H TOP SPEED.",
+			"text": "",
 			"size": 23.5,
 			"top": 64
 		},
 		"300x250": {
-			"text": "250 KM/H TOP SPEED.",
+			"text": "",
 			"size": 22,
 			"top": 63
 		},
@@ -571,31 +571,31 @@ localDynamicData = {
 		"300x600": {
 			"text": "LEARN MORE",
 			"size": 13,
-			"top": 180,
+			"top": 160,
 			"height": 23
 		},
 		"160x600": {
 			"text": "LEARN MORE",
 			"size": 11,
-			"top": 106,
+			"top": 100,
 			"height": 19
 		},
 		"320x480": {
 			"text": "LEARN MORE",
 			"size": 13,
-			"top": 116,
+			"top": 90,
 			"height": 23
 		},
 		"320x320": {
 			"text": "LEARN MORE",
 			"size": 14,
-			"top": 101,
+			"top": 80,
 			"height": 25
 		},
 		"300x250": {
 			"text": "LEARN MORE",
 			"size": 13,
-			"top": 98,
+			"top": 75,
 			"height": 23
 		},
 		"320x50": {
