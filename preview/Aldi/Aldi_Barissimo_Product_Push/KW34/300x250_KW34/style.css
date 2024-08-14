@@ -1,0 +1,203 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    color: #fff;
+    background: #0d2253;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #0d2253;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #00b6ed;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: solid 1px #000;
+    box-sizing: border-box;
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#wText{
+    bottom: -1px;
+    right: 2px;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+#productsWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+#productsBg{
+    width: 50%;
+    right: 0;
+}
+
+#shadowWrapper{
+    width: 50%;
+    height: 100%;
+    right: 0;
+    overflow: hidden;
+}
+
+.shadow{
+    width: 200%;
+    right: 0;
+}
+
+.product{
+    width: 100%;
+}
+#shadow1,
+#product1{
+    transform-origin: 224px 50px;
+}
+
+#shadow2,
+#product2{
+    transform-origin: 190px 125px;
+}
+
+#shadow3,
+#product3{
+    transform-origin: 258px 125px;
+}
+
+#shadow4,
+#product4{
+    transform-origin: 190px 240px;
+}
+
+#shadow5,
+#product5{
+    transform-origin: 258px 240px;
+}
+
+#brandLogo,
+#date1,
+#date2,
+#productBg,
+#product1Info,
+#product1Large,
+#sticker,
+#text2,
+#tagline,
+#ctaLeft,
+#ctaRight,
+#text1{
+    width: 100%;
+}
+
+#product1Wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+#product1Large{transform-origin: 213px 166px;}
+
+#bgRight{
+    height: 100%;
+    right: 0;
+}
+
+#productsWrapper{
+    width: 50%;
+    height: 100%;
+    right: 0;
+}
+
+#shadowWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.product,
+.shadow{
+    width: 100%;
+    height: 100%;
+}
+
+#shadow1,
+#product1{
+    transform-origin: 45px 45px;
+}
+
+#shadow2,
+#product2{
+    transform-origin: 106px 100px;
+}
+
+#shadow3,
+#product3{
+    transform-origin: 45px 125px;
+}
+
+#shadow4,
+#product4{
+    transform-origin: 106px 191px;
+}
+
+#shadow5,
+#product5{
+    transform-origin: 45px 206px;
+}
+
+#sticker{
+    transform-origin: 260px 40px;
+}
+
+#blueBg{
+    width: 100%;
+    height: 100%;
+    background: #0d2253;
+}
+
+#logo{
+    width: 64px;
+    top: 10px;
+    left: 10px;
+    transform: scale(0.890625);
+    transform-origin: 0px 0px;
+}
