@@ -158,17 +158,17 @@ localDynamicData = {
 			"top": 55
 		},
 		"320x320": {
-			"text": "0-100 KM/H IN 6.5s.",
+			"text": "0-100 KM/H IN 6.4s.",
 			"size": 28,
 			"top": 41
 		},
 		"300x250": {
-			"text": "0-100 KM/H IN 6.5s.",
+			"text": "0-100 KM/H IN 6.4s.",
 			"size": 23.5,
 			"top": 40
 		},
 		"320x50": {
-			"text": "0-100 KM/H IN 6.5s.",
+			"text": "0-100 KM/H IN 6.4s.",
 			"size": 15,
 			"top": 23
 		},
@@ -195,17 +195,17 @@ localDynamicData = {
 	},
 	"text1c": {
 		"300x600": {
-			"text": "6.5s.",
+			"text": "6.4s.",
 			"size": 29,
 			"top": 143
 		},
 		"160x600": {
-			"text": "6.5s.",
+			"text": "6.4s.",
 			"size": 19,
 			"top": 94
 		},
 		"320x480": {
-			"text": "6.5s.",
+			"text": "6.4s.",
 			"size": 42,
 			"top": 96
 		},
@@ -225,22 +225,22 @@ localDynamicData = {
 			"top": 0
 		},
 		"320x100": {
-			"text": "6.5s.",
+			"text": "6.4s.",
 			"size": 18.5,
 			"top": 51
 		},
 		"728x90": {
-			"text": "6.5s.",
+			"text": "6.4s.",
 			"size": 25,
 			"top": 54
 		},
 		"800x250": {
-			"text": " 6.5s.",
+			"text": " 6.4s.",
 			"size": 36,
 			"top": 86
 		},
 		"970x250": {
-			"text": " 6.5s.",
+			"text": " 6.4s.",
 			"size": 34,
 			"top": 81
 		}
