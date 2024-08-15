@@ -123,7 +123,7 @@ localDynamicData = {
 		"320x100": {
 			"text": "ACCELERATE",
 			"size": 14.5,
-			"top": 14
+			"top": 6
 		},
 		"728x90": {
 			"text": "ACCELERATE",
@@ -175,7 +175,7 @@ localDynamicData = {
 		"320x100": {
 			"text": "0-100 KM/H IN",
 			"size": 14.5,
-			"top": 28
+			"top": 20
 		},
 		"728x90": {
 			"text": "0-100 KM/H IN",
@@ -227,7 +227,7 @@ localDynamicData = {
 		"320x100": {
 			"text": "6.4s.",
 			"size": 14.5,
-			"top": 42
+			"top": 33
 		},
 		"728x90": {
 			"text": "6.4s.",

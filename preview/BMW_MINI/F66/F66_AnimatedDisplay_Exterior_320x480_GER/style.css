@@ -8,6 +8,11 @@
     src: url('MINISansSerif-Regular.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: 'mini_serifregular';
+    src: url('miniserif-regular.woff2') format('woff2');
+}
+
 body{
     margin: 0;
 }
@@ -88,7 +93,7 @@ img, div, object{
 
 #text2Wrapper,
 #text1Wrapper{
-    font-family: "MINISerif-Headline";
+    font-family: "mini_serifregular";
     left: 20px;
     top: 0px;
     width: 280px;
