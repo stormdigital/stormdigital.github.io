@@ -569,61 +569,61 @@ localDynamicData = {
 	},
 	"cta2": {
 		"300x600": {
-			"text": "DISCOVER NOW",
+			"text": "LEARN MORE",
 			"size": 13,
 			"top": 188,
 			"height": 23
 		},
 		"160x600": {
-			"text": "DISCOVER NOW",
+			"text": "LEARN MORE",
 			"size": 11,
 			"top": 111,
 			"height": 20
 		},
 		"320x480": {
-			"text": "DISCOVER NOW",
+			"text": "LEARN MORE",
 			"size": 13,
 			"top": 127,
 			"height": 24
 		},
 		"320x320": {
-			"text": "DISCOVER NOW",
+			"text": "LEARN MORE",
 			"size": 13,
 			"top": 111,
 			"height": 23
 		},
 		"300x250": {
-			"text": "DISCOVER NOW",
+			"text": "LEARN MORE",
 			"size": 13,
 			"top": 97,
 			"height": 23
 		},
 		"320x50": {
-			"text": "DISCOVER NOW",
+			"text": "LEARN MORE",
 			"size": 7,
 			"top": 30,
 			"height": 13
 		},
 		"320x100": {
-			"text": "DISCOVER NOW",
+			"text": "LEARN MORE",
 			"size": 10,
 			"top": 56,
 			"height": 17
 		},
 		"728x90": {
-			"text": "DISCOVER NOW",
+			"text": "LEARN MORE",
 			"size": 13,
 			"top": 55,
 			"height": 22
 		},
 		"800x250": {
-			"text": "DISCOVER NOW",
+			"text": "LEARN MORE",
 			"size": 13,
 			"top": 138,
 			"height": 24
 		},
 		"970x250": {
-			"text": "DISCOVER NOW",
+			"text": "LEARN MORE",
 			"size": 13,
 			"top": 138,
 			"height": 24
