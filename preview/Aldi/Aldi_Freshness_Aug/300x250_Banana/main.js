@@ -54,8 +54,9 @@ function getAnimation(){
     masterTL.from("#text2", 0.3, {opacity:0, y:30, ease:Sine.easeOut}, "-=0.2")
     masterTL.from("#highlight2Wrapper", 0.5, {width:0, ease:Sine.easeOut}, "+=0.5")
     masterTL.from("#ctaLeft", 0.5, {scale:0, transformOrigin:"50% 95%", ease:Back.easeOut}, "+=0");
-    masterTL.from("#ctaRight", 0.01, {opacity:0, ease:Sine.easeOut}, "+=0.2");
-    masterTL.from("#ctaRight", 0.3, {x:-50, ease:Sine.easeOut}, "-=0.01");
+    masterTL.from(["#ctaRight", "#ctaArrow"], 0.01, {opacity:0, ease:Sine.easeOut}, "+=0.2");
+    masterTL.from(["#ctaRight", "#ctaArrow"], 0.3, {x:-50, ease:Sine.easeOut}, "-=0.01");
+    masterTL.to("#ctaArrow", 0.2, {x:3, repeat:5, yoyo:true, ease:Sine.easeInOut}, "+=0.2");
         
     masterTL.play();
 
