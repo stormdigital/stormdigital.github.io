@@ -212,7 +212,7 @@ localDynamicData = {
 		"320x320": {
 			"text": "ELECTRIFIED.",
 			"size": 28,
-			"top": 73
+			"top": 70
 		},
 		"300x250": {
 			"text": "",

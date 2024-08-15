@@ -98,7 +98,7 @@ localDynamicData = {
 		"160x600": {
 			"text": "ACCELERATE",
 			"size": 19,
-			"top": 48
+			"top": 54
 		},
 		"320x480": {
 			"text": "ACCELERATE",
@@ -122,7 +122,7 @@ localDynamicData = {
 		},
 		"320x100": {
 			"text": "ACCELERATE",
-			"size": 18.5,
+			"size": 14.5,
 			"top": 14
 		},
 		"728x90": {
@@ -150,7 +150,7 @@ localDynamicData = {
 		"160x600": {
 			"text": "0-100 KM/H IN",
 			"size": 19,
-			"top": 71
+			"top": 73
 		},
 		"320x480": {
 			"text": "0-100 KM/H IN",
@@ -174,8 +174,8 @@ localDynamicData = {
 		},
 		"320x100": {
 			"text": "0-100 KM/H IN",
-			"size": 18.5,
-			"top": 32
+			"size": 14.5,
+			"top": 28
 		},
 		"728x90": {
 			"text": "0-100 KM/H IN",
@@ -202,7 +202,7 @@ localDynamicData = {
 		"160x600": {
 			"text": "6.4s.",
 			"size": 19,
-			"top": 94
+			"top": 91
 		},
 		"320x480": {
 			"text": "6.4s.",
@@ -226,8 +226,8 @@ localDynamicData = {
 		},
 		"320x100": {
 			"text": "6.4s.",
-			"size": 18.5,
-			"top": 51
+			"size": 14.5,
+			"top": 42
 		},
 		"728x90": {
 			"text": "6.4s.",
