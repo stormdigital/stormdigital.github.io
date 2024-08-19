@@ -118,7 +118,7 @@ localDynamicData = {
 		"320x50": {
 			"text": "THE NEW",
 			"size": 12.5,
-			"top": 5
+			"top": 8
 		},
 		"320x100": {
 			"text": "THE NEW",
@@ -128,7 +128,7 @@ localDynamicData = {
 		"728x90": {
 			"text": "THE NEW",
 			"size": 24.5,
-			"top": 6
+			"top": 13
 		},
 		"800x250": {
 			"text": "THE NEW",
@@ -143,52 +143,52 @@ localDynamicData = {
 	},
 	"text1b": {
 		"300x600": {
-			"text": "MINI John Cooper Works.",
+			"text": "MINI JOHN COOPER WORKS.",
 			"size": 15,
 			"top": 117
 		},
 		"160x600": {
-			"text": "MINI John Cooper Works.",
+			"text": "MINI JOHN COOPER WORKS.",
 			"size": 10,
-			"top": 70
+			"top": 65
 		},
 		"320x480": {
-			"text": "MINI John Cooper Works.",
+			"text": "MINI JOHN COOPER WORKS.",
 			"size": 15,
 			"top": 60
 		},
 		"320x320": {
-			"text": "MINI John Cooper Works.",
+			"text": "MINI JOHN COOPER WORKS.",
 			"size": 13.5,
 			"top": 49
 		},
 		"300x250": {
-			"text": "MINI John Cooper Works.",
+			"text": "MINI JOHN COOPER WORKS.",
 			"size": 12.5,
 			"top": 45
 		},
 		"320x50": {
-			"text": "MINI John Cooper Works.",
+			"text": "MINI JOHN COOPER WORKS.",
 			"size": 7.5,
-			"top": 18
+			"top": 20
 		},
 		"320x100": {
-			"text": "MINI John Cooper Works.",
+			"text": "MINI JOHN COOPER WORKS.",
 			"size": 8.5,
 			"top": 25
 		},
 		"728x90": {
-			"text": "MINI John Cooper Works.",
+			"text": "MINI JOHN COOPER WORKS.",
 			"size": 12.5,
-			"top": 33
+			"top": 36
 		},
 		"800x250": {
-			"text": "MINI John Cooper Works.​",
+			"text": "MINI JOHN COOPER WORKS.​",
 			"size": 17,
 			"top": 50
 		},
 		"970x250": {
-			"text": "MINI John Cooper Works.",
+			"text": "MINI JOHN COOPER WORKS.",
 			"size": 17,
 			"top": 51
 		}
@@ -313,7 +313,7 @@ localDynamicData = {
 		"320x480": {
 			"text": "LEARN MORE",
 			"size": 13,
-			"top": 90,
+			"top": 85,
 			"height": 23
 		},
 		"320x320": {
@@ -337,7 +337,7 @@ localDynamicData = {
 		"320x100": {
 			"text": "LEARN MORE",
 			"size": 10,
-			"top": 48,
+			"top": 40,
 			"height": 17
 		},
 		"728x90": {
@@ -367,7 +367,7 @@ localDynamicData = {
 		},
 		"160x600": {
 			"text": "250 KM/H",
-			"size": 16,
+			"size": 19,
 			"top": 52
 		},
 		"320x480": {
@@ -388,7 +388,7 @@ localDynamicData = {
 		"320x50": {
 			"text": "250 KM/H",
 			"size": 9.5,
-			"top": 6
+			"top": 8
 		},
 		"320x100": {
 			"text": "250 KM/H",
@@ -398,7 +398,7 @@ localDynamicData = {
 		"728x90": {
 			"text": "250 KM/H",
 			"size": 17,
-			"top": 10
+			"top": 15
 		},
 		"800x250": {
 			"text": "250 KM/H",
@@ -419,8 +419,8 @@ localDynamicData = {
 		},
 		"160x600": {
 			"text": "TOP SPEED.",
-			"size": 16,
-			"top": 68
+			"size": 19,
+			"top": 70
 		},
 		"320x480": {
 			"text": "TOP SPEED.",
@@ -440,7 +440,7 @@ localDynamicData = {
 		"320x50": {
 			"text": "TOP SPEED.",
 			"size": 9.5,
-			"top": 15
+			"top": 17
 		},
 		"320x100": {
 			"text": "TOP SPEED.",
@@ -450,7 +450,7 @@ localDynamicData = {
 		"728x90": {
 			"text": "TOP SPEED.",
 			"size": 17,
-			"top": 28
+			"top": 32
 		},
 		"800x250": {
 			"text": "TOP SPEED.",
@@ -571,43 +571,43 @@ localDynamicData = {
 		"300x600": {
 			"text": "LEARN MORE",
 			"size": 13,
-			"top": 160,
+			"top": 156,
 			"height": 23
 		},
 		"160x600": {
 			"text": "LEARN MORE",
 			"size": 11,
-			"top": 100,
+			"top": 104,
 			"height": 19
 		},
 		"320x480": {
 			"text": "LEARN MORE",
 			"size": 13,
-			"top": 90,
+			"top": 85,
 			"height": 23
 		},
 		"320x320": {
 			"text": "LEARN MORE",
 			"size": 14,
-			"top": 80,
+			"top": 73,
 			"height": 25
 		},
 		"300x250": {
 			"text": "LEARN MORE",
 			"size": 13,
-			"top": 75,
+			"top": 72,
 			"height": 23
 		},
 		"320x50": {
 			"text": "LEARN MORE",
 			"size": 7,
-			"top": 30,
+			"top": 29,
 			"height": 12
 		},
 		"320x100": {
 			"text": "LEARN MORE",
 			"size": 10,
-			"top": 48,
+			"top": 40,
 			"height": 17
 		},
 		"728x90": {
@@ -619,13 +619,13 @@ localDynamicData = {
 		"800x250": {
 			"text": "LEARN MORE",
 			"size": 13.5,
-			"top": 82,
+			"top": 81,
 			"height": 23
 		},
 		"970x250": {
 			"text": "LEARN MORE",
 			"size": 13.5,
-			"top": 97,
+			"top": 83,
 			"height": 23
 		}
 	}
