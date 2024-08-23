@@ -16,8 +16,7 @@ function init() {
     })
 
     document.querySelector("#mainExit").addEventListener("click", function(){
-        // masterTL.progress();
-        gsap.timeline({paused:true});
+        masterTL.progress();
     })
 
     getAnimation();
@@ -29,7 +28,7 @@ function getAnimation(){
     masterTL.add("start")
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)
     masterTL.add("start");
-    masterTL.fromTo("#bgWrapper", 10, {x:-800}, {x:-1009, ease:Sine.easeInOut}, "start+=2");
+    masterTL.fromTo("#bgWrapper", 8, {x:-800}, {x:-1309, ease:Sine.easeInOut}, "start+=2");
     masterTL.from("#nurNurWrapper", 1, {width:0, ease:Sine.easeInOut}, "start+=0.5");
     masterTL.from("#tagline", 0.5, {scale:0, ease:Sine.easeOut}, "start+=0.8");
     masterTL.from("#tagline", 0.7, {y:-70, ease:Back.easeOut}, "start+=0.8");
@@ -43,22 +42,26 @@ function getAnimation(){
     masterTL.to("#topBlock", 0.15, {y:-10, ease:Sine.easeInOut, repeat:1, yoyo:true}, "start+=4");
     masterTL.from("#text1", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=4");
     masterTL.to("#text1", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=6");
+    masterTL.to("#product", 0.2, {scale:0.85, right: -295, ease:Sine.easeInOut}, "start+=10")
+    //masterTL.to("#product", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=10")
+    //masterTL.to("#product", 0.001, {opacity:1, scale:0.85, right: -295, ease:Sine.easeInOut}, "start+=10.4")
+    //masterTL.to("#product", 0.3, {opacity:1, ease:Sine.easeInOut}, "start+=10.5")
     
-    masterTL.from("#proof1", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=6.5");
-    masterTL.to("#proof1", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=8.8");
+    // masterTL.from("#proof1", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=13.5");
+    // masterTL.to("#proof1", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=13.8");
     
-    masterTL.from("#proof2", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=8.9");
-    masterTL.to("#proof2", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=11.2");
+    masterTL.from("#proof2", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=9.9");
+    masterTL.to("#proof2", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=13.2");
 
-    masterTL.from("#proof3", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=11.3");
-    masterTL.to("#proof3", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=13");
+    masterTL.from("#proof3", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=13.3");
+    masterTL.to("#proof3", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=15");
 
-    masterTL.to("#bgWrapper", 0.5, {'-webkit-filter':'blur(3px)','filter':'blur(3px)', ease:Sine.easeInOut}, "start+=13");
-    masterTL.to("#logo", 0.5, {width:50, y:-112, ease:Sine.easeInOut}, "start+=13.2");
-    masterTL.from("#endText", 0.5, {opacity:0, y:20, ease:Sine.easeInOut}, "start+=13.5");
-    masterTL.from("#ctaLeft", 0.5, {scale:0, transformOrigin:"50% 95%", ease:Back.easeOut}, "start+=14");
-    masterTL.from("#ctaRight", 0.01, {opacity:0, ease:Sine.easeOut}, "start+=14.5");
-    masterTL.from("#ctaRight", 0.3, {x:-50, ease:Sine.easeOut}, "start+=14.5");
+    masterTL.to("#bgWrapper", 0.5, {'-webkit-filter':'blur(3px)','filter':'blur(3px)', ease:Sine.easeInOut}, "start+=15");
+    masterTL.to("#logo", 0.5, {width:50, y:-112, ease:Sine.easeInOut}, "start+=15.2");
+    masterTL.from("#endText", 0.5, {opacity:0, y:20, ease:Sine.easeInOut}, "start+=15.5");
+    masterTL.from("#ctaLeft", 0.5, {scale:0, transformOrigin:"50% 95%", ease:Back.easeOut}, "start+=16");
+    masterTL.from("#ctaRight", 0.01, {opacity:0, ease:Sine.easeOut}, "start+=16.5");
+    masterTL.from("#ctaRight", 0.3, {x:-50, ease:Sine.easeOut}, "start+=16.5");
  
     masterTL.play();
 }

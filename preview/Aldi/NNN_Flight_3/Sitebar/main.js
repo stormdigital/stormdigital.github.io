@@ -73,15 +73,15 @@ function getAnimation(){
     masterTL.from("#proof2", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=8.9");
     masterTL.to("#proof2", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=11.2");
 
-    masterTL.from("#proof3", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=11.3");
-    masterTL.to("#proof3", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=13");
+    // masterTL.from("#proof3", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=11.3");
+    // masterTL.to("#proof3", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=13");
 
-    masterTL.to("#bgWrapper", 0.5, {'-webkit-filter':'blur(10px)','filter':'blur(10px)', ease:Sine.easeInOut}, "start+=13");
-    masterTL.to("#logo", 0.5, {width:146, y:-582, ease:Sine.easeInOut}, "start+=13.2");
-    masterTL.from("#endText", 0.5, {opacity:0, y:20, ease:Sine.easeInOut}, "start+=13.5");
-    masterTL.from("#ctaLeft", 0.5, {scale:0, transformOrigin:"50% 95%", ease:Back.easeOut}, "start+=14");
-    masterTL.from("#ctaRight", 0.01, {opacity:0, ease:Sine.easeOut}, "start+=14.5");
-    masterTL.from("#ctaRight", 0.3, {x:-50, ease:Sine.easeOut}, "start+=14.5");
+    masterTL.to("#bgWrapper", 0.5, {'-webkit-filter':'blur(10px)','filter':'blur(10px)', ease:Sine.easeInOut}, "start+=11.3");
+    masterTL.to("#logo", 0.5, {width:146, y:-582, ease:Sine.easeInOut}, "start+=11.5");
+    masterTL.from("#endText", 0.5, {opacity:0, y:20, ease:Sine.easeInOut}, "start+=11.7");
+    masterTL.from("#ctaLeft", 0.5, {scale:0, transformOrigin:"50% 95%", ease:Back.easeOut}, "start+=12.3");
+    masterTL.from("#ctaRight", 0.01, {opacity:0, ease:Sine.easeOut}, "start+=12.8");
+    masterTL.from("#ctaRight", 0.3, {x:-50, ease:Sine.easeOut}, "start+=12.8");
  
     masterTL.play();
     
