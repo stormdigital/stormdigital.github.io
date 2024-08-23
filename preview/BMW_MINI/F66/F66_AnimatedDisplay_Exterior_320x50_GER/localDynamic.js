@@ -92,127 +92,127 @@ localDynamicData = {
 	"text1a": {
 		"300x600": {
 			"text": "THE NEW",
-			"size": 36,
-			"top": 77
+			"size": 29,
+			"top": 55
 		},
 		"160x600": {
 			"text": "THE NEW",
-			"size": 30,
+			"size": 22,
 			"top": 43
 		},
 		"320x480": {
 			"text": "THE NEW",
-			"size": 37,
-			"top": 15
+			"size": 31,
+			"top": 24
 		},
 		"320x320": {
 			"text": "THE NEW",
-			"size": 38,
-			"top": 7
+			"size": 31,
+			"top": 14
 		},
 		"300x250": {
 			"text": "THE NEW",
-			"size": 37,
-			"top": 7
+			"size": 23,
+			"top": 15
 		},
 		"320x50": {
 			"text": "THE NEW",
-			"size": 12.5,
-			"top": 5
+			"size": 10,
+			"top": 6
 		},
 		"320x100": {
 			"text": "THE NEW",
-			"size": 23.5,
-			"top": 4
+			"size": 14.5,
+			"top": 7
 		},
 		"728x90": {
 			"text": "THE NEW",
-			"size": 23.5,
-			"top": 9
+			"size": 23,
+			"top": 6
 		},
 		"800x250": {
 			"text": "THE NEW",
-			"size": 37,
-			"top": 12
+			"size": 30,
+			"top": 13
 		},
 		"970x250": {
 			"text": "THE NEW",
-			"size": 37,
+			"size": 29.5,
 			"top": 13
 		}
 	},
 	"text1b": {
 		"300x600": {
-			"text": "MINI JOHN COOPER WORKS.",
-			"size": 15,
-			"top": 111
+			"text": "MINI JOHN COOPER",
+			"size": 23,
+			"top": 85
 		},
 		"160x600": {
-			"text": "MINI JOHN COOPER WORKS.",
-			"size": 10.5,
-			"top": 72
+			"text": "MINI JOHN COOPER",
+			"size": 14.8,
+			"top": 65
 		},
 		"320x480": {
-			"text": "MINI JOHN COOPER WORKS.",
-			"size": 15.5,
-			"top": 50
+			"text": "MINI JOHN COOPER",
+			"size": 24,
+			"top": 55
 		},
 		"320x320": {
-			"text": "MINI JOHN COOPER WORKS.",
-			"size": 14,
-			"top": 43
+			"text": "MINI JOHN COOPER",
+			"size": 23.4,
+			"top": 46
 		},
 		"300x250": {
 			"text": "MINI JOHN COOPER WORKS.",
-			"size": 15,
+			"size": 16.3,
 			"top": 42
 		},
 		"320x50": {
 			"text": "MINI JOHN COOPER WORKS.",
-			"size": 7.5,
-			"top": 18
+			"size": 10.2,
+			"top": 16
 		},
 		"320x100": {
 			"text": "MINI JOHN COOPER WORKS.",
-			"size": 10,
-			"top": 28
+			"size": 7.6,
+			"top": 23
 		},
 		"728x90": {
 			"text": "MINI JOHN COOPER WORKS.",
-			"size": 15,
-			"top": 31
+			"size": 14.2,
+			"top": 28
 		},
 		"800x250": {
 			"text": "MINI JOHN COOPER WORKS.​",
-			"size": 15,
-			"top": 47
+			"size": 23.8,
+			"top": 45
 		},
 		"970x250": {
 			"text": "MINI JOHN COOPER WORKS.",
-			"size": 15,
-			"top": 48
+			"size": 23.7,
+			"top": 45
 		}
 	},
 	"text1c": {
 		"300x600": {
-			"text": "",
-			"size": 29,
-			"top": 143
+			"text": "WORKS.",
+			"size": 23,
+			"top": 110
 		},
 		"160x600": {
-			"text": "",
-			"size": 19,
-			"top": 94
+			"text": "WORKS.",
+			"size": 14.8,
+			"top": 80
 		},
 		"320x480": {
-			"text": "",
-			"size": 42,
-			"top": 96
+			"text": "WORKS.",
+			"size": 24,
+			"top": 80
 		},
 		"320x320": {
-			"text": "",
-			"size": 0,
-			"top": 0
+			"text": "WORKS.",
+			"size": 23,
+			"top": 70
 		},
 		"300x250": {
 			"text": "",
@@ -301,99 +301,99 @@ localDynamicData = {
 		"300x600": {
 			"text": "LEARN MORE",
 			"size": 14,
-			"top": 144,
+			"top": -144,
 			"height": 24
 		},
 		"160x600": {
 			"text": "LEARN MORE",
 			"size": 14,
-			"top": 99,
+			"top": -99,
 			"height": 20
 		},
 		"320x480": {
 			"text": "LEARN MORE",
 			"size": 13,
-			"top": 78,
+			"top": -78,
 			"height": 24
 		},
 		"320x320": {
 			"text": "LEARN MORE",
 			"size": 14,
-			"top": 70,
+			"top": -70,
 			"height": 25
 		},
 		"300x250": {
 			"text": "LEARN MORE",
 			"size": 14,
-			"top": 70,
+			"top": -70,
 			"height": 24
 		},
 		"320x50": {
 			"text": "LEARN MORE",
 			"size": 7,
-			"top": 30,
+			"top": -30,
 			"height": 12
 		},
 		"320x100": {
 			"text": "LEARN MORE",
 			"size": 10,
-			"top": 47,
+			"top": -47,
 			"height": 16
 		},
 		"728x90": {
 			"text": "LEARN MORE",
 			"size": 12.5,
-			"top": 53,
+			"top": -53,
 			"height": 22
 		},
 		"800x250": {
 			"text": "LEARN MORE",
 			"size": 14,
-			"top": 81,
+			"top": -81,
 			"height": 24
 		},
 		"970x250": {
 			"text": "LEARN MORE",
 			"size": 14,
-			"top": 81,
+			"top": -81,
 			"height": 24
 		}
 	},
 	"text2a": {
 		"300x600": {
 			"text": "READY. SET.",
-			"size": 37,
-			"top": 76
+			"size": 30,
+			"top": 54
 		},
 		"160x600": {
 			"text": "READY. SET.",
-			"size": 20,
-			"top": 45
+			"size": 20.4,
+			"top": 43
 		},
 		"320x480": {
 			"text": "READY. SET.",
-			"size": 38,
+			"size": 31.5,
 			"top": 14
 		},
 		"320x320": {
 			"text": "READY. SET.",
-			"size": 38,
-			"top": 7
+			"size": 31.5,
+			"top": 14
 		},
 		"300x250": {
 			"text": "READY. SET.",
-			"size": 37,
-			"top": 7
+			"size": 23.5,
+			"top": 16
 		},
 		"320x50": {
 			"text": "READY. SET.",
-			"size": 9.5,
+			"size": 10.2,
 			"top": 6
 		},
 		"320x100": {
 			"text": "READY. SET.",
-			"size": 23.5,
-			"top": 6
+			"size": 14.5,
+			"top": 7
 		},
 		"728x90": {
 			"text": "READY. SET.",
@@ -402,50 +402,50 @@ localDynamicData = {
 		},
 		"800x250": {
 			"text": "READY. SET.",
-			"size": 39,
-			"top": 10
+			"size": 30,
+			"top": 13
 		},
 		"970x250": {
 			"text": "READY. SET.",
-			"size": 39,
-			"top": 12
+			"size": 30,
+			"top": 14
 		}
 	},
 	"text2b": {
 		"300x600": {
 			"text": "GOOOO-KART.",
-			"size": 37,
-			"top": 107
+			"size": 30,
+			"top": 83
 		},
 		"160x600": {
 			"text": "GOOOO-KART.",
-			"size": 20,
-			"top": 65
+			"size": 22.2,
+			"top": 61
 		},
 		"320x480": {
 			"text": "GOOOO-KART.",
-			"size": 38,
-			"top": 46
+			"size": 31.5,
+			"top": 45
 		},
 		"320x320": {
 			"text": "GOOOO-KART.",
-			"size": 38,
-			"top": 38
+			"size": 31.5,
+			"top": 45
 		},
 		"300x250": {
 			"text": "GOOOO-KART.",
-			"size": 37,
-			"top": 38
+			"size": 23.2,
+			"top": 41
 		},
 		"320x50": {
 			"text": "GOOOO-KART.",
-			"size": 9.5,
+			"size": 10.2,
 			"top": 16
 		},
 		"320x100": {
 			"text": "GOOOO-KART.",
-			"size": 23.5,
-			"top": 24
+			"size": 14.5,
+			"top": 21
 		},
 		"728x90": {
 			"text": "GOOOO-KART.",
@@ -454,12 +454,12 @@ localDynamicData = {
 		},
 		"800x250": {
 			"text": "GOOOO-KART.",
-			"size": 39,
-			"top": 41
+			"size": 30,
+			"top": 42
 		},
 		"970x250": {
 			"text": "GOOOO-KART.",
-			"size": 39,
+			"size": 30,
 			"top": 43
 		}
 	},
@@ -570,14 +570,14 @@ localDynamicData = {
 	"cta2": {
 		"300x600": {
 			"text": "LEARN MORE",
-			"size": 14,
-			"top": 160,
+			"size": 13,
+			"top": 129,
 			"height": 24
 		},
 		"160x600": {
 			"text": "LEARN MORE",
-			"size": 14,
-			"top": 103,
+			"size": 11,
+			"top": 95,
 			"height": 20
 		},
 		"320x480": {
@@ -588,45 +588,45 @@ localDynamicData = {
 		},
 		"320x320": {
 			"text": "LEARN MORE",
-			"size": 14,
-			"top": 85,
+			"size": 11.4,
+			"top": 92,
 			"height": 25
 		},
 		"300x250": {
 			"text": "LEARN MORE",
-			"size": 14,
-			"top": 86,
+			"size": 11.8,
+			"top": 81,
 			"height": 24
 		},
 		"320x50": {
 			"text": "LEARN MORE",
-			"size": 7,
-			"top": 29,
+			"size": 7.1,
+			"top": 30,
 			"height": 12
 		},
 		"320x100": {
 			"text": "LEARN MORE",
 			"size": 10,
-			"top": 55,
+			"top": 44,
 			"height": 17
 		},
 		"728x90": {
 			"text": "LEARN MORE",
-			"size": 12.5,
+			"size": 7.2,
 			"top": 58,
-			"height": 22
+			"height": 14
 		},
 		"800x250": {
 			"text": "LEARN MORE",
-			"size": 14,
-			"top": 94,
+			"size": 11.5,
+			"top": 88,
 			"height": 24
 		},
 		"970x250": {
 			"text": "LEARN MORE",
-			"size": 14,
-			"top": 95,
-			"height": 24
+			"size": 11.5,
+			"top": 89,
+			"height": 20
 		}
 	}
 }
