@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    color: #fff;
+    background: #2d2682;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #2d2682;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #00b6ed;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: solid 1px #000;
+    box-sizing: border-box;
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+#bg,
+#disclaimer,
+#bottomBar,
+#logoExtra,
+#logoPP,
+#logo{
+    width: 100%;
+}
+
+#tower{
+    width: 100%;
+    transform-origin: 50% 108px;
+}
+
+#bgFront{
+    width: 100%;
+    bottom: 0;
+    transform-origin: 50% 0px;
+}
+
+#dogs{
+    width: 100%;
+    transform-origin: 50% 60%;
+}
+
+#footerWrapper{
+    width: 100%;
+    height: 100%;
+    top: 14px;
+}
+
+#footer{
+    width: 100%;
+    bottom: 0px;
+}
+
+#paws{
+    width: 100%;
+    height: 135px;
+    bottom: 0px;
+    background-image: url("paws.png");
+    mix-blend-mode: screen;
+}
+
+#pawWrapper{
+    width: 100%;
+    height: 137px;
+    bottom: 0;
+}
+
+#pawWrapper div{
+    width: 100%;
+    height: 100%;
+    background-size: 300px;
+    mix-blend-mode: screen;
+}
+
+#priceBlock{
+    opacity: 0;
+}
+
+#cta{
+    transform-origin: 50% 211px;
+}
+
+#cta,
+#priceBlock,
+#poster,
+#date,
+#text3,
+#text2,
+#text1{
+    width: 100%;
+}
+
+#highlight3Wrapper,
+#highlight2Wrapper,
+#highlight1Wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#highlight3,
+#highlight1,
+#highlight2{
+    width: 300px;
+}
+
+.cardWrapper{
+    width: 70px;
+    height: 92px;
+    overflow: hidden;
+}
+
+.card{
+    width: 100%;
+}
+
+.cardCorner,
+.cardDog{
+    width: 66px;
+    left: 2px;
+    top: 0px;
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+#cornerWrapper{
+    width: 200%;
+    height: 200%;
+    top: -50px;
+    left: -87px;
+    transform: rotate(45deg);
+    overflow: hidden;
+}
+
+.gradient{
+    width: 50%;
+    height: 230%;
+    top: -150px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    transform: rotate(45deg);
+    opacity: 0.25;
+}
+
+#card1Wrapper{
+    top: 65px;
+    left: 95px;
+    transform: rotate(-7deg);
+}
+
+#card2Wrapper{
+    top: 38px;
+    left: 157px;
+    transform: rotate(-1deg);
+}
+
+#card3Wrapper{
+    top: 76px;
+    left: 209px;
+    transform: rotate(17deg);
+}
+
+#card3Wrapper .cardDog{
+    transform: rotateY(180deg) rotate(45deg);
+    top: 12px;
+    left: 74px;
+}
+
+#card3Wrapper .cardCorner{
+    transform: rotateY(180deg) rotate(45deg);
+    top: 12px;
+    left: 74px;
+}
+
+#card3Wrapper .card{
+    transform: rotate(-45deg);
+    width: 70px;
+    top: 12px;
+    left: 75px;
+}

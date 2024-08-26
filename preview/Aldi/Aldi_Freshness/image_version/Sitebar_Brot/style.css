@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #0d2253;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #00b6ed;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#scaler{
+    width: 1200px;
+    height: 1200px;
+    left: 0px;
+    overflow: hidden;
+    color: #fff;
+    background: #0d2253;
+}
+
+#extraScaler{
+    width: 1200px;
+    height: 1200px;
+    pointer-events: none;
+    transform-origin: 0px 0px;
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: solid 1px #000;
+    box-sizing: border-box;
+}
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#bg,
+#tagline,
+#ctaLeft,
+#ctaRight,
+.text{
+    width: 100%;
+}
+
+.highlightWrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.highlight{
+    width: 1200px;
+}
+
+#stickerWrapper,
+#stickerOverlayWrapper{
+    width: 432px;
+    height: 212px;
+    overflow: hidden;
+    top: 715px;
+    left: 386px;
+    transform: rotate(-2deg);
+}
+
+#stickerWrapper{
+    top: auto;
+    bottom: 494px;
+    transform: rotate(0deg);
+}
+
+#sticker{
+    bottom: 0;
+}
+
+#stickerOverlay{
+    width: 100%;
+}
+
+#sticker{
+    width: 100%;
+}
+
+#gradient{
+    opacity: 0;
+    width: 90%;
+    height: 200%;
+    top: -50%;
+    left: -150%;
+    transform: rotate(-20deg);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+#logo{
+    width: 108px;
+    top: 32px;
+    left: 32px;
+}
+
+#logo2{
+    width: 211px;
+    top: 230px;
+    left: 50%;
+    transform: translateX(-50%);
+}
