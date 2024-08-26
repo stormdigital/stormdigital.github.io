@@ -28,7 +28,7 @@ function getAnimation(){
     masterTL.add("start")
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)
     masterTL.add("start");
-    masterTL.fromTo("#bgWrapper", 8, {x:-800}, {x:-1309, ease:Sine.easeInOut}, "start+=2");
+    masterTL.fromTo("#bgWrapper", 6.5, {x:-800}, {x:-1309, ease:Sine.easeInOut}, "start+=2");
     masterTL.from("#nurNurWrapper", 1, {width:0, ease:Sine.easeInOut}, "start+=0.5");
     masterTL.from("#tagline", 0.5, {scale:0, ease:Sine.easeOut}, "start+=0.8");
     masterTL.from("#tagline", 0.7, {y:-70, ease:Back.easeOut}, "start+=0.8");
@@ -42,7 +42,7 @@ function getAnimation(){
     masterTL.to("#topBlock", 0.15, {y:-10, ease:Sine.easeInOut, repeat:1, yoyo:true}, "start+=4");
     masterTL.from("#text1", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=4");
     masterTL.to("#text1", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=6");
-    masterTL.to("#product", 0.2, {scale:0.85, right: -295, ease:Sine.easeInOut}, "start+=10")
+    masterTL.to("#product", 0.4, {scale:0.85, right: -295, ease:Sine.easeInOut}, "start+=10")
     //masterTL.to("#product", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=10")
     //masterTL.to("#product", 0.001, {opacity:1, scale:0.85, right: -295, ease:Sine.easeInOut}, "start+=10.4")
     //masterTL.to("#product", 0.3, {opacity:1, ease:Sine.easeInOut}, "start+=10.5")
@@ -50,7 +50,7 @@ function getAnimation(){
     // masterTL.from("#proof1", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=13.5");
     // masterTL.to("#proof1", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=13.8");
     
-    masterTL.from("#proof2", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=9.9");
+    masterTL.from("#proof2", 0.7, {opacity:0, ease:Sine.easeInOut}, "start+=9.9");
     masterTL.to("#proof2", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=13.2");
 
     masterTL.from("#proof3", 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=13.3");
