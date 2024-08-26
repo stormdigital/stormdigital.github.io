@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -66,8 +67,9 @@ table {
 }
 .background {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  background: linear-gradient(180deg, rgb(131, 58, 180) 0%, rgb(58, 144, 180) 50%, rgb(252, 176, 69) 100%);
 }
 
 h3 {
@@ -75,9 +77,44 @@ h3 {
   font-size: 12px;
 }
 
+.skillsTicker {
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.skillsTicker .skillsTickerItemContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: 17px;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  font-family: "Mont-Heavy";
+}
+.skillsTicker .skillsTickerItemContainer span {
+  white-space: nowrap;
+  color: #fff;
+}
+.skillsTicker span::before {
+  content: "·";
+  position: relative;
+  margin-right: 15px;
+  width: 15px;
+  height: 15px;
+}
+
 .contentContainer {
   position: relative;
   width: 100%;
+  height: auto;
   left: 50%;
   top: 50%;
   transform: translate(-50%, 0%);
@@ -86,8 +123,27 @@ h3 {
   justify-content: center;
   flex-direction: column;
 }
-.contentContainer .heroCopyContainer {
+.contentContainer .heroContentContainer {
   position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 0px 0;
+  background-color: #efefef;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 40px 0;
+  align-items: center;
+}
+.contentContainer .heroContentContainer .skillsBackgroundImage {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+.contentContainer .heroCopyContainer {
+  position: absolute;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
@@ -101,6 +157,7 @@ h3 {
   transform: scale(1);
   white-space: nowrap;
   overflow: hidden;
+  background-color: #fff;
 }
 .contentContainer .heroCopyContainer .headline .title01 {
   opacity: 1;
@@ -118,19 +175,30 @@ h3 {
 .contentContainer .heroCopyContainer h1 {
   font-family: "Mont-Heavy";
   font-size: min(10vw, 128px);
-  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .contentContainer .teamContainer {
   position: relative;
   width: 100%;
-  height: auto;
-  padding: 25px 0;
-  background-color: #efefef;
+  padding: 0 0 50px 0;
+  background-color: #fff;
   display: flex;
+  justify-content: start;
   flex-direction: column;
+  gap: 40px 0;
   align-items: center;
+}
+.contentContainer .teamContainer .teamContainerInner {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(180deg, #EBD0F8 0%, rgba(235, 208, 248, 0) 100%);
+}
+.contentContainer .teamContainer h1 {
+  position: relative;
+  padding-top: 50px;
+  color: #000;
 }
 .contentContainer .teamContainer .teamOverviewContainer {
   display: flex;
@@ -141,6 +209,7 @@ h3 {
   align-items: center;
   justify-content: center;
   margin-top: 35px;
+  position: relative;
 }
 .contentContainer .teamContainer .teamOverviewContainer .teamMember {
   display: flex;
@@ -161,7 +230,93 @@ h3 {
 .contentContainer .teamContainer h1 {
   font-family: "Mont-Heavy";
   font-size: min(10vw, 128px);
-  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+}
+.contentContainer .skillsContainer {
+  width: 100%;
+  background-color: #F9F9F9;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px 0;
+  padding: 50px 0px;
+  box-sizing: border-box;
+}
+.contentContainer .skillsContainer .skillsInnerContainer {
+  max-width: min(95%, 1200px);
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.contentContainer .skillsContainer .skillsBackgroundImage {
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+.contentContainer .skillsContainer h1 {
+  max-width: 1200px;
+  font-family: "Mont-Heavy";
+  font-size: min(6.5vw, 78px);
+}
+.contentContainer .skillsContainer .titleContainer {
+  color: #000000;
+  position: relative;
+  max-width: min(95%, 1200px);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.contentContainer .skillsContainer .titleContainer h1 {
+  color: #000000;
+}
+.contentContainer .skillsContainer .titleContainer p {
+  color: #000000;
+  font-family: "Mont-Heavy";
+}
+.contentContainer .skillsContainer .skillsWrapper {
+  width: 100%;
+  max-width: min(95%, 1200px);
+  flex-flow: wrap;
+  gap: 40px 30px;
+  align-items: start;
+  justify-content: start;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  position: relative;
+}
+.contentContainer .skillsContainer .skillsWrapper .skillType {
+  width: 100%;
+  max-width: min(95%, 1200px);
+  flex-flow: wrap;
+  gap: 15px 15px;
+  align-items: start;
+  justify-content: start;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  position: relative;
+  flex-direction: row;
+}
+.contentContainer .skillsContainer .skillsWrapper .skillType .skillTitle {
+  width: 100%;
+  color: #000000;
+  font-family: "Mont-ExtraLight";
+}
+.contentContainer .skillsContainer .skillsWrapper .skillType .skill {
+  border-radius: 31.928px;
+  background: linear-gradient(262deg, #F544AC -27.84%, #CD2FCB 8.91%, #8B0EFE 68.43%, #34A6E4 113.25%);
+  padding: 15px 30px;
+  color: #fff;
+  font-family: "Mont-Heavy";
+  cursor: pointer;
+  font-size: max(0.7vw, 15px);
 }
