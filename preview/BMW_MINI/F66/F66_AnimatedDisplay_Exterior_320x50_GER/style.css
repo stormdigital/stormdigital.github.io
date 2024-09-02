@@ -8,6 +8,11 @@
     src: url('MINISansSerif-Regular.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: 'mini_serifregular';
+    src: url('miniserif-regular.woff2') format('woff2');
+}
+
 body{
     margin: 0;
 }
@@ -75,21 +80,21 @@ img, div, object{
 }
 
 #logoMini{
-    width: 22px;
-    bottom: 20px;
-    right: 41px;
+    width: 34px;
+    bottom: 16px;
+    right: 68px;
 }
 
 #logoJCW{
-    width: 29px;
-    right: 7px;
-    bottom: 21px;
+    width: 48px;
+    right: 10px;
+    bottom: 19px;
 }
 
 #text2Wrapper,
 #text1Wrapper{
-    font-family: "MINISerif-Headline";
-    left: 8px;
+    font-family: "mini_serifregular";
+    left: 10px;
     top: 0px;
     width: 700px;
 }
@@ -98,7 +103,7 @@ img, div, object{
 #cta1Wrapper{
     background: #c22e20;
     top: 125px;
-    padding: 0px 11px;
+    padding: 0px 8px;
     font-family: 'MINISansSerif-Regular';
 }
 
