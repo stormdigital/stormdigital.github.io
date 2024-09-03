@@ -49,7 +49,7 @@ function getAnimation(){
     masterTL.to("#product2", 0.6, {x:-300, ease:Sine.easeIn}, "-=0.75")
     masterTL.to("#date", 0.3, {x:150, ease:Sine.easeIn}, "-=1")
     
-    masterTL.to("#logo", 0.5, {scale:1.28571428571, left:"50%", translateX:"-50%", ease:Sine.easeInOut}, "-=0.5")
+    masterTL.to("#logo", 0.5, {top: 20, scale:1.28571428571, left:"50%", translateX:"-50%", ease:Sine.easeInOut}, "-=0.5")
     masterTL.from("#tagline", 0.5, {opacity:0, y:-20, ease:Sine.easeOut}, "-=0.2")
     masterTL.from("#text2", 0.3, {opacity:0, y:30, ease:Sine.easeOut}, "-=0.2")
     masterTL.from("#highlight2Wrapper", 0.5, {width:0, ease:Sine.easeOut}, "+=0.5")
