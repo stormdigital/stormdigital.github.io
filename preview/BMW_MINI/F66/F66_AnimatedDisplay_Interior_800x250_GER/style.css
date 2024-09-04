@@ -88,13 +88,13 @@ img, div, object{
 #logoJCW{
     width: 88px;
     right: 19px;
-    bottom: 22px;
+    bottom: 23px;
 }
 
 #text2Wrapper,
 #text1Wrapper{
     font-family: "mini_serifregular";
-    left: 21px;
+    left: 20px;
     top: 0px;
     width: 750px;
 }
