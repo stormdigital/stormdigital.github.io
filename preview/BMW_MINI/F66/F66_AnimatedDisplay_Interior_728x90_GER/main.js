@@ -43,10 +43,6 @@ function init(clickTAGvalue) {
         if(masterTL.progress() == 1){
             gsap.to("#cta2Wrapper", 0.3, {background:"#fff", color:"#000", ease:Sine.easeInOut});
         }
-
-
-        gsap.to(["#bg1", "#bg2"], 0.5, {filter: "sepia(0.5)"});
-        gsap.to(["#bg1", "#bg2"], 0.5, {filter: "sepia(0)", delay:0.5});
     })
     
     document.querySelector("#mainExit").addEventListener("mouseout", function(){
