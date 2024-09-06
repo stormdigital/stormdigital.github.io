@@ -19,72 +19,72 @@ localDynamicData = {
 	"logoJCW": "./jcw_logo.svg",
 	"scale": {
 		"300x600": {
-			"bg1": 1.15,
+			"bg1": 1.05,
 			"bg2": 1.15,
-			"introScale": 1.15,
+			"introScale": 1.05,
 			"transOr1": "50% 80%",
 			"transOr2": "50% 80%"
 		},
 		"160x600": {
-			"bg1": 1.15,
+			"bg1": 1.05,
 			"bg2": 1.15,
-			"introScale": 1.15,
+			"introScale": 1.05,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
 		},
 		"320x480": {
-			"bg1": 1.15,
+			"bg1": 1.05,
 			"bg2": 1.15,
-			"introScale": 1.15,
+			"introScale": 1.05,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
 		},
 		"320x320": {
-			"bg1": 1.15,
+			"bg1": 1.05,
 			"bg2": 1.15,
-			"introScale": 1.15,
+			"introScale": 1.05,
 			"transOr1": "50% 60%",
 			"transOr2": "50% 60%"
 		},
 		"300x250": {
-			"bg1": 1.15,
-			"bg2": 1.05,
-			"introScale": 1.15,
+			"bg1": 1.05,
+			"bg2": 1.15,
+			"introScale": 1.05,
 			"transOr1": "50% 50%",
-			"transOr2": "50% 80%"
+			"transOr2": "50% 50%"
 		},
 		"320x50": {
-			"bg1": 1.1,
+			"bg1": 1.05,
 			"bg2": 1.1,
-			"introScale": 1.15,
+			"introScale": 1.05,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
 		},
 		"320x100": {
-			"bg1": 1.2,
+			"bg1": 1.05,
 			"bg2": 1.2,
-			"introScale": 1.15,
+			"introScale": 1.05,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
 		},
 		"728x90": {
-			"bg1": 1.03,
+			"bg1": 1.05,
 			"bg2": 1.15,
-			"introScale": 1.15,
+			"introScale": 1.05,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
 		},
 		"800x250": {
-			"bg1": 1.15,
+			"bg1": 1.05,
 			"bg2": 1.15,
-			"introScale": 1.15,
+			"introScale": 1.05,
 			"transOr1": "40% 40%",
-			"transOr2": "40% 40%"
+			"transOr2": "60% 70%"
 		},
 		"970x250": {
-			"bg1": 1.15,
+			"bg1": 1.05,
 			"bg2": 1.15,
-			"introScale": 1.15,
+			"introScale": 1.05,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
 		}
@@ -128,7 +128,7 @@ localDynamicData = {
 		"728x90": {
 			"text": "STEP INSIDE",
 			"size": 23.5,
-			"top": 4
+			"top": 5
 		},
 		"800x250": {
 			"text": "STEP INSIDE",
@@ -180,7 +180,7 @@ localDynamicData = {
 		"728x90": {
 			"text": "THE COCKPIT.",
 			"size": 23.5,
-			"top": 24
+			"top": 25
 		},
 		"800x250": {
 			"text": "THE COCKPIT.",
@@ -401,12 +401,12 @@ localDynamicData = {
 			"top": 8
 		},
 		"800x250": {
-			"text": "THE FIRST-EVER ALL-ELECTRIC",
+			"text": "THE FIRST-EVER",
 			"size": 23.9,
 			"top": 14
 		},
 		"970x250": {
-			"text": "THE FIRST-EVER ALL-ELECTRIC",
+			"text": "THE FIRST-EVER",
 			"size": 23.9,
 			"top": 14
 		}
@@ -414,23 +414,23 @@ localDynamicData = {
 	"text2b": {
 		"300x600": {
 			"text": "ALL-ELECTRIC",
-			"size": 22.8,
-			"top": 81
+			"size": 29.8,
+			"top": 79
 		},
 		"160x600": {
 			"text": "ALL-ELECTRIC",
-			"size": 12.7,
-			"top": 61
+			"size": 16.5,
+			"top": 59
 		},
 		"320x480": {
 			"text": "ALL-ELECTRIC",
-			"size": 23.8,
-			"top": 55
+			"size": 31.8,
+			"top": 54
 		},
 		"320x320": {
 			"text": "ALL-ELECTRIC",
-			"size": 23.5,
-			"top": 39
+			"size": 31.5,
+			"top": 37
 		},
 		"300x250": {
 			"text": "MINI JCW ACEMAN.",
@@ -453,12 +453,12 @@ localDynamicData = {
 			"top": 19
 		},
 		"800x250": {
-			"text": "MINI JCW ACEMAN.",
+			"text": "ALL-ELECTRIC",
 			"size": 30,
 			"top": 38
 		},
 		"970x250": {
-			"text": "MINI JCW ACEMAN.",
+			"text": "ALL-ELECTRIC",
 			"size": 30,
 			"top": 38
 		}
@@ -467,7 +467,7 @@ localDynamicData = {
 		"300x600": {
 			"text": "MINI JCW ACEMAN.",
 			"size": 29.8,
-			"top": 104
+			"top": 107
 		},
 		"160x600": {
 			"text": "MINI JCW ACEMAN.",
@@ -477,12 +477,12 @@ localDynamicData = {
 		"320x480": {
 			"text": "MINI JCW ACEMAN.",
 			"size": 31.5,
-			"top": 79
+			"top": 83
 		},
 		"320x320": {
 			"text": "MINI JCW ACEMAN.",
 			"size": 31.5,
-			"top": 63
+			"top": 68
 		},
 		"300x250": {
 			"text": "",
@@ -505,14 +505,14 @@ localDynamicData = {
 			"top": 0
 		},
 		"800x250": {
-			"text": "",
-			"size": 36,
-			"top": 86
+			"text": "MINI JCW ACEMAN.",
+			"size": 30,
+			"top": 67
 		},
 		"970x250": {
-			"text": "",
-			"size": 34,
-			"top": 82
+			"text": "MINI JCW ACEMAN.",
+			"size": 30,
+			"top": 68
 		}
 	},
 	"text2d": {
@@ -571,7 +571,7 @@ localDynamicData = {
 		"300x600": {
 			"text": "LEARN MORE",
 			"size": 13,
-			"top": 149,
+			"top": 153,
 			"height": 23
 		},
 		"160x600": {
@@ -612,21 +612,21 @@ localDynamicData = {
 		},
 		"728x90": {
 			"text": "LEARN MORE",
-			"size": 7,
-			"top": 52,
-			"height": 12
+			"size": 8.5,
+			"top": 50,
+			"height": 15
 		},
 		"800x250": {
 			"text": "LEARN MORE",
 			"size": 11.4,
-			"top": 84,
-			"height": 24
+			"top": 113,
+			"height": 20
 		},
 		"970x250": {
 			"text": "LEARN MORE",
 			"size": 11.4,
-			"top": 84,
-			"height": 24
+			"top": 113,
+			"height": 20
 		}
 	}
 }

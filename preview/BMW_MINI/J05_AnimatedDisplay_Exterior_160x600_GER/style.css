@@ -80,24 +80,24 @@ img, div, object{
 }
 
 #logoMini{
-    width: 78px;
+    width: 72px;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 67px;
+    bottom: 61px;
     
 }
 
 #logoJCW{
-    width: 103px;
+    width: 90px;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 21px;
+    bottom: 20px;
 }
 
 #text2Wrapper,
 #text1Wrapper{
     font-family: "mini_serifregular";
-    left: 16px;
+    left: 10px;
     top: 0px;
     width: 140px;
 }
@@ -106,7 +106,7 @@ img, div, object{
 #cta1Wrapper{
     background: #c22e20;
     top: 125px;
-    padding: 0px 11px;
+    padding: 0px 14px;
     font-family: 'MINISansSerif-Regular';
 }
 
