@@ -19,71 +19,71 @@ localDynamicData = {
 	"logoJCW": "./jcw_logo.svg",
 	"scale": {
 		"300x600": {
-			"bg1": 1.15,
-			"bg2": 1.05,
+			"bg1": 1.2,
+			"bg2": 1.2,
 			"introScale": 2,
 			"transOr1": "50% 80%",
 			"transOr2": "50% 80%"
 		},
 		"160x600": {
-			"bg1": 1.15,
-			"bg2": 1.05,
+			"bg1": 1.125,
+			"bg2": 1.15,
 			"introScale": 2,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
 		},
 		"320x480": {
-			"bg1": 1.15,
-			"bg2": 1.05,
+			"bg1": 1.2,
+			"bg2": 1.2,
 			"introScale": 2,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
 		},
 		"320x320": {
-			"bg1": 1.15,
-			"bg2": 1.05,
+			"bg1": 1.2,
+			"bg2": 1.2,
 			"introScale": 2,
 			"transOr1": "50% 60%",
 			"transOr2": "50% 60%"
 		},
 		"300x250": {
-			"bg1": 1.15,
-			"bg2": 1.05,
+			"bg1": 1.2,
+			"bg2": 1.2,
 			"introScale": 2,
-			"transOr1": "50% 50%",
+			"transOr1": "50% 80%",
 			"transOr2": "50% 80%"
 		},
 		"320x50": {
 			"bg1": 1.1,
-			"bg2": 1.05,
+			"bg2": 1.1,
 			"introScale": 1.7,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
 		},
 		"320x100": {
-			"bg1": 1.2,
-			"bg2": 1.05,
+			"bg1": 1.15,
+			"bg2": 1.2,
 			"introScale": 2,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
 		},
 		"728x90": {
-			"bg1": 1.15,
+			"bg1": 1.05,
 			"bg2": 1.05,
 			"introScale": 2,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
 		},
 		"800x250": {
-			"bg1": 1.15,
-			"bg2": 1.05,
+			"bg1": 1.2,
+			"bg2": 1.15,
 			"introScale": 2,
 			"transOr1": "40% 40%",
 			"transOr2": "40% 40%"
 		},
 		"970x250": {
-			"bg1": 1.15,
-			"bg2": 1.05,
+			"bg1": 1.2,
+			"bg2": 1.2,
 			"introScale": 2,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
@@ -143,23 +143,23 @@ localDynamicData = {
 	},
 	"text1b": {
 		"300x600": {
-			"text": "MINI JOHN COOPER",
-			"size": 23,
+			"text": "MINI JOHN COOPER WORKS.",
+			"size": 20.5,
 			"top": 85
 		},
 		"160x600": {
-			"text": "MINI JOHN COOPER",
-			"size": 14.8,
+			"text": "MINI JOHN COOPER WORKS.",
+			"size": 11,
 			"top": 65
 		},
 		"320x480": {
-			"text": "MINI JOHN COOPER",
-			"size": 24,
+			"text": "MINI JOHN COOPER WORKS.",
+			"size": 22,
 			"top": 55
 		},
 		"320x320": {
-			"text": "MINI JOHN COOPER",
-			"size": 23.4,
+			"text": "MINI JOHN COOPER WORKS.",
+			"size": 22,
 			"top": 46
 		},
 		"300x250": {
@@ -195,22 +195,22 @@ localDynamicData = {
 	},
 	"text1c": {
 		"300x600": {
-			"text": "WORKS.",
+			"text": "",
 			"size": 23,
 			"top": 110
 		},
 		"160x600": {
-			"text": "WORKS.",
+			"text": "",
 			"size": 14.8,
 			"top": 80
 		},
 		"320x480": {
-			"text": "WORKS.",
+			"text": "",
 			"size": 24,
 			"top": 80
 		},
 		"320x320": {
-			"text": "WORKS.",
+			"text": "",
 			"size": 23,
 			"top": 70
 		},
@@ -590,13 +590,13 @@ localDynamicData = {
 			"text": "LEARN MORE",
 			"size": 11.4,
 			"top": 92,
-			"height": 25
+			"height": 20
 		},
 		"300x250": {
 			"text": "LEARN MORE",
 			"size": 11.8,
 			"top": 81,
-			"height": 24
+			"height": 20
 		},
 		"320x50": {
 			"text": "LEARN MORE",
@@ -612,15 +612,15 @@ localDynamicData = {
 		},
 		"728x90": {
 			"text": "LEARN MORE",
-			"size": 7.2,
-			"top": 58,
+			"size": 9,
+			"top": 57,
 			"height": 14
 		},
 		"800x250": {
 			"text": "LEARN MORE",
 			"size": 11.5,
 			"top": 88,
-			"height": 24
+			"height": 20
 		},
 		"970x250": {
 			"text": "LEARN MORE",
