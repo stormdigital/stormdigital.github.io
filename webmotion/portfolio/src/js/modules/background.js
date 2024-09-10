@@ -18,7 +18,7 @@ const self = {
         var tl = gsap.timeline({paused:true, repeat: -1, yoyo:true})
         tl.add('start')
         tl.add(gsap.set(".background", {background: b1}), 'start')
-        tl.add(gsap.to(".background", 15, {ease: "sine.inOut", background: b2}), 'start')
+        tl.add(gsap.to(".background", 2, {ease: "sine.inOut", background: b2}), 'start')
 
         // tl.add(gsap.set(".headline", {background: b2}), 'start')
         // tl.add(gsap.to(".headline", 15, {ease: "sine.inOut", background: b1}), 'start')
