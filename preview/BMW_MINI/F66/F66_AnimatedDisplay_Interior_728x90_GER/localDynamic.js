@@ -361,104 +361,104 @@ localDynamicData = {
 	},
 	"text2a": {
 		"300x600": {
-			"text": "250. <span style='font-size: 15px; top: 9px; left: 107px; position: absolute;'>KM/H</span>",
+			"text": "250<span style='font-size: 15px; top: 9px; left: 107px; position: absolute;'>KM/H</span>",
 			"size": 62,
 			"top": 49
 		},
 		"160x600": {
-			"text": "250. <span style='font-size: 10px; top: 6px; left: 69px; position: absolute;'>KM/H</span>",
+			"text": "250<span style='font-size: 10px; top: 6px; left: 69px; position: absolute;'>KM/H</span>",
 			"size": 40,
 			"top": 40
 		},
 		"320x480": {
-			"text": "250. <span style='font-size: 15px; top: 10px; left: 109px; position: absolute;'>KM/H</span>",
+			"text": "250<span style='font-size: 15px; top: 10px; left: 109px; position: absolute;'>KM/H</span>",
 			"size": 64,
 			"top": 22
 		},
 		"320x320": {
-			"text": "250. <span style='font-size: 15px; top: 9px; left: 109px; position: absolute;'>KM/H</span>",
+			"text": "250<span style='font-size: 15px; top: 9px; left: 109px; position: absolute;'>KM/H</span>",
 			"size": 63,
 			"top": 8
 		},
 		"300x250": {
-			"text": "250. <span style='font-size: 12px; top: 8px; left: 75px; position: absolute;'>KM/H</span>",
+			"text": "250<span style='font-size: 12px; top: 8px; left: 75px; position: absolute;'>KM/H</span>",
 			"size": 45,
 			"top": 10
 		},
 		"320x50": {
-			"text": "250. <span style='font-size: 5.5px; top: 1px; left: 19px; position: absolute;'>KM/H</span>",
+			"text": "250<span style='font-size: 5.5px; top: 1px; left: 19px; position: absolute;'>KM/H</span>",
 			"size": 10,
 			"top": 6
 		},
 		"320x100": {
-			"text": "250. <span style='font-size: 5.5px; top: 3px; left: 36px; position: absolute;'>KM/H</span>",
+			"text": "250<span style='font-size: 5.5px; top: 3px; left: 36px; position: absolute;'>KM/H</span>",
 			"size": 21,
 			"top": 6
 		},
 		"728x90": {
-			"text": "250. <span style='font-size: 10px; top: 5px; left: 56px; position: absolute;'>KM/H</span>",
+			"text": "250<span style='font-size: 10px; top: 5px; left: 56px; position: absolute;'>KM/H</span>",
 			"size": 33,
 			"top": 3
 		},
 		"800x250": {
-			"text": "250. <span style='font-size: 15px; top: 10px; left: 110px; position: absolute;'>KM/H</span>",
+			"text": "250<span style='font-size: 15px; top: 10px; left: 110px; position: absolute;'>KM/H</span>",
 			"size": 64,
 			"top": 7
 		},
 		"970x250": {
-			"text": "250. <span style='font-size: 15px; top: 10px; left: 110px; position: absolute;'>KM/H</span> ",
+			"text": "250<span style='font-size: 15px; top: 10px; left: 110px; position: absolute;'>KM/H</span> ",
 			"size": 63,
 			"top": 7
 		}
 	},
 	"text2b": {
 		"300x600": {
-			"text": "TOP SPEED",
+			"text": "TOP SPEED.",
 			"size": 23,
 			"top": 109
 		},
 		"160x600": {
-			"text": "TOP SPEED",
+			"text": "TOP SPEED.",
 			"size": 15,
 			"top": 77
 		},
 		"320x480": {
-			"text": "TOP SPEED",
+			"text": "TOP SPEED.",
 			"size": 23,
 			"top": 85
 		},
 		"320x320": {
-			"text": "TOP SPEED",
+			"text": "TOP SPEED.",
 			"size": 23.5,
 			"top": 70
 		},
 		"300x250": {
-			"text": "TOP SPEED",
+			"text": "TOP SPEED.",
 			"size": 16,
 			"top": 56
 		},
 		"320x50": {
-			"text": "TOP SPEED",
+			"text": "TOP SPEED.",
 			"size": 10,
 			"top": 17
 		},
 		"320x100": {
-			"text": "TOP SPEED",
+			"text": "TOP SPEED.",
 			"size": 8,
 			"top": 27
 		},
 		"728x90": {
-			"text": "TOP SPEED",
+			"text": "TOP SPEED.",
 			"size": 11.8,
 			"top": 35
 		},
 		"800x250": {
-			"text": "TOP SPEED",
+			"text": "TOP SPEED.",
 			"size": 23.5,
 			"top": 70
 		},
 		"970x250": {
-			"text": "TOP SPEED",
+			"text": "TOP SPEED.",
 			"size": 23,
 			"top": 70
 		}
