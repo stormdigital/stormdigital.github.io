@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #9fc2d5;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #0d2253;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#scaler{
+    width: 1200px;
+    height: 1200px;
+    left: 0px;
+    overflow: hidden;
+    background: #ee7100;
+    color: #fff;
+}
+
+#extraScaler{
+    width: 1200px;
+    height: 1200px;
+    pointer-events: none;
+    transform-origin: 0px 0px;
+}
+
+#logo{
+    width: 109px;
+    top: 20px;
+    left: 20px;
+}
+
+#leftWrapper{
+    width: 100%;
+    height: 50%;
+    background: #0d2253;
+}
+
+#logoBarissimo{
+    width: 100%;
+}
+
+.headline{
+    width: 100%;
+}
+
+#productsWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+#productsBg{
+    width: 100%;
+    bottom: 0;
+}
+
+.product{
+    width: 100%;
+    bottom: 0;
+}
+
+#shadowWrapper{
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.shadow{
+    width: 100%;
+    bottom: 0;
+}
+
+#shadow1,
+#product1{
+    transform-origin: 470px 230px;
+}
+
+#shadow2,
+#product2{
+    transform-origin: 730px 230px;
+}
+
+#shadow3,
+#product3{
+    transform-origin: 410px 505px;
+}
+
+#shadow4,
+#product4{
+    transform-origin: 590px 504px;
+}
+
+#shadow5,
+#product5{
+    transform-origin: 800px 500px;
+}
+
+#color2{
+    width: 100%;
+    height: 100%;
+    background: #992e2f;
+}
+
+#color3{
+    width: 100%;
+    height: 100%;
+    background: #b13c2b;
+}
+
+.productBig{
+    width: 100%;
+    bottom: 0;
+}
+
+#sticker,
+#sticker2{
+    width: 100%;
+    transform-origin: 801px 1100px;
+}
+
+#endScreen{
+    width: 100%;
+    height: 100%;
+    background: #9fc2d5;
+}
+
+#endLogo,
+#endMessage,
+#endText{
+    width: 100%;
+}
+
+#ctaLeft,
+#ctaRight{
+    width: 100%;
+}
