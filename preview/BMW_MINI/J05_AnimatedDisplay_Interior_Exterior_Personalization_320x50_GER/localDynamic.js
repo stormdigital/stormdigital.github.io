@@ -117,8 +117,8 @@ localDynamicData = {
 		},
 		"320x50": {
 			"text": "STEP INSIDE",
-			"size": 10.2,
-			"top": 5
+			"size": 9.3,
+			"top": 6
 		},
 		"320x100": {
 			"text": "STEP INSIDE",
@@ -169,8 +169,8 @@ localDynamicData = {
 		},
 		"320x50": {
 			"text": "THE COCKPIT.",
-			"size": 10.2,
-			"top": 16
+			"size": 9.3,
+			"top": 17
 		},
 		"320x100": {
 			"text": "THE COCKPIT.",
@@ -387,8 +387,8 @@ localDynamicData = {
 		},
 		"320x50": {
 			"text": "THE FIRST-EVER ALL-ELECTRIC",
-			"size": 7.6,
-			"top": 7
+			"size": 9.2,
+			"top": 6
 		},
 		"320x100": {
 			"text": "THE FIRST-EVER ALL-ELECTRIC",
@@ -439,8 +439,8 @@ localDynamicData = {
 		},
 		"320x50": {
 			"text": "MINI JCW ACEMAN.",
-			"size": 10.2,
-			"top": 16
+			"size": 9.2,
+			"top": 17
 		},
 		"320x100": {
 			"text": "MINI JCW ACEMAN.",
