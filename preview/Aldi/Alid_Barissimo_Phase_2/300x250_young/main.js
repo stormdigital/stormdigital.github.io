@@ -29,8 +29,9 @@ function getAnimation(){
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)
     masterTL.from("#bg", 3, {scale:1.1, ease:Sine.easeOut}, "start")
     masterTL.from("#gradient", 0.5, {opacity:0, ease:Sine.easeOut}, "start+=0.5")
-    // masterTL.to("#logoBarissimo", 0.5, {opacity:0, ease:Sine.easeIn}, "start+=0.5")
     masterTL.from("#text1", 0.5, {y:100, ease:Back.easeOut}, "start+=0.8")
+
+    masterTL.to("#logoBarissimo", 0.7, {opacity:0, ease:Sine.easeInOut}, "start+=2.5")
     
     masterTL.from("#contentRight", 1, {x:150, ease:Sine.easeInOut}, "start+=3")
     masterTL.to("#bg", 1, {x:-53, y:13, scale:1.1, ease:Sine.easeInOut}, "start+=3")

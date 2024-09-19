@@ -38,9 +38,11 @@ function onResize(){
         var newScale = bannerW/(scalerW/2);
         gsap.set("#scaler", {left:"50%", xPercent:-50, transformOrigin:"50% 0%", scale:newScale*bannerS});
         gsap.set("#extraScaler", {scale:newScale*bannerS});
+        gsap.set("#logoBarissimo", {x:-300});
     }
     else if(bannerW < scalerW){
         gsap.set("#scaler", {left:"50%", xPercent:-50, transformOrigin:"50% 0%"});
+        gsap.set("#logoBarissimo", {x:-((scalerW - screenW)/2)/bannerS});
     }
     else{
         gsap.set("#scaler", {left:"0%", xPercent:0, transformOrigin:"0% 0%"});
@@ -56,6 +58,8 @@ function getAnimation(){
     masterTL.from("#bg", 3, {scale:1.1, ease:Sine.easeOut}, "start")
     masterTL.from("#gradient", 0.5, {opacity:0, ease:Sine.easeOut}, "start+=0.5")
     masterTL.from("#text1", 0.5, {y:300, ease:Back.easeOut}, "start+=0.8")
+
+    masterTL.to("#logoBarissimo", 0.7, {opacity:0, ease:Back.easeInOut}, "start+=2.5")
     
     masterTL.from("#contentRight", 1, {y:600, ease:Sine.easeInOut}, "start+=3")
     masterTL.to("#bg", 1, {y:-127, ease:Sine.easeInOut}, "start+=3")

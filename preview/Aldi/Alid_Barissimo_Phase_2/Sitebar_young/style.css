@@ -79,6 +79,7 @@ img, div, object{
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 }
 
+#logoBarissimo,
 #logoBarissimo2,
 #ctaRight,
 #ctaLeft,
@@ -86,6 +87,11 @@ img, div, object{
 #text2,
 #text1{
     width: 100%;
+}
+
+#logoBarissimo{
+    top: -229px;
+    right: -323px;
 }
 
 #contentRight{
