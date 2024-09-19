@@ -61,8 +61,8 @@ function getAnimation(){
     masterTL.from("#leafs", 1.5, {rotation:60, ease: "back.inOut(5)"}, "start+=0.8");
     masterTL.from("#topBlock", 0.5, {scale:0, ease:Sine.easeOut}, "start+=3.5");
     masterTL.to("#tagline", 0.3, {opacity:0, ease:Sine.easeIn}, "start+=3.7");
-    masterTL.to("#introWrapper", 0.8, {scale:0.29, ease:Power3.easeInOut}, "start+=3.5");
-    masterTL.to("#introWrapper", 0.8, {y:-603, ease:"back.inOut(3)"}, "start+=3.5");
+    masterTL.to("#introWrapper", 0.8, {scale:0.4, ease:Power3.easeInOut}, "start+=3.5");
+    masterTL.to("#introWrapper", 0.8, {y:-590, ease:"back.inOut(3)"}, "start+=3.5");
     masterTL.to("#topBlock", 0.15, {y:-35, ease:Sine.easeInOut, repeat:1, yoyo:true}, "start+=4");
     masterTL.from("#text1", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=4");
     masterTL.to("#text1", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=6");
