@@ -93,15 +93,18 @@ img, div, object{
 #text1,
 #text2,
 #text3,
+#text3White,
 #text1Highlight,
 #text2Highlight,
-#text3Highlight{
+#text3Highlight,
+#text4Highlight{
     width: 300px;
 }
 
 #text1HighlightWrapper,
 #text2HighlightWrapper,
-#text3HighlightWrapper{
+#text3HighlightWrapper,
+#text4HighlightWrapper{
     width: 100%;
     height: 100%;
     overflow: hidden;

@@ -16,7 +16,8 @@ function init() {
     })
 
     document.querySelector("#mainExit").addEventListener("click", function(){
-        masterTL.progress(1);
+        // masterTL.progress(1);
+        masterTL.pause();
     })
 
     getAnimation();
@@ -41,10 +42,10 @@ function getAnimation(){
 
     masterTL.add("showFrame3")
 
-    masterTL.to("#logo", 0.5, {scale:1.35714285714, left:122, ease:Sine.easeInOut}, "showFrame3")
+    masterTL.to("#logo", 0.5, {scale:1.35714285714, left:122, top: 12, ease:Sine.easeInOut}, "showFrame3")
     masterTL.from("#tagline", 0.3, {opacity:0, ease:Sine.easeOut}, "showFrame3+=0.5")
-    masterTL.from("#text3", 0.5, {y:200, ease:Sine.easeOut}, "showFrame3+=1")
-    masterTL.from("#text3HighlightWrapper", 0.5, {width:0, ease:Sine.easeOut}, "showFrame3+=1.7")
+    masterTL.from("#text3White", 0.5, {y:200, ease:Sine.easeOut}, "showFrame3+=1")
+    masterTL.from(["#text3HighlightWrapper", "#text4HighlightWrapper"], 0.5, {width:0, ease:Sine.easeOut}, "showFrame3+=1.7")
 
     masterTL.add("endScreen")
     
