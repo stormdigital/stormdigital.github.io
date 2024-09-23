@@ -35,7 +35,7 @@ function getAnimation(){
 
     masterTL.add("showFrame2", 3)
     masterTL.to(["#bgBorder", "#bg"], 0.5, {y:-250, ease:Sine.easeIn}, "showFrame2+=1")
-    masterTL.to(["#text1", "#text1HighlightWrapper"], 0.5, {opacity:0, ease:Sine.easeInOut}, "showFrame2+=1.25")
+    masterTL.to(["#text1", "#text1HighlightWrapper"], 0.5, {opacity:0, ease:Sine.easeInOut}, "showFrame2+=1")
     masterTL.from("#text2", 0.5, {y:150, ease:Sine.easeOut}, "showFrame2+=1.5")
     masterTL.from("#text2HighlightWrapper", 0.7, {width:0, ease:Sine.easeInOut}, "showFrame2+=2.2")
     masterTL.to(["#text2", "#text2HighlightWrapper"], 0.5, {opacity:0, ease:Sine.easeInOut}, "showFrame2+=4.5")
