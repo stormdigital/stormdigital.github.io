@@ -1,0 +1,184 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    color: #fff;
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: 10px solid #007649;
+    box-sizing: border-box;
+    
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #007649;;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #14215a;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#bgWrapper{
+    width: 817px;
+    height: 100%;
+    left: 0px;
+    display: flex; 
+}
+
+.first{
+    position: relative;
+    height: 100%;
+    transform: translateX(-1);
+    transform: scaleX(-1) scale(1.3);
+}
+
+.second{
+    position: relative;
+    height: 100%;
+    left: 121px;
+    transform: scale(1.3);
+}
+
+.darkShadow{
+    top: 0px;
+    left: 110px;
+}
+
+#product{
+    position: absolute;
+    right: -230px;
+    transform: scale(1.3);
+    top: 70px;
+    width: 165px;
+}
+
+#introWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+#leafsWrapper{
+    width: 104px;
+    height: 42px;
+    top: 59px;
+    left: 106px;
+    overflow: hidden;
+}
+
+#leafsContainer{
+    width: 100%;
+    height: 100%;
+}
+
+#leafs{
+    left: 20px;
+    width: 64px;
+    transform-origin: 20% 100%;
+}
+
+#nurNurWrapper{
+    width: 122px;
+    height: 35px;
+    top: 92px;
+    left: 91px;
+    overflow: hidden;
+}
+
+#nurNurText{
+    width: 122px;
+}
+
+#naturWrapper{
+    width: 102px;
+    height: 70px;
+    top: 127px;
+    left: 93px;
+    overflow: hidden;
+}
+
+#naturText{
+    width: 102px;
+}
+
+#tagline{
+    width: 157px;
+    top: 174px;
+    left: 72px;
+}
+
+#text1,
+#endText{
+    width: 100%;
+}
+
+#wText{
+    bottom: 10px;
+    right: 13px;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+#topBlock{
+    width:47px;
+    height:43px;
+    background: #007749;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: 50% 0%;
+}
+
+#logo{
+    width: 25px;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#ctaLeft,
+#ctaRight{
+    width: 100%;
+}
+
+.proof{
+    height: 100%;
+}
