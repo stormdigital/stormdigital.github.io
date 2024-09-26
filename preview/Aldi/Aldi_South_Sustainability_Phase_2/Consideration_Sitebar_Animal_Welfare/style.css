@@ -117,3 +117,13 @@ img, div, object{
 #ctaRight{
     width: 100%;
 }
+
+#tagWrapper{
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#tag{
+    width: 1200px;
+}

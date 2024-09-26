@@ -49,12 +49,30 @@ function getAnimation(){
     masterTL.from("#tagline", 0.3, {opacity:0, ease:Sine.easeOut}, "showFrame3+=0.5")
     masterTL.from("#text3White", 0.5, {y:200, ease:Sine.easeOut}, "showFrame3+=1")
     masterTL.from(["#text3HighlightWrapper", "#text4HighlightWrapper"], 0.5, {width:0, ease:Sine.easeOut}, "showFrame3+=1.7")
-
-    masterTL.add("endScreen")
+    masterTL.to(["#text3HighlightWrapper", "#text4HighlightWrapper", "#text3White"], 0.3, {opacity:0, ease:Sine.easeOut}, "showFrame3+=4")
     
-    masterTL.from("#ctaLeft", 0.5, {scale:0, transformOrigin:"50% 95%", ease:Back.easeOut}, "endscreen");
-    masterTL.from("#ctaRight", 0.01, {opacity:0, ease:Sine.easeOut}, "endscreen+=0.7");
-    masterTL.from("#ctaRight", 0.3, {x:-50, ease:Sine.easeOut}, "endscreen+=0.7");
+    masterTL.add("endScreen")
+
+    masterTL.to("#tagWrapper", 0.0001, {width:49, ease:Sine.easeOut}, "endscreen+=0.1")
+    masterTL.to("#tagWrapper", 0.0001, {width:66, ease:Sine.easeOut}, "endscreen+=0.2")
+    masterTL.to("#tagWrapper", 0.0001, {width:81, ease:Sine.easeOut}, "endscreen+=0.3")
+    masterTL.to("#tagWrapper", 0.0001, {width:88, ease:Sine.easeOut}, "endscreen+=0.4")
+    masterTL.to("#tagWrapper", 0.0001, {width:101, ease:Sine.easeOut}, "endscreen+=0.6")
+    masterTL.to("#tagWrapper", 0.0001, {width:118, ease:Sine.easeOut}, "endscreen+=0.65")
+    masterTL.to("#tagWrapper", 0.0001, {width:135, ease:Sine.easeOut}, "endscreen+=0.7")
+    masterTL.to("#tagWrapper", 0.0001, {width:152, ease:Sine.easeOut}, "endscreen+=0.85")
+    masterTL.to("#tagWrapper", 0.0001, {width:164, ease:Sine.easeOut}, "endscreen+=0.9")
+    masterTL.to("#tagWrapper", 0.0001, {width:185, ease:Sine.easeOut}, "endscreen+=1.0")
+    masterTL.to("#tagWrapper", 0.0001, {width:202, ease:Sine.easeOut}, "endscreen+=1.05")
+    masterTL.to("#tagWrapper", 0.0001, {width:217, ease:Sine.easeOut}, "endscreen+=1.2")
+    masterTL.to("#tagWrapper", 0.0001, {width:234, ease:Sine.easeOut}, "endscreen+=1.3")
+    masterTL.to("#tagWrapper", 0.0001, {width:247, ease:Sine.easeOut}, "endscreen+=1.35")
+    masterTL.to("#tagWrapper", 0.0001, {width:262, ease:Sine.easeOut}, "endscreen+=1.5")
+    masterTL.to("#tagWrapper", 0.0001, {width:300, ease:Sine.easeOut}, "endscreen+=1.6")
+    
+    masterTL.from("#ctaLeft", 0.5, {scale:0, transformOrigin:"50% 95%", ease:Back.easeOut}, "endscreen+=1");
+    masterTL.from("#ctaRight", 0.01, {opacity:0, ease:Sine.easeOut}, "endscreen+=1.7");
+    masterTL.from("#ctaRight", 0.3, {x:-50, ease:Sine.easeOut}, "endscreen+=1.7");
 
     masterTL.play();
 
