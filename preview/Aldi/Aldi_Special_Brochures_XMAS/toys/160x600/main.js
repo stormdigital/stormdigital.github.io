@@ -16,8 +16,7 @@ function init() {
     })
 
     document.querySelector("#mainExit").addEventListener("click", function(){
-        // masterTL.progress(1);
-        masterTL.pause();
+        masterTL.progress(1);
     })
 
     getAnimation();
@@ -33,15 +32,15 @@ function getAnimation(){
     masterTL.from("#text1HighlightWrapper", 0.7, {width:0, ease:Sine.easeInOut}, "start+=0.8")
     masterTL.to(["#text1", "#text1HighlightWrapper"], 0.3, {opacity:0, ease:Sine.easeInOut}, "start+=2.7")
     masterTL.to("#introBg", 0.3, {opacity:0, ease:Sine.easeIn}, "start+=2.7")
-    masterTL.from("#brochure", 1, {scale:3.15, y:36, x:-156, rotation:2, ease:Power2.easeInOut}, "start+=2.7")
-    masterTL.from("#topic1", 0.5, {x:-200, ease:Sine.easeOut}, "start+=3.5")
+    masterTL.from("#brochure", 1, {scale:2.75, y:-252, x:47, rotation:2, ease:Power2.easeInOut}, "start+=2.7")
+    masterTL.from("#topic1", 0.5, {x:160, ease:Sine.easeOut}, "start+=3.5")
     masterTL.to("#brochure", 4, {rotation:-4, ease:Sine.easeInOut}, "start+=3.5")
     masterTL.from("#deco1", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=3.5")
-    masterTL.to("#topic1", 0.3, {opacity:0, ease:Sine.easeIn}, "start+=5")
-    masterTL.from("#topic2", 0.5, {x:-200, ease:Sine.easeOut}, "start+=5")
-    masterTL.to("#topic2", 0.3, {opacity:0, ease:Sine.easeIn}, "start+=6.5")
-    masterTL.from("#topic3", 0.5, {x:-200, ease:Sine.easeOut}, "start+=6.5")
-    masterTL.to(["#logo", "#topic3", "#brochure", "#deco1"], 0.5, {opacity:0, ease:Sine.easeInOut}, "8.2")
+    masterTL.to("#topic1", 0.3, {opacity:0, ease:Sine.easeIn}, "start+=5.5")
+    masterTL.from("#topic2", 0.5, {x:160, ease:Sine.easeOut}, "start+=5.5")
+    masterTL.to("#topic2", 0.3, {opacity:0, ease:Sine.easeIn}, "start+=7.5")
+    masterTL.from("#topic3", 0.5, {x:160, ease:Sine.easeOut}, "start+=7.5")
+    masterTL.to(["#logo", "#topic3", "#deco1"], 0.5, {opacity:0, ease:Sine.easeInOut}, "9.5")
     masterTL.add("endscreen", "-=0.1");
     masterTL.from("#deco2", 0.5, {opacity:0, ease:Sine.easeOut}, "endscreen")
     masterTL.from("#logo2", 0.3, {opacity:0, ease:Sine.easeOut}, "endscreen")
