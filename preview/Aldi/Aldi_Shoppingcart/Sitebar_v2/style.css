@@ -80,6 +80,7 @@ img, div, object{
 }
 
 #tagline,
+#sticker3,
 #sticker2,
 .price,
 #badge,
@@ -154,7 +155,11 @@ img, div, object{
 }
 
 #sticker{
-    transform-origin: 485px 418px;
+    transform-origin: 492px 573px;
+}
+
+#sticker3{
+    transform-origin: 600px 740px;
 }
 
 #logo{

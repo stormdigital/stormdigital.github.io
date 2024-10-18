@@ -73,11 +73,11 @@ function getAnimation(){
     masterTL.from(["#cart", "#light1", "#light2"], 1, {x:1200, ease:Sine.easeInOut}, "-=1");    
     masterTL.from("#date", 0.3, {opacity:0, ease:Sine.easeOut});  
     masterTL.from("#text1", 0.5, {opacity:0, ease:Sine.easeOut});  
-    masterTL.from("#highlight1Wrapper", 1, {width:0, ease:Sine.easeOut});  
-    masterTL.from("#sticker", 0.5, {scale:0, rotation:-360, ease:Sine.easeOut});  
+    masterTL.from("#highlight1Wrapper", 1, {width:0, ease:Sine.easeOut});   
     masterTL.to(["#introWrapper", "#bgWrapper"], 1, {x:-(1199*2), ease:Sine.easeInOut}, "+=1");    
     masterTL.to(["#cart", "#light1", "#light2"], 1, {x:-1200, ease:Sine.easeInOut}, "-=1");   
     masterTL.from("#products", 1, {x:1200, ease:Sine.easeInOut}, "-=1");    
+    masterTL.from("#sticker", 0.5, {scale:0, rotation:-360, ease:Back.easeOut}); 
     masterTL.from("#badge", 0.5, {opacity:0, ease:Sine.easeInOut});    
     // masterTL.from("#banner", 0.5, {opacity:1});//delay for loop    
     
@@ -86,17 +86,15 @@ function getAnimation(){
     //     masterTL.to("#price"+i, 0.3, {opacity:0, ease:Sine.easeInOut}, "+=0.75");    
     // }
     
-    masterTL.to(["#sticker", "#text1", "#highlight1Wrapper"], 0.3, {opacity:0, ease:Sine.easeIn}, "+=1.5");    
+    masterTL.to(["#sticker", "#text1", "#highlight1Wrapper"], 0.3, {opacity:0, ease:Sine.easeIn}, "+=2");    
     masterTL.from("#sticker2", 0.5, {opacity:0, ease:Sine.easeInOut});    
     masterTL.to("#sticker2", 0.3, {opacity:0, ease:Sine.easeInOut}, "+=1.5");    
     
 
-    masterTL.to(["#logo", "#date", "#badge"], 0.5, {opacity:0, ease:Sine.easeInOut});    
-    masterTL.set("#sticker", {x:296, y:139, scale:0, rotation:-360, opacity:1}, "-=0.5");    
+    masterTL.to(["#logo", "#date", "#badge", "#products"], 0.5, {opacity:0, ease:Sine.easeInOut});    
     masterTL.from("#logo2", 0.5, {opacity:0, ease:Sine.easeInOut}, "-=0.5");    
     masterTL.from("#tagline", 0.3, {opacity:0, ease:Sine.easeInOut}, "-=0.2");  
-    masterTL.to("#sticker", 0.5, {scale:1, rotation:0, ease:Sine.easeOut});    
-    masterTL.to("#products", 0.5, {y:-102, ease:Sine.easeInOut}); 
+    masterTL.from("#sticker3", 0.5, {scale:0, rotation:360, ease:Back.easeOut});    
     masterTL.from("#ctaLeft", 0.5, {scale:0, transformOrigin:"50% 95%", ease:Back.easeOut});
     masterTL.from("#ctaRight", 0.01, {opacity:0, ease:Sine.easeOut}, "+=0.1");
     masterTL.from("#ctaRight", 0.3, {x:-50, ease:Sine.easeOut}, "-=0.01");
