@@ -111,6 +111,6 @@ function getAnimation(){
     lightTL = gsap.timeline({paused:true});
     lightTL.add("start")
     lightTL.fromTo("#light1", 1, {rotation:-15}, {rotation:30, repeat:7, yoyo:true, ease:Power1.easeInOut}, "start")
-    lightTL.fromTo("#light2", 1.6, {rotation:-40}, {rotation:10, repeat:4, yoyo:true, ease:Sine.easeInOut}, "start")
+    lightTL.fromTo("#light2", 1.6, {rotation:30}, {rotation:60, repeat:4, yoyo:true, ease:Sine.easeInOut}, "start")
 
 }

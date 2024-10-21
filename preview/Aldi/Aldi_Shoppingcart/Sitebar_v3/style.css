@@ -138,12 +138,14 @@ img, div, object{
     right: 2px;
 }
 
-#light1{
+#light1,
+#light2{
     transform-origin: 250px 122px;
 }
 
 #light2{
-    transform-origin: 1000px 180px;
+    top: 60px;
+    left: 720px;
 }
 
 #highlight1Wrapper{
