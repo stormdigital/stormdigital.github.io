@@ -85,9 +85,12 @@ function getAnimation(){
     //     masterTL.from("#price"+i, 0.3, {opacity:0, ease:Sine.easeInOut}, "-=0.3");    
     //     masterTL.to("#price"+i, 0.3, {opacity:0, ease:Sine.easeInOut}, "+=0.75");    
     // }
+
+    masterTL.to("#badge", 0.3, {scale:1.1, repeat:1, yoyo:true, ease:Sine.easeInOut, transformOrigin:"100% 50%"}, "+=1"); 
     
-    masterTL.to(["#sticker", "#text1", "#highlight1Wrapper"], 0.3, {opacity:0, ease:Sine.easeIn}, "+=2");    
+    masterTL.to(["#sticker", "#text1", "#highlight1Wrapper"], 0.3, {opacity:0, ease:Sine.easeIn}, "+=0.4");    
     masterTL.from("#sticker2", 0.5, {opacity:0, ease:Sine.easeInOut});    
+    masterTL.to("#badge", 0.3, {scale:1.1, repeat:1, yoyo:true, ease:Sine.easeInOut, transformOrigin:"100% 50%"});    
     masterTL.to("#sticker2", 0.3, {opacity:0, ease:Sine.easeInOut}, "+=1.5");    
     
 
