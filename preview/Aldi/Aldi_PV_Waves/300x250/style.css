@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    color: #fff;
+    background: #e82d24;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #e82d24;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #0d2253;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: solid 1px #94c11c;
+    box-sizing: border-box;
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#wText{
+    bottom: -1px;
+    right: 2px;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+#bg{
+    width: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#endText,
+#sticker,
+#tagline,
+#product2,
+#price2,
+#product1,
+#price1,
+#priceBg,
+#arrow,
+#text1A,
+#text1B{
+    width: 100%;
+}
+
+#arrow{
+    top: -50px;
+}
+
+#price1,
+#price2{
+  transform-origin: 18px 232px;  
+}
+
+#product1,
+#product2{
+  transform-origin: 220px 170px;  
+}
+
+#darken{
+    width: 100%;
+    height: 100%;
+    background: #420F0C;
+    opacity: 0.15;
+}
+
+#highlight1Wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#highlight1{
+    width: 300px;
+}
+
+#sticker{
+    transform-origin: 245px 132px;
+}
+
+#logo{
+    width: 52px;
+    top: 12px;
+    left: 12px;
+}
+
+#ctaLeft,
+#ctaRight{
+    width: 100%;
+}
