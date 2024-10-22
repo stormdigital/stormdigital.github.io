@@ -68,5 +68,5 @@ function getAnimation(){
 
 function animateBg(){
     var tl = gsap.timeline({});
-    tl.to("#bg", 15, {rotation:200, ease:Power0.easeNone})
+    tl.to("#bg", 15, {rotation:90, ease:Power0.easeNone})
 }
