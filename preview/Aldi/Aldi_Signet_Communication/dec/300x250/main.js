@@ -16,8 +16,7 @@ function init() {
     })
 
     document.querySelector("#mainExit").addEventListener("click", function(){
-        // masterTL.progress(1);
-        masterTL.pause();
+        masterTL.progress(1);
     })
 
     getAnimation();
@@ -32,7 +31,7 @@ function getAnimation(){
     masterTL.from("#highlight1Wrapper", 0.7, {width:0, ease:Sine.easeOut}, "+=0.3");
     masterTL.to("#text1B", 0.3, {opacity:0, ease:Sine.easeIn}, "+=2.5");
     masterTL.to(["#text1", "#text1B", "#highlight1Wrapper"], 0.5, {scale:0.76, y:-78, x:32, ease:Sine.easeInOut})
-    masterTL.from("#product1", 1, {x:200, ease:Power4.easeOut}, "+=0.2");
+    masterTL.from("#product1", 1, {x:220, ease:Power4.easeOut}, "+=0.2");
     masterTL.add(animateLights, "-=1")
     masterTL.from("#sticker", 1, {x:-250, ease:Power4.easeOut}, "+=1.5");
     masterTL.to("#product1", 0.7, {x:55, ease:Power2.easeInOut}, "-=1");
