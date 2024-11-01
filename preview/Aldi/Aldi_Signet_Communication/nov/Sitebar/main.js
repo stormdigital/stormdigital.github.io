@@ -67,7 +67,7 @@ function getAnimation(){
     masterTL.to(["#text1", "#text1B", "#highlight1Wrapper"], 0.5, {y:0, ease:Sine.easeInOut}, "-=0")
     masterTL.to("#logo", 0.3, {opacity:0, ease:Sine.easeInOut}, "-=0.2")
     masterTL.from("#logo2", 0.3, {opacity:0, ease:Sine.easeInOut})
-    masterTL.to("#text1B", 0.3, {opacity:1, y:20, ease:Sine.easeIn}, "-=0.3");
+    masterTL.to("#text1B", 0.3, {opacity:1, ease:Sine.easeIn}, "-=0.3");
     masterTL.from("#tagline", 1, {opacity:0, ease:Sine.easeOut});
     masterTL.from("#ctaLeft", 0.5, {scale:0, ease:Back.easeOut}, "+=0.3");
     masterTL.from("#ctaRight", 0.0001, {opacity:0});

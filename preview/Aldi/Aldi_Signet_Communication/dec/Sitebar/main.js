@@ -61,13 +61,13 @@ function getAnimation(){
     masterTL.from("#product1", 1, {x:900, ease:Power4.easeOut}, "+=0.2");
     masterTL.add(animateLights, "-=1")
     masterTL.from("#sticker", 1, {x:-1200, ease:Power4.easeOut}, "+=1.5");
-    masterTL.to("#product1", 0.7, {x:190, ease:Power2.easeInOut}, "-=1");
+    masterTL.to("#product1", 0.7, {x:40, rotation:-25, ease:Power2.easeInOut}, "-=1");
     masterTL.to(["#bg", "#light1"], 1, {'-webkit-filter':'blur(5px)','filter':'blur(5px)', ease:Sine.easeInOut}, "+=1");
     masterTL.to(["#light2", "#light3", "#product1", "#sticker", "#text2", "#highlight2Wrapper"], 1, {opacity:0, ease:Sine.easeInOut}, "-=1");
     masterTL.to(["#text1", "#text1B", "#highlight1Wrapper"], 0.5, {y:0, ease:Sine.easeInOut}, "-=0")
     masterTL.to("#logo", 0.3, {opacity:0, ease:Sine.easeInOut}, "-=0.2")
     masterTL.from("#logo2", 0.3, {opacity:0, ease:Sine.easeInOut})
-    masterTL.to("#text1B", 0.3, {opacity:1, y:20, ease:Sine.easeIn}, "-=0.3");
+    masterTL.to("#text1B", 0.3, {opacity:1, ease:Sine.easeIn}, "-=0.3");
     masterTL.from("#tagline", 1, {opacity:0, ease:Sine.easeOut});
     masterTL.from("#ctaLeft", 0.5, {scale:0, ease:Back.easeOut}, "+=0.3");
     masterTL.from("#ctaRight", 0.0001, {opacity:0});
