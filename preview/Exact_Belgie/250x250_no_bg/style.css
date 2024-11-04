@@ -103,8 +103,8 @@ img, div, object, button{
 }
 
 #text2Wrapper{
-    width: 170px;
-    height: 40px;
+    width: 190px;
+    height: 45px;
     left: 0;
     top: 164px;
     background: #e1141d;
@@ -112,7 +112,7 @@ img, div, object, button{
 
 #text2{
     color: #fff;
-    font-size: 10px;
+    font-size: 12px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
