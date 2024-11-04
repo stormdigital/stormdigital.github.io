@@ -19,6 +19,7 @@ img, div, object, button{
     width: 250px;
     height: 250px;
     box-sizing: border-box;
+    background: #b982e9;
     overflow: hidden;
     font-family: 'apaxmedium';
 }
@@ -72,11 +73,11 @@ img, div, object, button{
     width: 100%;
 }
 
-#bg{
+/* #bg{
     height: 100%;
     right: 0;
     transform-origin: 50% 0%;
-}
+} */
 
 #person{
     height: 100%;
