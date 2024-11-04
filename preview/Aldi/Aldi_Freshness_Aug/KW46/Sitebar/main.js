@@ -90,13 +90,13 @@ function getAnimation(){
     masterTL.from("#product2", 0.6, {scale:0, ease: "back.out(1.4)",});  
     masterTL.from("#product2Info", 0.5, {scale:0, ease:Back.easeOut}, "-=0.4");  
     masterTL.from(["#product2Disclaimer"], 0.3, {opacity:0, ease:Sine.easeOut}, "-=0.4");  
-    masterTL.to("#product2", 0.5, {scale:0, ease: "back.in(1.4)",}, "+=1");  
-    masterTL.to("#product2Info", 0.5, {scale:0, ease:Back.easeIn}, "-=0.4");  
-    masterTL.to("#product2Disclaimer", 0.3, {opacity:0, ease:Sine.easeOut}, "-=0.4");  
+    // masterTL.to("#product2", 0.5, {scale:0, ease: "back.in(1.4)",}, "+=1");  
+    // masterTL.to("#product2Info", 0.5, {scale:0, ease:Back.easeIn}, "-=0.4");  
+    // masterTL.to("#product2Disclaimer", 0.3, {opacity:0, ease:Sine.easeOut}, "-=0.4");  
 
-    masterTL.from("#product3", 0.6, {scale:0, ease: "back.out(1.4)",});  
-    masterTL.from("#product3Info", 0.5, {scale:0, ease:Back.easeOut}, "-=0.4");  
-    masterTL.from("#product3Disclaimer", 0.3, {opacity:0, ease:Sine.easeOut}, "-=0.4");
+    // masterTL.from("#product3", 0.6, {scale:0, ease: "back.out(1.4)",});  
+    // masterTL.from("#product3Info", 0.5, {scale:0, ease:Back.easeOut}, "-=0.4");  
+    // masterTL.from("#product3Disclaimer", 0.3, {opacity:0, ease:Sine.easeOut}, "-=0.4");
 
     masterTL.from("#endBg", 0.6, {width:0, ease:Sine.easeInOut}, "+=1.5");
     masterTL.to("#logo", 0.5, {opacity:0, ease:Sine.easeInOut});    
