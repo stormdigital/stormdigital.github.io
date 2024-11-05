@@ -41,6 +41,10 @@ function getAnimation(){
     mainTL.from(splitT1.words, 0.3, {opacity: 0, x:-20, ease: Sine.easeOut, stagger: 0.1}, "-=1.5");
     mainTL.from("#text2Wrapper", 0.5, {x:-200, ease:Power3.easeOut}, "+=0.7")
     mainTL.from(splitT2.lines, 0.3, {opacity: 0, x:-20, ease: Sine.easeOut, stagger: 1}, "-=0.1");
+    mainTL.from("#cta", 0.5, {scale:0, ease:Back.easeOut}, "+=0.3");
+    
+    mainTL.to("#cta", 0.25, {scale:1.1, repeat:1, yoyo:true, ease:Sine.easeInOut}, "+=0.5");
+    mainTL.to("#cta", 0.25, {scale:1.1, repeat:1, yoyo:true, ease:Sine.easeInOut}, "+=0.5");
 
     mainTL.from("#banner", 0, {x:0, ease:Power3.easeOut}, "10")
 
