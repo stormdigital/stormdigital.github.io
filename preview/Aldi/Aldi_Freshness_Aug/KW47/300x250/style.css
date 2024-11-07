@@ -1,0 +1,198 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    color: #fff;
+    background: #95c11f;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #95c11f;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #14215a;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: solid 1px #000;
+    box-sizing: border-box;
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#wText{
+    bottom: -1px;
+    right: 2px;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+#introWrapper,
+.productDisclaimer,
+.product,
+#date,
+.productInfo,
+#text2,
+#ctaLeft,
+#ctaRight,
+#intro1,
+#endText,
+#tagline,
+#intro2,
+#intro3{
+    width: 100%;
+    height: 100%;
+}
+
+#intro1{ top: 7px;}
+#intro2{ top: 91px;}
+#intro3{ top: 174px;}
+
+.introEmpty,
+.introFill{
+    width: 213px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#bgWrapper{
+    width: 100%;
+    height: 100%;
+    right: 0;
+    overflow: hidden;
+}
+
+#bg{
+    width: 300px;
+    right: 0;
+}
+
+#highlight2Wrapper,
+#endHighlight1Wrapper,
+#endHighlight2Wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#highlight2,
+#endHighlight1,
+#endHighlight2{
+    width: 300px;
+}
+
+#stickerWrapper{
+    width: 100px;
+    height: 100px;
+    bottom: 6px;
+    left: 108px;
+    transform: rotate(45deg);
+    overflow: hidden;
+}
+
+#stickerReset{
+    width: 100%;
+    height: 100%;
+    transform: rotate(-45deg);
+}
+
+#sticker{
+    width: 84px;
+    top: 5%;
+    left: 5%;
+}
+
+#stickerBackWrapper{
+    width: 100px;
+    height: 100px;
+    bottom: -52px;
+    left: 167px;
+    transform: rotate(-45deg);
+    overflow: hidden;
+}
+
+#stickerBackReset{
+    width: 100%;
+    height: 100%;
+}
+
+#stickerBack{
+    width: 84px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg) scaleY(-1);
+}
+
+#productBg{
+    width: 100%;
+    height: 100%;
+    background: rgb(149,193,31);
+    background: linear-gradient(180deg, rgba(149,193,31,1) 0%, rgba(89,176,44,1) 100%);
+    right: 0;
+}
+
+.productWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.productInfo{
+    transform-origin: 235px 181px;
+}
+
+#endBg{
+    width: 100%;
+    height: 100%;
+    background: #00b6ed;
+    right: 0;
+}
+
+#stickerEnd{
+    width: 100%;
+    transform-origin: 244px 128px;
+}
+
+#logo{
+    width: 61px;
+    transform-origin: 0px 0px;
+    transform: scale(0.82926829268);
+    left: 10px;
+    top: 10px;
+}
