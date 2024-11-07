@@ -48,13 +48,15 @@ function getAnimation(){
     masterTL.from("#product1", 0.5, {x:300, ease:Sine.easeInOut}, "start+=4.8")
     
     masterTL.to("#product1", 0.5, {x:-300, ease:Sine.easeInOut}, "start+=8")
+    masterTL.to("#date", 0.5, {x:100, ease:Sine.easeInOut}, "start+=8")
     masterTL.to(["#text1", "#highlightWrapper1"], 0.5, {x:-300, ease:Sine.easeIn}, "start+=8")
     
     masterTL.from("#product2", 0.5, {x:300, ease:Sine.easeInOut}, "start+=8.3")
+    masterTL.from("#date2", 0.5, {x:100, ease:Sine.easeInOut}, "start+=8.3")
     masterTL.from("#text2", 0.5, {x:300, ease:Sine.easeOut}, "start+=8.3");
     masterTL.from("#highlightWrapper2", 0.5, {width:0, ease:Sine.easeInOut}, "start+=9");
 
-    masterTL.to(["#product2", "#text2", "#highlightWrapper2", "#date"], 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=12.5")
+    masterTL.to(["#product2", "#text2", "#highlightWrapper2", "#date", "#date2"], 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=12.5")
 
     masterTL.to("#logo", 0.5, {width:65, left:"50%", translateX:"-50%", ease:Sine.easeInOut}, "start+=13")
     masterTL.from("#text3", 0.5, {x:300, ease:Sine.easeOut}, "start+=13");
