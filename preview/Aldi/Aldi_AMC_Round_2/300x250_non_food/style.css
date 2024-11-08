@@ -76,10 +76,10 @@ img, div, object{
 }
 
 #flyerWrapper{
-    width: 118px;
-    height: 114px;
-    top: 33px;
-    left: 139px;
+    width: 141px;
+    height: 134px;
+    top: 22px;
+    left: 131px;
     transform: rotate(12deg);
     overflow: hidden;
 }

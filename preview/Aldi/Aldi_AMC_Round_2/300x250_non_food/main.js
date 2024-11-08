@@ -39,13 +39,13 @@ function getAnimation(){
     masterTL.to("#gradientRight", 1.8, {left:"95%", ease:Power3.easeInOut}, "start+=0.3")
     masterTL.to("#gradientRight", 0.3, {opacity:0}, "start+=1.1")
     
-    masterTL.from("#text1", 0.5, {x:300, ease:Sine.easeOut}, "start+=1");
-    masterTL.from("#highlightWrapper1", 0.5, {width:0, ease:Sine.easeInOut}, "start+=2");
-    masterTL.to(["#text1", "#highlightWrapper1"], 0.3, {scale:1.1, ease:Sine.easeInOut, repeat:1, yoyo:true}, "start+=2.7")
-    masterTL.from("#blueBg", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=4")
+    masterTL.from("#blueBg", 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=3")
     
-    masterTL.from("#date", 0.5, {x:100, ease:Sine.easeInOut}, "start+=4.5")
-    masterTL.from("#product1", 0.5, {x:300, ease:Sine.easeInOut}, "start+=4.8")
+    masterTL.from("#date", 0.5, {x:100, ease:Sine.easeInOut}, "start+=3.5")
+    masterTL.from("#product1", 0.5, {x:300, ease:Sine.easeInOut}, "start+=3.8")
+    masterTL.from("#text1", 0.5, {x:300, ease:Sine.easeOut}, "start+=4.3");
+    masterTL.from("#highlightWrapper1", 0.5, {width:0, ease:Sine.easeInOut}, "start+=5");
+    masterTL.to(["#text1", "#highlightWrapper1"], 0.3, {scale:1.1, ease:Sine.easeInOut, repeat:1, yoyo:true}, "start+=6")
     
     masterTL.to("#product1", 0.5, {x:-300, ease:Sine.easeInOut}, "start+=8")
     masterTL.to("#date", 0.5, {x:100, ease:Sine.easeInOut}, "start+=8")
@@ -55,6 +55,7 @@ function getAnimation(){
     masterTL.from("#date2", 0.5, {x:100, ease:Sine.easeInOut}, "start+=8.3")
     masterTL.from("#text2", 0.5, {x:300, ease:Sine.easeOut}, "start+=8.3");
     masterTL.from("#highlightWrapper2", 0.5, {width:0, ease:Sine.easeInOut}, "start+=9");
+    masterTL.to(["#text2", "#highlightWrapper2"], 0.3, {scale:1.1, ease:Sine.easeInOut, repeat:1, yoyo:true}, "start+=10")
 
     masterTL.to(["#product2", "#text2", "#highlightWrapper2", "#date", "#date2"], 0.5, {opacity:0, ease:Sine.easeInOut}, "start+=12.5")
 
