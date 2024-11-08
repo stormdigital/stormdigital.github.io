@@ -30,6 +30,7 @@ function getAnimation(){
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut}, 0)
     masterTL.add("start");
 
+    masterTL.from("#flyerWrapper", 1, {scale:0, ease: "back.out(2)",}, "start+=0.5")
     masterTL.from("#flyerLeft", 3.5, {rotationY:90, ease: "back.out(2)",}, "start+=0.5")
     masterTL.from("#gradientLeft", 0.3, {opacity:0}, "start+=0.7")
     masterTL.to("#gradientLeft", 1.7, {left:"-40%", ease:Power3.easeInOut}, "start+=0.3")
