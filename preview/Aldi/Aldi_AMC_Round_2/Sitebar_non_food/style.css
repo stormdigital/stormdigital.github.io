@@ -111,12 +111,16 @@ img, div, object{
     opacity: 0.6;
 }
 
+#date,
+#date2,
+#product1,
+#product2,
 #text1,
 #text2,
 #text3,
 #tagline{
     width: 100%;
-    transform-origin: 330px 1090px;
+    transform-origin: 325px 230px;
 }
 
 #highlightWrapper1,
@@ -125,7 +129,7 @@ img, div, object{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    transform-origin: 330px 1090px;
+    transform-origin: 325px 230px;
 }
 
 #highlight1,
@@ -139,19 +143,6 @@ img, div, object{
     height: 100%;
     background: #202b77;
 }
-
-#disclaimer,
-#icon1,
-#icon2,
-#icon3,
-#icon4{
-    width: 100%;
-}
-
-#icon1{transform-origin: 478px 350px;}
-#icon2{transform-origin: 722px 350px}
-#icon3{transform-origin: 478px 585px}
-#icon4{transform-origin: 722px 585px}
 
 #ctaLeft,
 #ctaRight{
