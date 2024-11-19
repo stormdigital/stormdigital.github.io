@@ -45,22 +45,23 @@ function getAnimation(){
 
     mainTL.from("#yellowBlock2", 0.5, {x:-200, ease:Power3.easeOut}, "+=0")
     mainTL.from("#purpleBlock1", 0.5, {x:-220, ease:Power3.easeOut}, "-=0.4")
-    mainTL.from("#yellowBlock1", 0.5, {x:-330, ease:Power3.easeOut}, "-=0.4")
-    mainTL.from("#purpleBlock2", 0.5, {x:-180, ease:Power3.easeOut}, "-=0.4")
+    // mainTL.from("#yellowBlock1", 0.5, {x:-330, ease:Power3.easeOut}, "-=0.4")
+    // mainTL.from("#purpleBlock2", 0.5, {x:-180, ease:Power3.easeOut}, "-=0.4")
     mainTL.from("#text2Wrapper", 0.5, {x:-250, ease:Power3.easeOut}, "-=0.4")
     mainTL.from(splitT2.lines, 0.3, {opacity: 0, x:-20, ease: Sine.easeOut, stagger: 0.2}, "-=0.3");
+
+    mainTL.from("#cta", 0.5, {scale:0, ease:Back.easeOut}, "+=0.3");
     
     mainTL.to("#text2Wrapper", 0.5, {x:250, ease:Power3.easeIn}, "+=2")
-    mainTL.to("#purpleBlock2", 0.5, {x:380, ease:Power3.easeIn}, "-=0.4")
-    mainTL.to("#yellowBlock1", 0.5, {x:330, ease:Power3.easeIn}, "-=0.4")
+    // mainTL.to("#purpleBlock2", 0.5, {x:380, ease:Power3.easeIn}, "-=0.4")
+    // mainTL.to("#yellowBlock1", 0.5, {x:330, ease:Power3.easeIn}, "-=0.4")
     mainTL.to("#purpleBlock1", 0.5, {x:270, ease:Power3.easeIn}, "-=0.4")
     mainTL.to("#yellowBlock2", 0.5, {x:260, ease:Power3.easeIn}, "-=0.4")
     
     mainTL.from("#text3Wrapper", 0.5, {x:-250, ease:Power3.easeOut}, "-=0")
-    mainTL.from(splitT3.lines, 0.3, {opacity: 0, x:-20, ease: Sine.easeOut, stagger: 1}, "-=0.3");
+    mainTL.from([splitT3.lines[0], splitT3.lines[1]], 0.3, {opacity: 0, x:-20, ease: Sine.easeOut}, "-=0.3");
+    mainTL.from([splitT3.lines[2], splitT3.lines[3]], 0.3, {opacity: 0, x:-20, ease: Sine.easeOut}, "-+=0.8");
     mainTL.from("#yellowBlock3", 0.5, {x:-160, ease:Power3.easeOut}, "-=0.1")
-
-    mainTL.from("#cta", 0.5, {scale:0, ease:Back.easeOut}, "+=0.3");
     
     mainTL.to("#cta", 0.25, {scale:1.1, repeat:1, yoyo:true, ease:Sine.easeInOut}, "+=0.5");
     mainTL.to("#cta", 0.25, {scale:1.1, repeat:1, yoyo:true, ease:Sine.easeInOut}, "+=0.5");

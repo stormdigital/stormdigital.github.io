@@ -87,7 +87,7 @@ img, div, object, button{
 
 #purpleBlock1{
     width: 100px;
-    height: 47px;
+    height: 67px;
     top: 61px;
     left: 0px;
     background-color: #7f00dc;
@@ -118,9 +118,9 @@ img, div, object, button{
 }
 
 #yellowBlock3{
-    width: 144px;
-    height: 24px;
-    top: 158px;
+    width: 55px;
+    height: 40px;
+    top: 149px;
     left: 0px;
     background-color: #d7ad28;
 }
@@ -170,9 +170,9 @@ img, div, object, button{
 
 #text3{
     color: #fff;
-    font-size: 13px;
-    line-height: 16px;
-    top: 22px;
+    font-size: 18px;
+    line-height: 22px;
+    top: 15px;
     left: 22px;
     white-space: nowrap;
 }
@@ -185,8 +185,8 @@ img, div, object, button{
     color: #fff;
     background: #0650d0;
     border-radius: 3px;
-    left: 15px;
-    bottom: 116px;
+    left: 90px;
+    bottom: 68px;
     text-align: center;
     font-size: 12px;
 }
