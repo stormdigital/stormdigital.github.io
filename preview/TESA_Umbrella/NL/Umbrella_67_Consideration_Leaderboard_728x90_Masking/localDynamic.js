@@ -4,7 +4,7 @@ localDynamicData = {
 	"dimensionName": {
 		"300x250": "Umbrella_59_Consideration_MediumRectangle_300x250_Masking",
 		"728x90": "Umbrella_67_Consideration_Leaderboard_728x90_Masking",
-		"160x600": "Umbrella_63_Consideration_Wide_Skyscraper_100x600_Masking"
+		"160x600": "Umbrella_63_Consideration_Wide_Skyscraper_160x600_Masking"
 	},
 	"text1": "./text1.png",
 	"highlight1": "./highlight1.png",
