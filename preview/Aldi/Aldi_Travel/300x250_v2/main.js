@@ -32,9 +32,9 @@ function getAnimation(){
         gsap.set("#loaderWrapper", {y:999999})
     }}, 0)    
     masterTL.from("#travelLogo", 0.5, {x:-150, ease:Sine.easeOut}, 0.5)    
-    // masterTL.from("#hand", 1.5, {x:-250, y:230, rotation:-25, ease: "back.out(1.2)"}, 1)    
+    masterTL.from("#hand", 0.5, {opacity:0, ease:Sine.easeOut}, 1)    
     
-    masterTL.from("#text1", 0.5, {opacity:0, ease:Sine.easeOut})
+    masterTL.from("#text1", 0.5, {opacity:0, ease:Sine.easeOut}, "+=0.3")
     masterTL.from("#destination", 1, {y:200, ease:Power2.easeOut}, "+=0")    
     
     masterTL.from("#price", 0.5, {scale:0, ease:Back.easeOut}, "+=0")   
