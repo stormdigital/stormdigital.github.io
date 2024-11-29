@@ -65,32 +65,32 @@ img, div, object{
     font-size: 14px;
 }
 
+#destination,
 #usp1,
 #usp2,
 #usp3,
 #usp4,
-#text1A,
-#text1B,
-#text1C,
+#text1,
 #hand,
 #bg,
 #travelLogo{
     width: 100%;
 }
 
+#usp1{transform-origin: 50px 102px;}
+#usp2{transform-origin: 50px 127px;}
+#usp3{transform-origin: 50px 155px;}
+#usp4{transform-origin: 50px 183px;}
+
 #destWrapper{
     width: 100%;
-    height: 100%;
+    height: 191px;
     overflow: hidden;
 }
 
 #price{
     width: 100%;
     transform-origin: 60px 82px;
-}
-
-#destination{
-    width: 300px;
 }
 
 #ctaLeft,
