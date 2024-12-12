@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="ad.size" content="width=300,height=250">
+    <script type="text/javascript">
+    var clickTag = "http://www.google.com"; </script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.11.5_min.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .stage-content {
+        position: absolute;
+        width: 300px;
+        height: 250px;
+        font-family: Verdana;
+        font-style: normal;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: #2175d9;
+        overflow: hidden;
+      }
+      .stage-background {
+        width: 100%;
+        height: 100%;
+        /* background: #ebebeb; */
+        -webkit-box-shadow: inset 0px 0px 0px 1px #34454e;
+        -moz-box-shadow: inset 0px 0px 0px 1px #34454e;
+        box-shadow: inset 0px 0px 0px 1px #34454e;
+      }
+      .weborama {
+        position: absolute;
+        color: rgb(85, 103, 112);
+        right: 5px;
+      }
+      .template-name {
+        bottom: 21px;
+        font-size: 11px;
+        font-weight: 700;
+      }
+      .template-size {
+        bottom: 5px;
+        font-size: 9px;
+        font-weight: 400;
+      }
+      .weborama-logo {
+        position: absolute;
+        left: 9px;
+        top: 9px;
+        width: 40px;
+        height: 40px;
+      }
+      .click-area {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 200;
+        background-color: #fff;
+        background-color: rgba(255, 0, 0, 0);
+      }
+
+      .circular-image{
+        position: absolute;
+        bottom: 0px;
+        right:0;
+      }
+
+      .tagline{
+        position: absolute;
+        bottom: 15px;
+        left: 14px;
+        display: none;
+      }
+
+      .ctaContainer{
+        position: absolute;
+        top: 189px;
+        left: 163px;
+        width: 120px;
+      }
+
+      .logo{
+        position: absolute;
+        bottom: 15px;
+        width: 119px;
+        left: 19px;
+      }
+
+      .cta, .ctaOver{
+        position: absolute;
+        width: 100%;
+      }
+
+      .ctaOver{
+        opacity: 0;
+      }
+      
+      .text01{
+        position: absolute;
+        left: 19px;
+        top: 18px;
+        width: 116px;
+      }
+
+      .guide{
+        position: absolute;
+        pointer-events: none;
+        opacity: 0.4;
+        top:0;
+        left:0;
+      }
+    </style>
+
+    <script type="text/javascript">
+      function exitClick() {
+        window.open(window.clickTag)
+        // screenad.click();
+      }
+
+      function addEventListener() {
+        if (document.getElementById("click-area")) {
+          document.getElementById("click-area").addEventListener("click", exitClick);
+          document.getElementById("click-area").addEventListener("mouseover", onOver);
+          document.getElementById("click-area").addEventListener("mouseout", onOut);
+        }
+      }
+      function onOver() {
+        gsap.to('.cta', 0.4, {opacity:0})
+        gsap.to('.ctaOver', 0.4, {opacity:1})
+      }
+
+      function onOut() {
+        gsap.to('.cta', 0.4, {opacity:1})
+        gsap.to('.ctaOver', 0.4, {opacity:0})
+      }
+
+      function startAnimation() {
+        var tl = gsap.timeline({paused:true});
+        tl.add('start')
+        tl.from('.stage-content', 0.7, {backgroundColor: "#0f1941"}, 'start')
+        tl.from('.circular-image', 0.7, {xPercent:100}, 'start+=1' )
+        tl.from('.tagline', 0.3, {opacity:0}, 'start+=1.6' )
+        tl.from('.text01', 0.3, {opacity:0}, 'start+=2' )
+        tl.from('.ctaContainer', 0.3, {scale:0.5 ,ease: "back.out(1.7)",}, 'start+=2.5' )
+        tl.from('.ctaContainer', 0.1, {opacity:0}, 'start+=2.5' )
+        tl.play(0);
+      }
+
+      window.onload = () => {
+        addEventListener();
+        startAnimation();
+      };
+    </script>
+  </head>
+
+  <body>
+    <div class="stage-content">
+      <div class="click-area" id="click-area"></div>
+
+      <div class="stage-background"></div>
+
+      <img class="circular-image" src="circular_image.png" />
+      <div class="ctaContainer">
+        <img class="cta" src="./cta.png" />
+        <img class="ctaOver" src="./cta-over.png" />
+      </div>
+
+      <img class="tagline" src="tagline.png" />
+      <img class="logo" src="logo.png" />
+      <img class="text01" src="text01.png" />
+      <!-- <img src="./guide.jpg" class="guide"> -->
+    </div>
+  </body>
+</html>
