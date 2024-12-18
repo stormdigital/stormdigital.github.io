@@ -144,12 +144,12 @@ img, div, object{
 }
 
 #renteCircle{
-    width: 75px;
-    height: 75px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
     background-color: #efe9e8;
     color: #000;
-    font-size: 8.4px;
+    font-size: 9.1px;
     position: absolute;
     display: flex;
     flex-direction: column;

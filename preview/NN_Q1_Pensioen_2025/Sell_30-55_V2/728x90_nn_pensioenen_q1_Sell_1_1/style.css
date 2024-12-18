@@ -126,7 +126,7 @@ img, div, object{
     color: #000;
     font-family: 'nn_nitti_grotesktext_regular';
     left: 260px;
-    margin-top: 12px;
+    margin-top: 18px;
     position: absolute;
     top: 5px;
     width: 172px;
@@ -142,16 +142,16 @@ img, div, object{
     font-size: 9px;
     color: #000;
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     left: 260px;
     font-family: 'nn_nitti_grotesktext_regular';
     width: 160px;
     line-height: 1.1;
 }
 
-#renteCircle{
-    width: 65px;
-    height: 65px;
+#renteCircle {
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background-color: #efe9e8;
     color: #000;
@@ -161,7 +161,7 @@ img, div, object{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: 8px;
+    top: 5px;
     right: 475px;
     line-height: 1.1;
     font-family: 'nn_nitti_grotesktext_regular';
