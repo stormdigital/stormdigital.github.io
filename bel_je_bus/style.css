@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap');
 
 *:focus {
     outline: none;
@@ -12,7 +12,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    font-family: "Roboto", serif;
+    font-family: "Playfair Display", serif;
 }
 
 #bg{
@@ -73,6 +73,7 @@ body{
     border-radius: 3vw;
     text-align: center;
     margin-top: 1vw;
+    font-family: "Roboto", serif;
 }
 
 #bar2{
