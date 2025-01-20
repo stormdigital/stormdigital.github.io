@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #10205a;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #da020d;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#scaler{
+    width: 1200px;
+    height: 1200px;
+    left: 0px;
+    overflow: hidden;
+    color: #fff;
+    background: #10205a;
+}
+
+#extraScaler{
+    width: 1200px;
+    height: 1200px;
+    pointer-events: none;
+    transform-origin: 0px 0px;
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: solid 1px #000;
+    box-sizing: border-box;
+}
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#sticker2{
+    opacity: 0;
+}
+
+#tagline,
+#sticker3,
+#sticker2,
+.price,
+#badge,
+#products,
+#sticker,
+#text1,
+#highlight1Wrapper,
+#light2,
+#light1,
+#cart,
+#introWrapper,
+#date,
+#ctaLeft,
+#ctaRight,
+#intro1,
+#intro2,
+#intro4,
+#intro3{
+    width: 100%;
+    height: 100%;
+}
+
+#intro1{ top: 304px;}
+#intro2{ top: 466px;}
+#intro3{ top: 622px;}
+#intro4{ top: 778px;}
+
+.introEmpty,
+.introFill{
+    width: 530px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#bgWrapper{
+    width: 300%;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+}
+
+#bg{
+    width: 1200px;
+    left: 0px;
+}
+
+#bg2{
+    width: 1200px;
+    left: 1199px;
+    transform: scaleX(-1);
+}
+
+#bg3{
+    width: 1200px;
+    right: 2px;
+}
+
+#light1,
+#light2{
+    transform-origin: 250px 122px;
+}
+
+#light2{
+    top: 60px;
+    left: 720px;
+}
+
+#highlight1Wrapper{
+    overflow: hidden;
+}
+
+#highlight1{
+    width: 1200px;
+}
+
+#sticker{
+    transform-origin: 492px 573px;
+}
+
+#sticker3{
+    transform-origin: 600px 740px;
+}
+
+#logo{
+    width: 108px;
+    top: 32px;
+    left: 32px;
+}
+
+#logo2{
+    width: 211px;
+    top: 128px;
+    left: 50%;
+    transform: translateX(-50%);
+}
