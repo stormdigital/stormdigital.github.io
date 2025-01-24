@@ -1,7 +1,7 @@
 window.onload = init;
 
-window.vLines = 13;
-window.hLines = 12;
+window.vLines = 19;
+window.hLines = 13;
 
 function init() {
 
@@ -166,12 +166,13 @@ function getRandomDeg(){
 }
 
 function setPoopChance(time, poopChance){
+    console.log("check poop chance");
+    
     time++;
     if(time < 20){
         //1-0.9995^20        
         poopChance = 0.05;
         var rand = gsap.utils.random(0, 100, poopChance);
-        console.log(rand, poopChance);
         
         if(rand == poopChance){
             checkWinningBlock();
@@ -183,7 +184,6 @@ function setPoopChance(time, poopChance){
     else if(time >= 20 && time < 40){
         poopChance = 0.2;
         var rand = gsap.utils.random(0, 100, poopChance);
-        console.log(rand, poopChance);
         
         if(rand == poopChance){
             checkWinningBlock();
@@ -195,7 +195,6 @@ function setPoopChance(time, poopChance){
     else if(time >= 40 && time < 60){   
         poopChance = 0.25;
         var rand = gsap.utils.random(0, 100, poopChance);
-        console.log(rand, poopChance);
         
         if(rand == poopChance){
             checkWinningBlock();
@@ -207,7 +206,6 @@ function setPoopChance(time, poopChance){
     else if(time >= 60 && time < 80){
         poopChance = 0.5;
         var rand = gsap.utils.random(0, 100, poopChance);
-        console.log(rand, poopChance);
         
         if(rand == poopChance){
             checkWinningBlock();
@@ -219,7 +217,6 @@ function setPoopChance(time, poopChance){
     else if(time >= 80 && time < 100){
         poopChance = 1;
         var rand = gsap.utils.random(0, 100, poopChance);
-        console.log(rand, poopChance);
         
         if(rand == poopChance){
             checkWinningBlock();
@@ -231,7 +228,6 @@ function setPoopChance(time, poopChance){
     else if(time >= 100 && time < 120){
         poopChance = 2;
         var rand = gsap.utils.random(0, 100, poopChance);
-        console.log(rand, poopChance);
         
         if(rand == poopChance){
             checkWinningBlock();
@@ -243,7 +239,6 @@ function setPoopChance(time, poopChance){
     else if(time >= 120 && time < 140){
         poopChance = 4;
         var rand = gsap.utils.random(0, 100, poopChance);
-        console.log(rand, poopChance);
         
         if(rand == poopChance){
             checkWinningBlock();
@@ -259,12 +254,12 @@ function setPoopChance(time, poopChance){
     }
     
     if(!window.finished){
-        document.querySelector("#poopChance").innerHTML = poopChance + "%";
-        document.querySelector("#timeRight").innerHTML = time;
+        // document.querySelector("#poopChance").innerHTML = poopChance + "%";
+        // document.querySelector("#timeRight").innerHTML = time;
         
         setTimeout(() => {
             setPoopChance(time, poopChance);
-        }, 100);
+        }, 60000);
     }
 
 
@@ -315,7 +310,7 @@ function showAlertScreen(){
 
     setTimeout(() => {
        showEndScreen(); 
-    }, 5000);
+    }, 60000);
 }
 
 function showEndScreen(){
@@ -372,7 +367,7 @@ function setNewTime(totalTime){
     if(totalTime > 0){
         setTimeout(() => {
             setNewTime(totalTime);
-        }, 50);
+        }, 1000);
     }
     else{
         gsap.to("#messageWrapper", 0.5, {scale:0, ease:Back.easeIn});
