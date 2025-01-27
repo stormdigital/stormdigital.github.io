@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="ad.size" content="width=300,height=250">
+    <meta name="ad.size" content="width=300,height=600">
     <script type="text/javascript">
     var clickTag = "http://www.google.com"; </script>
     <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.11.5_min.js"></script>
@@ -15,7 +15,7 @@
       .stage-content {
         position: absolute;
         width: 300px;
-        height: 250px;
+        height: 600px;
         font-family: Verdana;
         font-style: normal;
         text-decoration: none;
@@ -46,13 +46,7 @@
         font-size: 9px;
         font-weight: 400;
       }
-      .weborama-logo {
-        position: absolute;
-        left: 9px;
-        top: 9px;
-        width: 40px;
-        height: 40px;
-      }
+      
       .click-area {
         position: absolute;
         width: 100%;
@@ -63,31 +57,38 @@
         background-color: rgba(255, 0, 0, 0);
       }
 
+      .guide{
+        position: absolute;
+        pointer-events: none;
+        opacity: 0.6;
+        top:0;
+        left:0;
+      }
+
       .circular-image{
         position: absolute;
         bottom: 0px;
-        right:0;
       }
 
       .tagline{
         position: absolute;
-        bottom: 15px;
-        left: 14px;
+        bottom: 0;
+        width: 100%;
         display: none;
       }
 
       .ctaContainer{
         position: absolute;
-        top: 189px;
-        left: 163px;
-        width: 120px;
+        top: 532px;
+    left: 161px;
+    width: 114px;
       }
 
       .logo{
         position: absolute;
-        bottom: 15px;
-        width: 119px;
-        left: 19px;
+        left: 29px;
+        bottom: 28px;
+        width: 87px;
       }
 
       .cta, .ctaOver{
@@ -101,24 +102,15 @@
       
       .text01{
         position: absolute;
-        left: 19px;
-        top: 18px;
-        width: 116px;
-      }
-
-      .guide{
-        position: absolute;
-        pointer-events: none;
-        opacity: 0.4;
-        top:0;
-        left:0;
+        left: 28px;
+        top: 28px;
+        width: 214px;
       }
     </style>
 
     <script type="text/javascript">
       function exitClick() {
         window.open(window.clickTag)
-        // screenad.click();
       }
 
       function addEventListener() {
@@ -137,19 +129,17 @@
         gsap.to('.cta', 0.4, {opacity:1})
         gsap.to('.ctaOver', 0.4, {opacity:0})
       }
-
       function startAnimation() {
         var tl = gsap.timeline({paused:true});
         tl.add('start')
         tl.from('.stage-content', 0.7, {backgroundColor: "#0f1941"}, 'start')
-        tl.from('.circular-image', 0.7, {xPercent:100}, 'start+=1' )
+        tl.from('.circular-image', 0.7, {yPercent:100}, 'start+=1' )
         tl.from('.tagline', 0.3, {opacity:0}, 'start+=1.6' )
         tl.from('.text01', 0.3, {opacity:0}, 'start+=2' )
         tl.from('.ctaContainer', 0.3, {scale:0.5 ,ease: "back.out(1.7)",}, 'start+=2.5' )
         tl.from('.ctaContainer', 0.1, {opacity:0}, 'start+=2.5' )
         tl.play(0);
       }
-
       window.onload = () => {
         addEventListener();
         startAnimation();
@@ -162,12 +152,13 @@
       <div class="click-area" id="click-area"></div>
 
       <div class="stage-background"></div>
-
       <img class="circular-image" src="circular_image.png" />
+
       <div class="ctaContainer">
         <img class="cta" src="./cta.png" />
         <img class="ctaOver" src="./cta-over.png" />
       </div>
+
 
       <img class="tagline" src="tagline.png" />
       <img class="logo" src="logo.png" />
