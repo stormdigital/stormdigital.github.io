@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap');
+
+*:focus {
+    outline: none;
+}
+
+body{
+    margin: 0;
+}
+
+#page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: "Playfair Display", serif;
+}
+
+#bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+#content{
+    position: absolute;
+    top: 0;
+    width: 20vw;
+    left: 20vw;
+    height: 100%;
+}
+
+#topBlock{
+    position: relative;
+    width: 20vw;
+    height: 15vw;
+    background-color: #59270a;
+    border-radius: 0% 0% 3vw 3vw;
+    color: #bfa41f;
+    text-align: center;
+}
+
+#text1{
+    font-size: 4vw;
+    top: 2vw;
+    position: relative;
+    width: 100%;
+}
+
+#text2{
+    position: relative;
+    margin-top: 3vw;
+    font-size: 1.7vw;
+}
+
+#bar{
+    position: absolute;
+    bottom: 1vw;
+    width: 8vw;
+    height: 0.3vw;
+    background-color: #876919;
+    border-radius: 99999px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#phone{
+    position: relative;
+    width: 20vw;
+    height: 30vw;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 3vw;
+    text-align: center;
+    margin-top: 1vw;
+    font-family: "Roboto", serif;
+}
+
+#bar2{
+    position: absolute;
+    top: 1vw;
+    width: 8vw;
+    height: 0.3vw;
+    background-color: #000;
+    border-radius: 99999px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#phoneDisplay{
+    position: relative;
+    width: 16vw;
+    height: 3vw;
+    margin-top: 3vw;
+    text-align: center;
+    border: 0px;
+    background: transparent;
+    font-size: 3vw;
+}
+
+#numbersWrapper{
+    position: relative;
+    width: 18vw;
+    left: 1vw;
+    height: 18vw;
+    margin-top: 1vw;
+}
+
+#numbersWrapper div{
+    position: relative;
+    width: 5vw;
+    display: inline-block;
+    font-size: 2.5vw;
+    line-height: 4.6vw;
+    height: 4.6vw;
+    cursor: pointer;
+}
+
+#call{
+    width: 4vw;
+    position: absolute;
+    bottom: 1vw;
+    left: 2vw;
+}
+
+#hangUp{
+    width: 4vw;
+    position: absolute;
+    bottom: 1vw;
+    right: 2vw;
+}
