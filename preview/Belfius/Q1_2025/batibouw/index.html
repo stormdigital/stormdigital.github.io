@@ -89,6 +89,35 @@
     </div>
     <div id="content"></div>
     <script>
+        const hardcodedPaths = [
+            "300x250_NL_Netwerk",
+            "300x600_NL_Netwerk",
+            "320x100_NL_Netwerk",
+            "300x250_NL_OMS",
+            "300x600_NL_OMS",
+            "320x100_NL_OMS",
+            "840x150_NL_OMS",
+            "300x250_NL_Nieuwe_Formule",
+            "300x600_NL_Nieuwe_Formule",
+            "728x90_NL_Nieuwe_Formule",
+            "300x250_NL_Scherp_Tarief",
+            "300x600_NL_Scherp_Tarief",
+            "300x250_FR_OMS",
+            "300x600_FR_OMS",
+            "320x100_FR_OMS",
+            "840x150_FR_OMS",
+            "300x250_FR_Nieuwe_Formule",
+            "300x600_FR_Nieuwe_Formule",
+            "728x90_FR_Nieuwe_Formule",
+            "300x250_FR_Netwerk",
+            "300x600_FR_Netwerk",
+            "320x100_FR_Netwerk",
+            "300x250_FR_Scherp_Tarief",
+            "300x600_FR_Scherp_Tarief"
+        ];
+
+        const useHardcodedPaths = true; // Set to true to use hardcoded paths, false to fetch from PHP
+
         function resizeIframe(iframe) {
             const doc = iframe.contentWindow.document.documentElement;
             iframe.style.height = doc.scrollHeight + 'px';
@@ -115,94 +144,136 @@
         }
 
         function loadIframes() {
-            fetch('list_subfolders.php')
-                .then(response => response.json())
-                .then(data => {
-                    const { folders, sizes, languages, variants } = data;
-                    console.log('Response:', data); // Log the response for debugging
+            if (useHardcodedPaths) {
+                // Populate filter lists with hardcoded paths
+                const sizes = [...new Set(hardcodedPaths.map(path => path.split('_')[0]))];
+                const languages = [...new Set(hardcodedPaths.map(path => path.split('_')[1]))];
+                const variants = [...new Set(hardcodedPaths.map(path => path.split('_')[2]))];
 
-                    // Populate filter list
-                    const filterList = document.getElementById('filter-list');
-                    filterList.innerHTML = ''; // Clear existing filters
-                    sizes.forEach(size => {
-                        const label = document.createElement('label');
-                        label.innerHTML = `<input type="checkbox" value="${size}" checked> ${size}`;
-                        filterList.appendChild(label);
+                // Populate filter list
+                const filterList = document.getElementById('filter-list');
+                filterList.innerHTML = ''; // Clear existing filters
+                sizes.forEach(size => {
+                    const label = document.createElement('label');
+                    label.innerHTML = `<input type="checkbox" value="${size}" checked> ${size}`;
+                    filterList.appendChild(label);
+                });
+
+                // Populate language list
+                const languageList = document.getElementById('language-list');
+                languageList.innerHTML = ''; // Clear existing filters
+                languages.forEach(language => {
+                    const label = document.createElement('label');
+                    label.innerHTML = `<input type="checkbox" value="${language}" checked> ${language}`;
+                    languageList.appendChild(label);
+                });
+
+                // Populate variant list
+                const variantList = document.getElementById('variant-list');
+                variantList.innerHTML = ''; // Clear existing filters
+                variants.forEach(variant => {
+                    const label = document.createElement('label');
+                    label.innerHTML = `<input type="checkbox" value="${variant}" checked> ${variant}`;
+                    variantList.appendChild(label);
+                });
+
+                // Load checkbox state from localStorage
+                loadCheckboxState();
+
+                // Add event listeners to checkboxes
+                document.querySelectorAll('#filter-list input, #language-list input, #variant-list input').forEach(input => {
+                    input.addEventListener('change', () => {
+                        saveCheckboxState();
+                        updateIframes(hardcodedPaths);
                     });
+                });
 
-                    // Populate language list
-                    const languageList = document.getElementById('language-list');
-                    languageList.innerHTML = ''; // Clear existing filters
-                    languages.forEach(language => {
-                        const label = document.createElement('label');
-                        label.innerHTML = `<input type="checkbox" value="${language}" checked> ${language}`;
-                        languageList.appendChild(label);
-                    });
+                // Initial iframe load
+                updateIframes(hardcodedPaths);
+            } else {
+                fetch('list_subfolders.php')
+                    .then(response => response.json())
+                    .then(data => {
+                        const { folders, sizes, languages, variants } = data;
+                        console.log('Response:', data); // Log the response for debugging
 
-                    // Populate variant list
-                    const variantList = document.getElementById('variant-list');
-                    variantList.innerHTML = ''; // Clear existing filters
-                    variants.forEach(variant => {
-                        const label = document.createElement('label');
-                        label.innerHTML = `<input type="checkbox" value="${variant}" checked> ${variant}`;
-                        variantList.appendChild(label);
-                    });
-
-                    // Load checkbox state from localStorage
-                    loadCheckboxState();
-
-                    // Add event listeners to checkboxes
-                    document.querySelectorAll('#filter-list input, #language-list input, #variant-list input').forEach(input => {
-                        input.addEventListener('change', () => {
-                            saveCheckboxState();
-                            updateIframes();
+                        // Populate filter list
+                        const filterList = document.getElementById('filter-list');
+                        filterList.innerHTML = ''; // Clear existing filters
+                        sizes.forEach(size => {
+                            const label = document.createElement('label');
+                            label.innerHTML = `<input type="checkbox" value="${size}" checked> ${size}`;
+                            filterList.appendChild(label);
                         });
-                    });
 
-                    // Initial iframe load
-                    updateIframes();
-                })
-                .catch(error => console.error('Error fetching subfolders:', error));
+                        // Populate language list
+                        const languageList = document.getElementById('language-list');
+                        languageList.innerHTML = ''; // Clear existing filters
+                        languages.forEach(language => {
+                            const label = document.createElement('label');
+                            label.innerHTML = `<input type="checkbox" value="${language}" checked> ${language}`;
+                            languageList.appendChild(label);
+                        });
+
+                        // Populate variant list
+                        const variantList = document.getElementById('variant-list');
+                        variantList.innerHTML = ''; // Clear existing filters
+                        variants.forEach(variant => {
+                            const label = document.createElement('label');
+                            label.innerHTML = `<input type="checkbox" value="${variant}" checked> ${variant}`;
+                            variantList.appendChild(label);
+                        });
+
+                        // Load checkbox state from localStorage
+                        loadCheckboxState();
+
+                        // Add event listeners to checkboxes
+                        document.querySelectorAll('#filter-list input, #language-list input, #variant-list input').forEach(input => {
+                            input.addEventListener('change', () => {
+                                saveCheckboxState();
+                                updateIframes(folders);
+                            });
+                        });
+
+                        // Initial iframe load
+                        updateIframes(folders);
+                    })
+                    .catch(error => console.error('Error fetching subfolders:', error));
+            }
         }
 
-        function updateIframes() {
-            fetch('list_subfolders.php')
-                .then(response => response.json())
-                .then(data => {
-                    const { folders } = data;
-                    const content = document.getElementById('content');
-                    content.innerHTML = ''; // Clear existing iframes
-                    const checkedSizes = Array.from(document.querySelectorAll('#filter-list input:checked')).map(input => input.value);
-                    const checkedLanguages = Array.from(document.querySelectorAll('#language-list input:checked')).map(input => input.value);
-                    const checkedVariants = Array.from(document.querySelectorAll('#variant-list input:checked')).map(input => input.value);
-                    folders.forEach(folder => {
-                        const [size, language, variant] = folder.split('_'); // Assuming size, language, and variant are parts of the folder name
-                        if (checkedSizes.includes(size) && checkedLanguages.includes(language) && checkedVariants.includes(variant)) {
-                            const iframeContainer = document.createElement('div');
-                            iframeContainer.className = 'iframe-container';
+        function updateIframes(folders) {
+            const content = document.getElementById('content');
+            content.innerHTML = ''; // Clear existing iframes
+            const checkedSizes = Array.from(document.querySelectorAll('#filter-list input:checked')).map(input => input.value);
+            const checkedLanguages = Array.from(document.querySelectorAll('#language-list input:checked')).map(input => input.value);
+            const checkedVariants = Array.from(document.querySelectorAll('#variant-list input:checked')).map(input => input.value);
+            folders.forEach(folder => {
+                const [size, language, variant] = folder.split('_'); // Assuming size, language, and variant are parts of the folder name
+                if (checkedSizes.includes(size) && checkedLanguages.includes(language) && checkedVariants.includes(variant)) {
+                    const iframeContainer = document.createElement('div');
+                    iframeContainer.className = 'iframe-container';
 
-                            const iframe = document.createElement('iframe');
-                            iframe.src = `_build/${folder}/index.html`;
-                            iframe.onload = () => resizeIframe(iframe);
-                            iframeContainer.appendChild(iframe);
+                    const iframe = document.createElement('iframe');
+                    iframe.src = `_build/${folder}/index.html`;
+                    iframe.onload = () => resizeIframe(iframe);
+                    iframeContainer.appendChild(iframe);
 
-                            const folderName = document.createElement('div');
-                            folderName.className = 'folder-name';
+                    const folderName = document.createElement('div');
+                    folderName.className = 'folder-name';
 
-                            const reloadButton = document.createElement('button');
-                            reloadButton.className = 'reload-button';
-                            reloadButton.textContent = 'Reload';
-                            reloadButton.onclick = () => iframe.contentWindow.location.reload();
+                    const reloadButton = document.createElement('button');
+                    reloadButton.className = 'reload-button';
+                    reloadButton.textContent = 'Reload';
+                    reloadButton.onclick = () => iframe.contentWindow.location.reload();
 
-                            folderName.appendChild(reloadButton);
-                            folderName.appendChild(document.createTextNode(folder));
-                            iframeContainer.appendChild(folderName);
+                    folderName.appendChild(reloadButton);
+                    folderName.appendChild(document.createTextNode(folder));
+                    iframeContainer.appendChild(folderName);
 
-                            content.appendChild(iframeContainer);
-                        }
-                    });
-                })
-                .catch(error => console.error('Error updating iframes:', error));
+                    content.appendChild(iframeContainer);
+                }
+            });
         }
 
         // Initial load
