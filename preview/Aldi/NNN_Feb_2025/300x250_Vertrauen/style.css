@@ -167,6 +167,10 @@ img, div, object{
     width: 100%;
 }
 
+#text1B{
+    transform-origin: 234px 170px;
+}
+
 #usp1{
     transform-origin: 140px 190px;
 }

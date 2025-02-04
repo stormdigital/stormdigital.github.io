@@ -51,6 +51,7 @@ function getAnimation(){
     masterTL.add("showText1", "-=0.3");
     masterTL.from("#text1A", 0.5, {opacity:0, ease:Sine.easeOut}, "showText1");
     masterTL.from("#text1B", 0.5, {opacity:0, x:-20, ease:Sine.easeOut}, "showText1+=0.4");
+    masterTL.to("#text1B", 0.3, {scale:1.1, repeat:1, yoyo:true, ease:Sine.easeInOut}, "showText1+=1");
     masterTL.to(["#text1A", "#text1B"], 0.3, {opacity:0, ease:Sine.easeOut}, "showText1+=2.5");
     
     masterTL.add("showUSP1", "-=0.3");
@@ -69,10 +70,6 @@ function getAnimation(){
     masterTL.from("#sticker", 0.5, {opacity:0, ease:Sine.easeInOut}, "showUSP1+=6");
     masterTL.to("#arrow1", 0.5, {opacity:1, x:0, y:0, ease:Sine.easeOut}, "showUSP1+=6.31");
     masterTL.to(["#sticker", "#arrow1"], 0.3, {opacity:0, ease:Sine.easeOut}, "showUSP1+=8");
-    
-
-    
-
     
     masterTL.add("endScreen", "-=0.5");
     masterTL.to(["#bg", "#cow", "#product"], 0.5, {'-webkit-filter':'blur(3px)','filter':'blur(3px)', ease:Sine.easeInOut}, "endScreen");
