@@ -16,8 +16,7 @@ function init() {
     })
 
     document.querySelector("#mainExit").addEventListener("click", function(){
-        // masterTL.progress(1);
-        masterTL.pause();
+        masterTL.progress(1);
     })
 
     getAnimation();
@@ -31,9 +30,9 @@ function getAnimation(){
     masterTL.from("#bg", 2, {scale:1.1, ease:Sine.easeOut}, "intro");
     masterTL.from("#cow", 2, {scale:1.3, ease:Sine.easeOut}, "intro");
     masterTL.from("#product", 2, {scale:1.8, ease:Sine.easeOut}, "intro");
-    masterTL.to("#bg", 2, {x:-50, ease:Sine.easeInOut}, "intro+=1");
-    masterTL.to("#cow", 2, {x:-65, ease:Sine.easeInOut}, "intro+=1");
-    masterTL.to("#product", 2, {x:-75, ease:Sine.easeInOut}, "intro+=1");
+    masterTL.to("#bg", 2, {x:-40, ease:Sine.easeInOut}, "intro+=1");
+    masterTL.to("#cow", 2, {x:-53, ease:Sine.easeInOut}, "intro+=1");
+    masterTL.to("#product", 2, {x:-65, ease:Sine.easeInOut}, "intro+=1");
     
     masterTL.add("start", "-=0.8");
     masterTL.from("#darken", 1, {opacity:0, ease:Sine.easeInOut}, "start+=0.5");

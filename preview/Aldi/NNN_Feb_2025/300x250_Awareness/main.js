@@ -16,8 +16,7 @@ function init() {
     })
 
     document.querySelector("#mainExit").addEventListener("click", function(){
-        // masterTL.progress(1);
-        masterTL.pause();
+        masterTL.progress(1);
     })
 
     getAnimation();
@@ -31,9 +30,9 @@ function getAnimation(){
     masterTL.from("#bg", 2, {scale:1.1, ease:Sine.easeOut}, "intro");
     masterTL.from("#cow", 2, {scale:1.3, ease:Sine.easeOut}, "intro");
     masterTL.from("#product", 2, {scale:1.8, ease:Sine.easeOut}, "intro");
-    masterTL.to("#bg", 2, {x:-50, ease:Sine.easeInOut}, "intro+=1");
-    masterTL.to("#cow", 2, {x:-65, ease:Sine.easeInOut}, "intro+=1");
-    masterTL.to("#product", 2, {x:-75, ease:Sine.easeInOut}, "intro+=1");
+    masterTL.to("#bg", 2, {x:-40, ease:Sine.easeInOut}, "intro+=1");
+    masterTL.to("#cow", 2, {x:-53, ease:Sine.easeInOut}, "intro+=1");
+    masterTL.to("#product", 2, {x:-65, ease:Sine.easeInOut}, "intro+=1");
     
     masterTL.add("start", "-=0.8");
     masterTL.from("#darken", 1, {opacity:0, ease:Sine.easeInOut}, "start+=0.5");
@@ -55,21 +54,9 @@ function getAnimation(){
     masterTL.to(["#text1A", "#text1B"], 0.3, {opacity:0, ease:Sine.easeOut}, "showText1+=2.5");
     
     masterTL.add("showUSP1", "-=0.3");
-    masterTL.from("#usp1", 1, {scale:0, rotation:45, ease:Back.easeOut}, "showUSP1");
+    masterTL.from("#sticker", 0.5, {opacity:0, ease:Sine.easeInOut}, "showUSP1");
     masterTL.from("#arrow1", 0.5, {opacity:0, x:-20, y:20, ease:Sine.easeOut}, "showUSP1+=0.5");
-    masterTL.to(["#usp1", "#arrow1"], 0.3, {opacity:0, ease:Sine.easeOut}, "showUSP1+=2");
-    masterTL.to("#arrow1", 0.001, {x:-20, y:20}, "showUSP1+=2.3");
-    masterTL.from("#usp2", 1, {scale:0, rotation:45, ease:Back.easeOut}, "showUSP1+=2");
-    masterTL.to("#arrow1", 0.5, {opacity:1, x:0, y:0, ease:Sine.easeOut}, "showUSP1+=2.31");
-    masterTL.to(["#usp2", "#arrow1"], 0.3, {opacity:0, ease:Sine.easeOut}, "showUSP1+=4");
-    masterTL.to("#arrow1", 0.001, {x:-20, y:20}, "showUSP1+=4.3");
-    masterTL.from("#usp3", 1, {scale:0, rotation:45, ease:Back.easeOut}, "showUSP1+=4");
-    masterTL.to("#arrow1", 0.5, {opacity:1, x:0, y:0, ease:Sine.easeOut}, "showUSP1+=4.31");
-    masterTL.to(["#usp3", "#arrow1"], 0.3, {opacity:0, ease:Sine.easeOut}, "showUSP1+=6");
-    masterTL.to("#arrow1", 0.001, {x:-20, y:20}, "showUSP1+=6.3");
-    masterTL.from("#sticker", 0.5, {opacity:0, ease:Sine.easeInOut}, "showUSP1+=6");
-    masterTL.to("#arrow1", 0.5, {opacity:1, x:0, y:0, ease:Sine.easeOut}, "showUSP1+=6.31");
-    masterTL.to(["#sticker", "#arrow1"], 0.3, {opacity:0, ease:Sine.easeOut}, "showUSP1+=8");
+    masterTL.to(["#sticker", "#arrow1"], 0.3, {opacity:0, ease:Sine.easeOut}, "showUSP1+=3");
     
     masterTL.add("endScreen", "-=0.5");
     masterTL.to(["#bg", "#cow", "#product"], 0.5, {'-webkit-filter':'blur(3px)','filter':'blur(3px)', ease:Sine.easeInOut}, "endScreen");
