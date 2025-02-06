@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'Belfius';
+    src: url('./Belfius21-Medium.woff2');
+}
+
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 100%;
+    max-width: 1000px;
+    height: 200px;
+    overflow: hidden;
+    background-color: #c1133c;
+    color: #fff;
+    font-family: 'Belfius', sans-serif;
+    container-type: inline-size;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #C31F48;
+    pointer-events: none;
+    top:0;
+}
+
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #f33a68;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    top: 0;
+}
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 999;
+    position: absolute;
+    top:0;
+}
+
+#logo{
+    width: 73px;
+    top: 13px;
+    right: 12px;
+}
+
+#doubleLine{
+    position: absolute;
+    top: 19px;
+    left: 20px;
+    width: 24px;
+}
+
+#scalableBg{
+    position: absolute;
+    right: 0px;
+    top:50%;
+    transform: translate(0%, -50%);
+}
+
+.guide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+#belfiusLogo{
+    position: absolute;
+    bottom: 14px;
+    right: 25px;
+    width: 81px;
+}
+
+#headline{
+    position: absolute;
+    top:50%;
+    transform: translate(0%, -50%);
+    max-width: 390px;
+    left: 20px;
+    font-size: min(39px, 3.9cqw);
+    line-height: 0.98;
+    letter-spacing: -0.9px;
+}
+
+#subTextAndCTAContainer{
+    position: absolute;
+    top:50%;
+    transform: translate(0%, -50%);
+    left: 43%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#subtext{
+    /* position: absolute; */
+    position: relative;
+    /* top: 69px; */
+    /* left: 43%; */
+    font-size: 20px;
+    line-height: 1.1;
+    letter-spacing: -0.1px;
+}
+
+#cta{
+    /* position: absolute; */
+    /* top: 112px;
+    left: 43%; */
+    position: relative;
+    font-size: 15px;
+    color: #C31F48;
+    display: inline-block;
+    background: #fff;
+    padding: 4px 18px;
+    border-radius: 16px;
+    white-space: nowrap;
+    width: 157px;
+}
+
+#ctaText{
+    position: relative;
+    display: inline-block;
+}
+
+#disclaimer{
+    bottom: 15px;
+    left: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 1.1;
+    letter-spacing: -0.4px;
+}
+
+@container (max-width: 915px) {
+    #subtext{
+        max-width: 280px;
+    }
+}
+
+@container (max-width: 850px) {
+    #scalableBg{
+        height: 147%;
+        top:46%;
+    }
+
+    #headline{
+        max-width: 30%;
+    }
+
+    #subTextAndCTAContainer{
+        gap: 1.8cqw;
+    }
+
+    #subtext{
+        max-width: 170px;
+    }
+
+    #disclaimer{
+    }
+}
+
+@container (max-width: 650px) {
+    #scalableBg{
+        height: 127%;
+        top:46%;
+        right: -60px;
+    }
+
+    #headline{
+        max-width: 40%;
+        font-size: min(31px, 5.9cqw);
+    }
+
+    #subTextAndCTAContainer{
+        left:46%;
+        gap: 15px;
+    }
+
+    #subText{
+        max-width: 140px;
+    }
+
+    #cta{
+        font-size: 12px;
+        width: 124px;
+    }
+}
+
+@container (max-width: 480px) {
+    #headline{
+        max-width: 70%;
+        font-size: 26px;
+        top: 37%;
+    }
+
+    #subTextAndCTAContainer{
+        left: 20px;
+        gap: 11px;
+        top: 64%;
+    }
+
+    #subtext{
+        font-size: 11px;
+    }
+
+    #cta{
+        font-size: 10px;
+        width: 105px;
+        padding: 2px 13px;
+    }
+
+    #disclaimer{
+        width: 128px;
+        font-size: 10px;
+    }
+
+    #scalableBg{
+        height: 100%;
+        top: 59%;
+        right: -60px;
+    }
+}
+
+@container (max-width: 350px) {
+    #headline{
+        max-width: 100%;
+    }
+}
