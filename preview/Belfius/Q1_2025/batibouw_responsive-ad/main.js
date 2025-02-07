@@ -37,20 +37,18 @@ function init(clickTAGvalue) {
     getAnimation();
 }
 
-function getAnimation(){
-    var splitHeadline = new SplitText("#headline", { type: "words,chars" });
-    
+function getAnimation(){   
     masterTL = new TimelineLite();
     masterTL.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut, onComplete:function(){
         gsap.set("#loaderWrapper", {display:"none"});
     }}, 0)
-    masterTL.add("start");
-    masterTL.from("#bg", 1, {opacity:0, ease:Sine.easeOut}, "start")
-    masterTL.from("#bg", 2.5, { scale: 1.6, y: -50, x: -80, ease: Sine.easeOut }, "start+=0.1")
+    // masterTL.add("start");
+    // masterTL.from("#bg", 1, {opacity:0, ease:Sine.easeOut}, "start")
+    // masterTL.from("#bg", 2.5, { scale: 1.6, y: -50, x: -80, ease: Sine.easeOut }, "start+=0.1")
     
-    masterTL.staggerFrom(splitHeadline.words, 0.5, {opacity:0, y:20, ease:Power2.easeOut}, 0.25, "start+=1.4");
-    masterTL.from("#subtext", 0.7, { y: 20, opacity: 0, ease: Power2.easeInOut }, "+=0.2")
-    masterTL.from("#cta", 0.7, {scale:0, ease: "back.out(1.7)"}, "+=0.2")
+    // masterTL.staggerFrom(splitHeadline.words, 0.5, {opacity:0, y:20, ease:Power2.easeOut}, 0.25, "start+=1.4");
+    // masterTL.from("#subtext", 0.7, { y: 20, opacity: 0, ease: Power2.easeInOut }, "+=0.2")
+    // masterTL.from("#cta", 0.7, {scale:0, ease: "back.out(1.7)"}, "+=0.2")
 
 
 

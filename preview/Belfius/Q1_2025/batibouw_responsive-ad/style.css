@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Belfius';
-    src: url('./Belfius21-Medium.woff2');
+    src: url('./Belfius21-Regular.woff');
 }
 
 body{
@@ -87,8 +87,8 @@ img, div, object{
 #scalableBg{
     position: absolute;
     right: 0px;
-    top:50%;
-    transform: translate(0%, -50%);
+    top:-82px;
+    /* transform: translate(0%, -50%); */
 }
 
 .guide{
@@ -133,7 +133,7 @@ img, div, object{
     position: relative;
     /* top: 69px; */
     /* left: 43%; */
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.1;
     letter-spacing: -0.1px;
 }
@@ -176,7 +176,8 @@ img, div, object{
 @container (max-width: 850px) {
     #scalableBg{
         height: 147%;
-        top:46%;
+        top: -50px;
+        /* top:46%; */
     }
 
     #headline{
@@ -188,7 +189,7 @@ img, div, object{
     }
 
     #subtext{
-        max-width: 170px;
+        max-width: 150px;
     }
 
     #disclaimer{
@@ -198,7 +199,7 @@ img, div, object{
 @container (max-width: 650px) {
     #scalableBg{
         height: 127%;
-        top:46%;
+        top: -20px;
         right: -60px;
     }
 
@@ -252,13 +253,17 @@ img, div, object{
 
     #scalableBg{
         height: 100%;
-        top: 59%;
-        right: -60px;
+        right: -30px;
+        top: 5px;
     }
 }
 
 @container (max-width: 350px) {
     #headline{
         max-width: 100%;
+    }
+
+    #scalableBg{
+        top: 18px; 
     }
 }
