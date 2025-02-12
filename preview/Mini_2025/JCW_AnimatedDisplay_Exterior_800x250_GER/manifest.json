@@ -1,0 +1,11 @@
+{
+    "version": "1.0", 
+    "title": "Mini_800x250",   
+    "width" : "800", 
+    "height": "250", 
+    "clicktags": {
+        "clickTAG": "http://www.example.com"
+    },
+
+    "source": "index.html"
+}
