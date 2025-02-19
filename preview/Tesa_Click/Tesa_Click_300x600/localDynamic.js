@@ -13,6 +13,7 @@ localDynamicData = {
 	"text4": "./text4.png",
 	"highlight4": "./highlight4.png",
 	"text5": "./text5.png",
+	"text6": "./text6.png",
 	"logo": "./logo.svg",
 	"tadaa": "./tadaa.svg",
 	"bg1": "./bg1.jpg",
