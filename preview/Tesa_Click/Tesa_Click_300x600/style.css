@@ -58,9 +58,15 @@ img, div, object{
     z-index: 999;
 }
 
+#bg3,
+#bg4,
 #bg1,
 #bg2{
     width: 100%;
+}
+
+#bg1{
+    width: 200%;
 }
 
 #logo{
@@ -82,8 +88,6 @@ img, div, object{
 
 #mainProduct{
     width: 100%;
-    transform-origin: 50% 88%;
-    transform: scale(1.28);
 }
 
 #text3Wrapper,
@@ -125,4 +129,9 @@ img, div, object{
 #ctaBorder{
     width: 100%;
     transform-origin: 50% 550px;
+}
+
+#badge{
+    width: 100%;
+    transform-origin: 222px 280px;
 }

@@ -20,6 +20,7 @@ localDynamicData = {
 	"bg3": "./bg3.jpg",
 	"bg4": "./bg4.jpg",
 	"product": "./product_middle.png",
+	"badge": "./badge.png",
 	"cta": "./cta.png",
 	"ctaBorder": "./cta_border.png"
 }

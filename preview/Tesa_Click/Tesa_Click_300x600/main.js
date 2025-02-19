@@ -14,10 +14,11 @@ function loadLocalDynamic() {
     document.querySelector('#text5').src = localDynamicData.text5;
     document.querySelector('#logo').data = localDynamicData.logo;
     document.querySelector('#bg1').src = localDynamicData.bg1;
-    document.querySelector('#bg2').src = localDynamicData.bg2;
+    // document.querySelector('#bg2').src = localDynamicData.bg2;
     document.querySelector('#bg3').src = localDynamicData.bg3;
     document.querySelector('#bg4').src = localDynamicData.bg4;
     document.querySelector('#mainProduct').src = localDynamicData.product;
+    document.querySelector('#badge').src = localDynamicData.badge;
     document.querySelector('#cta').src = localDynamicData.cta;
     document.querySelector('#ctaBorder').src = localDynamicData.ctaBorder;
 }
@@ -56,8 +57,10 @@ function getAnimation(){
     masterTL.from("#text1", 0.7, {x:-50, opacity:0, ease:Power2.easeInOut}, "-=3.8")
     masterTL.from("#highlight1Wrapper", 0.8, {width:0, ease:Power2.easeInOut}, "-=3")
     masterTL.to(["#text1", "#highlight1Wrapper"], 0.7, {x:50, opacity:0, ease:Power2.easeInOut}, "-=1")
-    masterTL.from("#bg2", 4, {scale:1.1, ease:Sine.easeOut}, "-=0.5")
-    masterTL.from("#bg2", 1, {opacity:0, ease:Sine.easeInOut}, "-=4")
+    masterTL.from("#bg1", 4, {}, "-=0.5")
+    masterTL.to("#bg1", 1, {x:-300, scale:1.1, ease:Sine.easeInOut}, "-=4")
+    masterTL.to("#bg1", 4, {scale:1, ease:Sine.easeOut}, "-=3")
+    // masterTL.from("#bg2", 1, {opacity:0, ease:Sine.easeInOut}, "-=4")
     masterTL.from("#text2", 0.7, {x:-50, opacity:0, ease:Power2.easeInOut}, "-=3.8")
     masterTL.from("#highlight2Wrapper", 0.8, {width:0, ease:Power2.easeInOut}, "-=3")
     masterTL.to(["#text2", "#highlight2Wrapper"], 0.7, {x:50, opacity:0, ease:Power2.easeInOut}, "-=1")
@@ -74,6 +77,7 @@ function getAnimation(){
     masterTL.from("#blueCircle", 1.25, {scaleY:0, ease:"elastic.out(0.5,0.3)"})
     masterTL.from("#mainProduct", 1, {opacity:0, y:70, ease:"elastic.out(0.5 ,0.4)"}, "-=0.25")
     masterTL.from("#text5", 0.7, {x:-50, opacity:0, ease:Power2.easeInOut}, "-=0.2")
+    masterTL.from("#badge", 0.5, {scale:0, rotation:-360, ease:Back.easeOut}, "-=0.25")
     masterTL.from(["#cta", "#ctaBorder"], 1, {opacity:0, y:70, ease:"elastic.out(0.5 ,0.4)"}, "-=0.2")
 
     masterTL.to("#cta", 0.25, {scale:1.15, ease:Sine.easeInOut, repeat:1, yoyo:true}, "+=1")
