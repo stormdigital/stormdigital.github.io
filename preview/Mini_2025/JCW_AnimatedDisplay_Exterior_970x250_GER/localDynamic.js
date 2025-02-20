@@ -54,7 +54,7 @@ localDynamicData = {
 		"300x250": {
 			"bg1": 1.05,
 			"bg2": 1.05,
-			"bg3": 1.05,
+			"bg3": 1.01,
 			"introScale": 1,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 80%"
@@ -62,7 +62,7 @@ localDynamicData = {
 		"320x50": {
 			"bg1": 1.05,
 			"bg2": 1.05,
-			"bg3": 1.05,
+			"bg3": 1.01,
 			"introScale": 1,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
@@ -76,8 +76,8 @@ localDynamicData = {
 			"transOr2": "50% 50%"
 		},
 		"728x90": {
-			"bg1": 1.05,
-			"bg2": 1.05,
+			"bg1": 1.01,
+			"bg2": 1.01,
 			"bg3": 1.05,
 			"introScale": 1,
 			"transOr1": "50% 50%",

@@ -104,7 +104,8 @@ function getAnimation(text1Letters, adSize){
     var delay1 = 0;
     for (var i = 0; i < text1Letters.length; i++) {
         if(localDynamicData["text1"+text1Letters[i]][adSize].text != ""){
-            masterTL.from("#text1"+text1Letters[i], 0.01, {opacity:0, ease:Sine.easeOut}, "text1Start+="+delay1)
+            var direction = (text1Letters[i] === 'a' || text1Letters[i] === 'b') ? '-100%' : '100%';
+            masterTL.from("#text1"+text1Letters[i], 0.5, {x: direction, opacity: 0, ease: Sine.easeOut}, "text1Start+="+delay1)
             delay1+=0.15;
         } 
     }
@@ -124,7 +125,8 @@ function getAnimation(text1Letters, adSize){
     var delay3 = 0;
     for (var i = 0; i < text1Letters.length; i++) {
         if(localDynamicData["text2"+text1Letters[i]][adSize].text != ""){
-            masterTL.from("#text2"+text1Letters[i], 0.01, {opacity:0, ease:Sine.easeOut}, "text2Start+="+delay3)
+            var direction = (text1Letters[i] === 'c') ? '100%' : '-100%';
+            masterTL.from("#text2"+text1Letters[i], 0.5, {x: direction, opacity: 0, ease: Sine.easeOut}, "text2Start+="+delay3)
             delay3+=0.15;
         } 
     }
@@ -144,7 +146,8 @@ function getAnimation(text1Letters, adSize){
     var delay5 = 0;
     for (var i = 0; i < text1Letters.length; i++) {
         if(localDynamicData["text3"+text1Letters[i]][adSize].text != ""){
-            masterTL.from("#text3"+text1Letters[i], 0.01, {opacity:0, ease:Sine.easeOut}, "text3Start+="+delay5)
+            var direction = (text1Letters[i] === 'a' || text1Letters[i] === 'b' || text1Letters[i] === 'c') ? '-100%' : '100%';
+            masterTL.from("#text3"+text1Letters[i], 0.5, {x: direction, opacity: 0, ease: Sine.easeOut}, "text3Start+="+delay5)
             delay5+=0.15;
         } 
     }
