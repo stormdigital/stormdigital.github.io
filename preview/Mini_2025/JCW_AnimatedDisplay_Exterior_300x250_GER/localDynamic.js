@@ -62,7 +62,7 @@ localDynamicData = {
 		"320x50": {
 			"bg1": 1.05,
 			"bg2": 1.05,
-			"bg3": 1.05,
+			"bg3": 1.01,
 			"introScale": 1,
 			"transOr1": "50% 50%",
 			"transOr2": "50% 50%"
