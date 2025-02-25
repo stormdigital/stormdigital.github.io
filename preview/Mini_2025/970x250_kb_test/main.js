@@ -29,7 +29,7 @@ function getAnimation(){
     
     gsap.to("#loaderWrapper", 0.2, {opacity:0, ease:Sine.easeInOut})
     
-    masterTL = new TimelineLite({paused:true, repeat:2});
+    masterTL = new TimelineLite({paused:true, repeat:1});
     masterTL.add("start");
 
     masterTL.from("#bg1", 4, {scale:1.1, transformOrigin:"80% 100%", ease:Sine.easeInOut}, "start")
