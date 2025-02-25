@@ -65,6 +65,10 @@ img, div, object{
     width: 100%;
 }
 
+#bg1{
+    display: none;
+}
+
 #logo{
     width: 96px;
     top: 16px;
