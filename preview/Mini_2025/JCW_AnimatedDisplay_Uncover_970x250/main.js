@@ -39,9 +39,9 @@ function getAnimation(){
     masterTL.to("#text1", 0.3, {opacity:0, ease:Sine.easeIn})
 
     masterTL.add("switchBg1", "-=0.3")
-    masterTL.to("#bg1", 0.3, {scale:1.1, ease:Sine.easeInOut}, "switchBg1")
-    masterTL.from("#bg2", 0.3, {scale:1.1, opacity:0, ease:Sine.easeInOut}, "switchBg1")
-    masterTL.to("#bg1", 0.15, {opacity:0, ease:Sine.easeInOut}, "switchBg1+=0.15")
+    masterTL.to("#bg1", 0.3, {scale:1.2, ease:Sine.easeInOut}, "switchBg1")
+    masterTL.from("#bg2", 0.3, {scale:1.2, opacity:0, ease:Sine.easeInOut}, "switchBg1")
+    masterTL.to("#bg1", 0.15, {scale:1, opacity:0, ease:Sine.easeInOut}, "switchBg1+=0.15")
 
     masterTL.from("#text2A", 0.5, {x:20, opacity: 0, ease: Sine.easeOut}, "switchBg1+=0.5");
     masterTL.from("#text2B", 0.5, {x:20, opacity: 0, ease: Sine.easeOut}, "switchBg1+=0.75");
@@ -50,8 +50,10 @@ function getAnimation(){
     
     for (let i = 3; i <= 7; i++) {
         console.log(i);
-        masterTL.from("#bg"+i, 0.5, {opacity:0, ease: Sine.easeOut}, "+=1");
+        masterTL.from("#bg"+i, 0.5, {scale:1.2, opacity:0, ease: Sine.easeOut}, "+=1");
+        masterTL.to("#bg"+i, 0.5, {scale:1, ease: Sine.easeOut}, "+=0.5");
     }
+    masterTL.to("#bg12", 1.5, {opacity:1});
 
     masterTL.add("animateCTA3", "-=6.5")
 
