@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    color: #fff;
+    background: #000;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #c22e20;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    top: 0;
+}
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#logoMini{
+    width: 76px;
+    bottom: 20px;
+    right: 153px;
+}
+
+#logoJCW{
+    width: 105px;
+    right: 20px;
+    bottom: 24px;
+}
+
+.text{
+    width: 100%;
+}
+
+#text1,
+#text2{
+    width: 100%;
+    height: 100%;
+}
+
+#cta{
+    transform-origin: 72px 144px;
+}
+
+#ctaOver{
+    opacity: 0;
+}
+
+#bg5{
+    top: 254px;
+}
+#bg7{
+    top: 205px;
+}
+#bg9{
+    top: 294px;
+}
+#bg11{
+    top: 281px;
+    left: 1px;
+}
+#bg12{
+    top: 281px;
+    left: 1px;
+}
