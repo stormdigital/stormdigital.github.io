@@ -87,3 +87,7 @@ img, div, object{
 #ctaOver{
     opacity: 0;
 }
+
+#bg8, #bg9{
+    top: -1px;
+}

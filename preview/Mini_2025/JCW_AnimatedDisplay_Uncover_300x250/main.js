@@ -52,7 +52,7 @@ function getAnimation(){
         console.log(i);
         masterTL.from("#bg"+i, 0.5, {opacity:0, ease: Sine.easeOut}, "+=1");
     }
-
+    masterTL.to("#bg12", 1.5, {opacity:1});
     masterTL.add("animateCTA3", "-=6.5")
 
     masterTL.to("#ctaOver", 0.25, {opacity:1, ease:Sine.easeInOut}, "animateCTA3");
@@ -63,7 +63,6 @@ function getAnimation(){
     masterTL.to("#ctaOver", 0.25, {opacity:0, ease:Sine.easeInOut}, "animateCTA3+=1.25");
     
     masterTL.from("#banner", 0.5, {}, 14.5);
-
 
     console.log(masterTL.duration())
     

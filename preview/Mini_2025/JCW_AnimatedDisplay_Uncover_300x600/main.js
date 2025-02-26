@@ -53,6 +53,7 @@ function getAnimation(){
         console.log(i);
         masterTL.from("#bg"+i, 0.5, {opacity:0, ease: Sine.easeOut}, "+=1");
     }
+    masterTL.to("#bg12", 1.5, {opacity:1});
 
     masterTL.add("animateCTA3", "-=6.5")
 
