@@ -6,8 +6,13 @@ img, div, object{
     position: absolute;
 }
 
+#guide{
+    opacity: 0.5;
+    z-index: 33333;
+}
+
 #banner{
-    width: 800px;
+    width: 300px;
     height: 250px;
     overflow: hidden;
     color: #fff;
@@ -60,26 +65,14 @@ img, div, object{
 
 #logoMini{
     width: 70px;
-    bottom: 20px;
-    right: 129px;
+    bottom: 14px;
+    right: 139px;
 }
 
 #logoJCW{
-    width: 93px;
-    right: 19px;
-    bottom: 23px;
-}
-
-#bg3{
-    left: 283px;
-}
-
-#bg5{
-    right: 0;
-}
-
-#bg7{
-    left: 280px;
+    width: 104px;
+    right: 17px;
+    bottom: 18px;
 }
 
 .text{
