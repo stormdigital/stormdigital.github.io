@@ -56,12 +56,12 @@ function getAnimation(){
         gsap.set("#loaderWrapper", {display:"none"});
     }}, 0)
     masterTL.add("start");
-    masterTL.from("#bg1", 4, {scale:1.1, ease:Sine.easeOut}, "start")
-    masterTL.from("#text1", 0.7, {x:-50, opacity:0, ease:Power2.easeInOut}, "-=3.8")
-    masterTL.from("#highlight1Wrapper", 0.8, {width:0, ease:Power2.easeInOut}, "-=3")
-    masterTL.to(["#text1", "#highlight1Wrapper"], 0.7, {x:50, opacity:0, ease:Power2.easeInOut}, "-=1")
-    masterTL.from("#bg2", 4, {scale:1.1, ease:Sine.easeOut}, "-=0.5")
-    masterTL.from("#bg2", 1, {opacity:0, ease:Sine.easeInOut}, "-=4")
+    // masterTL.from("#bg1", 4, {scale:1.1, ease:Sine.easeOut}, "start")
+    masterTL.from("#bg2", 8, {scale:1.1, ease:Sine.easeOut})
+    masterTL.from("#text1", 0.7, {x:-50, opacity:0, ease:Power2.easeInOut}, "-=7.8")
+    masterTL.from("#highlight1Wrapper", 0.8, {width:0, ease:Power2.easeInOut}, "-=7")
+    masterTL.to(["#text1", "#highlight1Wrapper"], 0.7, {x:50, opacity:0, ease:Power2.easeInOut}, "-=5")
+    // masterTL.from("#bg2", 1, {opacity:0, ease:Sine.easeInOut}, "-=4")
     masterTL.from("#text2", 0.7, {x:-50, opacity:0, ease:Power2.easeInOut}, "-=3.8")
     masterTL.from("#highlight2Wrapper", 0.8, {width:0, ease:Power2.easeInOut}, "-=3")
     masterTL.to(["#text2", "#highlight2Wrapper"], 0.7, {x:50, opacity:0, ease:Power2.easeInOut}, "-=1")

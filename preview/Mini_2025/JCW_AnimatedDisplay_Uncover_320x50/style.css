@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 320px;
+    height: 50px;
+    overflow: hidden;
+    color: #fff;
+    background: #000;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 30px;
+    height: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #c22e20;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    top: 0;
+}
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#logoMini{
+    width: 25px;
+    bottom: 4px;
+    right: 45px;
+}
+
+#logoJCW{
+    width: 33px;
+    right: 6px;
+    bottom: 6px;
+}
+
+.text{
+    width: 100%;
+}
+
+#text1,
+#text2{
+    width: 100%;
+    height: 100%;
+}
+
+#cta{
+    transform-origin: 72px 144px;
+}
+
+#ctaOver{
+    opacity: 0;
+}
+
+#bg8, #bg9{
+    top: -1px;
+}
