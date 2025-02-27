@@ -7,11 +7,16 @@ img, div, object{
 }
 
 #banner{
-    width: 300px;
+    width: 160px;
     height: 600px;
     overflow: hidden;
     color: #fff;
     background: #000;
+}
+
+#guide{
+    opacity: 0.5;
+    z-index: 33333;
 }
 
 #loaderWrapper{
@@ -59,15 +64,15 @@ img, div, object{
 }
 
 #logoMini{
-    width: 76px;
-    bottom: 20px;
-    right: 153px;
+    width: 70px;
+    bottom: 54px;
+    right: 45px;
 }
 
 #logoJCW{
-    width: 105px;
-    right: 20px;
-    bottom: 24px;
+    width: 92px;
+    right: 34px;
+    bottom: 16px;
 }
 
 .text{
@@ -88,27 +93,3 @@ img, div, object{
     opacity: 0;
 }
 
-#bg5{
-    top: 254px;
-    left: -1px;
-}
-#bg7{
-    top: 205px;
-    left: -1px;
-}
-#bg9{
-    top: 294px;
-    left: -1px;
-}
-#bg11{
-    top: 282px;
-    left: -1px;
-}
-#bg12{
-    top: 282px;
-    left: -1px;
-}
-
-#bg1, #bg2, #bg3, #bg4, #bg6, #bg8, #bg10{
-    left: -2px;
-}
