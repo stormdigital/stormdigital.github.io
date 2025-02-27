@@ -18,7 +18,8 @@ function init(clickTAGvalue) {
 
     document.querySelector("#mainExit").addEventListener("click", function(){
         clickTAGvalue = dhtml.getVar('clickTAG', 'http://www.example.com');
-        masterTL.progress(1).pause();
+        masterTL.pause();
+        // masterTL.progress(1).pause();
         
     })
 
@@ -49,11 +50,17 @@ function getAnimation(){
     masterTL.from("#cta", 0.5, {scale:0, ease: Back.easeOut}, "switchBg1+=1.3");
     
     for (let i = 3; i <= 7; i++) {
-        console.log(i);
-        masterTL.from("#bg"+i, 0.5, {scale:1.2, opacity:0, ease: Sine.easeOut}, "+=1");
-        masterTL.to("#bg"+i, 0.5, {scale:1, ease: Sine.easeOut}, "+=0.5");
+        if(i == 3 || i == 5 || i == 7){
+            masterTL.set("#bg"+(i-1), {scale:1.2, ease: Sine.easeOut}, "+=1");
+            masterTL.from("#bg"+i, 0.5, {scale:1.2, opacity:0, ease: Sine.easeOut});
+            masterTL.to("#bg"+(i-1), 0.5, {scale:1, opacity:1, ease: Sine.easeOut}, "-=0.5");
+            masterTL.to("#bg"+i, 0.5, {scale:1, ease: Sine.easeOut}, "+=0.5");
+        } else {
+            masterTL.from("#bg"+i, 0.5, {scale:1.2, opacity:0, ease: Sine.easeOut}, "+=1");
+            masterTL.to("#bg"+i, 0.5, {scale:1, ease: Sine.easeOut}, "+=0.5");
+        }
     }
-    masterTL.to("#bg12", 1.5, {opacity:1});
+
 
     masterTL.add("animateCTA3", "-=6.5")
 
