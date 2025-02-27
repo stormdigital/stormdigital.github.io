@@ -18,7 +18,8 @@ function init(clickTAGvalue) {
 
     document.querySelector("#mainExit").addEventListener("click", function(){
         clickTAGvalue = dhtml.getVar('clickTAG', 'http://www.example.com');
-        masterTL.progress(1).pause();
+        masterTL.pause();
+        // masterTL.progress(1).pause();
         
     })
 
@@ -39,9 +40,9 @@ function getAnimation(){
     masterTL.to("#text1", 0.3, {opacity:0, ease:Sine.easeIn})
 
     masterTL.add("switchBg1", "-=0.3")
-    masterTL.to("#bg1", 0.3, {scale:1.2, ease:Sine.easeInOut}, "switchBg1")
-    masterTL.from("#bg2", 0.3, {scale:1.2, opacity:0, ease:Sine.easeInOut}, "switchBg1")
-    masterTL.to("#bg1", 0.15, {scale:1, opacity:0, ease:Sine.easeInOut}, "switchBg1+=0.15")
+    masterTL.to("#bg1", 0.3, {scale:1.1, ease:Sine.easeInOut}, "switchBg1")
+    masterTL.from("#bg2", 0.3, {scale:1.1, opacity:0, ease:Sine.easeInOut}, "switchBg1")
+    masterTL.to("#bg1", 0.15, {opacity:0, ease:Sine.easeInOut}, "switchBg1+=0.15")
 
     masterTL.from("#text2A", 0.5, {x:20, opacity: 0, ease: Sine.easeOut}, "switchBg1+=0.5");
     masterTL.from("#text2B", 0.5, {x:20, opacity: 0, ease: Sine.easeOut}, "switchBg1+=0.75");
