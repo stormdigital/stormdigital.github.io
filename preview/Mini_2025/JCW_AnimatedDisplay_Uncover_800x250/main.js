@@ -51,13 +51,13 @@ function getAnimation(){
     
     for (let i = 3; i <= 7; i++) {
         if(i == 3 || i == 5 || i == 7){
-            masterTL.set("#bg"+(i-1), {scale:1.2, ease: Sine.easeOut}, "+=1");
-            masterTL.from("#bg"+i, 0.5, {scale:1.2, opacity:0, ease: Sine.easeOut});
-            masterTL.to("#bg"+(i-1), 0.5, {scale:1, opacity:1, ease: Sine.easeOut}, "-=0.5");
-            masterTL.to("#bg"+i, 0.5, {scale:1, ease: Sine.easeOut}, "+=0.5");
+            masterTL.set("#bg"+(i-1), {scale:1.2, ease: Sine.easeOut}, "+=0.7");
+            masterTL.from("#bg"+i, 0.35, {scale:1.2, opacity:0, ease: Sine.easeOut});
+            masterTL.to("#bg"+(i-1), 0.35, {scale:1, opacity:1, ease: Sine.easeOut}, "-=0.35");
+            masterTL.to("#bg"+i, 0.35, {scale:1, ease: Sine.easeOut}, "+=0.35");
         } else {
-            masterTL.from("#bg"+i, 0.5, {scale:1.2, opacity:0, ease: Sine.easeOut}, "+=1");
-            masterTL.to("#bg"+i, 0.5, {scale:1, ease: Sine.easeOut}, "+=0.5");
+            masterTL.from("#bg"+i, 0.35, {scale:1.2, opacity:0, ease: Sine.easeOut}, "+=0.7");
+            masterTL.to("#bg"+i, 0.35, {scale:1, ease: Sine.easeOut}, "+=0.35");
         }
     }
 
