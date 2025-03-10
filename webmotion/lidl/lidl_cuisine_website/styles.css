@@ -234,8 +234,8 @@ img{
     position: absolute;
     pointer-events: none;
     cursor: pointer;
-    top: 999999px;
-    left: 999999px;
+    /* top: 999999px;
+    left: 999999px; */
 }
 
 .gameElementContainer{
