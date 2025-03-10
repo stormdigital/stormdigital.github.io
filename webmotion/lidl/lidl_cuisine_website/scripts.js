@@ -10,7 +10,7 @@ function init() {
         document.querySelector('.PlayGameButton').style.display = 'none';
         document.querySelector('.introScreenContainer').style.display = 'none';
         document.querySelector('.gameElementContainer').style.display = 'flex';
-        
+        document.querySelector('#mobileTextInputfield').focus();
         startPreCountdown()
 
     });
