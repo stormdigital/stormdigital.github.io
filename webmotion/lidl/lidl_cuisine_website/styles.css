@@ -210,6 +210,12 @@ img{
     font-family: "Lidl Font Cond Pro Semibold";
 }
 
+#mobileTextInputfield{
+    opacity: 0;
+    height: 0;
+    position: absolute;
+}
+
 .gameElementContainer{
     display: flex;
     flex-direction: column;
@@ -217,17 +223,17 @@ img{
     align-items: center;
     justify-content: center;
     gap: 25px;
+}
 
-    p{
-        color: #FFF000;
-        text-align: center;
-        font-family: "Lidl Font Cond Pro";
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        width: 80%;
-    }
+.gameElementContainer p{
+    color: #FFF000;
+    text-align: center;
+    font-family: "Lidl Font Cond Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 80%;
 }
 
 .endScreenCTA{
