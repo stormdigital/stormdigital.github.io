@@ -112,25 +112,29 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    h1{
-        color: #fff;
-        text-align: center;
-        font-family: "Lidl Font Cond Pro Semibold";
-        font-size: 77.778px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-    p{
-        color: #FFF000;
-        text-align: center;
-        font-family: "Lidl Font Cond Pro";
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        width: 80%;
-    }
+
+
+}
+
+.introText h1{
+    color: #fff;
+    text-align: center;
+    font-family: "Lidl Font Cond Pro Semibold";
+    font-size: 77.778px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.introText p{
+    color: #FFF000;
+    text-align: center;
+    font-family: "Lidl Font Cond Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 80%;
 }
 
 .countdownContainer{
@@ -275,12 +279,11 @@ img{
     text-transform: uppercase;
     justify-content: center;
     transition: all 0.3s ease-out;
-
-    &:hover{
-        background-color: #FFF000;
-        color: #0050AA;
-        transform: scale(1.1);
-    }
+}
+.endScreenCTA:hover{
+    background-color: #FFF000;
+    color: #0050AA;
+    transform: scale(1.1);
 }
 
 .formScreenContainer{
@@ -296,52 +299,57 @@ img{
     
     box-sizing: border-box;
 
-    h1{
-        color: #fff;
-        text-align: center;
-        font-family: "Lidl Font Cond Pro Semibold";
-        font-size: 77.778px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        margin-bottom: 25px;
-        line-height: 1;
-    }
+    
+}
 
-    .formInputContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        width: 100%;
-        gap:5px;
+h1{
+    color: #fff;
+    text-align: center;
+    font-family: "Lidl Font Cond Pro Semibold";
+    font-size: 77.778px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 25px;
+    line-height: 1;
+}
 
-        .inputLabel{
-            font-size: 22px;
-            color: #fff;
-            font-family: "Lidl Font Cond Pro";
-        }
+.formInputContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    gap:5px;
 
-        input{
-            all: unset;
-            border-radius: 15px;
-            background: #78A6DB;
-            padding: 10px 15px;
-            margin-bottom: 12px;
-        }
-    }
-    .submitFormButton{
-        width: 150px;
-        height: 20px;
-        background-color: yellow;
-        color: #0050AA;
-        font-size: 20px;
-        border: none;
-        cursor: pointer;    
-        border-radius: 15px;
-        padding: 15px;
-        text-align: center;
-        margin-top: 25px;
-    }
+}
+
+
+.formInputContainer .inputLabel{
+    font-size: 22px;
+    color: #fff;
+    font-family: "Lidl Font Cond Pro";
+}
+
+.formInputContainer input{
+    all: unset;
+    border-radius: 15px;
+    background: #78A6DB;
+    padding: 10px 15px;
+    margin-bottom: 12px;
+}
+
+.submitFormButton{
+    width: 150px;
+    height: 20px;
+    background-color: yellow;
+    color: #0050AA;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;    
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 25px;
 }
 
 #confetti-canvas{
