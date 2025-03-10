@@ -18,8 +18,9 @@ function init() {
         document.querySelector('.wordInputContainer').addEventListener('click', () => {
             document.querySelector('#mobileTextInputfield').focus();
         });
-
-        window.scrollTo(0, 1000);
+        
+        const scrollingElement = (document.body);
+        scrollingElement.scrollTop = scrollingElement.scrollHeight;
         startPreCountdown();
 
     });
@@ -114,7 +115,8 @@ function keyPress(e) {
     const scrollHeight = document.body.scrollHeight;
     console.log(document.body.scrollHeight);
     
-    window.scrollTo(0, 1000);
+    const scrollingElement = (document.body);
+    scrollingElement.scrollTop = scrollingElement.scrollHeight;
 
     window.upcomingCharacter = characterCurrentCount + 1;
 
