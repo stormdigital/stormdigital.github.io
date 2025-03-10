@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lidl Cuisine Website</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+</head>
+<body>
+    <div class="topBarLogoContainer">
+        <img src="Logo_MC.png" alt="Monsieur Cuisine Logo">
+        <img src="lidl_logo.svg" alt="Lidl Logo">
+    </div>
+    <div class="gameContainer">
+        <div class="productContainer">
+            <div class="productImage">
+                <img src="product.png" alt="Monsieur Cuisine Product Image">
+                <div class="productCircle">
+                    <img src="product_circle.png" alt="Monsieur Cuisine Product Circle">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="introScreenContainer">
+            <div class="introText">
+                <h1>Win a Monsieur Cuisine</h1>
+                <p>You have 15 seconds to type out all the things that this amazing appliance can do - and trust us, there’s a lot! Ready? Fastest fingers win!</p>
+            </div>
+            <div class="PlayGameButton">PLAY GAME</div>
+        </div>
+
+        <div class="gameElementContainer">
+            <p>Get ready to type what the Monsieur Cuisine can do below:</p>
+            <div class="wordInputContainer">
+                <div class="exampleWord"></div>
+                <div class="typedWord"></div>
+            </div>
+            <div class="countdownContainer">
+                <div class="countdownBarContainer">
+                    <div class="countdownBarOuter">
+                        <div class="countdownBarInner"></div>
+                    </div>
+                </div>
+                <div class="countdownText preCountDown">Timer will start in:&nbsp;<span class="timer"> 3 </span>&nbsp;Seconds</div>
+                <div class="countdownText countdown">Time left:&nbsp;<span class="timer"> 15 </span>&nbsp;seconds</div>
+            </div>
+            <div class="endScreenCTA">ENTER TO WIN</div>
+        </div>
+
+        <div class="formScreenContainer">
+            <h1>Congratulations! Enter your details to be in with a chance to win:</h1>
+            <div class="formInputContainer">
+                <div class="inputLabel">Name</div>
+                <input type="text" class="nameInput">
+                <div class="inputLabel">Email</div>
+                <input type="email" class="emailInput">
+                <div class="inputLabel">Phone Number</div>
+                <input type="tel" class="phoneInput">
+            </div>
+            <div class="submitFormButton">SUBMIT</div>
+        </div>
+
+           
+
+        
+        <div class="legalDisclaimer">Some legal copy goes here</div>
+    </div>
+    <canvas id="confetti-canvas"></canvas>
+    <script src="scripts.js"></script>
+</body>
+</html>
