@@ -112,8 +112,10 @@ function checkUserInput() {
     document.querySelector('body').addEventListener('keyup', keyPress, true);
 }
 function keyPress(e) {    
-    const scrollHeight = document.body.scrollHeight;
-    console.log(document.body.scrollHeight);
+    // const scrollHeight = document.body.scrollHeight;
+    // console.log(document.body.scrollHeight);
+    console.log('checkkk');
+    
     
     const scrollingElement = (document.body);
     scrollingElement.scrollTop = scrollingElement.scrollHeight;
