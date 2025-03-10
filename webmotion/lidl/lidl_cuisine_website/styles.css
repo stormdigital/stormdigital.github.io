@@ -272,6 +272,13 @@ img{
     display: none;
     text-transform: uppercase;
     justify-content: center;
+    transition: all 0.3s ease-out;
+
+    &:hover{
+        background-color: #FFF000;
+        color: #0050AA;
+        transform: scale(1.1);
+    }
 }
 
 .formScreenContainer{

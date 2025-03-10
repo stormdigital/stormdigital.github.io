@@ -14,6 +14,8 @@ function init() {
         document.querySelector('.introScreenContainer').style.display = 'none';
         document.querySelector('.gameElementContainer').style.display = 'flex';
         document.querySelector('#mobileTextInputfield').focus();
+        const scrollHeight = document.body.scrollHeight;
+        window.scrollTo(0, scrollHeight);
         startPreCountdown()
 
     });
@@ -41,34 +43,17 @@ function idleAnimation() {
 function startPreCountdown() { 
     document.querySelector('.exampleWord').innerHTML = wordObjArray[0].word;
     var preCountDownDuration = 3;
-    gsap.to('.preCountDown span', {duration: 0.8, scale: 2, opacity: 0, repeat: preCountDownDuration-1, repeatDelay:0.2});
+    gsap.to('.preCountDown span', {duration: 0.8, scale: 3, opacity: 0, repeat: preCountDownDuration-1, repeatDelay:0.2, delay:0.5});
     gsap.to('.preCountDown', preCountDownDuration, {
         opacity: 1,
-        delay: 1,
+        delay: 1.5,
         onStart: function () {
-            gsap.to('.preCountDown span', {duration: 0.8, scale: 2, opacity: 0, repeat: preCountDownDuration-1, repeatDelay:0.2});
+            gsap.to('.preCountDown span', {duration: 0.8, scale: 3, opacity: 0, repeat: preCountDownDuration-1, repeatDelay:0.2});
             // gsap.fromTo('.preCountDown span', { duration: 2, scale: 0.6, opacity: 0 }, { scale: 1.5, opacity: 1, repeat: preCountDownDuration-1});
         },
         onUpdate: function () {
             document.querySelector('.preCountDown span').innerHTML = Math.floor(preCountDownDuration - this.progress() * preCountDownDuration);
-            gsap.set('.countdownBarInner', { width: 100 / preCountDownDuration * Math.ceil(this.progress() * preCountDownDuration) + '%' });
-console.log(100 / preCountDownDuration * Math.ceil(this.progress() * preCountDownDuration) + '%' );
-
-            
-            
-            // (1 / 3) * 1
-            // (1 / 3) * 2
-            // (1 / 3) * 3
-            
-
-            //0%
-            //33%
-            //66%
-            //100%
-            
-            // console.log(100/Math.round(preCountDownDuration - this.progress() * preCountDownDuration));
-            
-            //here 
+            // gsap.set('.countdownBarInner', { width: 100 / preCountDownDuration * Math.ceil(this.progress() * preCountDownDuration) + '%' });
         },
         onComplete: function () {
             document.querySelector('.preCountDown').style.display = 'none';
@@ -89,12 +74,11 @@ function startGame() {
 }
 
 function startCountdown(seconds) {
-    window.countdownbaranimation = gsap.to('.countdownBarInner', {
+    window.countdownbaranimation = gsap.fromTo('.countdownBarInner', {width: '100%'},{
         duration: seconds, width: 0, ease: 'linear',
         onUpdate: function () {
             document.querySelector('.countdownText.countdown span').innerHTML = Math.round(seconds - this.progress() * seconds);               
     }, onComplete: function () {
-            // console.log('time is up');
             document.querySelector('.countdownText.countdown').innerHTML = '&nbsp;';
             document.querySelector('.countdownText.countdown').style.display = 'none';
             document.querySelector('.gameElementContainer p').style.display = 'none';
@@ -104,7 +88,7 @@ function startCountdown(seconds) {
             document.querySelector('.exampleWord').style.color = '#fff';
             document.querySelector('.typedWord').innerHTML = '&nbsp;';
             document.querySelector('.typedWord').style.display = 'none';
-            // document.querySelector('body').removeEventListener('keyup');
+
             window.gameFinished = true;
             goToEndScreen('fail');
     }});
@@ -123,10 +107,10 @@ function checkUserInput() {
     document.querySelector('body').addEventListener('keyup', keyPress, true);
 }
 function keyPress(e) {    
-    // console.log(e.key);
-    
+    const scrollHeight = document.body.scrollHeight;
+    window.scrollTo(0, scrollHeight);
+
     window.upcomingCharacter = characterCurrentCount + 1;
-    console.log(window.upcomingCharacter);
 
     if (window.gameFinished == true) {
         return;
@@ -134,9 +118,7 @@ function keyPress(e) {
 
     if (mobileAndTabletCheck() == true) {
         var mobileInput = [];
-        console.log('mobile');
-        
-        // console.log(document.querySelector('#mobileTextInputfield').value);
+
         var input = document.querySelector('#mobileTextInputfield').value;
         input.split('').forEach((char) => {
             mobileInput.push(char);
@@ -160,8 +142,7 @@ function keyPress(e) {
     else {
         if(inputExceptions.includes(input)) {
             return;
-        }
-        console.log('wrong');        
+        }    
         if (wrongCharacterAnimationIsPlaying == true) {
             return;
         }   
@@ -175,21 +156,17 @@ function keyPress(e) {
             }
         });
     }
-    // console.log(input)
     
     if (characterCurrentCount == characterTotalCount) {
         completedWords++;
         if (completedWords >= wordObjArray.length) { 
-            console.log('game over');
             goToEndScreen('win');
             window.gameFinished = true;
             // return;
         }
         else {
             document.querySelector('.typedWord').innerHTML = '';
-            document.querySelector('.upcomingCharacterHint').innerHTML = '';
-            // console.log(wordObjArray);
-            
+            document.querySelector('.upcomingCharacterHint').innerHTML = '';            
             gsap.to('.upcomingCharacterHint', { duration: 0, opacity: 0 });
 
             gsap.to(['.exampleWord'], {
@@ -210,9 +187,7 @@ function keyPress(e) {
             characterCurrentCount = 0;
             document.querySelector('.upcomingCharacterHint').innerHTML += wordInput[characterCurrentCount]
             // document.querySelector('.upcomingCharacterHint').innerHTML += wordInput[characterCurrentCount + 1];
-        }
-        console.log('finished');
-        
+        }        
     }
 }
 
@@ -260,7 +235,6 @@ function goToEndScreen(result) {
     }
 
     document.querySelector('body').removeEventListener('keyup', () => {
-        console.log('event listener removed');
     });
 }
 
@@ -269,13 +243,10 @@ function goToForm() {
     document.querySelector('.formScreenContainer').style.display = 'flex';
     document.querySelector('.gameElementContainer').style.display = 'none';
     document.querySelector('.productContainer').style.display = 'none';
-    console.log('go to form');
     document.querySelector('.endScreenCTA').removeEventListener('click', goToForm, true);
 }
 
-function resetGame() {
-    console.log('reset game');
-   
+function resetGame() {  
     document.querySelector('.endScreenCTA').removeEventListener('click', resetGame, true);
     location.reload();
 }
