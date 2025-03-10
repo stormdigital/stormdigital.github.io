@@ -168,9 +168,12 @@ img{
     top:0;
     left:0;
     height: 100%;
-    width: 100%;
+    width: 0%;
     border-radius: 20px;
-    background: #FFF;
+    /* background: #FFF; */
+    background-color: #FFF000;
+
+    
 }
 
 .preCountDown{
@@ -211,6 +214,7 @@ img{
     font-family: "Lidl Font Cond Pro Semibold";
     border-bottom: 5px solid #FFF000;
     white-space: pre;
+    /* display: none; */
 }
 
 .typedWord{
@@ -279,6 +283,9 @@ img{
     max-width: 850px;
     cursor:default;
     display: none;
+    padding: 50px;
+    
+    box-sizing: border-box;
 
     h1{
         color: #fff;
@@ -288,6 +295,7 @@ img{
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+        margin-bottom: 25px;
         line-height: 1;
     }
 

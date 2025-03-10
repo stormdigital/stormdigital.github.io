@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
 function init() {
     
     window.wordObjArray = prepareWordArray();
+
+    idleAnimation();
+
          
     document.querySelector('.PlayGameButton').addEventListener('click', () => {
         document.querySelector('.PlayGameButton').style.display = 'none';
@@ -15,16 +18,57 @@ function init() {
 
     });
 };
+function idleAnimation() { 
 
+    var tl = new TimelineMax({ paused: true });
+    tl.add('start')
+    .from('.product', { duration: 0.7, x: -25, opacity: 0, ease: 'power1.inOut' }, 'start')
+    
+    tl.add('circleIn')
+    .from('.circle', { duration: 0.5,  opacity: 0, ease: 'power1.inOut' }, 'circleIn')
+    .from('.circle', { duration: 0.7, x: -25, scale: 0.3,  rotation:-120, ease: "back.out(1.7)"}, 'circleIn')
+    
+    tl.add('textIn')
+    .from('.introText h1', { duration: 0.7, y: 25, opacity: 0, ease: 'power1.inOut' }, 'textIn')
+    .from('.introText p', { duration: 0.7, y: 25, opacity: 0, ease: 'power1.inOut'}, 'textIn+=0.2')
+
+    tl.add('ctaIn')
+    .from('.PlayGameButton', { duration: 0.7, y: 25, opacity: 0, ease: 'power1.inOut' }, 'ctaIn+=0.5')
+    .to('.PlayGameButton', { duration: 0.5, scale: 1.1, yoyo: true, repeat: -1, delay: 2 }, 'ctaIn+=1');
+    tl.play(0)
+}
 
 function startPreCountdown() { 
     document.querySelector('.exampleWord').innerHTML = wordObjArray[0].word;
-
-    gsap.to('.preCountDown', 3, {
+    var preCountDownDuration = 3;
+    gsap.to('.preCountDown span', {duration: 0.8, scale: 2, opacity: 0, repeat: preCountDownDuration-1, repeatDelay:0.2});
+    gsap.to('.preCountDown', preCountDownDuration, {
         opacity: 1,
-        delay:1,
+        delay: 1,
+        onStart: function () {
+            gsap.to('.preCountDown span', {duration: 0.8, scale: 2, opacity: 0, repeat: preCountDownDuration-1, repeatDelay:0.2});
+            // gsap.fromTo('.preCountDown span', { duration: 2, scale: 0.6, opacity: 0 }, { scale: 1.5, opacity: 1, repeat: preCountDownDuration-1});
+        },
         onUpdate: function () {
-            document.querySelector('.preCountDown span').innerHTML = Math.round(3 - this.progress() * 3);
+            document.querySelector('.preCountDown span').innerHTML = Math.floor(preCountDownDuration - this.progress() * preCountDownDuration);
+            gsap.set('.countdownBarInner', { width: 100 / preCountDownDuration * Math.ceil(this.progress() * preCountDownDuration) + '%' });
+console.log(100 / preCountDownDuration * Math.ceil(this.progress() * preCountDownDuration) + '%' );
+
+            
+            
+            // (1 / 3) * 1
+            // (1 / 3) * 2
+            // (1 / 3) * 3
+            
+
+            //0%
+            //33%
+            //66%
+            //100%
+            
+            // console.log(100/Math.round(preCountDownDuration - this.progress() * preCountDownDuration));
+            
+            //here 
         },
         onComplete: function () {
             document.querySelector('.preCountDown').style.display = 'none';
@@ -46,8 +90,9 @@ function startGame() {
 
 function startCountdown(seconds) {
     window.countdownbaranimation = gsap.to('.countdownBarInner', {
-        duration: seconds, width: 0, ease: 'linear', onUpdate: function () {
-        document.querySelector('.countdownText.countdown span').innerHTML = Math.round(seconds - this.progress() * seconds);   
+        duration: seconds, width: 0, ease: 'linear',
+        onUpdate: function () {
+            document.querySelector('.countdownText.countdown span').innerHTML = Math.round(seconds - this.progress() * seconds);               
     }, onComplete: function () {
             // console.log('time is up');
             document.querySelector('.countdownText.countdown').innerHTML = '&nbsp;';
@@ -145,7 +190,20 @@ function keyPress(e) {
             document.querySelector('.upcomingCharacterHint').innerHTML = '';
             // console.log(wordObjArray);
             
-            document.querySelector('.exampleWord').innerHTML = wordObjArray[completedWords].word;
+            gsap.to('.upcomingCharacterHint', { duration: 0, opacity: 0 });
+
+            gsap.to(['.exampleWord'], {
+                duration: 0.3, scale: 1.5, opacity: 0, onComplete: function () {
+                    document.querySelector(['.exampleWord']).innerHTML = wordObjArray[completedWords].word;
+                    gsap.fromTo(['.exampleWord'], { duration: 0.3, scale: 0.6, opacity: 0 }, {
+                        scale: 1, opacity: 1, onComplete: function () {
+                            gsap.to('.upcomingCharacterHint', { duration: 0.3, opacity: 1 });
+                        }
+                    });
+                    
+                }
+            })
+            // document.querySelector('.exampleWord').innerHTML = wordObjArray[completedWords].word;
 
             wordInput = wordObjArray[completedWords].characters;
             characterTotalCount = wordInput.length;
@@ -168,7 +226,11 @@ function goToEndScreen(result) {
         document.querySelector('.endScreenCTA').innerHTML = 'Enter to win';
         document.querySelector('.countdownBarInner').style.background = '#0AD000';
         document.querySelector('.countdownBarInner').style.width = '100%';
-        document.querySelector('.countdownText').innerHTML = 'COMPLETED!';
+        document.querySelector('.exampleWord').innerHTML = 'COMPLETED!';
+        document.querySelector('.exampleWord').style.color = '#fff';
+        document.querySelector('.upcomingCharacterHint').style.display = 'none';
+        document.querySelector('.typedWord').style.display = 'none';
+        document.querySelector('.gameElementContainer p').style.display = 'none';
         
         // Add confetti animation
         const confettiSettings = {
@@ -185,8 +247,16 @@ function goToEndScreen(result) {
         document.querySelector('.endScreenCTA').addEventListener('click', goToForm, true);
     }
     if (result == 'fail') { 
+        document.querySelector('.upcomingCharacterHint').style.display = 'none';
+        document.querySelector('.exampleWord').innerHTML = 'Times Up!';
+        document.querySelector('.exampleWord').style.color = '#fff';
+        document.querySelector('.upcomingCharacterHint').style.display = 'none';
+        document.querySelector('.typedWord').style.display = 'none';
+        document.querySelector('.gameElementContainer p').style.display = 'none';
         document.querySelector('.endScreenCTA').innerHTML = 'Try Again';
         document.querySelector('.endScreenCTA').addEventListener('click', resetGame, true);
+
+        gsap.to('.endScreenCTA', {duration: 0.5, scale: 1.1, yoyo: true, repeat: -1, delay: 1});
     }
 
     document.querySelector('body').removeEventListener('keyup', () => {
