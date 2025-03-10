@@ -234,6 +234,8 @@ img{
     position: absolute;
     pointer-events: none;
     cursor: pointer;
+    bottom:0;
+    left:0;
     /* top: 999999px;
     left: 999999px; */
 }
