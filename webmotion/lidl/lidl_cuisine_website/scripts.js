@@ -14,9 +14,13 @@ function init() {
         document.querySelector('.introScreenContainer').style.display = 'none';
         document.querySelector('.gameElementContainer').style.display = 'flex';
         document.querySelector('#mobileTextInputfield').focus();
-        const scrollHeight = document.body.scrollHeight;
-        window.scrollTo(0, scrollHeight);
-        startPreCountdown()
+
+        document.querySelector('.wordInputContainer').addEventListener('click', () => {
+            document.querySelector('#mobileTextInputfield').focus();
+        });
+
+        window.scrollTo(0, 1000);
+        startPreCountdown();
 
     });
 };
@@ -108,7 +112,9 @@ function checkUserInput() {
 }
 function keyPress(e) {    
     const scrollHeight = document.body.scrollHeight;
-    window.scrollTo(0, scrollHeight);
+    console.log(document.body.scrollHeight);
+    
+    window.scrollTo(0, 1000);
 
     window.upcomingCharacter = characterCurrentCount + 1;
 
