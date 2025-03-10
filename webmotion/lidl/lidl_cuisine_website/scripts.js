@@ -41,7 +41,7 @@ function startGame() {
 
     document.querySelector('.exampleWord').innerHTML = wordObjArray[0].word;
     checkUserInput();
-    startCountdown(13);
+    startCountdown(500);
 }
 
 function startCountdown(seconds) {
@@ -70,13 +70,19 @@ function checkUserInput() {
     window.completedWords = 0;
     window.wordInput = wordObjArray[0].characters;
     window.characterTotalCount = window.wordInput.length;
-    window.inputExceptions = ['Shift', 'CapsLock', 'Control', 'Alt', 'Tab', 'Enter', 'Backspace', 'Delete', 'ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Meta', 'Escape', 'Home', 'End', 'PageUp', 'PageDown', 'Insert', 'ContextMenu', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9', 'F10', 'F11', 'F12'];
+    window.inputExceptions = ['Shift', 'CapsLock', 'Control', 'Alt', 'Tab', 'Space', 'Enter', 'Backspace', 'Delete', 'ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Meta', 'Escape', 'Home', 'End', 'PageUp', 'PageDown', 'Insert', 'ContextMenu', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9', 'F10', 'F11', 'F12'];
     window.wrongCharacterAnimationIsPlaying = false;
-
+    document.querySelector('.upcomingCharacterHint').innerHTML += wordInput[characterCurrentCount];
+    
     
     document.querySelector('body').addEventListener('keyup', keyPress, true);
 }
-function keyPress(e) {      
+function keyPress(e) {    
+    // console.log(e.key);
+    
+    window.upcomingCharacter = characterCurrentCount + 1;
+    console.log(window.upcomingCharacter);
+
     if (window.gameFinished == true) {
         return;
     }
@@ -90,21 +96,20 @@ function keyPress(e) {
         input.split('').forEach((char) => {
             mobileInput.push(char);
         });
-        // console.log('-----');
-        // console.log(mobileInput[mobileInput.length - 1]);
         
         var input = mobileInput[mobileInput.length - 1];
     }
     else {
         var input = e.key;    
     }        
-    
-console.log('input: ', input);
-console.log('required input: ', wordInput[characterCurrentCount]);
 
 
     if (input.toLowerCase() == wordInput[characterCurrentCount] || input == wordInput[characterCurrentCount].toLowerCase() || input.toLowerCase() == wordInput[characterCurrentCount].toLowerCase()) {
         document.querySelector('.typedWord').innerHTML += wordInput[characterCurrentCount];
+        if (wordInput[characterCurrentCount + 1] !== undefined) {
+            document.querySelector('.upcomingCharacterHint').innerHTML += wordInput[characterCurrentCount+1];    
+        }
+        
         characterCurrentCount++;
     }
     else {
@@ -137,12 +142,16 @@ console.log('required input: ', wordInput[characterCurrentCount]);
         }
         else {
             document.querySelector('.typedWord').innerHTML = '';
+            document.querySelector('.upcomingCharacterHint').innerHTML = '';
             // console.log(wordObjArray);
             
             document.querySelector('.exampleWord').innerHTML = wordObjArray[completedWords].word;
+
             wordInput = wordObjArray[completedWords].characters;
             characterTotalCount = wordInput.length;
             characterCurrentCount = 0;
+            document.querySelector('.upcomingCharacterHint').innerHTML += wordInput[characterCurrentCount]
+            // document.querySelector('.upcomingCharacterHint').innerHTML += wordInput[characterCurrentCount + 1];
         }
         console.log('finished');
         
