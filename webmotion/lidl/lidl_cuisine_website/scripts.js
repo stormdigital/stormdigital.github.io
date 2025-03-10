@@ -151,6 +151,7 @@ console.log('required input: ', wordInput[characterCurrentCount]);
 
 
 function goToEndScreen(result) {
+    document.querySelector('#mobileTextInputfield').blur();
     window.countdownbaranimation.pause();
     document.querySelector('.endScreenCTA').style.display = 'flex';
 
