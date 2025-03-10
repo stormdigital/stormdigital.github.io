@@ -75,7 +75,7 @@ function startGame() {
 
     document.querySelector('.exampleWord').innerHTML = wordObjArray[0].word;
     checkUserInput();
-    startCountdown(15);
+    startCountdown(150);
 }
 
 function startCountdown(seconds) {
