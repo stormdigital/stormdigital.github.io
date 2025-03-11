@@ -1,0 +1,473 @@
+@font-face {
+    font-family: "Lidl Font Cond Pro Semibold";
+    src: url("Lidl Font Cond Pro Semibold.woff")format("woff"),
+        url("Lidl Font Cond Pro Semibold.woff2")format("woff2");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family: "Lidl Font Cond Pro";
+    src: url("Lidl Font Cond Pro.woff")format("woff"),
+        url("Lidl Font Cond Pro.woff2")format("woff2");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 80, 170, 1);
+    overflow: hidden;
+}
+
+.gameContainer{
+    position: absolute;
+    top:0%;
+    left:50%;
+    transform: translate(-50%, 0%);
+    height: 100%;
+    /* margin: 50px 0; */
+    width: 100%;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+}
+
+.topBarLogoContainer{
+    width: 95%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap:5px;
+    margin-top:20px;
+    margin-left: 2.5%;
+}
+
+img{
+    /* margin-left: 50px;
+    margin-right: 50px; */
+}
+
+.productContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.productImage{
+    position: relative;
+}
+
+.productCircle{
+    position: absolute;
+    bottom:0;
+    right:0;
+    transform: translate(65%, 0);
+}
+
+.legalDisclaimer{
+    position: absolute;
+    bottom:10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #fff;
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+.PlayGameButton{
+    /* position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%); */
+    width: 150px;
+    height: 20px;
+    background-color: yellow;
+    color: #0050AA;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;    
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.introScreenContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    cursor:default;
+}
+
+.introText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.introText h1{
+    color: #fff;
+    text-align: center;
+    font-family: "Lidl Font Cond Pro Semibold";
+    font-size: 77.778px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.introText p{
+    color: #FFF000;
+    text-align: center;
+    font-family: "Lidl Font Cond Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 80%;
+}
+
+.countdownContainer{
+    /* position: absolute;
+    top:75%;
+    left:50%;
+    transform: translate(-50%, -50%); */
+    font-size: 25px;
+    white-space: nowrap;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Lidl Font Cond Pro";
+    color: #fff;
+}
+
+.countdownBarOuter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.countdownBarContainer{
+    width: 100%;
+    height: 15px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.countdownBarInner{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 0%;
+    border-radius: 20px;
+    /* background: #FFF; */
+    background-color: #FFF000;
+
+    
+}
+
+.preCountDown{
+    display: flex;
+}
+
+.countdown{
+    display: none;
+}
+
+.countdownText{
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: center;
+}
+
+.wordInputContainer{
+    font-size: 45px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.exampleWord{
+    position: relative;
+    left:0;
+    color: #78A6DB;
+    text-align: center;
+    font-family: "Lidl Font Cond Pro Semibold";
+}
+
+.upcomingCharacterHint{
+    position: absolute;
+    left:0;
+    top:0;
+    color: rgba(120, 166, 219, 0);
+    text-decoration: underline;
+    text-align: center;
+    font-family: "Lidl Font Cond Pro Semibold";
+    border-bottom: 5px solid #FFF000;
+    white-space: pre;
+    /* display: none; */
+}
+
+.typedWord{
+    position: absolute;
+    left:0;
+    top:0;
+    color: #FFF000;
+    text-align: center;
+    font-family: "Lidl Font Cond Pro Semibold";
+    border-bottom: 6px solid rgba(0, 80, 170, 1);
+    white-space: pre;
+}
+
+#mobileTextInputfield{
+    opacity: 0;
+    height: 0;
+    position: absolute;
+    pointer-events: none;
+    cursor: pointer;
+    bottom:0;
+    left:0;
+    /* top: 999999px;
+    left: 999999px; */
+}
+
+.gameElementContainer{
+    display: flex;
+    flex-direction: column;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.gameElementContainer p{
+    color: #FFF000;
+    text-align: center;
+    font-family: "Lidl Font Cond Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 80%;
+}
+
+.endScreenCTA{
+    width: 150px;
+    height: 20px;
+    background-color: #fff;
+    color: #0050AA;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;    
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    display: none;
+    text-transform: uppercase;
+    justify-content: center;
+    transition: all 0.3s ease-out;
+}
+.endScreenCTA:hover{
+    background-color: #FFF000;
+    color: #0050AA;
+    transform: scale(1.1);
+}
+
+.formScreenContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 850px;
+    cursor:default;
+    display: none;
+    padding: 50px;
+    
+    box-sizing: border-box;
+
+    
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    font-family: "Lidl Font Cond Pro Semibold";
+    font-size: 77.778px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 25px;
+    line-height: 1;
+}
+
+.formInputContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    gap:5px;
+
+}
+
+
+.formInputContainer .inputLabel{
+    font-size: 22px;
+    color: #fff;
+    font-family: "Lidl Font Cond Pro";
+}
+
+.formInputContainer input{
+    all: unset;
+    border-radius: 15px;
+    background: #78A6DB;
+    padding: 10px 15px;
+    margin-bottom: 12px;
+}
+
+.submitFormButton{
+    width: 150px;
+    height: 20px;
+    background-color: yellow;
+    color: #0050AA;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;    
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+#confetti-canvas{
+    position: absolute;
+    top:-20%;
+    left:0;
+    width: 100%;
+    height: 120%;
+    z-index: 100;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .gameContainer {
+        gap: 20px;
+    }
+
+    .topBarLogoContainer {
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .PlayGameButton {
+        width: 120px;
+        height: 15px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .introText h1 {
+        font-size: 50px;
+    }
+
+    .introText p {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .countdownContainer {
+        font-size: 20px;
+    }
+
+    .wordInputContainer {
+        font-size: 35px;
+    }
+
+    .formScreenContainer h1 {
+        font-size: 50px;
+    }
+
+    .formScreenContainer .formInputContainer .inputLabel {
+        font-size: 18px;
+    }
+
+    .formScreenContainer .submitFormButton {
+        width: 120px;
+        height: 15px;
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .productContainer{
+            transform: scale(0.8);
+    }
+
+    .gameContainer {
+        gap: 15px;
+    }
+
+    .topBarLogoContainer {
+        height: 30px;
+        margin-top: 5px;
+    }
+
+    .PlayGameButton {
+        width: 100px;
+        height: 10px;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .introText h1 {
+        font-size: 40px;
+    }
+
+    .introText p {
+        font-size: 16px;
+        width: 95%;
+    }
+
+    .countdownContainer {
+        font-size: 18px;
+    }
+
+    .wordInputContainer {
+        font-size: 30px;
+    }
+
+    .formScreenContainer h1 {
+        font-size: 40px;
+    }
+
+    .formScreenContainer .formInputContainer .inputLabel {
+        font-size: 16px;
+    }
+
+    .formScreenContainer .submitFormButton {
+        width: 100px;
+        height: 10px;
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    .productContainer{
+            transform: scale(0.6);
+    }
+}
