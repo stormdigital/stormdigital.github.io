@@ -13,14 +13,16 @@ function init() {
         document.querySelector('.PlayGameButton').style.display = 'none';
         document.querySelector('.introScreenContainer').style.display = 'none';
         document.querySelector('.gameElementContainer').style.display = 'flex';
-        document.querySelector('#mobileTextInputfield').focus();
+
 
         document.querySelector('.wordInputContainer').addEventListener('click', () => {
             document.querySelector('#mobileTextInputfield').focus();
         });
         
-        const scrollingElement = (document.body);
-        scrollingElement.scrollTop = scrollingElement.scrollHeight;
+        console.log(document.querySelector('.productContainer').offsetHeight);
+        console.log(document.querySelector('.gameElementContainer').offsetHeight);
+        
+        window.scrollTo(0, 150);
         startPreCountdown();
 
     });
@@ -75,7 +77,14 @@ function startGame() {
 
     document.querySelector('.exampleWord').innerHTML = wordObjArray[0].word;
     checkUserInput();
-    startCountdown(150);
+    setTimeout(() => {
+        document.querySelector('#mobileTextInputfield').focus();    
+    }, 1000);
+    
+    console.log('set Focus2');
+    
+    startCountdown(15);
+
 }
 
 function startCountdown(seconds) {
@@ -114,11 +123,11 @@ function checkUserInput() {
 function keyPress(e) {    
     // const scrollHeight = document.body.scrollHeight;
     // console.log(document.body.scrollHeight);
-    console.log('checkkk');
+    // console.log('checkkk');
     
     
-    const scrollingElement = (document.body);
-    scrollingElement.scrollTop = scrollingElement.scrollHeight;
+    // const scrollingElement = (document.body);
+    // scrollingElement.scrollTop = scrollingElement.scrollHeight;
 
     window.upcomingCharacter = characterCurrentCount + 1;
 
