@@ -91,6 +91,11 @@ img, div, object{
     transform-origin: 38px 84px;
 }
 
+#badge1,
+#badge2,
+#badge3,
+#badge4,
+#badge5,
 #tagline,
 #sticker,
 #text2,
@@ -128,4 +133,28 @@ img, div, object{
     width: 45px;
     top: 12px;
     right: 12px;
+}
+
+#badgeBg{
+    width: 94px;
+    height: 109px;
+    background: #c51718;
+    top: 51px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#badge1{
+    transform-origin: 50px 75px;
+}
+#badge2{
+    transform-origin: 50px 100px;
+}
+#badge3{
+    transform-origin: 50px 115px;
+}
+#badge4{
+    transform-origin: 50px 130px;
+}
+#badge5{
+    transform-origin: 50px 147px;
 }
