@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+}
+
+img, div, object{
+    position: absolute;
+}
+
+#banner{
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    color: #fff;
+    background: #202B77;
+}
+
+#loaderWrapper{
+    width: 100%;
+    height: 100%;
+    background: #202B77;
+    pointer-events: none;
+}
+
+#loaderCenter{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid #fff;
+    border-top: 3px solid #C51718;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#border{
+    width: 100%;
+    height: 100%;
+    border: solid 1px #000;
+    box-sizing: border-box;
+}
+
+
+#mainExit{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#logo{
+    width: 45px;
+    top: 12px;
+    left: 12px;
+}
+
+#sticker,
+#flower3,
+#ctaLeft,
+#ctaRight,
+#tagline,
+#product1Shadow,
+#product2Shadow,
+#product3Shadow,
+#date,
+#flower2,
+#egg0,
+#egg1,
+#product1A,
+#product1B,
+#product2A,
+#product2B,
+#product3,
+#price1,
+#price2,
+#price3,
+#info1,
+#info2,
+#info3,
+#basket1,
+#basketProduct1,
+#basketProduct2,
+#flower1,
+#bg,
+#text2,
+#text1{
+    width: 100%;
+}
+
+#bg{
+    transform-origin: 230px 46px;
+}
+
+#flower1{
+    transform-origin: 268px 100px;
+}
+
+#egg0{
+    transform-origin: 172px 190px;
+}
+
+#price3,
+#price2,
+#price1{
+    transform-origin: 232px 186px;
+}
+
+#basketProduct1,
+#basketProduct2,
+#basket1{
+    transform-origin: 75px 235px;
+}
+
+#flower2{
+    transform-origin: 261px 96px;
+}
+
+#flower3{
+    transform-origin: 40px 95px;
+}
+
+#egg1{
+    transform-origin: 200px 87px;
+}
+
+#sticker{
+    transform-origin: 247px 93px;
+}
+
+#highlightWrapper2,
+#highlightWrapper1{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#highlight2,
+#highlight1{
+    width: 300px;
+}
+
+#bgColor1{
+    width: 100%;
+    height: 100%;
+    background: #003087;
+}
+
+#bgColor2{
+    width: 100%;
+    height: 100%;
+    background: #00A9E0;
+}
+
+#product3Wrapper,
+#product2Wrapper,
+#product1Wrapper{
+    width: 100%;
+    height: 100%;
+}
